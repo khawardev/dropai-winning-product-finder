@@ -1,32 +1,49 @@
-'use client';
+'use client'
 
-import React from 'react';
-import { 
-  Search, 
-  Filter, 
-  MapPin, 
-  Star, 
-  Truck, 
-  ShieldCheck, 
+import React, { useState, useEffect } from 'react'
+import {
+  Search,
+  Filter,
+  MapPin,
+  Star,
+  Truck,
+  ShieldCheck,
   ExternalLink,
-  Mail
-} from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Card, CardContent } from '@/components/ui/card';
-import { cn } from '@/lib/utils';
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
-
-const suppliers = [
-  { name: 'PetWorld Global', loc: 'China', time: '7-12 days', score: 98, min: '1 unit', categories: ['Pets', 'Home'] },
-  { name: 'US Pet Supplies', loc: 'USA', time: '3-5 days', score: 95, min: '1 unit', categories: ['Pets'] },
-  { name: 'QuickShip Dropship', loc: 'China', time: '5-10 days', score: 92, min: '5 units', categories: ['General', 'Tech'] },
-  { name: 'EuroHome Direct', loc: 'Germany', time: '4-7 days', score: 96, min: '1 unit', categories: ['Home', 'Kitchen'] },
-  { name: 'BeautyPro Source', loc: 'South Korea', time: '8-14 days', score: 94, min: '10 units', categories: ['Beauty', 'Health'] },
-  { name: 'TechNexus Mfg', loc: 'China', time: '6-12 days', score: 97, min: '1 unit', categories: ['Tech', 'Gadgets'] },
-];
+  Mail,
+  Loader2
+} from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Card, CardContent } from '@/components/ui/card'
+import { cn } from '@/lib/utils'
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
+import { getSuppliers } from '@/server/actions/SupplierQueries'
 
 export default function SupplierLibrary() {
+  const [suppliers, setSuppliers] = useState<any[]>([])
+  const [isLoading, setIsLoading] = useState(true)
+
+  useEffect(() => {
+    async function loadSuppliers() {
+      try {
+        const result = await getSuppliers()
+        if (result.data && result.data.length > 0) {
+          setSuppliers(result.data)
+        }
+      } catch (err) {
+        console.error('Failed to load suppliers:', err)
+      } finally {
+        setIsLoading(false)
+      }
+    }
+    loadSuppliers()
+  }, [])
+
+  const formatShipping = (days: number) => {
+    if (days <= 5) return `${days - 2}-${days} days`
+    return `${days - 3}-${days} days`
+  }
+
   return (
     <div className="space-y-8 animate-in fade-in duration-500">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
@@ -60,8 +77,8 @@ export default function SupplierLibrary() {
                 </tr>
               </thead>
               <tbody className="text-sm divide-y divide-border">
-                {suppliers.map((s, i) => (
-                  <tr key={i} className="group hover:bg-muted/30 transition-colors">
+                {suppliers.length > 0 ? suppliers.map((s, i) => (
+                  <tr key={s.id || i} className="group hover:bg-muted/30 transition-colors">
                     <td className="p-6">
                       <div className="flex items-center gap-3">
                         <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary font-bold">
@@ -70,7 +87,7 @@ export default function SupplierLibrary() {
                         <div>
                           <p className="font-bold text-foreground">{s.name}</p>
                           <div className="flex gap-1 mt-1">
-                            {s.categories.map((cat, j) => (
+                            {(s.categories || []).map((cat: string, j: number) => (
                               <span key={j} className="text-[9px] bg-muted text-muted-foreground px-1.5 py-0.5 rounded uppercase font-bold tracking-wider">
                                 {cat}
                               </span>
@@ -81,23 +98,23 @@ export default function SupplierLibrary() {
                     </td>
                     <td className="p-6">
                       <div className="flex items-center gap-2 text-muted-foreground">
-                        <MapPin className="w-3 h-3" /> {s.loc}
+                        <MapPin className="w-3 h-3" /> {s.location}
                       </div>
                     </td>
                     <td className="p-6">
                       <div className="flex items-center gap-2 text-muted-foreground">
-                        <Truck className="w-3 h-3" /> {s.time}
+                        <Truck className="w-3 h-3" /> {formatShipping(s.shippingDays)}
                       </div>
                     </td>
                     <td className="p-6">
                       <div className="flex items-center gap-2">
                         <div className="w-12 h-1.5 bg-muted rounded-full overflow-hidden">
-                          <div className="h-full bg-emerald-500" style={{ width: `${s.score}%` }}></div>
+                          <div className="h-full bg-emerald-500" style={{ width: `${s.reliabilityScore}%` }}></div>
                         </div>
-                        <span className="text-emerald-500 font-mono font-bold">{s.score}%</span>
+                        <span className="text-emerald-500 font-mono font-bold">{s.reliabilityScore}%</span>
                       </div>
                     </td>
-                    <td className="p-6 text-muted-foreground">{s.min}</td>
+                    <td className="p-6 text-muted-foreground">{s.minOrder}</td>
                     <td className="p-6 text-right">
                       <div className="flex justify-end gap-2">
                         <TooltipProvider>
@@ -121,7 +138,13 @@ export default function SupplierLibrary() {
                       </div>
                     </td>
                   </tr>
-                ))}
+                )) : (
+                  <tr>
+                    <td colSpan={6} className="p-12 text-center text-muted-foreground">
+                      No suppliers found in the library. Start searching for products to find suppliers.
+                    </td>
+                  </tr>
+                )}
               </tbody>
             </table>
           </div>
@@ -148,5 +171,5 @@ export default function SupplierLibrary() {
         ))}
       </div>
     </div>
-  );
+  )
 }

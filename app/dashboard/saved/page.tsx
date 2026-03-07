@@ -1,58 +1,58 @@
-'use client';
+'use client'
 
-import React, { useState } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import { 
-  Bookmark, 
-  TrendingUp, 
-  DollarSign, 
-  Trash2, 
+import React, { useState, useEffect, useTransition } from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+import {
+  Bookmark,
+  TrendingUp,
+  DollarSign,
+  Trash2,
   ExternalLink,
-  Search
-} from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Card, CardContent } from '@/components/ui/card';
-import { cn } from '@/lib/utils';
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
+  Search,
+  Loader2
+} from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Card, CardContent } from '@/components/ui/card'
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
+import { getSavedProducts, unsaveProduct } from '@/server/actions/SaveProduct'
 
-const savedProducts = [
-  {
-    id: '1',
-    name: 'Portable Dog Water Bottle',
-    image: 'https://picsum.photos/seed/dog/400/400',
-    demand: 8.9,
-    profit: '42%',
-    notes: 'High potential for TikTok viral marketing.',
-    date: '2 days ago'
-  },
-  {
-    id: '2',
-    name: 'Self-Cleaning Hair Brush',
-    image: 'https://picsum.photos/seed/brush/400/400',
-    demand: 9.2,
-    profit: '55%',
-    notes: 'Low competition, great for Facebook ads.',
-    date: '5 days ago'
-  },
-  {
-    id: '4',
-    name: 'Ergonomic Seat Cushion',
-    image: 'https://picsum.photos/seed/seat/400/400',
-    demand: 8.1,
-    profit: '48%',
-    notes: 'Stable demand, good for SEO.',
-    date: '1 week ago'
-  },
-];
+export default function SavedProductsPage() {
+  const [items, setItems] = useState<any[]>([])
+  const [isLoading, setIsLoading] = useState(true)
+  const [isPending, startTransition] = useTransition()
 
-export default function SavedProducts() {
-  const [items, setItems] = useState(savedProducts);
+  useEffect(() => {
+    async function loadSaved() {
+      try {
+        const result = await getSavedProducts()
+        if (result.data) {
+          setItems(result.data)
+        }
+      } catch (err) {
+        console.error('Failed to load saved products:', err)
+      } finally {
+        setIsLoading(false)
+      }
+    }
+    loadSaved()
+  }, [])
 
-  const removeItem = (id: string) => {
-    setItems(prev => prev.filter(item => item.id !== id));
-  };
+  const removeItem = (productId: string) => {
+    startTransition(async () => {
+      await unsaveProduct(productId)
+      setItems(prev => prev.filter(item => item.id !== productId))
+    })
+  }
+
+  if (isLoading) {
+    return (
+      <div className="flex items-center justify-center py-20">
+        <Loader2 className="w-8 h-8 animate-spin text-primary" />
+      </div>
+    )
+  }
 
   return (
     <div className="space-y-8 animate-in fade-in duration-500">
@@ -72,9 +72,9 @@ export default function SavedProducts() {
           {items.map((product) => (
             <Card key={product.id} className="bg-card border-border overflow-hidden group hover:border-primary/50 transition-all duration-300">
               <div className="relative aspect-video overflow-hidden">
-                <Image 
-                  src={product.image} 
-                  alt={product.name} 
+                <Image
+                  src={product.imageUrl || `https://picsum.photos/seed/${encodeURIComponent(product.name)}/400/400`}
+                  alt={product.name}
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                   referrerPolicy="no-referrer"
@@ -83,7 +83,7 @@ export default function SavedProducts() {
                 <TooltipProvider>
                   <Tooltip>
                     <TooltipTrigger asChild>
-                      <button 
+                      <button
                         onClick={() => removeItem(product.id)}
                         className="absolute top-4 right-4 p-2 rounded-full bg-rose-500/20 text-rose-500 hover:bg-rose-500 hover:text-white transition-colors backdrop-blur-md z-10"
                       >
@@ -97,23 +97,27 @@ export default function SavedProducts() {
               <CardContent className="p-6">
                 <div className="flex justify-between items-start mb-2">
                   <h3 className="text-lg font-bold text-foreground line-clamp-1">{product.name}</h3>
-                  <span className="text-[10px] text-muted-foreground font-medium">{product.date}</span>
+                  <span className="text-[10px] text-muted-foreground font-medium">
+                    {product.savedAt ? new Date(product.savedAt).toLocaleDateString() : ''}
+                  </span>
                 </div>
-                
+
                 <div className="flex gap-4 mb-4">
                   <div className="flex items-center gap-1.5">
                     <TrendingUp className="w-3 h-3 text-primary" />
-                    <span className="text-xs font-bold text-foreground font-mono">{product.demand}</span>
+                    <span className="text-xs font-bold text-foreground font-mono">{Number(product.demandScore).toFixed(1)}</span>
                   </div>
                   <div className="flex items-center gap-1.5">
                     <DollarSign className="w-3 h-3 text-emerald-500" />
-                    <span className="text-xs font-bold text-foreground font-mono">{product.profit}</span>
+                    <span className="text-xs font-bold text-foreground font-mono">{Number(product.profitMargin).toFixed(0)}%</span>
                   </div>
                 </div>
 
-                <div className="p-3 bg-muted/50 border border-border rounded-lg mb-6">
-                  <p className="text-xs text-muted-foreground italic">&quot;{product.notes}&quot;</p>
-                </div>
+                {product.savedNotes && (
+                  <div className="p-3 bg-muted/50 border border-border rounded-lg mb-6">
+                    <p className="text-xs text-muted-foreground italic">&quot;{product.savedNotes}&quot;</p>
+                  </div>
+                )}
 
                 <div className="flex gap-2">
                   <Link href={`/dashboard/product/${product.id}`} className="flex-1">
@@ -144,5 +148,5 @@ export default function SavedProducts() {
         </Card>
       )}
     </div>
-  );
+  )
 }

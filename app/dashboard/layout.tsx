@@ -1,8 +1,8 @@
-'use client';
+'use client'
 
-import React, { useState } from 'react';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import React, { useState } from 'react'
+import Link from 'next/link'
+import { usePathname, useRouter } from 'next/navigation'
 import { 
   LayoutDashboard, 
   Search, 
@@ -11,18 +11,19 @@ import {
   BarChart3, 
   Settings, 
   Bell, 
-  User,
   Menu,
   X,
   Zap,
   SearchIcon,
   LogOut,
-} from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { cn } from '@/lib/utils';
-import AIChatAssistant from '@/components/AIChatAssistant';
-import { ThemeToggle } from '@/components/ThemeToggle';
+  Loader2,
+} from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { cn } from '@/lib/utils'
+import AIChatAssistant from '@/components/AIChatAssistant'
+import { ThemeToggle } from '@/components/ThemeToggle'
+import { useSession, signOut } from '@/lib/auth-client'
 
 const navItems = [
   { name: 'Dashboard', icon: LayoutDashboard, href: '/dashboard' },
@@ -31,15 +32,29 @@ const navItems = [
   { name: 'Supplier Library', icon: Library, href: '/dashboard/suppliers' },
   { name: 'Reports', icon: BarChart3, href: '/dashboard/reports' },
   { name: 'Settings', icon: Settings, href: '/dashboard/settings' },
-];
+]
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
-  const [sidebarOpen, setSidebarOpen] = useState(true);
-  const pathname = usePathname();
+  const [sidebarOpen, setSidebarOpen] = useState(true)
+  const pathname = usePathname()
+  const router = useRouter()
+  const { data: session, isPending } = useSession()
+
+  const userName = session?.user?.name || 'User'
+  const userInitials = userName
+    .split(' ')
+    .map((n: string) => n[0])
+    .join('')
+    .toUpperCase()
+    .slice(0, 2)
+
+  const handleLogout = async () => {
+    await signOut()
+    router.push('/login')
+  }
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      {/* Sidebar */}
       <aside 
         className={cn(
           "fixed left-0 top-0 h-full bg-card border-r border-border transition-all duration-300 z-50",
@@ -47,18 +62,16 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
         )}
       >
         <div className="flex flex-col h-full">
-          {/* Logo */}
-          <div className="p-6 flex items-center gap-3">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center shrink-0">
-              <Zap className="w-5 h-5 text-primary-foreground" />
+          <div className="p-6 flex items-center gap-1 ">
+            <div className="w-9 h-9 flex items-center justify-center shrink-0">
+              <img src="https://i.ibb.co/fJSBXLF/714d2bd0-4e86-4ac9-8720-9bdae9ab297b-removalai-preview.png" alt="DropAI Logo" className="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]" />
             </div>
             {sidebarOpen && <span className="text-xl font-bold text-foreground tracking-tight">DropAI</span>}
           </div>
 
-          {/* Nav Items */}
           <nav className="flex-1 px-3 space-y-1 mt-4">
             {navItems.map((item) => {
-              const isActive = pathname === item.href;
+              const isActive = pathname === item.href
               return (
                 <Link 
                   key={item.name} 
@@ -73,11 +86,10 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                   <item.icon className={cn("w-5 h-5 shrink-0", isActive ? "text-primary-foreground" : "text-muted-foreground group-hover:text-accent-foreground")} />
                   {sidebarOpen && <span className="text-sm font-medium">{item.name}</span>}
                 </Link>
-              );
+              )
             })}
           </nav>
 
-          {/* Bottom Actions */}
           <div className="p-4 border-t border-border">
             <button 
               onClick={() => setSidebarOpen(!sidebarOpen)}
@@ -86,25 +98,23 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
               {sidebarOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
               {sidebarOpen && <span className="text-sm font-medium">Collapse</span>}
             </button>
-            <Link 
-              href="/login"
+            <button
+              onClick={handleLogout}
               className="flex items-center gap-3 px-3 py-2.5 w-full rounded-lg text-muted-foreground hover:bg-accent hover:text-accent-foreground transition-colors mt-1"
             >
               <LogOut className="w-5 h-5" />
               {sidebarOpen && <span className="text-sm font-medium">Logout</span>}
-            </Link>
+            </button>
           </div>
         </div>
       </aside>
 
-      {/* Main Content */}
       <main 
         className={cn(
           "transition-all duration-300 min-h-screen",
           sidebarOpen ? "pl-64" : "pl-20"
         )}
       >
-        {/* Top Bar */}
         <header className="h-16 border-b border-border bg-background/80 backdrop-blur-md sticky top-0 z-40 px-8 flex items-center justify-between">
           <div className="flex-1 max-w-md relative">
             <SearchIcon className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
@@ -123,24 +133,28 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
             <div className="h-8 w-[1px] bg-border mx-2"></div>
             <div className="flex items-center gap-3 pl-2">
               <div className="text-right hidden sm:block">
-                <p className="text-sm font-medium text-foreground leading-none">Alex Smith</p>
-                <p className="text-xs text-muted-foreground mt-1">Pro Plan</p>
+                {isPending ? (
+                  <Loader2 className="w-4 h-4 animate-spin text-muted-foreground" />
+                ) : (
+                  <>
+                    <p className="text-sm font-medium text-foreground leading-none">{userName}</p>
+                    <p className="text-xs text-muted-foreground mt-1">{session?.user?.email || ''}</p>
+                  </>
+                )}
               </div>
               <div className="w-9 h-9 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center text-primary font-bold">
-                AS
+                {userInitials}
               </div>
             </div>
           </div>
         </header>
 
-        {/* Page Content */}
         <div className="p-8">
           {children}
         </div>
 
-        {/* AI Assistant */}
         <AIChatAssistant />
       </main>
     </div>
-  );
+  )
 }

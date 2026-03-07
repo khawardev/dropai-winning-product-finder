@@ -1,0 +1,1717 @@
+{
+  "search_metadata": {
+    "id": "69a9a01bfbbebbb4d510194e",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/4YuLVSm2d8y6y2ypMMjrRQ/69a9a01bfbbebbb4d510194e.json",
+    "created_at": "2026-03-05 15:24:11 UTC",
+    "processed_at": "2026-03-05 15:24:11 UTC",
+    "google_shopping_url": "https://www.google.com/search?udm=28&q=gaming+chair&hl=en&gl=us",
+    "raw_html_file": "https://serpapi.com/searches/4YuLVSm2d8y6y2ypMMjrRQ/69a9a01bfbbebbb4d510194e.html",
+    "total_time_taken": 2.03
+  },
+  "search_parameters": {
+    "engine": "google_shopping",
+    "q": "gaming chair",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "gaming chair",
+    "shopping_results_state": "Results for exact spelling"
+  },
+  "shopping_results": [
+    {
+      "position": 1,
+      "title": "Gtplayer GT905 Gaming Chair",
+      "product_id": "5977510012180452601",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:5977510012180452601,headlineOfferDocid:834567496225501802,imageDocid:1082278985216235208,rds:PC_9400949704385049411|PROD_PC_9400949704385049411,gpcid:9400949704385049411,mid:576462810920451617,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNTk3NzUxMDAxMjE4MDQ1MjYwMSIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjgzNDU2NzQ5NjIyNTUwMTgwMiIsImltYWdlRG9jaWQiOiIxMDgyMjc4OTg1MjE2MjM1MjA4IiwicmRzIjoiUENfOTQwMDk0OTcwNDM4NTA0OTQxMXxQUk9EX1BDXzk0MDA5NDk3MDQzODUwNDk0MTEiLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiOTQwMDk0OTcwNDM4NTA0OTQxMSIsIm1pZCI6IjU3NjQ2MjgxMDkyMDQ1MTYxNyIsInB2dCI6ImhnIiwidXVsZSI6bnVsbCwiZ2wiOiJ1cyIsImhsIjoiZW4ifQ==",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNTk3NzUxMDAxMjE4MDQ1MjYwMSIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjgzNDU2NzQ5NjIyNTUwMTgwMiIsImltYWdlRG9jaWQiOiIxMDgyMjc4OTg1MjE2MjM1MjA4IiwicmRzIjoiUENfOTQwMDk0OTcwNDM4NTA0OTQxMXxQUk9EX1BDXzk0MDA5NDk3MDQzODUwNDk0MTEiLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiOTQwMDk0OTcwNDM4NTA0OTQxMSIsIm1pZCI6IjU3NjQ2MjgxMDkyMDQ1MTYxNyIsInB2dCI6ImhnIiwidXVsZSI6bnVsbCwiZ2wiOiJ1cyIsImhsIjoiZW4ifQ%3D%3D",
+      "source": "gtracing.com",
+      "source_icon": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/sCQ8nR94Hc864dgqqPWYlzxDlhEhHqljcSDmXxLw618.png",
+      "multiple_sources": true,
+      "price": "$109.99",
+      "extracted_price": 109.99,
+      "old_price": "$180",
+      "extracted_old_price": 180,
+      "rating": 4.4,
+      "reviews": 96,
+      "snippet": "Comfortable (45 user reviews)",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS4ZWF5kzSyXZwecMbq2uPK_X2uAvGCKcZaQdCCV8T5U1Kl945RBIg3doIloBPoOyU_8FHEuwE",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/6VS3THicu9mYUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDjaJCnczza4KroyIKk9N9k0qNCoN8I6PMCp1LHN39k6OSgxMcXYOswgxDTX0zrE0MQ1y8kw3Tsn3zMl3Csj3rwyNt3DzcC0tdwUAbUMuDg",
+      "tag": "38% OFF",
+      "extensions": [
+        "38% OFF"
+      ]
+    },
+    {
+      "position": 2,
+      "title": "Emerge Vortex Gaming Chair",
+      "product_id": "7813432732169648123",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:7813432732169648123,headlineOfferDocid:3245277010443903719,imageDocid:10318060353531112700,rds:PC_5286550290586063660|PROD_PC_5286550290586063660,gpcid:5286550290586063660,mid:576462866655689942,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNzgxMzQzMjczMjE2OTY0ODEyMyIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjMyNDUyNzcwMTA0NDM5MDM3MTkiLCJpbWFnZURvY2lkIjoiMTAzMTgwNjAzNTM1MzExMTI3MDAiLCJyZHMiOiJQQ181Mjg2NTUwMjkwNTg2MDYzNjYwfFBST0RfUENfNTI4NjU1MDI5MDU4NjA2MzY2MCIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiI1Mjg2NTUwMjkwNTg2MDYzNjYwIiwibWlkIjoiNTc2NDYyODY2NjU1Njg5OTQyIiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNzgxMzQzMjczMjE2OTY0ODEyMyIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjMyNDUyNzcwMTA0NDM5MDM3MTkiLCJpbWFnZURvY2lkIjoiMTAzMTgwNjAzNTM1MzExMTI3MDAiLCJyZHMiOiJQQ181Mjg2NTUwMjkwNTg2MDYzNjYwfFBST0RfUENfNTI4NjU1MDI5MDU4NjA2MzY2MCIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiI1Mjg2NTUwMjkwNTg2MDYzNjYwIiwibWlkIjoiNTc2NDYyODY2NjU1Njg5OTQyIiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+      "source": "Staples",
+      "source_icon": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/sCQ8nR94Hc864dgqqPWYlyQ2m5OKLegfehOL2541d-U.png",
+      "multiple_sources": true,
+      "price": "$159.99",
+      "extracted_price": 159.99,
+      "old_price": "$260",
+      "extracted_old_price": 260,
+      "rating": 4.6,
+      "reviews": 4800,
+      "snippet": "Comfortable (2,411 user reviews)",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRfJzn7mY6BPiU3NFrbymqjsUqRFeqSE5dUO9Qdp4_EyCgNMA0exWuGrdpt2SFo_xdbYlIh1UA",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/yTT4w3icDcnLCoJAFADQL0rtjUKEhSMFTaUM4kqaR6OR87yBtusz-5s62_P9tADGJ2EoFHOjAcEnQFUUSA836FjAdB_6VhvTKbm1m_8lKeZxzor78a3Wfb3aXToyx8jRsbcPT2yBhC2zJSfn-MrNosnGvcSnNBJD9codNzArkW4GTuvnoZ2S9AeV3S9f",
+      "tag": "38% OFF",
+      "extensions": [
+        "38% OFF"
+      ],
+      "delivery": "Free next-day delivery"
+    },
+    {
+      "position": 3,
+      "title": "gtracing gaming chair Music Series GT890MF",
+      "product_id": "941927770825723973",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:941927770825723973,headlineOfferDocid:15485113918908702813,imageDocid:3238974880843432929,rds:PC_13043471600724736343|PROD_PC_13043471600724736343,gpcid:13043471600724736343,mid:576462836159066885,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiOTQxOTI3NzcwODI1NzIzOTczIiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiMTU0ODUxMTM5MTg5MDg3MDI4MTMiLCJpbWFnZURvY2lkIjoiMzIzODk3NDg4MDg0MzQzMjkyOSIsInJkcyI6IlBDXzEzMDQzNDcxNjAwNzI0NzM2MzQzfFBST0RfUENfMTMwNDM0NzE2MDA3MjQ3MzYzNDMiLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiMTMwNDM0NzE2MDA3MjQ3MzYzNDMiLCJtaWQiOiI1NzY0NjI4MzYxNTkwNjY4ODUiLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0=",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiOTQxOTI3NzcwODI1NzIzOTczIiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiMTU0ODUxMTM5MTg5MDg3MDI4MTMiLCJpbWFnZURvY2lkIjoiMzIzODk3NDg4MDg0MzQzMjkyOSIsInJkcyI6IlBDXzEzMDQzNDcxNjAwNzI0NzM2MzQzfFBST0RfUENfMTMwNDM0NzE2MDA3MjQ3MzYzNDMiLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiMTMwNDM0NzE2MDA3MjQ3MzYzNDMiLCJtaWQiOiI1NzY0NjI4MzYxNTkwNjY4ODUiLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0%3D",
+      "source": "Walmart",
+      "source_icon": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/sCQ8nR94Hc864dgqqPWYlzVlSBJOeNWO4bSLuMXtISA.png",
+      "multiple_sources": true,
+      "price": "$115.99",
+      "extracted_price": 115.99,
+      "old_price": "Usually $160",
+      "extracted_old_price": 160,
+      "rating": 4,
+      "reviews": 1400,
+      "snippet": "Comfortable (351 user reviews)",
+      "thumbnail": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSd4hNSPpQo1-TS26FjJeNQ4Z6-NsRfEQLkYK29ZKHLeOjjUWJ-nb3WBZMto70",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/6Au-UXicu1maUVJSUGylr5-al1xUWVCSmqJbkpRnqJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDk4xyfALDigIzDfUDQk2MnPL8kr1CzSJMtP1Kw5Kcw30yY70NrKM8vbwSfXPygoN99LNSzIOd4ryLck3NwAAKYcpAg",
+      "tag": "LOW PRICE",
+      "extensions": [
+        "LOW PRICE"
+      ],
+      "delivery": "Free delivery"
+    },
+    {
+      "position": 4,
+      "title": "Bestier Gaming Chair",
+      "product_id": "12828410935262554339",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:12828410935262554339,headlineOfferDocid:7133628851623558872,imageDocid:17389687735644477166,rds:PC_1750975933807008330|PROD_PC_1750975933807008330,gpcid:1750975933807008330,mid:576462859891118916,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTI4Mjg0MTA5MzUyNjI1NTQzMzkiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiI3MTMzNjI4ODUxNjIzNTU4ODcyIiwiaW1hZ2VEb2NpZCI6IjE3Mzg5Njg3NzM1NjQ0NDc3MTY2IiwicmRzIjoiUENfMTc1MDk3NTkzMzgwNzAwODMzMHxQUk9EX1BDXzE3NTA5NzU5MzM4MDcwMDgzMzAiLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiMTc1MDk3NTkzMzgwNzAwODMzMCIsIm1pZCI6IjU3NjQ2Mjg1OTg5MTExODkxNiIsInB2dCI6ImhnIiwidXVsZSI6bnVsbCwiZ2wiOiJ1cyIsImhsIjoiZW4ifQ==",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTI4Mjg0MTA5MzUyNjI1NTQzMzkiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiI3MTMzNjI4ODUxNjIzNTU4ODcyIiwiaW1hZ2VEb2NpZCI6IjE3Mzg5Njg3NzM1NjQ0NDc3MTY2IiwicmRzIjoiUENfMTc1MDk3NTkzMzgwNzAwODMzMHxQUk9EX1BDXzE3NTA5NzU5MzM4MDcwMDgzMzAiLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiMTc1MDk3NTkzMzgwNzAwODMzMCIsIm1pZCI6IjU3NjQ2Mjg1OTg5MTExODkxNiIsInB2dCI6ImhnIiwidXVsZSI6bnVsbCwiZ2wiOiJ1cyIsImhsIjoiZW4ifQ%3D%3D",
+      "source": "Best Buy",
+      "source_icon": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/sCQ8nR94Hc864dgqqPWYl3reuYAWpSgle0pVxH9SIpU.png",
+      "multiple_sources": true,
+      "price": "$128.99",
+      "extracted_price": 128.99,
+      "old_price": "$219",
+      "extracted_old_price": 219,
+      "rating": 3.7,
+      "reviews": 17,
+      "snippet": "Comfortable (7 user reviews)",
+      "thumbnail": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQqPuGTUX6EtWiFWW4PQwJ8AX6B-f9-guh6oG4wREvnJZE20VJBMAwf2AgyfW9BNTVvD3EL0yQ",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/ScagYHicu9mYUVJSUGylr5-al1xUWVCSmqJbkpRnpJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDiwMKHUPCY0wcy0Jz3QLDzcJCCz3snCMMHPSTbPUTS_NMMt3NykPci3L84pyNTII83LydSxPM3JMr0wLt3TyCwkrczF29TGoDAQAS8stLA",
+      "tag": "41% OFF",
+      "extensions": [
+        "41% OFF"
+      ]
+    },
+    {
+      "position": 5,
+      "title": "Costway Gaming Chair with Footrest Ergonomic Video Game Computer Chair with Headrest",
+      "product_id": "1634788843798453798",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=productid:1634788843798453798,headlineOfferDocid:1634788843798453798,imageDocid:2045284637533095684,rds:PC_13468371493178312646|PROD_PC_13468371493178312646,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiMTYzNDc4ODg0Mzc5ODQ1Mzc5OCIsImNhdGFsb2dpZCI6IiIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjE2MzQ3ODg4NDM3OTg0NTM3OTgiLCJpbWFnZURvY2lkIjoiMjA0NTI4NDYzNzUzMzA5NTY4NCIsInJkcyI6IlBDXzEzNDY4MzcxNDkzMTc4MzEyNjQ2fFBST0RfUENfMTM0NjgzNzE0OTMxNzgzMTI2NDYiLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiIiwibWlkIjoiIiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiMTYzNDc4ODg0Mzc5ODQ1Mzc5OCIsImNhdGFsb2dpZCI6IiIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjE2MzQ3ODg4NDM3OTg0NTM3OTgiLCJpbWFnZURvY2lkIjoiMjA0NTI4NDYzNzUzMzA5NTY4NCIsInJkcyI6IlBDXzEzNDY4MzcxNDkzMTc4MzEyNjQ2fFBST0RfUENfMTM0NjgzNzE0OTMxNzgzMTI2NDYiLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiIiwibWlkIjoiIiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+      "source": "Target",
+      "source_icon": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/sCQ8nR94Hc864dgqqPWYl_EScR3FS7JPYmW8nKqPbnM.png",
+      "price": "$149.99",
+      "extracted_price": 149.99,
+      "old_price": "$370",
+      "extracted_old_price": 370,
+      "rating": 4.7,
+      "reviews": 40,
+      "snippet": "Comfortable (28 user reviews)",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ1QunBtouM6ogMXipnx4fyOyDvvCA8CDVFOfryb0M_Mqu8HTc",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/SwFPyHicu5mZUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDjQMLM1zKskv9TXLT_eNyCzIqzBJq_SvdCkrc3a0cHYJc_NPK6pMMvCN9y0stfAISQYAhRsnHg",
+      "tag": "59% OFF",
+      "extensions": [
+        "59% OFF"
+      ],
+      "delivery": "Free delivery by Sat"
+    },
+    {
+      "position": 6,
+      "title": "Lucklife Gaming Chair",
+      "product_id": "1598017686789755357",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:1598017686789755357,headlineOfferDocid:9506874470546077957,imageDocid:15225966316897933976,rds:PC_2443386430539555384|PROD_PC_2443386430539555384,gpcid:2443386430539555384,mid:576462810169667419,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTU5ODAxNzY4Njc4OTc1NTM1NyIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6Ijk1MDY4NzQ0NzA1NDYwNzc5NTciLCJpbWFnZURvY2lkIjoiMTUyMjU5NjYzMTY4OTc5MzM5NzYiLCJyZHMiOiJQQ18yNDQzMzg2NDMwNTM5NTU1Mzg0fFBST0RfUENfMjQ0MzM4NjQzMDUzOTU1NTM4NCIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiIyNDQzMzg2NDMwNTM5NTU1Mzg0IiwibWlkIjoiNTc2NDYyODEwMTY5NjY3NDE5IiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTU5ODAxNzY4Njc4OTc1NTM1NyIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6Ijk1MDY4NzQ0NzA1NDYwNzc5NTciLCJpbWFnZURvY2lkIjoiMTUyMjU5NjYzMTY4OTc5MzM5NzYiLCJyZHMiOiJQQ18yNDQzMzg2NDMwNTM5NTU1Mzg0fFBST0RfUENfMjQ0MzM4NjQzMDUzOTU1NTM4NCIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiIyNDQzMzg2NDMwNTM5NTU1Mzg0IiwibWlkIjoiNTc2NDYyODEwMTY5NjY3NDE5IiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+      "source": "Home Depot",
+      "source_icon": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/sCQ8nR94Hc864dgqqPWYl6Bk9A9tM3EJGjEZ9px9WzI.png",
+      "price": "$188.32",
+      "extracted_price": 188.32,
+      "rating": 4.1,
+      "reviews": 8,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSeuNGwOCOWSCl0QyVd8Ix1cZat0kylR9LyKaCnf9AURhhWYex_W2QVDjLoih0",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/_iggBHicu1maUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDk4t9XMv93f2Dw92zjEIrAxLsfCsMEyOSiwxyK7MCbL0qfROdM5Ls3QMDcrICI9MrYgPNwoMc8nyyc_MMAAAY1gq2A",
+      "delivery": "Free delivery"
+    },
+    {
+      "position": 7,
+      "title": "Alvantor Gaming Chair",
+      "product_id": "8431650464946439699",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:8431650464946439699,headlineOfferDocid:249113138626792444,imageDocid:9826724982814569500,rds:PC_2652830971979440407|PROD_PC_2652830971979440407,gpcid:2652830971979440407,mid:576462869825080497,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiODQzMTY1MDQ2NDk0NjQzOTY5OSIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjI0OTExMzEzODYyNjc5MjQ0NCIsImltYWdlRG9jaWQiOiI5ODI2NzI0OTgyODE0NTY5NTAwIiwicmRzIjoiUENfMjY1MjgzMDk3MTk3OTQ0MDQwN3xQUk9EX1BDXzI2NTI4MzA5NzE5Nzk0NDA0MDciLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiMjY1MjgzMDk3MTk3OTQ0MDQwNyIsIm1pZCI6IjU3NjQ2Mjg2OTgyNTA4MDQ5NyIsInB2dCI6ImhnIiwidXVsZSI6bnVsbCwiZ2wiOiJ1cyIsImhsIjoiZW4ifQ==",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiODQzMTY1MDQ2NDk0NjQzOTY5OSIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjI0OTExMzEzODYyNjc5MjQ0NCIsImltYWdlRG9jaWQiOiI5ODI2NzI0OTgyODE0NTY5NTAwIiwicmRzIjoiUENfMjY1MjgzMDk3MTk3OTQ0MDQwN3xQUk9EX1BDXzI2NTI4MzA5NzE5Nzk0NDA0MDciLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiMjY1MjgzMDk3MTk3OTQ0MDQwNyIsIm1pZCI6IjU3NjQ2Mjg2OTgyNTA4MDQ5NyIsInB2dCI6ImhnIiwidXVsZSI6bnVsbCwiZ2wiOiJ1cyIsImhsIjoiZW4ifQ%3D%3D",
+      "source": "Walmart",
+      "source_icon": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/sCQ8nR94Hc864dgqqPWYl3uWonuMDXt3JWyx8Gu6zBU.png",
+      "price": "$89.99",
+      "extracted_price": 89.99,
+      "rating": 2.3,
+      "reviews": 15,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQl6xAphgl7LyZTzmXb-thulOLuVdWL16GmSoNisDBtSQBnrqKBNqscuFg-GIWcMKtkoUkPOfs",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/x2TPHHicDcnRCoIwFADQL9LVi5EQ4YgktJlYGb3l1TZRt-m9g-ytz-xv6rye70cRWQwZazRMs6Wm9qjSC18iPagFH8zAUBlrWy234-Z_YSTqdQx5H7wiq2S_Suf7-T3cKo-U67PUXesyXQbxUBjR4o5TkXM9jQkXI4LbSy8-lHBMqDOX7pQ98QettzAB",
+      "delivery": "Free delivery"
+    },
+    {
+      "position": 8,
+      "title": "Freeport Park Adjustable Video Gaming Chair",
+      "product_id": "5453736943227726352",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:5453736943227726352,headlineOfferDocid:7760020917894034539,imageDocid:1812561630991576509,rds:PC_6925237958653157481|PROD_PC_6925237958653157481,gpcid:6925237958653157481,mid:576462832763965913,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNTQ1MzczNjk0MzIyNzcyNjM1MiIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6Ijc3NjAwMjA5MTc4OTQwMzQ1MzkiLCJpbWFnZURvY2lkIjoiMTgxMjU2MTYzMDk5MTU3NjUwOSIsInJkcyI6IlBDXzY5MjUyMzc5NTg2NTMxNTc0ODF8UFJPRF9QQ182OTI1MjM3OTU4NjUzMTU3NDgxIiwicXVlcnkiOiJnYW1pbmcrY2hhaXIiLCJncGNpZCI6IjY5MjUyMzc5NTg2NTMxNTc0ODEiLCJtaWQiOiI1NzY0NjI4MzI3NjM5NjU5MTMiLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0=",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNTQ1MzczNjk0MzIyNzcyNjM1MiIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6Ijc3NjAwMjA5MTc4OTQwMzQ1MzkiLCJpbWFnZURvY2lkIjoiMTgxMjU2MTYzMDk5MTU3NjUwOSIsInJkcyI6IlBDXzY5MjUyMzc5NTg2NTMxNTc0ODF8UFJPRF9QQ182OTI1MjM3OTU4NjUzMTU3NDgxIiwicXVlcnkiOiJnYW1pbmcrY2hhaXIiLCJncGNpZCI6IjY5MjUyMzc5NTg2NTMxNTc0ODEiLCJtaWQiOiI1NzY0NjI4MzI3NjM5NjU5MTMiLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0%3D",
+      "source": "Wayfair",
+      "source_icon": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/sCQ8nR94Hc864dgqqPWYl6KiCzXzQPqetSLFaLJqcPs.png",
+      "price": "$108.99",
+      "extracted_price": 108.99,
+      "old_price": "$137",
+      "extracted_old_price": 137,
+      "rating": 4.4,
+      "reviews": 1000,
+      "snippet": "Comfortable (235 user reviews)",
+      "thumbnail": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQu3uQ94op_8LHlZVEOdxmyyRpHeyX1K1kxV2VVn5kUjPnaKBCqAG_lNK4FVPy3XwPxdwPhJNLg",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/mZ0W3Xicu9mUUVJSUGylr5-al1xUWVCSmqJbkpRnqJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDiw1Lg20NMkviLfw8ciJCnP1T6nIrawMKvBIrYww9DbMrggzCgvLM80OzQrIS_R2ci50dI_P8fM2cQsLqDSOKA-oSCkPyPDy80kHALt2L3g",
+      "tag": "20% OFF",
+      "extensions": [
+        "20% OFF"
+      ],
+      "delivery": "Free delivery by Wed"
+    },
+    {
+      "position": 9,
+      "title": "Insignia Essential PC Gaming Chair",
+      "product_id": "6805212492537077793",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:6805212492537077793,headlineOfferDocid:14899963473328580632,rds:PC_692778466298626606|PROD_PC_692778466298626606,gpcid:692778466298626606,mid:576462759213999497,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNjgwNTIxMjQ5MjUzNzA3Nzc5MyIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjE0ODk5OTYzNDczMzI4NTgwNjMyIiwiaW1hZ2VEb2NpZCI6IiIsInJkcyI6IlBDXzY5Mjc3ODQ2NjI5ODYyNjYwNnxQUk9EX1BDXzY5Mjc3ODQ2NjI5ODYyNjYwNiIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiI2OTI3Nzg0NjYyOTg2MjY2MDYiLCJtaWQiOiI1NzY0NjI3NTkyMTM5OTk0OTciLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0=",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNjgwNTIxMjQ5MjUzNzA3Nzc5MyIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjE0ODk5OTYzNDczMzI4NTgwNjMyIiwiaW1hZ2VEb2NpZCI6IiIsInJkcyI6IlBDXzY5Mjc3ODQ2NjI5ODYyNjYwNnxQUk9EX1BDXzY5Mjc3ODQ2NjI5ODYyNjYwNiIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiI2OTI3Nzg0NjYyOTg2MjY2MDYiLCJtaWQiOiI1NzY0NjI3NTkyMTM5OTk0OTciLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0%3D",
+      "source": "Best Buy",
+      "source_icon": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/sCQ8nR94Hc864dgqqPWYlyyidintWNh8KJ6MO1ETVYs.png",
+      "multiple_sources": true,
+      "price": "$119.99",
+      "extracted_price": 119.99,
+      "old_price": "$180",
+      "extracted_old_price": 180,
+      "rating": 4.5,
+      "reviews": 1200,
+      "snippet": "Comfortable (571 user reviews)",
+      "thumbnail": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQNeKDCpCzxL-KGRCOTZSZHDyN8YwpxF9Cuu_8TMi1WmFueAddtw_qixSeXNnQ",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/Wnna7nicu1maUVJSUGylr5-al1xUWVCSmqJbkpRnrJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDvRL9XZxLnCuqvDR9XYPcvYPiQqO8nCp9LOILC-ocLN0Li2NtwjxzTQMz3UrTXVMSSkpjy_MrAhOjfDLCwQAVi0rGg",
+      "tag": "33% OFF",
+      "extensions": [
+        "33% OFF"
+      ],
+      "delivery": "Free delivery by Sun"
+    },
+    {
+      "position": 10,
+      "title": "Herman-Miller-X-Logitech-G Vantum Gaming Chair",
+      "product_id": "16253165934567180109",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:16253165934567180109,headlineOfferDocid:13658627826876596179,imageDocid:17860169090614761664,rds:PC_17559466358188353190|PROD_PC_17559466358188353190,gpcid:17559466358188353190,mid:576462484447823028,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTYyNTMxNjU5MzQ1NjcxODAxMDkiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiIxMzY1ODYyNzgyNjg3NjU5NjE3OSIsImltYWdlRG9jaWQiOiIxNzg2MDE2OTA5MDYxNDc2MTY2NCIsInJkcyI6IlBDXzE3NTU5NDY2MzU4MTg4MzUzMTkwfFBST0RfUENfMTc1NTk0NjYzNTgxODgzNTMxOTAiLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiMTc1NTk0NjYzNTgxODgzNTMxOTAiLCJtaWQiOiI1NzY0NjI0ODQ0NDc4MjMwMjgiLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0=",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTYyNTMxNjU5MzQ1NjcxODAxMDkiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiIxMzY1ODYyNzgyNjg3NjU5NjE3OSIsImltYWdlRG9jaWQiOiIxNzg2MDE2OTA5MDYxNDc2MTY2NCIsInJkcyI6IlBDXzE3NTU5NDY2MzU4MTg4MzUzMTkwfFBST0RfUENfMTc1NTk0NjYzNTgxODgzNTMxOTAiLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiMTc1NTk0NjYzNTgxODgzNTMxOTAiLCJtaWQiOiI1NzY0NjI0ODQ0NDc4MjMwMjgiLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0%3D",
+      "source": "Design Within Reach",
+      "source_icon": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/sCQ8nR94Hc864dgqqPWYl0Tf7fvBiJe-nDgZGcpimxk.png",
+      "multiple_sources": true,
+      "price": "$960.00",
+      "extracted_price": 960,
+      "rating": 3.6,
+      "reviews": 215,
+      "snippet": "Easy to assemble (18 user reviews)",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQeq_NKI2OmnZ76zHIbB0yRaqZTmuiUauUPwrSvyy7CpZ2eIeRrvhaIa2DhmvtEc604TpqdJE8",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/raNMMHicu9mYUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDkwtjPfz9jTyz82LMjer8vBMcjKoDEosjArJLc0MTSwNDSgvCi6rrDR3LogySvVMDSoqy0j0TDRyycgtK3FNNjMwCSkoTPFytQAAnTsveA"
+    },
+    {
+      "position": 11,
+      "title": "Gianna Ergonomic Computer Gaming Chair",
+      "product_id": "13413578563955302386",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:13413578563955302386,headlineOfferDocid:15065547233567684695,imageDocid:1452407802978152732,gpcid:2062081900572859129,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTM0MTM1Nzg1NjM5NTUzMDIzODYiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiIxNTA2NTU0NzIzMzU2NzY4NDY5NSIsImltYWdlRG9jaWQiOiIxNDUyNDA3ODAyOTc4MTUyNzMyIiwicmRzIjoiIiwicXVlcnkiOiJnYW1pbmcrY2hhaXIiLCJncGNpZCI6IjIwNjIwODE5MDA1NzI4NTkxMjkiLCJtaWQiOiIiLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0=",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTM0MTM1Nzg1NjM5NTUzMDIzODYiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiIxNTA2NTU0NzIzMzU2NzY4NDY5NSIsImltYWdlRG9jaWQiOiIxNDUyNDA3ODAyOTc4MTUyNzMyIiwicmRzIjoiIiwicXVlcnkiOiJnYW1pbmcrY2hhaXIiLCJncGNpZCI6IjIwNjIwODE5MDA1NzI4NTkxMjkiLCJtaWQiOiIiLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0%3D",
+      "source": "Walmart",
+      "source_icon": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/sCQ8nR94Hc864dgqqPWYlxSc0_sHBnipOLbNBImXBLc.png",
+      "price": "$79.99",
+      "extracted_price": 79.99,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSb75aFn2Afd8nvazKHj4R9yh9Kkk-sF4QV_NGId8_3FHk6DYAEoumgJyxhT5M5XCaC_WCZjEKo",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/e0KTZXicu9mUUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDk4yN010yzNyTEuxyCtLrPL2yDIJsqzMsPTOztYtdjMJDIv3c_dMsYg3dvPINnOJdHTNL81N96qsyAgx9TWNcE50jg93jspy9c4HAIgYLjg",
+      "delivery": "Free delivery"
+    },
+    {
+      "position": 12,
+      "title": "RS Gaming RGX Faux Leather High-Back Gaming Office Chair",
+      "product_id": "3619969542557650812",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:3619969542557650812,headlineOfferDocid:9465629352417469807,imageDocid:14542874832507228117,rds:PC_2537271349603846783|PROD_PC_2537271349603846783,gpcid:2537271349603846783,mid:576462834871504045,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMzYxOTk2OTU0MjU1NzY1MDgxMiIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6Ijk0NjU2MjkzNTI0MTc0Njk4MDciLCJpbWFnZURvY2lkIjoiMTQ1NDI4NzQ4MzI1MDcyMjgxMTciLCJyZHMiOiJQQ18yNTM3MjcxMzQ5NjAzODQ2NzgzfFBST0RfUENfMjUzNzI3MTM0OTYwMzg0Njc4MyIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiIyNTM3MjcxMzQ5NjAzODQ2NzgzIiwibWlkIjoiNTc2NDYyODM0ODcxNTA0MDQ1IiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMzYxOTk2OTU0MjU1NzY1MDgxMiIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6Ijk0NjU2MjkzNTI0MTc0Njk4MDciLCJpbWFnZURvY2lkIjoiMTQ1NDI4NzQ4MzI1MDcyMjgxMTciLCJyZHMiOiJQQ18yNTM3MjcxMzQ5NjAzODQ2NzgzfFBST0RfUENfMjUzNzI3MTM0OTYwMzg0Njc4MyIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiIyNTM3MjcxMzQ5NjAzODQ2NzgzIiwibWlkIjoiNTc2NDYyODM0ODcxNTA0MDQ1IiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+      "source": "OfficeSupply",
+      "source_icon": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/sCQ8nR94Hc864dgqqPWYl9wuup7RsEDpsQL9BAdle_Y.png",
+      "multiple_sources": true,
+      "price": "$119.99",
+      "extracted_price": 119.99,
+      "rating": 4.4,
+      "reviews": 253,
+      "snippet": "Comfortable (122 user reviews)",
+      "thumbnail": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSnL4whV33SeRBfk2OJR7gScKkxcLyIp_efcg-IYqnHs8E8AmBFcGPEPIEaWmqABD3xgbrx074",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/ctur5Hicu9mYUVJSUGylr5-al1xUWVCSmqJbkpRnqJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDs7zMSnPCDM2Dk4NckrLNvL3CjJPD072zq5I9qn0LIhPTUtO1_WMLMzzKLZwtXDMdXJLdg9wDfB0TQzPLXR0cjGuSE8qqjAwNwEAcHcuLA",
+      "delivery": "Free delivery"
+    },
+    {
+      "position": 13,
+      "title": "Corsair TC100 Relaxed Gaming Chair",
+      "product_id": "12759959347430358586",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:12759959347430358586,headlineOfferDocid:14418350967533182454,imageDocid:18171573148219411563,rds:PC_2710929963052485119|PROD_PC_2710929963052485119,gpcid:2710929963052485119,mid:576462446001910617,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTI3NTk5NTkzNDc0MzAzNTg1ODYiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiIxNDQxODM1MDk2NzUzMzE4MjQ1NCIsImltYWdlRG9jaWQiOiIxODE3MTU3MzE0ODIxOTQxMTU2MyIsInJkcyI6IlBDXzI3MTA5Mjk5NjMwNTI0ODUxMTl8UFJPRF9QQ18yNzEwOTI5OTYzMDUyNDg1MTE5IiwicXVlcnkiOiJnYW1pbmcrY2hhaXIiLCJncGNpZCI6IjI3MTA5Mjk5NjMwNTI0ODUxMTkiLCJtaWQiOiI1NzY0NjI0NDYwMDE5MTA2MTciLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0=",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTI3NTk5NTkzNDc0MzAzNTg1ODYiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiIxNDQxODM1MDk2NzUzMzE4MjQ1NCIsImltYWdlRG9jaWQiOiIxODE3MTU3MzE0ODIxOTQxMTU2MyIsInJkcyI6IlBDXzI3MTA5Mjk5NjMwNTI0ODUxMTl8UFJPRF9QQ18yNzEwOTI5OTYzMDUyNDg1MTE5IiwicXVlcnkiOiJnYW1pbmcrY2hhaXIiLCJncGNpZCI6IjI3MTA5Mjk5NjMwNTI0ODUxMTkiLCJtaWQiOiI1NzY0NjI0NDYwMDE5MTA2MTciLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0%3D",
+      "source": "Best Buy",
+      "source_icon": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/sCQ8nR94Hc864dgqqPWYl1oOQ1ir6k8t-QmipGdfAaU.png",
+      "multiple_sources": true,
+      "price": "$269.99",
+      "extracted_price": 269.99,
+      "rating": 4.3,
+      "reviews": 1000,
+      "snippet": "Comfortable (326 user reviews)",
+      "thumbnail": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTYjYL9a6ycs5ke3Z2zVP9oD4brImFEeYGVzQ_DVVv82Yu6ROadCQvA9VZtY40uAK0SXLQuvXg",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/_D1vIHicu9mYUVJSUGylr5-al1xUWVCSmqJbkpRnrJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDonMivSxTDSrTC42zU41jjKqCguwzHcxSSryzHVzTY10D6sKjHcJCyuzMIosNQvyT0xxDixztAyLKok0MSh19DYIjvAJLC2LSAcAbLkuNQ"
+    },
+    {
+      "position": 14,
+      "title": "GTPLAYER Gaming Chair",
+      "product_id": "3846836888904289258",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:3846836888904289258,headlineOfferDocid:9411746573464873369,imageDocid:14616317296322246950,rds:PC_4987631742154287142|PROD_PC_4987631742154287142,gpcid:4987631742154287142,mid:576462872470244720,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMzg0NjgzNjg4ODkwNDI4OTI1OCIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6Ijk0MTE3NDY1NzM0NjQ4NzMzNjkiLCJpbWFnZURvY2lkIjoiMTQ2MTYzMTcyOTYzMjIyNDY5NTAiLCJyZHMiOiJQQ180OTg3NjMxNzQyMTU0Mjg3MTQyfFBST0RfUENfNDk4NzYzMTc0MjE1NDI4NzE0MiIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiI0OTg3NjMxNzQyMTU0Mjg3MTQyIiwibWlkIjoiNTc2NDYyODcyNDcwMjQ0NzIwIiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMzg0NjgzNjg4ODkwNDI4OTI1OCIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6Ijk0MTE3NDY1NzM0NjQ4NzMzNjkiLCJpbWFnZURvY2lkIjoiMTQ2MTYzMTcyOTYzMjIyNDY5NTAiLCJyZHMiOiJQQ180OTg3NjMxNzQyMTU0Mjg3MTQyfFBST0RfUENfNDk4NzYzMTc0MjE1NDI4NzE0MiIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiI0OTg3NjMxNzQyMTU0Mjg3MTQyIiwibWlkIjoiNTc2NDYyODcyNDcwMjQ0NzIwIiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+      "source": "Target",
+      "source_icon": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/sCQ8nR94Hc864dgqqPWYl4z0VzI2CNOEOyzSJP8NywY.png",
+      "multiple_sources": true,
+      "price": "$139.99",
+      "extracted_price": 139.99,
+      "rating": 3.7,
+      "reviews": 321,
+      "snippet": "Comfortable (80 user reviews)",
+      "thumbnail": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR3skyqMgj4cJmZYsKz0w6WZdbh7deN3TGw2f99EYoO7E1lEDI",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/fa3IH3icu5mZUVJSUGylr5-al1xUWVCSmqJbkpRnpJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDjIuzq4s9E3PMkn2yo2KLPauMig3C49KScowT0n1Mw5xLzdKs7R0jcz3N3c1zHF18QQAewcmJQ",
+      "delivery": "Free delivery by Wed"
+    },
+    {
+      "position": 15,
+      "title": "RS Gaming Davanti Vegan Leather High-Back Gaming Office Chair",
+      "product_id": "1802550211357590662",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:1802550211357590662,headlineOfferDocid:12989674706328418843,imageDocid:362433094079078201,rds:PC_10427531323737624160|PROD_PC_10427531323737624160,gpcid:10427531323737624160,mid:576462803510833282,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTgwMjU1MDIxMTM1NzU5MDY2MiIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjEyOTg5Njc0NzA2MzI4NDE4ODQzIiwiaW1hZ2VEb2NpZCI6IjM2MjQzMzA5NDA3OTA3ODIwMSIsInJkcyI6IlBDXzEwNDI3NTMxMzIzNzM3NjI0MTYwfFBST0RfUENfMTA0Mjc1MzEzMjM3Mzc2MjQxNjAiLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiMTA0Mjc1MzEzMjM3Mzc2MjQxNjAiLCJtaWQiOiI1NzY0NjI4MDM1MTA4MzMyODIiLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0=",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTgwMjU1MDIxMTM1NzU5MDY2MiIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjEyOTg5Njc0NzA2MzI4NDE4ODQzIiwiaW1hZ2VEb2NpZCI6IjM2MjQzMzA5NDA3OTA3ODIwMSIsInJkcyI6IlBDXzEwNDI3NTMxMzIzNzM3NjI0MTYwfFBST0RfUENfMTA0Mjc1MzEzMjM3Mzc2MjQxNjAiLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiMTA0Mjc1MzEzMjM3Mzc2MjQxNjAiLCJtaWQiOiI1NzY0NjI4MDM1MTA4MzMyODIiLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0%3D",
+      "source": "Office Depot",
+      "source_icon": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/sCQ8nR94Hc864dgqqPWYlxEO_vfJS3KjCd_MBispxq8.png",
+      "multiple_sources": true,
+      "price": "$449.99",
+      "extracted_price": 449.99,
+      "old_price": "$500",
+      "extracted_old_price": 500,
+      "rating": 4.2,
+      "reviews": 222,
+      "snippet": "Comfortable (88 user reviews)",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSb-iY-hnyN-KpC6UXxEo3NNwkdkskxEYi0r7feSepgzJ81gQsy",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/wrn7Y3icu5mVUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDk7SzYzUzcir9NP1LnA2C42ocM039vMrz07JLs6ucI3MNCgyT0sNTi1Ir_KyMEwPLK4EAJqBJ2k",
+      "tag": "10% OFF",
+      "extensions": [
+        "10% OFF"
+      ],
+      "delivery": "Free delivery"
+    },
+    {
+      "position": 16,
+      "title": "Purple Leather Gaming Chair with Footrest",
+      "product_id": "12929837897922734854",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:12929837897922734854,headlineOfferDocid:10136726856607647250,imageDocid:12236531954989397106,rds:PC_4921572700165931243|PROD_PC_4921572700165931243,gpcid:4921572700165931243,mid:576462810953596986,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTI5Mjk4Mzc4OTc5MjI3MzQ4NTQiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiIxMDEzNjcyNjg1NjYwNzY0NzI1MCIsImltYWdlRG9jaWQiOiIxMjIzNjUzMTk1NDk4OTM5NzEwNiIsInJkcyI6IlBDXzQ5MjE1NzI3MDAxNjU5MzEyNDN8UFJPRF9QQ180OTIxNTcyNzAwMTY1OTMxMjQzIiwicXVlcnkiOiJnYW1pbmcrY2hhaXIiLCJncGNpZCI6IjQ5MjE1NzI3MDAxNjU5MzEyNDMiLCJtaWQiOiI1NzY0NjI4MTA5NTM1OTY5ODYiLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0=",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTI5Mjk4Mzc4OTc5MjI3MzQ4NTQiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiIxMDEzNjcyNjg1NjYwNzY0NzI1MCIsImltYWdlRG9jaWQiOiIxMjIzNjUzMTk1NDk4OTM5NzEwNiIsInJkcyI6IlBDXzQ5MjE1NzI3MDAxNjU5MzEyNDN8UFJPRF9QQ180OTIxNTcyNzAwMTY1OTMxMjQzIiwicXVlcnkiOiJnYW1pbmcrY2hhaXIiLCJncGNpZCI6IjQ5MjE1NzI3MDAxNjU5MzEyNDMiLCJtaWQiOiI1NzY0NjI4MTA5NTM1OTY5ODYiLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0%3D",
+      "source": "Walmart - Soontrans Direct",
+      "source_icon": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/sCQ8nR94Hc864dgqqPWYlzNVQzQYGYR65Q_rHPZUmd8.png",
+      "price": "$79.99",
+      "extracted_price": 79.99,
+      "old_price": "$134",
+      "extracted_old_price": 134,
+      "rating": 4,
+      "reviews": 21,
+      "snippet": "Comfortable (6 user reviews)",
+      "thumbnail": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS_0A8yvNCRPfgw9qJLIqE1MjSUPdoScKFwcJKOIHB9Gj-HTXBd",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/LuTLjHicu5mVUVJSUGylr5-al1xUWVCSmqJbkpRnpJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDo43cLSoLPNzDgpISy-3LPTy8Sx0NfTNCg4NSMkPTvZ2K0_28vb39HCydM_S9QiJcEoBAIr0Jh4",
+      "tag": "40% OFF",
+      "extensions": [
+        "40% OFF"
+      ]
+    },
+    {
+      "position": 17,
+      "title": "Dowinx PU Leather Gaming Chair LS-6658Z",
+      "product_id": "4760379669278376293",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:4760379669278376293,headlineOfferDocid:10370428430027117210,imageDocid:3715170937029944064,gpcid:218766826278642657,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNDc2MDM3OTY2OTI3ODM3NjI5MyIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjEwMzcwNDI4NDMwMDI3MTE3MjEwIiwiaW1hZ2VEb2NpZCI6IjM3MTUxNzA5MzcwMjk5NDQwNjQiLCJyZHMiOiIiLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiMjE4NzY2ODI2Mjc4NjQyNjU3IiwibWlkIjoiIiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNDc2MDM3OTY2OTI3ODM3NjI5MyIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjEwMzcwNDI4NDMwMDI3MTE3MjEwIiwiaW1hZ2VEb2NpZCI6IjM3MTUxNzA5MzcwMjk5NDQwNjQiLCJyZHMiOiIiLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiMjE4NzY2ODI2Mjc4NjQyNjU3IiwibWlkIjoiIiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+      "source": "Dowinx",
+      "source_icon": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/sCQ8nR94Hc864dgqqPWYly12AA99ogNRd1br-kRT0aA.png",
+      "multiple_sources": true,
+      "price": "$159.99",
+      "extracted_price": 159.99,
+      "old_price": "$200",
+      "extracted_old_price": 200,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQRa_3BEowkQob53DFyINvd7NhtQ856Z5AR70JUNbLwtTaVEuK0GJDa7WVG_c5jmw-07enhuFM",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/jXD_-Hicu9mYUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDgxKjDd2cs0vzw7MTzI1dnGr9PQrSzH3yygJtDA1izJ1DDI38Ar1S_IpLwlJDHMt9TZw93JJNA8Pc49PNs3KLdc1ME_Nyyh18wUATzwthA",
+      "tag": "20% OFF",
+      "extensions": [
+        "20% OFF"
+      ],
+      "delivery": "Free delivery by Wed"
+    },
+    {
+      "position": 18,
+      "title": "Dowinx PU Leather Gaming Chair",
+      "product_id": "13311397622444950564",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:13311397622444950564,headlineOfferDocid:5131718035659617109,imageDocid:6025905699905490312,gpcid:6057867679619377206,mid:576462827229397350,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTMzMTEzOTc2MjI0NDQ5NTA1NjQiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiI1MTMxNzE4MDM1NjU5NjE3MTA5IiwiaW1hZ2VEb2NpZCI6IjYwMjU5MDU2OTk5MDU0OTAzMTIiLCJyZHMiOiIiLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiNjA1Nzg2NzY3OTYxOTM3NzIwNiIsIm1pZCI6IjU3NjQ2MjgyNzIyOTM5NzM1MCIsInB2dCI6ImhnIiwidXVsZSI6bnVsbCwiZ2wiOiJ1cyIsImhsIjoiZW4ifQ==",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTMzMTEzOTc2MjI0NDQ5NTA1NjQiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiI1MTMxNzE4MDM1NjU5NjE3MTA5IiwiaW1hZ2VEb2NpZCI6IjYwMjU5MDU2OTk5MDU0OTAzMTIiLCJyZHMiOiIiLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiNjA1Nzg2NzY3OTYxOTM3NzIwNiIsIm1pZCI6IjU3NjQ2MjgyNzIyOTM5NzM1MCIsInB2dCI6ImhnIiwidXVsZSI6bnVsbCwiZ2wiOiJ1cyIsImhsIjoiZW4ifQ%3D%3D",
+      "source": "Best Buy",
+      "source_icon": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/sCQ8nR94Hc864dgqqPWYlyXLyAB3bjjc3s8z0M9nXYQ.png",
+      "multiple_sources": true,
+      "price": "$129.99",
+      "extracted_price": 129.99,
+      "old_price": "$200",
+      "extracted_old_price": 200,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQdQMN2mDnnVGivxIB9h2zEpwBQCMhyz47WMAvemgve5oMjp4hU9b95F3B50g",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/FzQ4XnicDcndCsIgGADQJ2qONQkHEbOf0YUDL6rrpqIG6ld-WNub9jZ1bs8XHSLkjhAT1WsGNHqFU6wrm_GOXlUqBZJdAvDR7p7b_3X9qNmgpJZibMIhxuvgy-fMmWuWI7y53As3L-3mJvpigi2GJvGA1l3YxOhpzWltfzhBKeY",
+      "tag": "35% OFF",
+      "extensions": [
+        "35% OFF"
+      ]
+    },
+    {
+      "position": 19,
+      "title": "AutoFull G7 Mesh Gaming Chair",
+      "product_id": "8690022946382968458",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:8690022946382968458,headlineOfferDocid:15988470050592519687,imageDocid:4473587763562832213,rds:PC_13062624199286987672|PROD_PC_13062624199286987672,gpcid:13062624199286987672,mid:576462537338920687,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiODY5MDAyMjk0NjM4Mjk2ODQ1OCIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjE1OTg4NDcwMDUwNTkyNTE5Njg3IiwiaW1hZ2VEb2NpZCI6IjQ0NzM1ODc3NjM1NjI4MzIyMTMiLCJyZHMiOiJQQ18xMzA2MjYyNDE5OTI4Njk4NzY3MnxQUk9EX1BDXzEzMDYyNjI0MTk5Mjg2OTg3NjcyIiwicXVlcnkiOiJnYW1pbmcrY2hhaXIiLCJncGNpZCI6IjEzMDYyNjI0MTk5Mjg2OTg3NjcyIiwibWlkIjoiNTc2NDYyNTM3MzM4OTIwNjg3IiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiODY5MDAyMjk0NjM4Mjk2ODQ1OCIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjE1OTg4NDcwMDUwNTkyNTE5Njg3IiwiaW1hZ2VEb2NpZCI6IjQ0NzM1ODc3NjM1NjI4MzIyMTMiLCJyZHMiOiJQQ18xMzA2MjYyNDE5OTI4Njk4NzY3MnxQUk9EX1BDXzEzMDYyNjI0MTk5Mjg2OTg3NjcyIiwicXVlcnkiOiJnYW1pbmcrY2hhaXIiLCJncGNpZCI6IjEzMDYyNjI0MTk5Mjg2OTg3NjcyIiwibWlkIjoiNTc2NDYyNTM3MzM4OTIwNjg3IiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+      "source": "AutoFull Official",
+      "source_icon": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/sCQ8nR94Hc864dgqqPWYlxnS-5KEPjZWG86oyB_Xfgw.png",
+      "price": "$549.99",
+      "extracted_price": 549.99,
+      "old_price": "$800",
+      "extracted_old_price": 800,
+      "rating": 5,
+      "reviews": 4,
+      "thumbnail": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQI8p_t2w6Y5dYgwU-AKuhlpKVR_Ara3FeMKu2NgZSxdYE37YzqtMWoNW-sPCDh2EkFKVVejK-a",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/Ifw9QXicu9mUUVJSUGylr5-al1xUWVCSmqJbkpRnqJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDvS0KIgvMSo3izRNiUwvD9V19C7NyCnwDguKdyxKNHZL9fUuNfJLjwquSIl0NTaPrCos8Q3P9wvXLQ5wdskwcs128w4LS83y1k0EAKdBLrw",
+      "tag": "31% OFF",
+      "extensions": [
+        "31% OFF"
+      ],
+      "delivery": "Free delivery by Wed"
+    },
+    {
+      "position": 20,
+      "title": "Gtplayer Faux Leather Gaming Office Chair with Lumbar Massage Pillow",
+      "product_id": "5196957010773643381",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:5196957010773643381,headlineOfferDocid:8883294648113174397,imageDocid:1296285720907115904,rds:PC_18349683870512326187|PROD_PC_18349683870512326187,gpcid:18349683870512326187,mid:576462807120322779,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNTE5Njk1NzAxMDc3MzY0MzM4MSIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6Ijg4ODMyOTQ2NDgxMTMxNzQzOTciLCJpbWFnZURvY2lkIjoiMTI5NjI4NTcyMDkwNzExNTkwNCIsInJkcyI6IlBDXzE4MzQ5NjgzODcwNTEyMzI2MTg3fFBST0RfUENfMTgzNDk2ODM4NzA1MTIzMjYxODciLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiMTgzNDk2ODM4NzA1MTIzMjYxODciLCJtaWQiOiI1NzY0NjI4MDcxMjAzMjI3NzkiLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0=",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNTE5Njk1NzAxMDc3MzY0MzM4MSIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6Ijg4ODMyOTQ2NDgxMTMxNzQzOTciLCJpbWFnZURvY2lkIjoiMTI5NjI4NTcyMDkwNzExNTkwNCIsInJkcyI6IlBDXzE4MzQ5NjgzODcwNTEyMzI2MTg3fFBST0RfUENfMTgzNDk2ODM4NzA1MTIzMjYxODciLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiMTgzNDk2ODM4NzA1MTIzMjYxODciLCJtaWQiOiI1NzY0NjI4MDcxMjAzMjI3NzkiLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0%3D",
+      "source": "Walmart - GTRACING",
+      "source_icon": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/sCQ8nR94Hc864dgqqPWYlxg5jwdojxikCGfYT3CXFg0.png",
+      "multiple_sources": true,
+      "price": "$139.99",
+      "extracted_price": 139.99,
+      "old_price": "Usually $210",
+      "extracted_old_price": 210,
+      "rating": 4.3,
+      "reviews": 18,
+      "snippet": "Comfortable (9 user reviews)",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTAUogyDs3tGSYvq5Ebsoh9ZPabKp70iVLn3vRz-7jfvu_vaD9C",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/KyzPbHicu5mVUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDnEMzU-vdCk2LnEPjiwrNHVNKs7PsIwKSEzyLjA3yAzzyTMuC6rSNc9KKyuNL0t0sXQGAKScJ0I",
+      "tag": "LOW PRICE",
+      "extensions": [
+        "LOW PRICE"
+      ],
+      "delivery": "Free delivery"
+    },
+    {
+      "position": 21,
+      "title": "GTRacing Gaming Chair GT800A wiht Footrest and Massage Lumbar Support Breathable Fabric",
+      "product_id": "6545628543519028989",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:6545628543519028989,headlineOfferDocid:11022699836187277176,imageDocid:5653112172746446522,rds:PC_7100633946273332946|PROD_PC_7100633946273332946,gpcid:7100633946273332946,mid:576462838972632723,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNjU0NTYyODU0MzUxOTAyODk4OSIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjExMDIyNjk5ODM2MTg3Mjc3MTc2IiwiaW1hZ2VEb2NpZCI6IjU2NTMxMTIxNzI3NDY0NDY1MjIiLCJyZHMiOiJQQ183MTAwNjMzOTQ2MjczMzMyOTQ2fFBST0RfUENfNzEwMDYzMzk0NjI3MzMzMjk0NiIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiI3MTAwNjMzOTQ2MjczMzMyOTQ2IiwibWlkIjoiNTc2NDYyODM4OTcyNjMyNzIzIiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNjU0NTYyODU0MzUxOTAyODk4OSIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjExMDIyNjk5ODM2MTg3Mjc3MTc2IiwiaW1hZ2VEb2NpZCI6IjU2NTMxMTIxNzI3NDY0NDY1MjIiLCJyZHMiOiJQQ183MTAwNjMzOTQ2MjczMzMyOTQ2fFBST0RfUENfNzEwMDYzMzk0NjI3MzMzMjk0NiIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiI3MTAwNjMzOTQ2MjczMzMyOTQ2IiwibWlkIjoiNTc2NDYyODM4OTcyNjMyNzIzIiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+      "source": "Walmart - GTRACING",
+      "source_icon": "https://encrypted-tbn3.gstatic.com/favicon-tbn?q=tbn%3AANd9GcTnP5ISNmbEt5sfd-d6O77v8eZaWxR-UtwYkk865osEjKrS0r8udsVsfLPjH1VQBQizWhrYkhO2STFk8WaMhokVgFUhjn2NoxU",
+      "multiple_sources": true,
+      "price": "$139.99",
+      "extracted_price": 139.99,
+      "old_price": "$250",
+      "extracted_old_price": 250,
+      "rating": 4.1,
+      "reviews": 87,
+      "snippet": "Comfortable (21 user reviews)",
+      "thumbnail": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT_N5wUEMSEbqnMXw8oonXjm_hr1HXRN_AgopSMOFcGMmRU6ywE",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/ZZ0k6Xicu5mVUVJSUGylr5-al1xUWVCSmqJbkpRnpJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDon3My0PdfUNdk0qzPONKLfIz8-LyMqNzygy9IgI8ot3TM8vCPb1d0t2980NCjWrLHcFAKR9J1k",
+      "tag": "44% OFF",
+      "extensions": [
+        "44% OFF"
+      ],
+      "delivery": "Free delivery"
+    },
+    {
+      "position": 22,
+      "title": "Dowinx Gaming Chair Fabric with Pocket Spring Cushion Grey",
+      "product_id": "1089310028184997441",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:1089310028184997441,headlineOfferDocid:6171919742404746743,imageDocid:6305822756195503212,rds:PC_2004564418599542491|PROD_PC_2004564418599542491,gpcid:2004564418599542491,mid:576462794991512741,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTA4OTMxMDAyODE4NDk5NzQ0MSIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjYxNzE5MTk3NDI0MDQ3NDY3NDMiLCJpbWFnZURvY2lkIjoiNjMwNTgyMjc1NjE5NTUwMzIxMiIsInJkcyI6IlBDXzIwMDQ1NjQ0MTg1OTk1NDI0OTF8UFJPRF9QQ18yMDA0NTY0NDE4NTk5NTQyNDkxIiwicXVlcnkiOiJnYW1pbmcrY2hhaXIiLCJncGNpZCI6IjIwMDQ1NjQ0MTg1OTk1NDI0OTEiLCJtaWQiOiI1NzY0NjI3OTQ5OTE1MTI3NDEiLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0=",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTA4OTMxMDAyODE4NDk5NzQ0MSIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjYxNzE5MTk3NDI0MDQ3NDY3NDMiLCJpbWFnZURvY2lkIjoiNjMwNTgyMjc1NjE5NTUwMzIxMiIsInJkcyI6IlBDXzIwMDQ1NjQ0MTg1OTk1NDI0OTF8UFJPRF9QQ18yMDA0NTY0NDE4NTk5NTQyNDkxIiwicXVlcnkiOiJnYW1pbmcrY2hhaXIiLCJncGNpZCI6IjIwMDQ1NjQ0MTg1OTk1NDI0OTEiLCJtaWQiOiI1NzY0NjI3OTQ5OTE1MTI3NDEiLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0%3D",
+      "source": "Best Buy",
+      "source_icon": "https://encrypted-tbn1.gstatic.com/favicon-tbn?q=tbn%3AANd9GcTT0Tmy1Tfrj2gTx9YogV9JASOlx23rpuvmGNx4Bq5y8RSu8-Z0lLHF-bSjuIKJIIqtvp6tbLoEo8gc01Ho4x7nq1feVYguWCY",
+      "multiple_sources": true,
+      "price": "$159.99",
+      "extracted_price": 159.99,
+      "old_price": "$210",
+      "extracted_old_price": 210,
+      "rating": 4.9,
+      "reviews": 253,
+      "snippet": "Comfortable (110 user reviews)",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcStVggjFFQOfJm59hpEe3LadAC_nVBz5hQq1AN0jGToBc_BK6LrhTuSL4w-og6RpbCJYAWjbk_9",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/u06ljHicu9mUUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDi4JS0_PcnML9E_zyjW1zChwTTX2SUxxdI7PC3OqMs0ILDR09DPIcg_Jd0qOd_I28ynKCCkN9jEp181PNwsqSHL2inQMz0rKjrcEAJ6SLpo",
+      "tag": "23% OFF",
+      "extensions": [
+        "23% OFF"
+      ]
+    },
+    {
+      "position": 23,
+      "title": "Alpha Series Gaming Seat",
+      "product_id": "868768378697425122",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:868768378697425122,headlineOfferDocid:12820372435324473540,imageDocid:1550612184120480710,rds:PC_14902218525432628135|PROD_PC_14902218525432628135,gpcid:14902218525432628135,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiODY4NzY4Mzc4Njk3NDI1MTIyIiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiMTI4MjAzNzI0MzUzMjQ0NzM1NDAiLCJpbWFnZURvY2lkIjoiMTU1MDYxMjE4NDEyMDQ4MDcxMCIsInJkcyI6IlBDXzE0OTAyMjE4NTI1NDMyNjI4MTM1fFBST0RfUENfMTQ5MDIyMTg1MjU0MzI2MjgxMzUiLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiMTQ5MDIyMTg1MjU0MzI2MjgxMzUiLCJtaWQiOiIiLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0=",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiODY4NzY4Mzc4Njk3NDI1MTIyIiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiMTI4MjAzNzI0MzUzMjQ0NzM1NDAiLCJpbWFnZURvY2lkIjoiMTU1MDYxMjE4NDEyMDQ4MDcxMCIsInJkcyI6IlBDXzE0OTAyMjE4NTI1NDMyNjI4MTM1fFBST0RfUENfMTQ5MDIyMTg1MjU0MzI2MjgxMzUiLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiMTQ5MDIyMTg1MjU0MzI2MjgxMzUiLCJtaWQiOiIiLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0%3D",
+      "source": "Walmart - Soontrans Direct",
+      "source_icon": "https://encrypted-tbn3.gstatic.com/favicon-tbn?q=tbn%3AANd9GcTnP5ISNmbEt5sfd-d6O77v8eZaWxR-UtwYkk865osEjKrS0r8udsVsfLPjH1VQBQizWhrYkhO2STFk8WaMhokVgFUhjn2NoxU",
+      "multiple_sources": true,
+      "price": "$69.79",
+      "extracted_price": 69.79,
+      "old_price": "$134",
+      "extracted_old_price": 134,
+      "rating": 4.2,
+      "reviews": 46,
+      "snippet": "Easy to assemble (11 user reviews)",
+      "thumbnail": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRvcUl3kYeQVmtx-RZ_fR93ZNQtYy-cKgw9z7RmonkmOYqVc8tG",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/qQdxYHicu5mVUVJSUGylr5-al1xUWVCSmqJbkpRnpJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDipLDs0xzo5MDQzLLanQDYqKTwuyNI7yCyyJrNRN9k4vt6wyD8rNz8vO9Y8sDEu2KHEHAKpJJ6E",
+      "tag": "47% OFF",
+      "extensions": [
+        "47% OFF"
+      ]
+    },
+    {
+      "position": 24,
+      "title": "Dowinx Gaming Chair",
+      "product_id": "1776289276190520771",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:1776289276190520771,headlineOfferDocid:13023855764151853807,imageDocid:14508547050538631482,rds:PC_6259442856644918837|PROD_PC_6259442856644918837,gpcid:6259442856644918837,mid:576462878433209020,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTc3NjI4OTI3NjE5MDUyMDc3MSIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjEzMDIzODU1NzY0MTUxODUzODA3IiwiaW1hZ2VEb2NpZCI6IjE0NTA4NTQ3MDUwNTM4NjMxNDgyIiwicmRzIjoiUENfNjI1OTQ0Mjg1NjY0NDkxODgzN3xQUk9EX1BDXzYyNTk0NDI4NTY2NDQ5MTg4MzciLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiNjI1OTQ0Mjg1NjY0NDkxODgzNyIsIm1pZCI6IjU3NjQ2Mjg3ODQzMzIwOTAyMCIsInB2dCI6ImhnIiwidXVsZSI6bnVsbCwiZ2wiOiJ1cyIsImhsIjoiZW4ifQ==",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTc3NjI4OTI3NjE5MDUyMDc3MSIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjEzMDIzODU1NzY0MTUxODUzODA3IiwiaW1hZ2VEb2NpZCI6IjE0NTA4NTQ3MDUwNTM4NjMxNDgyIiwicmRzIjoiUENfNjI1OTQ0Mjg1NjY0NDkxODgzN3xQUk9EX1BDXzYyNTk0NDI4NTY2NDQ5MTg4MzciLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiNjI1OTQ0Mjg1NjY0NDkxODgzNyIsIm1pZCI6IjU3NjQ2Mjg3ODQzMzIwOTAyMCIsInB2dCI6ImhnIiwidXVsZSI6bnVsbCwiZ2wiOiJ1cyIsImhsIjoiZW4ifQ%3D%3D",
+      "source": "Dowinx",
+      "source_icon": "https://encrypted-tbn3.gstatic.com/favicon-tbn?q=tbn%3AANd9GcQHTHDQXJYMQ80a0b0EQd10uszDS7QgEqPMBvkFtbvG6-ksxmyJvG81_9eajuWSOtZb27m-22SRpTcx93jgrhvC08lR",
+      "multiple_sources": true,
+      "price": "$169.99",
+      "extracted_price": 169.99,
+      "old_price": "$200",
+      "extracted_old_price": 200,
+      "rating": 4.9,
+      "reviews": 29,
+      "snippet": "Comfortable (13 user reviews)",
+      "thumbnail": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRL08dxxienULHdE0a2lW_DskX2Echd1SnzMdtEtWNP87dIpMs5bnm_DqaNngA-uj9Mwj9SwYhx",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/z7-ZK3icDcndCoIwFADgJ_InIVIhQnBYoCOSsK5k7ojT8jjbCVeXvWVvU9_t9_0oIm1iz2tRPl6aWnCowcDtDAnqpSun0TNq0rrHbjdv_xcnHKJMnnI_BGv7Fs_5HpgvgntVp-Z2CZhUsCrxXQAxqvgx3MBBF2bd4Fins-DYJc5ziIpliMrlquwPtF8vrA",
+      "tag": "15% OFF",
+      "extensions": [
+        "15% OFF"
+      ],
+      "delivery": "Free delivery by Wed"
+    },
+    {
+      "position": 25,
+      "title": "RESPAWN 900 Gaming Chair",
+      "product_id": "2187400660516739326",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:2187400660516739326,headlineOfferDocid:758442462413449870,imageDocid:6557289164669561449,rds:PC_6548629891200848552|PROD_PC_6548629891200848552,gpcid:6548629891200848552,mid:576462373747906371,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMjE4NzQwMDY2MDUxNjczOTMyNiIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6Ijc1ODQ0MjQ2MjQxMzQ0OTg3MCIsImltYWdlRG9jaWQiOiI2NTU3Mjg5MTY0NjY5NTYxNDQ5IiwicmRzIjoiUENfNjU0ODYyOTg5MTIwMDg0ODU1MnxQUk9EX1BDXzY1NDg2Mjk4OTEyMDA4NDg1NTIiLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiNjU0ODYyOTg5MTIwMDg0ODU1MiIsIm1pZCI6IjU3NjQ2MjM3Mzc0NzkwNjM3MSIsInB2dCI6ImhnIiwidXVsZSI6bnVsbCwiZ2wiOiJ1cyIsImhsIjoiZW4ifQ==",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMjE4NzQwMDY2MDUxNjczOTMyNiIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6Ijc1ODQ0MjQ2MjQxMzQ0OTg3MCIsImltYWdlRG9jaWQiOiI2NTU3Mjg5MTY0NjY5NTYxNDQ5IiwicmRzIjoiUENfNjU0ODYyOTg5MTIwMDg0ODU1MnxQUk9EX1BDXzY1NDg2Mjk4OTEyMDA4NDg1NTIiLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiNjU0ODYyOTg5MTIwMDg0ODU1MiIsIm1pZCI6IjU3NjQ2MjM3Mzc0NzkwNjM3MSIsInB2dCI6ImhnIiwidXVsZSI6bnVsbCwiZ2wiOiJ1cyIsImhsIjoiZW4ifQ%3D%3D",
+      "source": "Best Buy",
+      "source_icon": "https://encrypted-tbn1.gstatic.com/favicon-tbn?q=tbn%3AANd9GcTT0Tmy1Tfrj2gTx9YogV9JASOlx23rpuvmGNx4Bq5y8RSu8-Z0lLHF-bSjuIKJIIqtvp6tbLoEo8gc01Ho4x7nq1feVYguWCY",
+      "multiple_sources": true,
+      "price": "$399.99",
+      "extracted_price": 399.99,
+      "rating": 4.5,
+      "reviews": 832,
+      "snippet": "Comfortable (330 user reviews)",
+      "thumbnail": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTr-nffT8QEEuuodRC67NZ_NSJz79F3WVlQfhvAJZDZ13OwX7EEm1da4MUjz-wRVv157ES1Dy4",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/iMWflHicu9mYUVJSUGylr5-al1xUWVCSmqJbkpRnpJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDinSzUtLC7EIdHUtLc1PCXI2M_eLivcL9qoyt3QzDg_LCUzLKHP0inKJMjT2L48wd3XNNUxJNPENzarSLQ8KKzM0NXcNNnSpNAEAW0wtSw"
+    },
+    {
+      "position": 26,
+      "title": "Huracan Gaming Chair",
+      "product_id": "16972303225477883191",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:16972303225477883191,headlineOfferDocid:18272112881640713610,imageDocid:15082149060363140588,rds:CID_16972303225477883191|PROD_CID_16972303225477883191,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTY5NzIzMDMyMjU0Nzc4ODMxOTEiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiIxODI3MjExMjg4MTY0MDcxMzYxMCIsImltYWdlRG9jaWQiOiIxNTA4MjE0OTA2MDM2MzE0MDU4OCIsInJkcyI6IkNJRF8xNjk3MjMwMzIyNTQ3Nzg4MzE5MXxQUk9EX0NJRF8xNjk3MjMwMzIyNTQ3Nzg4MzE5MSIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiIiLCJtaWQiOiIiLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0=",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTY5NzIzMDMyMjU0Nzc4ODMxOTEiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiIxODI3MjExMjg4MTY0MDcxMzYxMCIsImltYWdlRG9jaWQiOiIxNTA4MjE0OTA2MDM2MzE0MDU4OCIsInJkcyI6IkNJRF8xNjk3MjMwMzIyNTQ3Nzg4MzE5MXxQUk9EX0NJRF8xNjk3MjMwMzIyNTQ3Nzg4MzE5MSIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiIiLCJtaWQiOiIiLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0%3D",
+      "source": "Walmart - Ferghana Shop",
+      "source_icon": "https://encrypted-tbn3.gstatic.com/favicon-tbn?q=tbn%3AANd9GcTnP5ISNmbEt5sfd-d6O77v8eZaWxR-UtwYkk865osEjKrS0r8udsVsfLPjH1VQBQizWhrYkhO2STFk8WaMhokVgFUhjn2NoxU",
+      "price": "$65.99",
+      "extracted_price": 65.99,
+      "old_price": "$105",
+      "extracted_old_price": 105,
+      "rating": 5,
+      "reviews": 3,
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRFGyW0J51chqkZIU_O8gZFgVlbr_ok6gpnSy9Sr3VjUYkEwMM",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/jdvBQHicu5mZUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDnJzrww38DI1TM4ozI7yDI33t0iPcksPy0kqis_PNksvyAuutAwuMg7LCo3Mdi339QUAbncm1w",
+      "tag": "37% OFF",
+      "extensions": [
+        "37% OFF"
+      ]
+    },
+    {
+      "position": 27,
+      "title": "Gtracing RGB Ergonomic Gaming Chair with Massage",
+      "product_id": "2786009100579933884",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:2786009100579933884,headlineOfferDocid:275746549010605838,imageDocid:17817736044044014177,rds:PC_13494000673344916720|PROD_PC_13494000673344916720,gpcid:13494000673344916720,mid:576462827527042288,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMjc4NjAwOTEwMDU3OTkzMzg4NCIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjI3NTc0NjU0OTAxMDYwNTgzOCIsImltYWdlRG9jaWQiOiIxNzgxNzczNjA0NDA0NDAxNDE3NyIsInJkcyI6IlBDXzEzNDk0MDAwNjczMzQ0OTE2NzIwfFBST0RfUENfMTM0OTQwMDA2NzMzNDQ5MTY3MjAiLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiMTM0OTQwMDA2NzMzNDQ5MTY3MjAiLCJtaWQiOiI1NzY0NjI4Mjc1MjcwNDIyODgiLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0=",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMjc4NjAwOTEwMDU3OTkzMzg4NCIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjI3NTc0NjU0OTAxMDYwNTgzOCIsImltYWdlRG9jaWQiOiIxNzgxNzczNjA0NDA0NDAxNDE3NyIsInJkcyI6IlBDXzEzNDk0MDAwNjczMzQ0OTE2NzIwfFBST0RfUENfMTM0OTQwMDA2NzMzNDQ5MTY3MjAiLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiMTM0OTQwMDA2NzMzNDQ5MTY3MjAiLCJtaWQiOiI1NzY0NjI4Mjc1MjcwNDIyODgiLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0%3D",
+      "source": "gtracing.com",
+      "source_icon": "https://encrypted-tbn1.gstatic.com/favicon-tbn?q=tbn%3AANd9GcR_EqQL8pQblBvB3-7Dkb1Iz1EdDBLzOfCf0usphs1Fn26F2FUZaZYQA1pcIL2R-EwhoP1NqYAKLTbFnOQESakaNnmfXCA",
+      "multiple_sources": true,
+      "price": "$154.99",
+      "extracted_price": 154.99,
+      "old_price": "$220",
+      "extracted_old_price": 220,
+      "rating": 3.7,
+      "reviews": 156,
+      "snippet": "Easy to assemble (27 user reviews)",
+      "thumbnail": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRgHBtSPz5snVDQBAyiOgEixWneaHQD14yxNbzfD5nH8o4e_TxaYOquLeGRuwMHzRlWfJhHKLI",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/5jaHKXicu9mYUVJSUGylr5-al1xUWVCSmqJbkpRnqJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDkr3cCoJDqgyLc4Lcwl0cqzM9E93zawIz0tN9Ah0MTSprPBLqkpzMc3zsMg3SY0PqUiM9C8s9Ul1Dyot9_WoCsoJT_PK8PD28QQAmHsvfw",
+      "tag": "29% OFF",
+      "extensions": [
+        "29% OFF"
+      ]
+    },
+    {
+      "position": 28,
+      "title": "Dowinx Fabric Gaming Chair with Pocket Spring & Massage Support 6657K",
+      "product_id": "14231758133934866828",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:14231758133934866828,headlineOfferDocid:8389857544108462284,imageDocid:5839174791949741928,rds:PC_17099230266658513950|PROD_PC_17099230266658513950,gpcid:17099230266658513950,mid:576462531552072854,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTQyMzE3NTgxMzM5MzQ4NjY4MjgiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiI4Mzg5ODU3NTQ0MTA4NDYyMjg0IiwiaW1hZ2VEb2NpZCI6IjU4MzkxNzQ3OTE5NDk3NDE5MjgiLCJyZHMiOiJQQ18xNzA5OTIzMDI2NjY1ODUxMzk1MHxQUk9EX1BDXzE3MDk5MjMwMjY2NjU4NTEzOTUwIiwicXVlcnkiOiJnYW1pbmcrY2hhaXIiLCJncGNpZCI6IjE3MDk5MjMwMjY2NjU4NTEzOTUwIiwibWlkIjoiNTc2NDYyNTMxNTUyMDcyODU0IiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTQyMzE3NTgxMzM5MzQ4NjY4MjgiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiI4Mzg5ODU3NTQ0MTA4NDYyMjg0IiwiaW1hZ2VEb2NpZCI6IjU4MzkxNzQ3OTE5NDk3NDE5MjgiLCJyZHMiOiJQQ18xNzA5OTIzMDI2NjY1ODUxMzk1MHxQUk9EX1BDXzE3MDk5MjMwMjY2NjU4NTEzOTUwIiwicXVlcnkiOiJnYW1pbmcrY2hhaXIiLCJncGNpZCI6IjE3MDk5MjMwMjY2NjU4NTEzOTUwIiwibWlkIjoiNTc2NDYyNTMxNTUyMDcyODU0IiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+      "source": "Best Buy",
+      "source_icon": "https://encrypted-tbn1.gstatic.com/favicon-tbn?q=tbn%3AANd9GcTT0Tmy1Tfrj2gTx9YogV9JASOlx23rpuvmGNx4Bq5y8RSu8-Z0lLHF-bSjuIKJIIqtvp6tbLoEo8gc01Ho4x7nq1feVYguWCY",
+      "multiple_sources": true,
+      "price": "$149.99",
+      "extracted_price": 149.99,
+      "old_price": "$160",
+      "extracted_old_price": 160,
+      "rating": 5,
+      "reviews": 105,
+      "snippet": "Comfortable (48 user reviews)",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRd9yRkZoKvdRu1-lFu439qPlA3TDbSq7U3pg0uTIN_eGBf7WIreJthaL3NhNPxK1WwMoAOqiQa",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/VQ40D3icu9mUUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDkqxrAzKjsr3LksJKjXUzXErNTG2LAzIcTQOcUkKLjQPNS5INygN8fSLT3V3SjMP9yxK9SrJSPQx9svwC6jwNgwv98139C_MDEwEAJ6ALtE",
+      "tag": "6% OFF",
+      "extensions": [
+        "6% OFF"
+      ]
+    },
+    {
+      "position": 29,
+      "title": "Gianna Gaming Chair",
+      "product_id": "7846633845574348755",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:7846633845574348755,headlineOfferDocid:10961021518244305298,imageDocid:15265022528972184243,rds:PC_428925001620897163|PROD_PC_428925001620897163,gpcid:428925001620897163,mid:576462843200401310,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNzg0NjYzMzg0NTU3NDM0ODc1NSIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjEwOTYxMDIxNTE4MjQ0MzA1Mjk4IiwiaW1hZ2VEb2NpZCI6IjE1MjY1MDIyNTI4OTcyMTg0MjQzIiwicmRzIjoiUENfNDI4OTI1MDAxNjIwODk3MTYzfFBST0RfUENfNDI4OTI1MDAxNjIwODk3MTYzIiwicXVlcnkiOiJnYW1pbmcrY2hhaXIiLCJncGNpZCI6IjQyODkyNTAwMTYyMDg5NzE2MyIsIm1pZCI6IjU3NjQ2Mjg0MzIwMDQwMTMxMCIsInB2dCI6ImhnIiwidXVsZSI6bnVsbCwiZ2wiOiJ1cyIsImhsIjoiZW4ifQ==",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNzg0NjYzMzg0NTU3NDM0ODc1NSIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjEwOTYxMDIxNTE4MjQ0MzA1Mjk4IiwiaW1hZ2VEb2NpZCI6IjE1MjY1MDIyNTI4OTcyMTg0MjQzIiwicmRzIjoiUENfNDI4OTI1MDAxNjIwODk3MTYzfFBST0RfUENfNDI4OTI1MDAxNjIwODk3MTYzIiwicXVlcnkiOiJnYW1pbmcrY2hhaXIiLCJncGNpZCI6IjQyODkyNTAwMTYyMDg5NzE2MyIsIm1pZCI6IjU3NjQ2Mjg0MzIwMDQwMTMxMCIsInB2dCI6ImhnIiwidXVsZSI6bnVsbCwiZ2wiOiJ1cyIsImhsIjoiZW4ifQ%3D%3D",
+      "source": "Walmart",
+      "source_icon": "https://encrypted-tbn3.gstatic.com/favicon-tbn?q=tbn%3AANd9GcTnP5ISNmbEt5sfd-d6O77v8eZaWxR-UtwYkk865osEjKrS0r8udsVsfLPjH1VQBQizWhrYkhO2STFk8WaMhokVgFUhjn2NoxU",
+      "multiple_sources": true,
+      "price": "$111.00",
+      "extracted_price": 111,
+      "rating": 3.7,
+      "reviews": 3,
+      "thumbnail": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRuIL82tjqFE4y1hIEQtuKWTPUQwHt8secpFAOx9ANECJaWOpQveFk4NnufNkD1tBNNXiv6wv2A",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/zWptU3icDcnRDoIgFADQL0qnuaZurVFJWQ2j1ezVkIRciHHBfO0v-5s6r-f7EQDapL7PFXuNGng9gZuaeo2BCiTzWPf0jei0lqpZ9PP_pYjUyYadbH6IQ3j0OIvGQOQZBbsvz8cLHbYQG840RsU7QSRb7aqy0NRx3EZE2Ttp1wEsCblKNxtciH6mci7_",
+      "delivery": "Free delivery"
+    },
+    {
+      "position": 30,
+      "title": "Razer Iskur V2 X Ergonomic Gaming Chair",
+      "product_id": "5438348040970438907",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:5438348040970438907,headlineOfferDocid:6529967693746720233,imageDocid:3607824505870801589,rds:PC_13134991672679661613|PROD_PC_13134991672679661613,gpcid:13134991672679661613,mid:576462865618200437,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNTQzODM0ODA0MDk3MDQzODkwNyIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjY1Mjk5Njc2OTM3NDY3MjAyMzMiLCJpbWFnZURvY2lkIjoiMzYwNzgyNDUwNTg3MDgwMTU4OSIsInJkcyI6IlBDXzEzMTM0OTkxNjcyNjc5NjYxNjEzfFBST0RfUENfMTMxMzQ5OTE2NzI2Nzk2NjE2MTMiLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiMTMxMzQ5OTE2NzI2Nzk2NjE2MTMiLCJtaWQiOiI1NzY0NjI4NjU2MTgyMDA0MzciLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0=",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNTQzODM0ODA0MDk3MDQzODkwNyIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjY1Mjk5Njc2OTM3NDY3MjAyMzMiLCJpbWFnZURvY2lkIjoiMzYwNzgyNDUwNTg3MDgwMTU4OSIsInJkcyI6IlBDXzEzMTM0OTkxNjcyNjc5NjYxNjEzfFBST0RfUENfMTMxMzQ5OTE2NzI2Nzk2NjE2MTMiLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiMTMxMzQ5OTE2NzI2Nzk2NjE2MTMiLCJtaWQiOiI1NzY0NjI4NjU2MTgyMDA0MzciLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0%3D",
+      "source": "BrandsMart USA",
+      "source_icon": "https://encrypted-tbn2.gstatic.com/favicon-tbn?q=tbn%3AANd9GcQ-WYPZHAGjCRXYZi9fkGcOuG2Tlx_oWcJh8rKlt7HNZhe1QPo6WKBEwzTW8b2U-ke5diAa3_ctNuWO5MVPmnJVcGECIV8_su3acwGEisU",
+      "multiple_sources": true,
+      "price": "$299.99",
+      "extracted_price": 299.99,
+      "rating": 4.5,
+      "reviews": 129,
+      "snippet": "Comfortable (31 user reviews)",
+      "thumbnail": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQNByYOm740JbrXXZNFXeh5BrIuS2R71pdL0ULrFA7vn3Rm9_s",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/JcdVQnicu5mZUVJSUGylr5-al1xUWVCSmqJbkpRnqJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDvRzqoz0zzU3MfBKKoqIiPJzi0jNMHUq8iwNNgoyNyxI8TEI9SlyczQvyzMOyrWMLwYAWaolsw"
+    },
+    {
+      "position": 31,
+      "title": "Emerge Vector Luxura Gaming Chair",
+      "product_id": "9582241052221523744",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:9582241052221523744,headlineOfferDocid:1290736918759123712,imageDocid:15162443950445380889,rds:PC_17143605207514228271|PROD_PC_17143605207514228271,gpcid:17143605207514228271,mid:576462687835999167,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiOTU4MjI0MTA1MjIyMTUyMzc0NCIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjEyOTA3MzY5MTg3NTkxMjM3MTIiLCJpbWFnZURvY2lkIjoiMTUxNjI0NDM5NTA0NDUzODA4ODkiLCJyZHMiOiJQQ18xNzE0MzYwNTIwNzUxNDIyODI3MXxQUk9EX1BDXzE3MTQzNjA1MjA3NTE0MjI4MjcxIiwicXVlcnkiOiJnYW1pbmcrY2hhaXIiLCJncGNpZCI6IjE3MTQzNjA1MjA3NTE0MjI4MjcxIiwibWlkIjoiNTc2NDYyNjg3ODM1OTk5MTY3IiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiOTU4MjI0MTA1MjIyMTUyMzc0NCIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjEyOTA3MzY5MTg3NTkxMjM3MTIiLCJpbWFnZURvY2lkIjoiMTUxNjI0NDM5NTA0NDUzODA4ODkiLCJyZHMiOiJQQ18xNzE0MzYwNTIwNzUxNDIyODI3MXxQUk9EX1BDXzE3MTQzNjA1MjA3NTE0MjI4MjcxIiwicXVlcnkiOiJnYW1pbmcrY2hhaXIiLCJncGNpZCI6IjE3MTQzNjA1MjA3NTE0MjI4MjcxIiwibWlkIjoiNTc2NDYyNjg3ODM1OTk5MTY3IiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+      "source": "Staples",
+      "source_icon": "https://encrypted-tbn0.gstatic.com/favicon-tbn?q=tbn%3AANd9GcTXV3w4Nn8sVCPhDktAY7NDzVyR-vNBiptQW_bqhwO4-bcQE9AY5tTnKs9mDw7npcSA-31OLnFGLOxuZIgebRhMBTdGfJY0MQ",
+      "multiple_sources": true,
+      "price": "$84.99",
+      "extracted_price": 84.99,
+      "old_price": "$176",
+      "extracted_old_price": 176,
+      "rating": 3.8,
+      "reviews": 191,
+      "snippet": "Comfortable (56 user reviews)",
+      "thumbnail": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS824fLjxp0rJPW7yuSRY-nhLMCdeMJyJsz3cyYulwpQZT8iMTFQ0uTD_9PSVa8HIiB0Y2TQTI",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/mI8fRXicu9mYUVJSUGylr5-al1xUWVCSmqJbkpRnqJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDrYwMknzyaooMCjyCgg3rywNDorUzcvw8XVOSfX1qvQqrjJOrowszSkvCIwKscj0DXELNCgNcYm3DAgOS7Tw8Mx0Mog0CgkM8QQAe5cuOg",
+      "tag": "51% OFF",
+      "extensions": [
+        "51% OFF"
+      ],
+      "delivery": "Free next-day delivery"
+    },
+    {
+      "position": 32,
+      "title": "Eureka Python II Series Ergonomic Chair GC08",
+      "product_id": "8289230681329207806",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:8289230681329207806,headlineOfferDocid:16848110051647897591,imageDocid:1229913395111171449,rds:PC_11330574449634523818|PROD_PC_11330574449634523818,gpcid:11330574449634523818,mid:576462694312107067,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiODI4OTIzMDY4MTMyOTIwNzgwNiIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjE2ODQ4MTEwMDUxNjQ3ODk3NTkxIiwiaW1hZ2VEb2NpZCI6IjEyMjk5MTMzOTUxMTExNzE0NDkiLCJyZHMiOiJQQ18xMTMzMDU3NDQ0OTYzNDUyMzgxOHxQUk9EX1BDXzExMzMwNTc0NDQ5NjM0NTIzODE4IiwicXVlcnkiOiJnYW1pbmcrY2hhaXIiLCJncGNpZCI6IjExMzMwNTc0NDQ5NjM0NTIzODE4IiwibWlkIjoiNTc2NDYyNjk0MzEyMTA3MDY3IiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiODI4OTIzMDY4MTMyOTIwNzgwNiIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjE2ODQ4MTEwMDUxNjQ3ODk3NTkxIiwiaW1hZ2VEb2NpZCI6IjEyMjk5MTMzOTUxMTExNzE0NDkiLCJyZHMiOiJQQ18xMTMzMDU3NDQ0OTYzNDUyMzgxOHxQUk9EX1BDXzExMzMwNTc0NDQ5NjM0NTIzODE4IiwicXVlcnkiOiJnYW1pbmcrY2hhaXIiLCJncGNpZCI6IjExMzMwNTc0NDQ5NjM0NTIzODE4IiwibWlkIjoiNTc2NDYyNjk0MzEyMTA3MDY3IiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+      "source": "Eureka Ergonomic",
+      "source_icon": "https://encrypted-tbn2.gstatic.com/favicon-tbn?q=tbn%3AANd9GcRq8ww0Um1yjkfhhdNRsPIUU2GAJiu0mWM66gv85zdtCpUBYXVi54V2Zg0G1g-5_7Brcw8L5hb2loiX2WH5fak9gi-foMPlo2045XIO",
+      "multiple_sources": true,
+      "price": "$349.99",
+      "extracted_price": 349.99,
+      "rating": 4.4,
+      "reviews": 80,
+      "snippet": "Comfortable (25 user reviews)",
+      "thumbnail": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQS7Yq0j7KCNeMkd5pLM6gB6ga_QGufsZB_n_QC-l3cnntyQegTqGuS1ENbZUP4AvDHohEw8YTs",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/D5GGxXicu9mUUVJSUGylr5-al1xUWVCSmqJbkpRnqJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDgw2jyw0yDL3dvZL9c1OMS3w8TVLdzJLT4wPdC9NK45yis-LD3TWzTFOzssrqQxMTQ8pdC8NNnT1S4oKDTBxLHPxyM9wLbeIDCkGAJqlLvg",
+      "delivery": "Free delivery"
+    },
+    {
+      "position": 33,
+      "title": "Gtplayer Ergonomic Gaming Chair",
+      "product_id": "5163706745168905141",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:5163706745168905141,headlineOfferDocid:15962463792189790517,imageDocid:2780403438490331342,rds:PC_12268605401161809131|PROD_PC_12268605401161809131,gpcid:12268605401161809131,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNTE2MzcwNjc0NTE2ODkwNTE0MSIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjE1OTYyNDYzNzkyMTg5NzkwNTE3IiwiaW1hZ2VEb2NpZCI6IjI3ODA0MDM0Mzg0OTAzMzEzNDIiLCJyZHMiOiJQQ18xMjI2ODYwNTQwMTE2MTgwOTEzMXxQUk9EX1BDXzEyMjY4NjA1NDAxMTYxODA5MTMxIiwicXVlcnkiOiJnYW1pbmcrY2hhaXIiLCJncGNpZCI6IjEyMjY4NjA1NDAxMTYxODA5MTMxIiwibWlkIjoiIiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNTE2MzcwNjc0NTE2ODkwNTE0MSIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjE1OTYyNDYzNzkyMTg5NzkwNTE3IiwiaW1hZ2VEb2NpZCI6IjI3ODA0MDM0Mzg0OTAzMzEzNDIiLCJyZHMiOiJQQ18xMjI2ODYwNTQwMTE2MTgwOTEzMXxQUk9EX1BDXzEyMjY4NjA1NDAxMTYxODA5MTMxIiwicXVlcnkiOiJnYW1pbmcrY2hhaXIiLCJncGNpZCI6IjEyMjY4NjA1NDAxMTYxODA5MTMxIiwibWlkIjoiIiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+      "source": "Best Buy",
+      "source_icon": "https://encrypted-tbn1.gstatic.com/favicon-tbn?q=tbn%3AANd9GcTT0Tmy1Tfrj2gTx9YogV9JASOlx23rpuvmGNx4Bq5y8RSu8-Z0lLHF-bSjuIKJIIqtvp6tbLoEo8gc01Ho4x7nq1feVYguWCY",
+      "multiple_sources": true,
+      "price": "$128.99",
+      "extracted_price": 128.99,
+      "rating": 2,
+      "reviews": 1,
+      "thumbnail": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcREIJT8HciZj63xSTBcwBjO6PWqK7B00zSfeCUa-lBhZWxYBZCIEOwKyN4_IQvu6c4hXAqWLfQ",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/QCXJ5nicu9mYUVJSUGylr5-al1xUWVCSmqJbkpRnpJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDnL19Aqx8EjOjMoyM64IDnFKLnfK8jcLCC_0NncyMKgKTkt1Dk3UzXHKiAqviHSKcvZ09S_3rvQzifcMLCs1SzbJiHAsDPdJCwQAUXUt5A"
+    },
+    {
+      "position": 34,
+      "title": "Room Essentials Floor Gaming Chair",
+      "product_id": "11077842912185128459",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:11077842912185128459,headlineOfferDocid:17789350087613605597,rds:PC_601776735350999835|PROD_PC_601776735350999835,gpcid:601776735350999835,mid:576462518423997777,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTEwNzc4NDI5MTIxODUxMjg0NTkiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiIxNzc4OTM1MDA4NzYxMzYwNTU5NyIsImltYWdlRG9jaWQiOiIiLCJyZHMiOiJQQ182MDE3NzY3MzUzNTA5OTk4MzV8UFJPRF9QQ182MDE3NzY3MzUzNTA5OTk4MzUiLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiNjAxNzc2NzM1MzUwOTk5ODM1IiwibWlkIjoiNTc2NDYyNTE4NDIzOTk3Nzc3IiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTEwNzc4NDI5MTIxODUxMjg0NTkiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiIxNzc4OTM1MDA4NzYxMzYwNTU5NyIsImltYWdlRG9jaWQiOiIiLCJyZHMiOiJQQ182MDE3NzY3MzUzNTA5OTk4MzV8UFJPRF9QQ182MDE3NzY3MzUzNTA5OTk4MzUiLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiNjAxNzc2NzM1MzUwOTk5ODM1IiwibWlkIjoiNTc2NDYyNTE4NDIzOTk3Nzc3IiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+      "source": "Target",
+      "source_icon": "https://encrypted-tbn3.gstatic.com/favicon-tbn?q=tbn%3AANd9GcTEcvKCC4vYSJ0lcojmG1G8H5SxvMYMWwuZ0hBVYInrlmIpQc8-QknEydjdLUOCUc4t5gk8LzLYNskt9jyjXHnjIq2sfztY",
+      "multiple_sources": true,
+      "price": "$120.00",
+      "extracted_price": 120,
+      "rating": 5,
+      "reviews": 1,
+      "thumbnail": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQLfarozctaMZTdZOsmgOSiTeCaNZK136ptc2PAB4v3rePcmek",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/HVsqXXicu5mZUVJSUGylr5-al1xUWVCSmqJbkpRnqJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDvRJSyzKr0ouSfSNCkmJ8i_OTfcPzgxJdU70i_I2NDYrKEk2CnB0MikzLkoNSM5NzQYAh_onCw",
+      "delivery": "Free delivery by Wed"
+    },
+    {
+      "position": 35,
+      "title": "Magshion Ergonomic Gaming Chair",
+      "product_id": "16605623679737136563",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:16605623679737136563,headlineOfferDocid:13463450473667166576,imageDocid:3385131644117572605,gpcid:12124609918839011208,mid:576462869680651869,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTY2MDU2MjM2Nzk3MzcxMzY1NjMiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiIxMzQ2MzQ1MDQ3MzY2NzE2NjU3NiIsImltYWdlRG9jaWQiOiIzMzg1MTMxNjQ0MTE3NTcyNjA1IiwicmRzIjoiIiwicXVlcnkiOiJnYW1pbmcrY2hhaXIiLCJncGNpZCI6IjEyMTI0NjA5OTE4ODM5MDExMjA4IiwibWlkIjoiNTc2NDYyODY5NjgwNjUxODY5IiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTY2MDU2MjM2Nzk3MzcxMzY1NjMiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiIxMzQ2MzQ1MDQ3MzY2NzE2NjU3NiIsImltYWdlRG9jaWQiOiIzMzg1MTMxNjQ0MTE3NTcyNjA1IiwicmRzIjoiIiwicXVlcnkiOiJnYW1pbmcrY2hhaXIiLCJncGNpZCI6IjEyMTI0NjA5OTE4ODM5MDExMjA4IiwibWlkIjoiNTc2NDYyODY5NjgwNjUxODY5IiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+      "source": "Walmart - Magshion",
+      "source_icon": "https://encrypted-tbn3.gstatic.com/favicon-tbn?q=tbn%3AANd9GcTnP5ISNmbEt5sfd-d6O77v8eZaWxR-UtwYkk865osEjKrS0r8udsVsfLPjH1VQBQizWhrYkhO2STFk8WaMhokVgFUhjn2NoxU",
+      "price": "$89.99",
+      "extracted_price": 89.99,
+      "thumbnail": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQQMCDQpbK0dglUgt4jL656gR8Dn4L47la23Pg4I6nFLI-OPd0",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/8hUZYXicu5mZUVJSUGylr5-al1xUWVCSmqJbkpRnqJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDgz0dXYJLEjyNkhJzwlNLzHJ8jEzNUsPsnDJM_ExMc9JNDIOSDfxNMtz8_HU9Q9IMQAAT20kuQ",
+      "delivery": "Free delivery"
+    },
+    {
+      "position": 36,
+      "title": "Flexispot GC5 Ergonomic Gaming Chair",
+      "product_id": "7357898954541908658",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:7357898954541908658,headlineOfferDocid:2927522392034898861,imageDocid:501721827048511361,rds:PC_6688387344243038527|PROD_PC_6688387344243038527,gpcid:6688387344243038527,mid:576462483921937243,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNzM1Nzg5ODk1NDU0MTkwODY1OCIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjI5Mjc1MjIzOTIwMzQ4OTg4NjEiLCJpbWFnZURvY2lkIjoiNTAxNzIxODI3MDQ4NTExMzYxIiwicmRzIjoiUENfNjY4ODM4NzM0NDI0MzAzODUyN3xQUk9EX1BDXzY2ODgzODczNDQyNDMwMzg1MjciLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiNjY4ODM4NzM0NDI0MzAzODUyNyIsIm1pZCI6IjU3NjQ2MjQ4MzkyMTkzNzI0MyIsInB2dCI6ImhnIiwidXVsZSI6bnVsbCwiZ2wiOiJ1cyIsImhsIjoiZW4ifQ==",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNzM1Nzg5ODk1NDU0MTkwODY1OCIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjI5Mjc1MjIzOTIwMzQ4OTg4NjEiLCJpbWFnZURvY2lkIjoiNTAxNzIxODI3MDQ4NTExMzYxIiwicmRzIjoiUENfNjY4ODM4NzM0NDI0MzAzODUyN3xQUk9EX1BDXzY2ODgzODczNDQyNDMwMzg1MjciLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiNjY4ODM4NzM0NDI0MzAzODUyNyIsIm1pZCI6IjU3NjQ2MjQ4MzkyMTkzNzI0MyIsInB2dCI6ImhnIiwidXVsZSI6bnVsbCwiZ2wiOiJ1cyIsImhsIjoiZW4ifQ%3D%3D",
+      "source": "FlexiSpot.com",
+      "source_icon": "https://encrypted-tbn0.gstatic.com/favicon-tbn?q=tbn%3AANd9GcSCEheVD1UYqC7dlIO4EP9gOfR_18ZRgRjhYx_DyxQXNaTTe36Y0fAsz9MNA85DF13D_O9rfOdzgEvIWA5fd1ijcexWTuHQ",
+      "price": "$299.99",
+      "extracted_price": 299.99,
+      "rating": 4.6,
+      "reviews": 51,
+      "snippet": "Comfortable (25 user reviews)",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTG-Oh1HlqcsrMAAznrYdRLRj3obHAqeqzr4n1_uvTtimR7186wS8_y6eC0m3eQK9BQNTCKf_St",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/EN9PoXicu9mUUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDnHX9c8w9MgpTC4u8nV0rMorikwJ8gnKMs5P8nAsTC2sKjLJM4wvLQspycwNMje0MCsPtoivNEt1Nsg1Tg30tnQK9Atx9k6LDy4BALt5Lwk",
+      "delivery": "Free delivery"
+    },
+    {
+      "position": 37,
+      "title": "noblechairs Noblechair Epic Gaming Chair",
+      "product_id": "16906400623945577478",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:16906400623945577478,headlineOfferDocid:17806217506960324913,imageDocid:15602859082991359516,rds:PC_407665950788949996|PROD_PC_407665950788949996,gpcid:407665950788949996,mid:576462791293814584,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTY5MDY0MDA2MjM5NDU1Nzc0NzgiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiIxNzgwNjIxNzUwNjk2MDMyNDkxMyIsImltYWdlRG9jaWQiOiIxNTYwMjg1OTA4Mjk5MTM1OTUxNiIsInJkcyI6IlBDXzQwNzY2NTk1MDc4ODk0OTk5NnxQUk9EX1BDXzQwNzY2NTk1MDc4ODk0OTk5NiIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiI0MDc2NjU5NTA3ODg5NDk5OTYiLCJtaWQiOiI1NzY0NjI3OTEyOTM4MTQ1ODQiLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0=",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTY5MDY0MDA2MjM5NDU1Nzc0NzgiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiIxNzgwNjIxNzUwNjk2MDMyNDkxMyIsImltYWdlRG9jaWQiOiIxNTYwMjg1OTA4Mjk5MTM1OTUxNiIsInJkcyI6IlBDXzQwNzY2NTk1MDc4ODk0OTk5NnxQUk9EX1BDXzQwNzY2NTk1MDc4ODk0OTk5NiIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiI0MDc2NjU5NTA3ODg5NDk5OTYiLCJtaWQiOiI1NzY0NjI3OTEyOTM4MTQ1ODQiLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0%3D",
+      "source": "noblechairs.com",
+      "source_icon": "https://encrypted-tbn1.gstatic.com/favicon-tbn?q=tbn%3AANd9GcRYl1UnJ2kDPz_eySooIYGsYymFfouZ4y9SC6_CrwO-hJzm6zGXRYb0Qdi47ISBte7CSN5dyYqVCDrrKDw-hA4vaPBiafcuvDqlNuYj",
+      "multiple_sources": true,
+      "price": "$499.00",
+      "extracted_price": 499,
+      "rating": 4.6,
+      "reviews": 1800,
+      "snippet": "Comfortable (580 user reviews)",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTz_dIeMS1eGtW6NHAhyqbQ8euIvChe2SHzcesBQIwf44LbAMUyn6Agv7bK6vedDAxA6_OhXP0",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/CCK0rnicDcnRDsEwFADQL7KOLMUSkSLZFjaWEd4Wba91D7pOr9K9-Ux_w3k9349CNDYmBLR4eIMgR8h1GDQWr9iKQHR3YlVnTKubZb_4X8wKOU_EcahlBnk1hgTPtEiZ8j0vZ_DM3FrBpEoHAXZVZq9bFO04y09eU9a4Kd9SB3LD3ozWe3U5hD-HXS6b",
+      "delivery": "Free delivery"
+    },
+    {
+      "position": 38,
+      "title": "GTPlayer - Big and Tall Gaming Chair Wide Ergonomic Office Chair with Deluxe Embossing Leather Computer Chair - Black",
+      "product_id": "10878042032702451529",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=productid:10878042032702451529,headlineOfferDocid:10878042032702451529,imageDocid:13879494591567973166,rds:PC_10672533090383913453|PROD_PC_10672533090383913453,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiMTA4NzgwNDIwMzI3MDI0NTE1MjkiLCJjYXRhbG9naWQiOiIiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiIxMDg3ODA0MjAzMjcwMjQ1MTUyOSIsImltYWdlRG9jaWQiOiIxMzg3OTQ5NDU5MTU2Nzk3MzE2NiIsInJkcyI6IlBDXzEwNjcyNTMzMDkwMzgzOTEzNDUzfFBST0RfUENfMTA2NzI1MzMwOTAzODM5MTM0NTMiLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiIiwibWlkIjoiIiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiMTA4NzgwNDIwMzI3MDI0NTE1MjkiLCJjYXRhbG9naWQiOiIiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiIxMDg3ODA0MjAzMjcwMjQ1MTUyOSIsImltYWdlRG9jaWQiOiIxMzg3OTQ5NDU5MTU2Nzk3MzE2NiIsInJkcyI6IlBDXzEwNjcyNTMzMDkwMzgzOTEzNDUzfFBST0RfUENfMTA2NzI1MzMwOTAzODM5MTM0NTMiLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiIiwibWlkIjoiIiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+      "source": "Best Buy",
+      "source_icon": "https://encrypted-tbn1.gstatic.com/favicon-tbn?q=tbn%3AANd9GcTT0Tmy1Tfrj2gTx9YogV9JASOlx23rpuvmGNx4Bq5y8RSu8-Z0lLHF-bSjuIKJIIqtvp6tbLoEo8gc01Ho4x7nq1feVYguWCY",
+      "price": "$177.99",
+      "extracted_price": 177.99,
+      "old_price": "$300",
+      "extracted_old_price": 300,
+      "rating": 4.2,
+      "reviews": 106,
+      "snippet": "Comfortable (49 user reviews)",
+      "thumbnail": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ3WzlrvHzYHVBakAooONxrZqbNzOzdiDRNibQatMcEq3jWyS6iPC9I8aGMEQX4ksecb1wq2Clk",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/uV6wHHicu9mUUVJSUGylr5-al1xUWVCSmqJbkpRnpJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDjQOr8opKvOoivQIc0rMdszP9_erKIoqTPKr8q9KyXQJ8stMCkws8U12LTTOCq8MNssMcLb0tEh093UNjDDJLk5NTjIsLzRyzskGAOZmMAY",
+      "tag": "40% OFF",
+      "extensions": [
+        "40% OFF"
+      ]
+    },
+    {
+      "position": 39,
+      "title": "GTRACING Gaming Chair",
+      "product_id": "14324878536283491548",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:14324878536283491548,headlineOfferDocid:8281760057755126441,imageDocid:13577553424554852015,rds:PC_6227596127266995141|PROD_PC_6227596127266995141,gpcid:6227596127266995141,mid:576462809008288336,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTQzMjQ4Nzg1MzYyODM0OTE1NDgiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiI4MjgxNzYwMDU3NzU1MTI2NDQxIiwiaW1hZ2VEb2NpZCI6IjEzNTc3NTUzNDI0NTU0ODUyMDE1IiwicmRzIjoiUENfNjIyNzU5NjEyNzI2Njk5NTE0MXxQUk9EX1BDXzYyMjc1OTYxMjcyNjY5OTUxNDEiLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiNjIyNzU5NjEyNzI2Njk5NTE0MSIsIm1pZCI6IjU3NjQ2MjgwOTAwODI4ODMzNiIsInB2dCI6ImhnIiwidXVsZSI6bnVsbCwiZ2wiOiJ1cyIsImhsIjoiZW4ifQ==",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTQzMjQ4Nzg1MzYyODM0OTE1NDgiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiI4MjgxNzYwMDU3NzU1MTI2NDQxIiwiaW1hZ2VEb2NpZCI6IjEzNTc3NTUzNDI0NTU0ODUyMDE1IiwicmRzIjoiUENfNjIyNzU5NjEyNzI2Njk5NTE0MXxQUk9EX1BDXzYyMjc1OTYxMjcyNjY5OTUxNDEiLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiNjIyNzU5NjEyNzI2Njk5NTE0MSIsIm1pZCI6IjU3NjQ2MjgwOTAwODI4ODMzNiIsInB2dCI6ImhnIiwidXVsZSI6bnVsbCwiZ2wiOiJ1cyIsImhsIjoiZW4ifQ%3D%3D",
+      "source": "Walmart - GTRACING",
+      "source_icon": "https://encrypted-tbn3.gstatic.com/favicon-tbn?q=tbn%3AANd9GcTnP5ISNmbEt5sfd-d6O77v8eZaWxR-UtwYkk865osEjKrS0r8udsVsfLPjH1VQBQizWhrYkhO2STFk8WaMhokVgFUhjn2NoxU",
+      "multiple_sources": true,
+      "price": "$139.99",
+      "extracted_price": 139.99,
+      "old_price": "$250",
+      "extracted_old_price": 250,
+      "rating": 4.2,
+      "reviews": 2700,
+      "snippet": "Comfortable (702 user reviews)",
+      "thumbnail": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTKTe5HULZe83Qa_0zGgeGoatX2z_6pIHVaES6s2jyyF86E4GckneEjjsxeLA",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/6YyHaXicu1mSUVJSUGylr5-al1xUWVCSmqJbkpRnrJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDvEOSTX1CPWJSrUwDkyMN6hyT091z08siTCqijcr8PQIS3QNNis2yqqsdLMwczVxT87OS3XNyiquSPVxBAAgQioR",
+      "tag": "44% OFF",
+      "extensions": [
+        "44% OFF"
+      ],
+      "delivery": "Free delivery"
+    },
+    {
+      "position": 40,
+      "title": "RESPAWN 110 Ergonomic Gaming Chair",
+      "product_id": "4066001912061579675",
+      "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:4066001912061579675,headlineOfferDocid:7201837067824878576,imageDocid:17161423598863760660,rds:PC_6320052120471554263|PROD_PC_6320052120471554263,gpcid:6320052120471554263,mid:576462685489784650,pvt:hg&hl=en&gl=us&udm=28",
+      "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNDA2NjAwMTkxMjA2MTU3OTY3NSIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjcyMDE4MzcwNjc4MjQ4Nzg1NzYiLCJpbWFnZURvY2lkIjoiMTcxNjE0MjM1OTg4NjM3NjA2NjAiLCJyZHMiOiJQQ182MzIwMDUyMTIwNDcxNTU0MjYzfFBST0RfUENfNjMyMDA1MjEyMDQ3MTU1NDI2MyIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiI2MzIwMDUyMTIwNDcxNTU0MjYzIiwibWlkIjoiNTc2NDYyNjg1NDg5Nzg0NjUwIiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+      "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNDA2NjAwMTkxMjA2MTU3OTY3NSIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjcyMDE4MzcwNjc4MjQ4Nzg1NzYiLCJpbWFnZURvY2lkIjoiMTcxNjE0MjM1OTg4NjM3NjA2NjAiLCJyZHMiOiJQQ182MzIwMDUyMTIwNDcxNTU0MjYzfFBST0RfUENfNjMyMDA1MjEyMDQ3MTU1NDI2MyIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiI2MzIwMDUyMTIwNDcxNTU0MjYzIiwibWlkIjoiNTc2NDYyNjg1NDg5Nzg0NjUwIiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+      "source": "Respawn",
+      "source_icon": "https://encrypted-tbn1.gstatic.com/favicon-tbn?q=tbn%3AANd9GcSQm_h6vPkzTDPIq2HLpAwEwFw1ndj7SMUFN1dqa8gfO99ATT4b4cc4AMdCBa1rWs4yG_SY-l1AtfgbZF3337hFzsygRWGLvscI5x3m",
+      "multiple_sources": true,
+      "price": "$189.99",
+      "extracted_price": 189.99,
+      "old_price": "$200",
+      "extracted_old_price": 200,
+      "rating": 4.5,
+      "reviews": 1500,
+      "snippet": "Comfortable (670 user reviews)",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSWvzhrwqUXCOKuL_colwzwB4-NXvMfKklB_kZunuB36I3ZDvKLahaSdSmPbQyEPO3QT3LCF2Y",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/8_mrFnicu9mYUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDg4vq8ooKi8MjXD29y71iU_OzymvKncy0fWLKPNN887OcYrPjirNK3UyNvM0jnIp8_ZJzEgMTgnODUgKrHQN8DcODDH2cXYzigQAu40vMw",
+      "tag": "5% OFF",
+      "extensions": [
+        "5% OFF"
+      ],
+      "delivery": "Free delivery"
+    }
+  ],
+  "categorized_shopping_results": [
+    {
+      "title": "Ergonomic gaming chairs",
+      "shopping_results": [
+        {
+          "position": 1,
+          "title": "Gtracing RGB Ergonomic Gaming Chair with Massage",
+          "product_id": "2786009100579933884",
+          "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:2786009100579933884,headlineOfferDocid:275746549010605838,imageDocid:17817736044044014177,rds:PC_13494000673344916720|PROD_PC_13494000673344916720,gpcid:13494000673344916720,mid:576462827527042288,pvt:hg&hl=en&gl=us&udm=28",
+          "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiIyNzg2MDA5MTAwNTc5OTMzODg0IiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiMjc1NzQ2NTQ5MDEwNjA1ODM4IiwiaW1hZ2VEb2NpZCI6IjE3ODE3NzM2MDQ0MDQ0MDE0MTc3IiwicmRzIjoiUENfMTM0OTQwMDA2NzMzNDQ5MTY3MjB8UFJPRF9QQ18xMzQ5NDAwMDY3MzM0NDkxNjcyMCIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiIxMzQ5NDAwMDY3MzM0NDkxNjcyMCIsIm1pZCI6IjU3NjQ2MjgyNzUyNzA0MjI4OCIsInB2dCI6ImhnIiwidXVsZSI6bnVsbCwiZ2wiOiJ1cyIsImhsIjoiZW4ifQ==",
+          "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiIyNzg2MDA5MTAwNTc5OTMzODg0IiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiMjc1NzQ2NTQ5MDEwNjA1ODM4IiwiaW1hZ2VEb2NpZCI6IjE3ODE3NzM2MDQ0MDQ0MDE0MTc3IiwicmRzIjoiUENfMTM0OTQwMDA2NzMzNDQ5MTY3MjB8UFJPRF9QQ18xMzQ5NDAwMDY3MzM0NDkxNjcyMCIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiIxMzQ5NDAwMDY3MzM0NDkxNjcyMCIsIm1pZCI6IjU3NjQ2MjgyNzUyNzA0MjI4OCIsInB2dCI6ImhnIiwidXVsZSI6bnVsbCwiZ2wiOiJ1cyIsImhsIjoiZW4ifQ%3D%3D",
+          "source": "gtracing.com",
+          "source_icon": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/GsYfG6oldqIdWrVr_IkAFKTJSwg6h7m2fYPyhUG1cFA0Wv9eGN9iR5cooVo2DPmWcxSY3JElCQdAskG7Sl5BzQ.png",
+          "multiple_sources": true,
+          "price": "$154.99",
+          "extracted_price": 154.99,
+          "old_price": "$220",
+          "extracted_old_price": 220,
+          "rating": 3.7,
+          "reviews": 156,
+          "thumbnail": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/GsYfG6oldqIdWrVr_IkAFKTJSwg6h7m2fYPyhUG1cFA0Wv9eGN9iR5cooVo2DPmWLrLoNTw7wevTpO2YCrphRw.jpeg",
+          "tag": "29% OFF",
+          "extensions": [
+            "29% OFF"
+          ]
+        },
+        {
+          "position": 2,
+          "title": "RESPAWN 900 Gaming Chair",
+          "product_id": "2187400660516739326",
+          "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:2187400660516739326,headlineOfferDocid:758442462413449870,imageDocid:6557289164669561449,rds:PC_6548629891200848552|PROD_PC_6548629891200848552,gpcid:6548629891200848552,mid:576462373747906371,pvt:hg&hl=en&gl=us&udm=28",
+          "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiIyMTg3NDAwNjYwNTE2NzM5MzI2IiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiNzU4NDQyNDYyNDEzNDQ5ODcwIiwiaW1hZ2VEb2NpZCI6IjY1NTcyODkxNjQ2Njk1NjE0NDkiLCJyZHMiOiJQQ182NTQ4NjI5ODkxMjAwODQ4NTUyfFBST0RfUENfNjU0ODYyOTg5MTIwMDg0ODU1MiIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiI2NTQ4NjI5ODkxMjAwODQ4NTUyIiwibWlkIjoiNTc2NDYyMzczNzQ3OTA2MzcxIiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+          "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiIyMTg3NDAwNjYwNTE2NzM5MzI2IiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiNzU4NDQyNDYyNDEzNDQ5ODcwIiwiaW1hZ2VEb2NpZCI6IjY1NTcyODkxNjQ2Njk1NjE0NDkiLCJyZHMiOiJQQ182NTQ4NjI5ODkxMjAwODQ4NTUyfFBST0RfUENfNjU0ODYyOTg5MTIwMDg0ODU1MiIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiI2NTQ4NjI5ODkxMjAwODQ4NTUyIiwibWlkIjoiNTc2NDYyMzczNzQ3OTA2MzcxIiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+          "source": "Best Buy",
+          "source_icon": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/GsYfG6oldqIdWrVr_IkAFKTJSwg6h7m2fYPyhUG1cFA0Wv9eGN9iR5cooVo2DPmWr2SEyr1W-SiG8kfIB7NI7w.png",
+          "multiple_sources": true,
+          "price": "$399.99",
+          "extracted_price": 399.99,
+          "rating": 4.5,
+          "reviews": 832,
+          "thumbnail": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/GsYfG6oldqIdWrVr_IkAFKTJSwg6h7m2fYPyhUG1cFA0Wv9eGN9iR5cooVo2DPmWkLuKyKaSYp9rWaUEuKo3wQ.jpeg"
+        },
+        {
+          "position": 3,
+          "title": "herman-miller-x-logitech-g Embody Gaming Chair Design Within Reach",
+          "product_id": "13780177952042524612",
+          "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:13780177952042524612,headlineOfferDocid:17523073329703307664,imageDocid:5553833064917854335,rds:PC_17768790926085339351|PROD_PC_17768790926085339351,gpcid:17768790926085339351,mid:576462882014733484,pvt:hg&hl=en&gl=us&udm=28",
+          "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiIxMzc4MDE3Nzk1MjA0MjUyNDYxMiIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjE3NTIzMDczMzI5NzAzMzA3NjY0IiwiaW1hZ2VEb2NpZCI6IjU1NTM4MzMwNjQ5MTc4NTQzMzUiLCJyZHMiOiJQQ18xNzc2ODc5MDkyNjA4NTMzOTM1MXxQUk9EX1BDXzE3NzY4NzkwOTI2MDg1MzM5MzUxIiwicXVlcnkiOiJnYW1pbmcrY2hhaXIiLCJncGNpZCI6IjE3NzY4NzkwOTI2MDg1MzM5MzUxIiwibWlkIjoiNTc2NDYyODgyMDE0NzMzNDg0IiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+          "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiIxMzc4MDE3Nzk1MjA0MjUyNDYxMiIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjE3NTIzMDczMzI5NzAzMzA3NjY0IiwiaW1hZ2VEb2NpZCI6IjU1NTM4MzMwNjQ5MTc4NTQzMzUiLCJyZHMiOiJQQ18xNzc2ODc5MDkyNjA4NTMzOTM1MXxQUk9EX1BDXzE3NzY4NzkwOTI2MDg1MzM5MzUxIiwicXVlcnkiOiJnYW1pbmcrY2hhaXIiLCJncGNpZCI6IjE3NzY4NzkwOTI2MDg1MzM5MzUxIiwibWlkIjoiNTc2NDYyODgyMDE0NzMzNDg0IiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+          "source": "Herman Miller",
+          "source_icon": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/GsYfG6oldqIdWrVr_IkAFKTJSwg6h7m2fYPyhUG1cFA0Wv9eGN9iR5cooVo2DPmW7nKLHc7hA7x5TcJQotqRYw.png",
+          "multiple_sources": true,
+          "price": "$2,110.00",
+          "extracted_price": 2110,
+          "rating": 4.4,
+          "reviews": 1400,
+          "thumbnail": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/GsYfG6oldqIdWrVr_IkAFKTJSwg6h7m2fYPyhUG1cFA0Wv9eGN9iR5cooVo2DPmWpbqLvUS_9do2Zlda7BJHyg.jpeg"
+        },
+        {
+          "position": 4,
+          "title": "AndaSeat Kaiser 3 Gaming Chair",
+          "product_id": "12823216477764102910",
+          "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:12823216477764102910,headlineOfferDocid:2321702129825505259,imageDocid:1656371763200486527,rds:PC_1752285178210717461|PROD_PC_1752285178210717461,gpcid:1752285178210717461,mid:576462716877556496,pvt:hg&hl=en&gl=us&udm=28",
+          "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiIxMjgyMzIxNjQ3Nzc2NDEwMjkxMCIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjIzMjE3MDIxMjk4MjU1MDUyNTkiLCJpbWFnZURvY2lkIjoiMTY1NjM3MTc2MzIwMDQ4NjUyNyIsInJkcyI6IlBDXzE3NTIyODUxNzgyMTA3MTc0NjF8UFJPRF9QQ18xNzUyMjg1MTc4MjEwNzE3NDYxIiwicXVlcnkiOiJnYW1pbmcrY2hhaXIiLCJncGNpZCI6IjE3NTIyODUxNzgyMTA3MTc0NjEiLCJtaWQiOiI1NzY0NjI3MTY4Nzc1NTY0OTYiLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0=",
+          "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiIxMjgyMzIxNjQ3Nzc2NDEwMjkxMCIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjIzMjE3MDIxMjk4MjU1MDUyNTkiLCJpbWFnZURvY2lkIjoiMTY1NjM3MTc2MzIwMDQ4NjUyNyIsInJkcyI6IlBDXzE3NTIyODUxNzgyMTA3MTc0NjF8UFJPRF9QQ18xNzUyMjg1MTc4MjEwNzE3NDYxIiwicXVlcnkiOiJnYW1pbmcrY2hhaXIiLCJncGNpZCI6IjE3NTIyODUxNzgyMTA3MTc0NjEiLCJtaWQiOiI1NzY0NjI3MTY4Nzc1NTY0OTYiLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0%3D",
+          "source": "AndaSeat",
+          "source_icon": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/GsYfG6oldqIdWrVr_IkAFKTJSwg6h7m2fYPyhUG1cFA0Wv9eGN9iR5cooVo2DPmWuyWtaP7DZn47PtJbvhp-tQ.png",
+          "multiple_sources": true,
+          "price": "$449.00",
+          "extracted_price": 449,
+          "old_price": "$489",
+          "extracted_old_price": 489,
+          "rating": 4.5,
+          "reviews": 1100,
+          "thumbnail": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/GsYfG6oldqIdWrVr_IkAFKTJSwg6h7m2fYPyhUG1cFA0Wv9eGN9iR5cooVo2DPmWebTAqiDplz0LJvbZp9Zbog.jpeg",
+          "tag": "8% OFF",
+          "extensions": [
+            "8% OFF"
+          ],
+          "delivery": "Free delivery by Wed"
+        },
+        {
+          "position": 5,
+          "title": "Flexispot GC5 Ergonomic Gaming Chair",
+          "product_id": "7357898954541908658",
+          "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:7357898954541908658,headlineOfferDocid:2927522392034898861,imageDocid:501721827048511361,rds:PC_6688387344243038527|PROD_PC_6688387344243038527,gpcid:6688387344243038527,mid:576462483921937243,pvt:hg&hl=en&gl=us&udm=28",
+          "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiI3MzU3ODk4OTU0NTQxOTA4NjU4IiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiMjkyNzUyMjM5MjAzNDg5ODg2MSIsImltYWdlRG9jaWQiOiI1MDE3MjE4MjcwNDg1MTEzNjEiLCJyZHMiOiJQQ182Njg4Mzg3MzQ0MjQzMDM4NTI3fFBST0RfUENfNjY4ODM4NzM0NDI0MzAzODUyNyIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiI2Njg4Mzg3MzQ0MjQzMDM4NTI3IiwibWlkIjoiNTc2NDYyNDgzOTIxOTM3MjQzIiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+          "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiI3MzU3ODk4OTU0NTQxOTA4NjU4IiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiMjkyNzUyMjM5MjAzNDg5ODg2MSIsImltYWdlRG9jaWQiOiI1MDE3MjE4MjcwNDg1MTEzNjEiLCJyZHMiOiJQQ182Njg4Mzg3MzQ0MjQzMDM4NTI3fFBST0RfUENfNjY4ODM4NzM0NDI0MzAzODUyNyIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiI2Njg4Mzg3MzQ0MjQzMDM4NTI3IiwibWlkIjoiNTc2NDYyNDgzOTIxOTM3MjQzIiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+          "source": "FlexiSpot.com",
+          "source_icon": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/GsYfG6oldqIdWrVr_IkAFKTJSwg6h7m2fYPyhUG1cFA0Wv9eGN9iR5cooVo2DPmWgHU0nRVTGKj5mTu-wbMB5Q.png",
+          "price": "$299.99",
+          "extracted_price": 299.99,
+          "rating": 4.6,
+          "reviews": 51,
+          "thumbnail": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/GsYfG6oldqIdWrVr_IkAFKTJSwg6h7m2fYPyhUG1cFA0Wv9eGN9iR5cooVo2DPmWSfOUNwyI3tQXBUCAyckQwQ.jpeg",
+          "delivery": "Free delivery"
+        }
+      ]
+    },
+    {
+      "title": "Fabric gaming chairs",
+      "shopping_results": [
+        {
+          "position": 1,
+          "title": "Dowinx Gaming Chair Fabric with Pocket Spring Cushion Grey",
+          "product_id": "5958761596373855216",
+          "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:5958761596373855216,headlineOfferDocid:3384579858962969156,imageDocid:6432048344597754526,rds:PC_2004564418599542491|PROD_PC_2004564418599542491,gpcid:2004564418599542491,mid:576462794991512741,pvt:hg&hl=en&gl=us&udm=28",
+          "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiI1OTU4NzYxNTk2MzczODU1MjE2IiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiMzM4NDU3OTg1ODk2Mjk2OTE1NiIsImltYWdlRG9jaWQiOiI2NDMyMDQ4MzQ0NTk3NzU0NTI2IiwicmRzIjoiUENfMjAwNDU2NDQxODU5OTU0MjQ5MXxQUk9EX1BDXzIwMDQ1NjQ0MTg1OTk1NDI0OTEiLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiMjAwNDU2NDQxODU5OTU0MjQ5MSIsIm1pZCI6IjU3NjQ2Mjc5NDk5MTUxMjc0MSIsInB2dCI6ImhnIiwidXVsZSI6bnVsbCwiZ2wiOiJ1cyIsImhsIjoiZW4ifQ==",
+          "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiI1OTU4NzYxNTk2MzczODU1MjE2IiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiMzM4NDU3OTg1ODk2Mjk2OTE1NiIsImltYWdlRG9jaWQiOiI2NDMyMDQ4MzQ0NTk3NzU0NTI2IiwicmRzIjoiUENfMjAwNDU2NDQxODU5OTU0MjQ5MXxQUk9EX1BDXzIwMDQ1NjQ0MTg1OTk1NDI0OTEiLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiMjAwNDU2NDQxODU5OTU0MjQ5MSIsIm1pZCI6IjU3NjQ2Mjc5NDk5MTUxMjc0MSIsInB2dCI6ImhnIiwidXVsZSI6bnVsbCwiZ2wiOiJ1cyIsImhsIjoiZW4ifQ%3D%3D",
+          "source": "Best Buy",
+          "source_icon": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/GsYfG6oldqIdWrVr_IkAFKuI9rUa9X8ExGf8lsxGvlL4NGnz4jH2OE4EYoxe_l5TYmYg_Y5xkhU6UeZdC0e4NA.png",
+          "multiple_sources": true,
+          "price": "$159.99",
+          "extracted_price": 159.99,
+          "old_price": "$210",
+          "extracted_old_price": 210,
+          "rating": 4.9,
+          "reviews": 253,
+          "thumbnail": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/GsYfG6oldqIdWrVr_IkAFKuI9rUa9X8ExGf8lsxGvlL4NGnz4jH2OE4EYoxe_l5TGB1OjIhQR_qk_ChMMrQvog.jpeg",
+          "tag": "23% OFF",
+          "extensions": [
+            "23% OFF"
+          ]
+        },
+        {
+          "position": 2,
+          "title": "Dowinx Fabric Gaming Chair for Adults with Pocket Spring Cushion, Massage Lumbar Support, Footrest, Breathable High Back Office Chair, Blue, 300lbs",
+          "product_id": "107783553985917468",
+          "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=productid:107783553985917468,headlineOfferDocid:107783553985917468,imageDocid:3983591028348530539,rds:PC_452200695179641335|PROD_PC_452200695179641335,pvt:hg&hl=en&gl=us&udm=28",
+          "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiMTA3NzgzNTUzOTg1OTE3NDY4IiwiY2F0YWxvZ2lkIjpudWxsLCJoZWFkbGluZU9mZmVyRG9jaWQiOiIxMDc3ODM1NTM5ODU5MTc0NjgiLCJpbWFnZURvY2lkIjoiMzk4MzU5MTAyODM0ODUzMDUzOSIsInJkcyI6IlBDXzQ1MjIwMDY5NTE3OTY0MTMzNXxQUk9EX1BDXzQ1MjIwMDY5NTE3OTY0MTMzNSIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOm51bGwsIm1pZCI6bnVsbCwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+          "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiMTA3NzgzNTUzOTg1OTE3NDY4IiwiY2F0YWxvZ2lkIjpudWxsLCJoZWFkbGluZU9mZmVyRG9jaWQiOiIxMDc3ODM1NTM5ODU5MTc0NjgiLCJpbWFnZURvY2lkIjoiMzk4MzU5MTAyODM0ODUzMDUzOSIsInJkcyI6IlBDXzQ1MjIwMDY5NTE3OTY0MTMzNXxQUk9EX1BDXzQ1MjIwMDY5NTE3OTY0MTMzNSIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOm51bGwsIm1pZCI6bnVsbCwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+          "source": "Walmart - dowinxCSteam",
+          "source_icon": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/GsYfG6oldqIdWrVr_IkAFKuI9rUa9X8ExGf8lsxGvlL4NGnz4jH2OE4EYoxe_l5TMSHctEqwxXFG-oCgilOnTQ.png",
+          "price": "$119.99",
+          "extracted_price": 119.99,
+          "rating": 4.7,
+          "reviews": 3,
+          "thumbnail": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/GsYfG6oldqIdWrVr_IkAFKuI9rUa9X8ExGf8lsxGvlL4NGnz4jH2OE4EYoxe_l5TrdKhYa1-VojiUaNk2caZDQ.jpeg",
+          "delivery": "Free delivery"
+        },
+        {
+          "position": 3,
+          "title": "RESPAWN 110 Ergonomic Gaming Chair",
+          "product_id": "4066001912061579675",
+          "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:4066001912061579675,headlineOfferDocid:7201837067824878576,imageDocid:17161423598863760660,rds:PC_6320052120471554263|PROD_PC_6320052120471554263,gpcid:6320052120471554263,mid:576462685489784650,pvt:hg&hl=en&gl=us&udm=28",
+          "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiI0MDY2MDAxOTEyMDYxNTc5Njc1IiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiNzIwMTgzNzA2NzgyNDg3ODU3NiIsImltYWdlRG9jaWQiOiIxNzE2MTQyMzU5ODg2Mzc2MDY2MCIsInJkcyI6IlBDXzYzMjAwNTIxMjA0NzE1NTQyNjN8UFJPRF9QQ182MzIwMDUyMTIwNDcxNTU0MjYzIiwicXVlcnkiOiJnYW1pbmcrY2hhaXIiLCJncGNpZCI6IjYzMjAwNTIxMjA0NzE1NTQyNjMiLCJtaWQiOiI1NzY0NjI2ODU0ODk3ODQ2NTAiLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0=",
+          "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiI0MDY2MDAxOTEyMDYxNTc5Njc1IiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiNzIwMTgzNzA2NzgyNDg3ODU3NiIsImltYWdlRG9jaWQiOiIxNzE2MTQyMzU5ODg2Mzc2MDY2MCIsInJkcyI6IlBDXzYzMjAwNTIxMjA0NzE1NTQyNjN8UFJPRF9QQ182MzIwMDUyMTIwNDcxNTU0MjYzIiwicXVlcnkiOiJnYW1pbmcrY2hhaXIiLCJncGNpZCI6IjYzMjAwNTIxMjA0NzE1NTQyNjMiLCJtaWQiOiI1NzY0NjI2ODU0ODk3ODQ2NTAiLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0%3D",
+          "source": "Respawn",
+          "source_icon": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/GsYfG6oldqIdWrVr_IkAFKuI9rUa9X8ExGf8lsxGvlL4NGnz4jH2OE4EYoxe_l5TI9cR6tdpadxOh4uquz_3sQ.png",
+          "multiple_sources": true,
+          "price": "$189.99",
+          "extracted_price": 189.99,
+          "old_price": "$200",
+          "extracted_old_price": 200,
+          "rating": 4.5,
+          "reviews": 1500,
+          "thumbnail": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/GsYfG6oldqIdWrVr_IkAFKuI9rUa9X8ExGf8lsxGvlL4NGnz4jH2OE4EYoxe_l5Tgx5vcqtf1Z690RDt0mQO-Q.jpeg",
+          "tag": "5% OFF",
+          "extensions": [
+            "5% OFF"
+          ],
+          "delivery": "Free delivery"
+        },
+        {
+          "position": 4,
+          "title": "Corsair TC100 Relaxed Gaming Chair",
+          "product_id": "12759959347430358586",
+          "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:12759959347430358586,headlineOfferDocid:14418350967533182454,imageDocid:18171573148219411563,rds:PC_2710929963052485119|PROD_PC_2710929963052485119,gpcid:2710929963052485119,mid:576462446001910617,pvt:hg&hl=en&gl=us&udm=28",
+          "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiIxMjc1OTk1OTM0NzQzMDM1ODU4NiIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjE0NDE4MzUwOTY3NTMzMTgyNDU0IiwiaW1hZ2VEb2NpZCI6IjE4MTcxNTczMTQ4MjE5NDExNTYzIiwicmRzIjoiUENfMjcxMDkyOTk2MzA1MjQ4NTExOXxQUk9EX1BDXzI3MTA5Mjk5NjMwNTI0ODUxMTkiLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiMjcxMDkyOTk2MzA1MjQ4NTExOSIsIm1pZCI6IjU3NjQ2MjQ0NjAwMTkxMDYxNyIsInB2dCI6ImhnIiwidXVsZSI6bnVsbCwiZ2wiOiJ1cyIsImhsIjoiZW4ifQ==",
+          "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiIxMjc1OTk1OTM0NzQzMDM1ODU4NiIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjE0NDE4MzUwOTY3NTMzMTgyNDU0IiwiaW1hZ2VEb2NpZCI6IjE4MTcxNTczMTQ4MjE5NDExNTYzIiwicmRzIjoiUENfMjcxMDkyOTk2MzA1MjQ4NTExOXxQUk9EX1BDXzI3MTA5Mjk5NjMwNTI0ODUxMTkiLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiMjcxMDkyOTk2MzA1MjQ4NTExOSIsIm1pZCI6IjU3NjQ2MjQ0NjAwMTkxMDYxNyIsInB2dCI6ImhnIiwidXVsZSI6bnVsbCwiZ2wiOiJ1cyIsImhsIjoiZW4ifQ%3D%3D",
+          "source": "Best Buy",
+          "source_icon": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/GsYfG6oldqIdWrVr_IkAFKuI9rUa9X8ExGf8lsxGvlL4NGnz4jH2OE4EYoxe_l5Tr6ulXAGIbeq8rhCovYSnig.png",
+          "multiple_sources": true,
+          "price": "$269.99",
+          "extracted_price": 269.99,
+          "rating": 4.3,
+          "reviews": 1000,
+          "thumbnail": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/GsYfG6oldqIdWrVr_IkAFKuI9rUa9X8ExGf8lsxGvlL4NGnz4jH2OE4EYoxe_l5TMJCICiKQWhVJhQM6K-Aycw.jpeg"
+        },
+        {
+          "position": 5,
+          "title": "Dowinx Fabric Gaming Chair with Pocket Spring & Massage Support 6657K",
+          "product_id": "5868751148759318215",
+          "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:5868751148759318215,headlineOfferDocid:3444577651854717862,imageDocid:7695018395852070310,rds:PC_17099230266658513950|PROD_PC_17099230266658513950,gpcid:17099230266658513950,mid:576462531552072854,pvt:hg&hl=en&gl=us&udm=28",
+          "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiI1ODY4NzUxMTQ4NzU5MzE4MjE1IiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiMzQ0NDU3NzY1MTg1NDcxNzg2MiIsImltYWdlRG9jaWQiOiI3Njk1MDE4Mzk1ODUyMDcwMzEwIiwicmRzIjoiUENfMTcwOTkyMzAyNjY2NTg1MTM5NTB8UFJPRF9QQ18xNzA5OTIzMDI2NjY1ODUxMzk1MCIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiIxNzA5OTIzMDI2NjY1ODUxMzk1MCIsIm1pZCI6IjU3NjQ2MjUzMTU1MjA3Mjg1NCIsInB2dCI6ImhnIiwidXVsZSI6bnVsbCwiZ2wiOiJ1cyIsImhsIjoiZW4ifQ==",
+          "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiI1ODY4NzUxMTQ4NzU5MzE4MjE1IiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiMzQ0NDU3NzY1MTg1NDcxNzg2MiIsImltYWdlRG9jaWQiOiI3Njk1MDE4Mzk1ODUyMDcwMzEwIiwicmRzIjoiUENfMTcwOTkyMzAyNjY2NTg1MTM5NTB8UFJPRF9QQ18xNzA5OTIzMDI2NjY1ODUxMzk1MCIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiIxNzA5OTIzMDI2NjY1ODUxMzk1MCIsIm1pZCI6IjU3NjQ2MjUzMTU1MjA3Mjg1NCIsInB2dCI6ImhnIiwidXVsZSI6bnVsbCwiZ2wiOiJ1cyIsImhsIjoiZW4ifQ%3D%3D",
+          "source": "Dowinx",
+          "source_icon": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/GsYfG6oldqIdWrVr_IkAFKuI9rUa9X8ExGf8lsxGvlL4NGnz4jH2OE4EYoxe_l5TqtLWg8xJXUQQxJEI2ohL1g.png",
+          "multiple_sources": true,
+          "price": "$179.99",
+          "extracted_price": 179.99,
+          "rating": 5,
+          "reviews": 105,
+          "thumbnail": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/GsYfG6oldqIdWrVr_IkAFKuI9rUa9X8ExGf8lsxGvlL4NGnz4jH2OE4EYoxe_l5TkEAVZm2lsMNa3441PSH6aA.jpeg",
+          "delivery": "Free delivery by Wed"
+        }
+      ]
+    },
+    {
+      "title": "Reclining gaming chairs",
+      "shopping_results": [
+        {
+          "position": 1,
+          "title": "RESPAWN 900 Gaming Chair",
+          "product_id": "2187400660516739326",
+          "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:2187400660516739326,headlineOfferDocid:758442462413449870,imageDocid:6557289164669561449,rds:PC_6548629891200848552|PROD_PC_6548629891200848552,gpcid:6548629891200848552,mid:576462373747906371,pvt:hg&hl=en&gl=us&udm=28",
+          "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiIyMTg3NDAwNjYwNTE2NzM5MzI2IiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiNzU4NDQyNDYyNDEzNDQ5ODcwIiwiaW1hZ2VEb2NpZCI6IjY1NTcyODkxNjQ2Njk1NjE0NDkiLCJyZHMiOiJQQ182NTQ4NjI5ODkxMjAwODQ4NTUyfFBST0RfUENfNjU0ODYyOTg5MTIwMDg0ODU1MiIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiI2NTQ4NjI5ODkxMjAwODQ4NTUyIiwibWlkIjoiNTc2NDYyMzczNzQ3OTA2MzcxIiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+          "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiIyMTg3NDAwNjYwNTE2NzM5MzI2IiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiNzU4NDQyNDYyNDEzNDQ5ODcwIiwiaW1hZ2VEb2NpZCI6IjY1NTcyODkxNjQ2Njk1NjE0NDkiLCJyZHMiOiJQQ182NTQ4NjI5ODkxMjAwODQ4NTUyfFBST0RfUENfNjU0ODYyOTg5MTIwMDg0ODU1MiIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiI2NTQ4NjI5ODkxMjAwODQ4NTUyIiwibWlkIjoiNTc2NDYyMzczNzQ3OTA2MzcxIiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+          "source": "Best Buy",
+          "source_icon": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/GsYfG6oldqIdWrVr_IkAFNa4bmVOArGGu_LsI7rJWAo0iT7yp4_fdZ1zai8PfzTwQaWE8qVQK0RFlos5hIrBzA.png",
+          "multiple_sources": true,
+          "price": "$399.99",
+          "extracted_price": 399.99,
+          "rating": 4.5,
+          "reviews": 832,
+          "thumbnail": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/GsYfG6oldqIdWrVr_IkAFNa4bmVOArGGu_LsI7rJWAo0iT7yp4_fdZ1zai8PfzTwNxperKXL9YSc9iNd-rCoew.jpeg"
+        },
+        {
+          "position": 2,
+          "title": "Total Tactic Massage Video Gaming Recliner Chair",
+          "product_id": "16215599933359288412",
+          "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:16215599933359288412,headlineOfferDocid:2451716429098504036,imageDocid:464707400194670557,rds:PC_9232575643397650768|PROD_PC_9232575643397650768,gpcid:9232575643397650768,mid:576462874597971301,pvt:hg&hl=en&gl=us&udm=28",
+          "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiIxNjIxNTU5OTkzMzM1OTI4ODQxMiIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjI0NTE3MTY0MjkwOTg1MDQwMzYiLCJpbWFnZURvY2lkIjoiNDY0NzA3NDAwMTk0NjcwNTU3IiwicmRzIjoiUENfOTIzMjU3NTY0MzM5NzY1MDc2OHxQUk9EX1BDXzkyMzI1NzU2NDMzOTc2NTA3NjgiLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiOTIzMjU3NTY0MzM5NzY1MDc2OCIsIm1pZCI6IjU3NjQ2Mjg3NDU5Nzk3MTMwMSIsInB2dCI6ImhnIiwidXVsZSI6bnVsbCwiZ2wiOiJ1cyIsImhsIjoiZW4ifQ==",
+          "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiIxNjIxNTU5OTkzMzM1OTI4ODQxMiIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjI0NTE3MTY0MjkwOTg1MDQwMzYiLCJpbWFnZURvY2lkIjoiNDY0NzA3NDAwMTk0NjcwNTU3IiwicmRzIjoiUENfOTIzMjU3NTY0MzM5NzY1MDc2OHxQUk9EX1BDXzkyMzI1NzU2NDMzOTc2NTA3NjgiLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiOTIzMjU3NTY0MzM5NzY1MDc2OCIsIm1pZCI6IjU3NjQ2Mjg3NDU5Nzk3MTMwMSIsInB2dCI6ImhnIiwidXVsZSI6bnVsbCwiZ2wiOiJ1cyIsImhsIjoiZW4ifQ%3D%3D",
+          "source": "Costway",
+          "source_icon": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/GsYfG6oldqIdWrVr_IkAFNa4bmVOArGGu_LsI7rJWAo0iT7yp4_fdZ1zai8PfzTw5bcSSkcy3GEpRkgKd5DiQg.png",
+          "multiple_sources": true,
+          "price": "$305.10",
+          "extracted_price": 305.1,
+          "old_price": "$558",
+          "extracted_old_price": 558,
+          "rating": 4.4,
+          "reviews": 36,
+          "thumbnail": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/GsYfG6oldqIdWrVr_IkAFNa4bmVOArGGu_LsI7rJWAo0iT7yp4_fdZ1zai8PfzTwWJuxyw8YtvOJIa3gSL5m4A.jpeg",
+          "tag": "45% OFF",
+          "extensions": [
+            "45% OFF"
+          ],
+          "delivery": "Free delivery by Tue"
+        },
+        {
+          "position": 3,
+          "title": "Gaming Recliner Chair GT208M",
+          "product_id": "6172763830927050191",
+          "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:6172763830927050191,headlineOfferDocid:17152722502797425204,imageDocid:11567586053029359830,rds:PC_2709048762655160930|PROD_PC_2709048762655160930,gpcid:2709048762655160930,mid:576462900312069621,pvt:hg&hl=en&gl=us&udm=28",
+          "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiI2MTcyNzYzODMwOTI3MDUwMTkxIiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiMTcxNTI3MjI1MDI3OTc0MjUyMDQiLCJpbWFnZURvY2lkIjoiMTE1Njc1ODYwNTMwMjkzNTk4MzAiLCJyZHMiOiJQQ18yNzA5MDQ4NzYyNjU1MTYwOTMwfFBST0RfUENfMjcwOTA0ODc2MjY1NTE2MDkzMCIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiIyNzA5MDQ4NzYyNjU1MTYwOTMwIiwibWlkIjoiNTc2NDYyOTAwMzEyMDY5NjIxIiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+          "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiI2MTcyNzYzODMwOTI3MDUwMTkxIiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiMTcxNTI3MjI1MDI3OTc0MjUyMDQiLCJpbWFnZURvY2lkIjoiMTE1Njc1ODYwNTMwMjkzNTk4MzAiLCJyZHMiOiJQQ18yNzA5MDQ4NzYyNjU1MTYwOTMwfFBST0RfUENfMjcwOTA0ODc2MjY1NTE2MDkzMCIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiIyNzA5MDQ4NzYyNjU1MTYwOTMwIiwibWlkIjoiNTc2NDYyOTAwMzEyMDY5NjIxIiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+          "source": "Walmart",
+          "source_icon": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/GsYfG6oldqIdWrVr_IkAFNa4bmVOArGGu_LsI7rJWAo0iT7yp4_fdZ1zai8PfzTwdY8coGk2RMoNST3VXc8IOw.png",
+          "price": "$189.99",
+          "extracted_price": 189.99,
+          "rating": 3.2,
+          "reviews": 8,
+          "thumbnail": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/GsYfG6oldqIdWrVr_IkAFNa4bmVOArGGu_LsI7rJWAo0iT7yp4_fdZ1zai8PfzTw0SkKoGywVgrFJzHuhfUOAA.jpeg",
+          "delivery": "Free delivery"
+        },
+        {
+          "position": 4,
+          "title": "Gtracing RGB Ergonomic Gaming Chair with Massage",
+          "product_id": "2786009100579933884",
+          "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:2786009100579933884,headlineOfferDocid:275746549010605838,imageDocid:17817736044044014177,rds:PC_13494000673344916720|PROD_PC_13494000673344916720,gpcid:13494000673344916720,mid:576462827527042288,pvt:hg&hl=en&gl=us&udm=28",
+          "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiIyNzg2MDA5MTAwNTc5OTMzODg0IiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiMjc1NzQ2NTQ5MDEwNjA1ODM4IiwiaW1hZ2VEb2NpZCI6IjE3ODE3NzM2MDQ0MDQ0MDE0MTc3IiwicmRzIjoiUENfMTM0OTQwMDA2NzMzNDQ5MTY3MjB8UFJPRF9QQ18xMzQ5NDAwMDY3MzM0NDkxNjcyMCIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiIxMzQ5NDAwMDY3MzM0NDkxNjcyMCIsIm1pZCI6IjU3NjQ2MjgyNzUyNzA0MjI4OCIsInB2dCI6ImhnIiwidXVsZSI6bnVsbCwiZ2wiOiJ1cyIsImhsIjoiZW4ifQ==",
+          "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiIyNzg2MDA5MTAwNTc5OTMzODg0IiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiMjc1NzQ2NTQ5MDEwNjA1ODM4IiwiaW1hZ2VEb2NpZCI6IjE3ODE3NzM2MDQ0MDQ0MDE0MTc3IiwicmRzIjoiUENfMTM0OTQwMDA2NzMzNDQ5MTY3MjB8UFJPRF9QQ18xMzQ5NDAwMDY3MzM0NDkxNjcyMCIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiIxMzQ5NDAwMDY3MzM0NDkxNjcyMCIsIm1pZCI6IjU3NjQ2MjgyNzUyNzA0MjI4OCIsInB2dCI6ImhnIiwidXVsZSI6bnVsbCwiZ2wiOiJ1cyIsImhsIjoiZW4ifQ%3D%3D",
+          "source": "gtracing.com",
+          "source_icon": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/GsYfG6oldqIdWrVr_IkAFNa4bmVOArGGu_LsI7rJWAo0iT7yp4_fdZ1zai8PfzTwNKbXDox6WtyBct6l_auaRw.png",
+          "multiple_sources": true,
+          "price": "$154.99",
+          "extracted_price": 154.99,
+          "old_price": "$220",
+          "extracted_old_price": 220,
+          "rating": 3.7,
+          "reviews": 156,
+          "thumbnail": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/GsYfG6oldqIdWrVr_IkAFNa4bmVOArGGu_LsI7rJWAo0iT7yp4_fdZ1zai8PfzTw44-2N-h1OCw-ehh4jy9ctQ.jpeg",
+          "tag": "29% OFF",
+          "extensions": [
+            "29% OFF"
+          ]
+        },
+        {
+          "position": 5,
+          "title": "ORRD E-Sports Gaming Chair",
+          "product_id": "6269234172871937267",
+          "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:6269234172871937267,headlineOfferDocid:1984566036485810532,imageDocid:14244242476795641370,gpcid:1487951559966674138,mid:576462542628663261,pvt:hg&hl=en&gl=us&udm=28",
+          "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiI2MjY5MjM0MTcyODcxOTM3MjY3IiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiMTk4NDU2NjAzNjQ4NTgxMDUzMiIsImltYWdlRG9jaWQiOiIxNDI0NDI0MjQ3Njc5NTY0MTM3MCIsInJkcyI6IiIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiIxNDg3OTUxNTU5OTY2Njc0MTM4IiwibWlkIjoiNTc2NDYyNTQyNjI4NjYzMjYxIiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+          "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiI2MjY5MjM0MTcyODcxOTM3MjY3IiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiMTk4NDU2NjAzNjQ4NTgxMDUzMiIsImltYWdlRG9jaWQiOiIxNDI0NDI0MjQ3Njc5NTY0MTM3MCIsInJkcyI6IiIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiIxNDg3OTUxNTU5OTY2Njc0MTM4IiwibWlkIjoiNTc2NDYyNTQyNjI4NjYzMjYxIiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+          "source": "Target",
+          "source_icon": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/GsYfG6oldqIdWrVr_IkAFNa4bmVOArGGu_LsI7rJWAo0iT7yp4_fdZ1zai8PfzTwwHT9kED0DVrg0NT0x8GBww.png",
+          "price": "$135.99",
+          "extracted_price": 135.99,
+          "old_price": "$230",
+          "extracted_old_price": 230,
+          "thumbnail": "https://serpapi.com/searches/69a9a01bfbbebbb4d510194e/images/GsYfG6oldqIdWrVr_IkAFNa4bmVOArGGu_LsI7rJWAo0iT7yp4_fdZ1zai8PfzTwug-QXh-nE_I8J3DypDkacA.jpeg",
+          "tag": "40% OFF",
+          "extensions": [
+            "40% OFF"
+          ],
+          "delivery": "Free delivery"
+        }
+      ]
+    },
+    {
+      "title": "Large & tall gaming chairs",
+      "shopping_results": [
+        {
+          "position": 1,
+          "title": "Dowinx Gaming Chair",
+          "product_id": "11439449369948592488",
+          "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:11439449369948592488,headlineOfferDocid:11550533586200040278,imageDocid:9448555588780493478,rds:PC_6507190814576114138|PROD_PC_6507190814576114138,gpcid:6507190814576114138,mid:576462845907855197,pvt:hg&hl=en&gl=us&udm=28",
+          "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiIxMTQzOTQ0OTM2OTk0ODU5MjQ4OCIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjExNTUwNTMzNTg2MjAwMDQwMjc4IiwiaW1hZ2VEb2NpZCI6Ijk0NDg1NTU1ODg3ODA0OTM0NzgiLCJyZHMiOiJQQ182NTA3MTkwODE0NTc2MTE0MTM4fFBST0RfUENfNjUwNzE5MDgxNDU3NjExNDEzOCIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiI2NTA3MTkwODE0NTc2MTE0MTM4IiwibWlkIjoiNTc2NDYyODQ1OTA3ODU1MTk3IiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+          "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiIxMTQzOTQ0OTM2OTk0ODU5MjQ4OCIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjExNTUwNTMzNTg2MjAwMDQwMjc4IiwiaW1hZ2VEb2NpZCI6Ijk0NDg1NTU1ODg3ODA0OTM0NzgiLCJyZHMiOiJQQ182NTA3MTkwODE0NTc2MTE0MTM4fFBST0RfUENfNjUwNzE5MDgxNDU3NjExNDEzOCIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiI2NTA3MTkwODE0NTc2MTE0MTM4IiwibWlkIjoiNTc2NDYyODQ1OTA3ODU1MTk3IiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+          "source": "Dowinx",
+          "source_icon": "https://encrypted-tbn3.gstatic.com/favicon-tbn?q=tbn%3AANd9GcQHTHDQXJYMQ80a0b0EQd10uszDS7QgEqPMBvkFtbvG6-ksxmyJvG81_9eajuWSOtZb27m-22SRpTcx93jgrhvC08lR",
+          "multiple_sources": true,
+          "price": "$139.99",
+          "extracted_price": 139.99,
+          "old_price": "$220",
+          "extracted_old_price": 220,
+          "rating": 4.9,
+          "reviews": 170,
+          "thumbnail": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRazdeVPno8IybWIZEbEm6kUVBPHP8xiyPst1YaozVtLXF2laZ0nfsMgY7T8_7GaciWgz6SPHYZ",
+          "serpapi_thumbnail": "https://serpapi.com/images/url/vyNPRHicu9mUUVJSUGylr5-al1xUWVCSmqJbkpRnpJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDkqsSkkNC8jLt_CsTAr3jHJNcs01yw4NcwrwCLCoyKwMKC4xjEzMrwor8YlwM8pJjDLISyv2TY80D7GIN3dPTM4MT68yCw7wiIwCAM6-L58",
+          "tag": "36% OFF",
+          "extensions": [
+            "36% OFF"
+          ],
+          "delivery": "Free delivery by Wed"
+        },
+        {
+          "position": 2,
+          "title": "GTPlayer - Big and Tall Gaming Chair Wide Ergonomic Office Chair with Deluxe Embossing Leather Computer Chair - Black",
+          "product_id": "10878042032702451529",
+          "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=productid:10878042032702451529,headlineOfferDocid:10878042032702451529,imageDocid:13879494591567973166,rds:PC_10672533090383913453|PROD_PC_10672533090383913453,pvt:hg&hl=en&gl=us&udm=28",
+          "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiMTA4NzgwNDIwMzI3MDI0NTE1MjkiLCJjYXRhbG9naWQiOm51bGwsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjEwODc4MDQyMDMyNzAyNDUxNTI5IiwiaW1hZ2VEb2NpZCI6IjEzODc5NDk0NTkxNTY3OTczMTY2IiwicmRzIjoiUENfMTA2NzI1MzMwOTAzODM5MTM0NTN8UFJPRF9QQ18xMDY3MjUzMzA5MDM4MzkxMzQ1MyIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOm51bGwsIm1pZCI6bnVsbCwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+          "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiMTA4NzgwNDIwMzI3MDI0NTE1MjkiLCJjYXRhbG9naWQiOm51bGwsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjEwODc4MDQyMDMyNzAyNDUxNTI5IiwiaW1hZ2VEb2NpZCI6IjEzODc5NDk0NTkxNTY3OTczMTY2IiwicmRzIjoiUENfMTA2NzI1MzMwOTAzODM5MTM0NTN8UFJPRF9QQ18xMDY3MjUzMzA5MDM4MzkxMzQ1MyIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOm51bGwsIm1pZCI6bnVsbCwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+          "source": "Best Buy",
+          "source_icon": "https://encrypted-tbn1.gstatic.com/favicon-tbn?q=tbn%3AANd9GcTT0Tmy1Tfrj2gTx9YogV9JASOlx23rpuvmGNx4Bq5y8RSu8-Z0lLHF-bSjuIKJIIqtvp6tbLoEo8gc01Ho4x7nq1feVYguWCY",
+          "price": "$177.99",
+          "extracted_price": 177.99,
+          "old_price": "$300",
+          "extracted_old_price": 300,
+          "rating": 4.2,
+          "reviews": 106,
+          "thumbnail": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQXIrXXkNPhdlsp7Zowbx5Omus8aWK-htnhIEyv6BoTLK7Vo1CcL4tGgbYq4FqP8spweYy2xPD0",
+          "serpapi_thumbnail": "https://serpapi.com/images/url/GWGOJXicDcnLCoJAFADQL1JLLE2I6CmimEHk2E5nxJFyHt5bOtv-sr-psz3fD0dUEDpOI-hgFDbMwlq4dgtYYUdtKnsHuFSqE-1Gr_8XbjO2iuiFxAMhjyzn7AnKv8uxnhbn_gVBVSQWR8Hjo3kvd_KaJv5Nzvc09TBq61J7J50HoMamNO6UH2Y_3EMv2A",
+          "tag": "40% OFF",
+          "extensions": [
+            "40% OFF"
+          ]
+        },
+        {
+          "position": 3,
+          "title": "Jonpony Ergonomic Big & Tall Gaming Chair, High Back Office Chair with Adjustable 360 Swivel, Footrest, Headrest & Lumbar Support for 8 Hours Comfort,",
+          "product_id": "7254249078011883637",
+          "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=productid:7254249078011883637,headlineOfferDocid:7254249078011883637,imageDocid:11831290094952072753,rds:PC_18168208437913697|PROD_PC_18168208437913697,pvt:hg&hl=en&gl=us&udm=28",
+          "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiNzI1NDI0OTA3ODAxMTg4MzYzNyIsImNhdGFsb2dpZCI6bnVsbCwiaGVhZGxpbmVPZmZlckRvY2lkIjoiNzI1NDI0OTA3ODAxMTg4MzYzNyIsImltYWdlRG9jaWQiOiIxMTgzMTI5MDA5NDk1MjA3Mjc1MyIsInJkcyI6IlBDXzE4MTY4MjA4NDM3OTEzNjk3fFBST0RfUENfMTgxNjgyMDg0Mzc5MTM2OTciLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjpudWxsLCJtaWQiOm51bGwsInB2dCI6ImhnIiwidXVsZSI6bnVsbCwiZ2wiOiJ1cyIsImhsIjoiZW4ifQ==",
+          "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjoiNzI1NDI0OTA3ODAxMTg4MzYzNyIsImNhdGFsb2dpZCI6bnVsbCwiaGVhZGxpbmVPZmZlckRvY2lkIjoiNzI1NDI0OTA3ODAxMTg4MzYzNyIsImltYWdlRG9jaWQiOiIxMTgzMTI5MDA5NDk1MjA3Mjc1MyIsInJkcyI6IlBDXzE4MTY4MjA4NDM3OTEzNjk3fFBST0RfUENfMTgxNjgyMDg0Mzc5MTM2OTciLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjpudWxsLCJtaWQiOm51bGwsInB2dCI6ImhnIiwidXVsZSI6bnVsbCwiZ2wiOiJ1cyIsImhsIjoiZW4ifQ%3D%3D",
+          "source": "Walmart - JONPONY",
+          "source_icon": "https://encrypted-tbn3.gstatic.com/favicon-tbn?q=tbn%3AANd9GcTnP5ISNmbEt5sfd-d6O77v8eZaWxR-UtwYkk865osEjKrS0r8udsVsfLPjH1VQBQizWhrYkhO2STFk8WaMhokVgFUhjn2NoxU",
+          "price": "$99.89",
+          "extracted_price": 99.89,
+          "old_price": "$190",
+          "extracted_old_price": 190,
+          "rating": 3.7,
+          "reviews": 900,
+          "thumbnail": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQPmaENbNIo1_mIIP1QM0bb5_1LxLPas6WRW55jpk44p_1sCLYoQvUKvs4AkXhiOIGs8SAe0PQ",
+          "serpapi_thumbnail": "https://serpapi.com/images/url/ET0Rx3icDcndCoIwGADQJ0oduCghYoTIyGwrwroa2xRdsp_6htRlj9nb1Lk9388YY4AiTXunn-8Q-24RlUPJAFFGoxPtbQqjD8G4YfvY_K8gTbeuNGdWlo1qqEfCUsoQP2RKYYHqV80kLNtTi_E9THkeBIJdffN8vuxnyMl0Hc2RVrA6kz5j_AdVPC3B",
+          "tag": "47% OFF",
+          "extensions": [
+            "47% OFF"
+          ],
+          "delivery": "Free delivery"
+        },
+        {
+          "position": 4,
+          "title": "GTRACING Big and Tall Gaming Chair 400lbs Heavy Duty Office Chair with Foot Rest & Ergonomic Pocket Spring Lumbar Support",
+          "product_id": "4809605916168100186",
+          "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:4809605916168100186,headlineOfferDocid:9802059752364062326,imageDocid:2208376480957535564,gpcid:1214286258805706190,mid:576462529888404054,pvt:hg&hl=en&gl=us&udm=28",
+          "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiI0ODA5NjA1OTE2MTY4MTAwMTg2IiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiOTgwMjA1OTc1MjM2NDA2MjMyNiIsImltYWdlRG9jaWQiOiIyMjA4Mzc2NDgwOTU3NTM1NTY0IiwicmRzIjoiIiwicXVlcnkiOiJnYW1pbmcrY2hhaXIiLCJncGNpZCI6IjEyMTQyODYyNTg4MDU3MDYxOTAiLCJtaWQiOiI1NzY0NjI1Mjk4ODg0MDQwNTQiLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0=",
+          "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiI0ODA5NjA1OTE2MTY4MTAwMTg2IiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiOTgwMjA1OTc1MjM2NDA2MjMyNiIsImltYWdlRG9jaWQiOiIyMjA4Mzc2NDgwOTU3NTM1NTY0IiwicmRzIjoiIiwicXVlcnkiOiJnYW1pbmcrY2hhaXIiLCJncGNpZCI6IjEyMTQyODYyNTg4MDU3MDYxOTAiLCJtaWQiOiI1NzY0NjI1Mjk4ODg0MDQwNTQiLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0%3D",
+          "source": "gtracing.com",
+          "source_icon": "https://encrypted-tbn1.gstatic.com/favicon-tbn?q=tbn%3AANd9GcR_EqQL8pQblBvB3-7Dkb1Iz1EdDBLzOfCf0usphs1Fn26F2FUZaZYQA1pcIL2R-EwhoP1NqYAKLTbFnOQESakaNnmfXCA",
+          "price": "$209.99",
+          "extracted_price": 209.99,
+          "old_price": "$300",
+          "extracted_old_price": 300,
+          "thumbnail": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRZYWVjb1CmRTHE69BM_xDJPmLxu-WxapCiY6WLgYxmxfLu7IQy2e3rvUNSZ-MpKH4Kwtslk7s",
+          "serpapi_thumbnail": "https://serpapi.com/images/url/wObtV3icu9mYUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDoqKDA_LSjJ0zg0K8XA1s3Tyja9w8QrI9ako1Q2vSCxwzow0C_dJj6zIrUjzKTX3DKw0SjUuKgv1C47S9S3w9jDxLi8pzsk2LwYAdiIu-A",
+          "tag": "30% OFF",
+          "extensions": [
+            "30% OFF"
+          ],
+          "delivery": "Free delivery by Wed"
+        },
+        {
+          "position": 5,
+          "title": "Vitesse Big and Tall Gaming Chair",
+          "product_id": "1088715616628176079",
+          "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:1088715616628176079,headlineOfferDocid:10081144240676148584,imageDocid:5372853733775986232,rds:PC_1513216609054713325|PROD_PC_1513216609054713325,gpcid:1513216609054713325,mid:576462842382185871,pvt:hg&hl=en&gl=us&udm=28",
+          "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiIxMDg4NzE1NjE2NjI4MTc2MDc5IiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiMTAwODExNDQyNDA2NzYxNDg1ODQiLCJpbWFnZURvY2lkIjoiNTM3Mjg1MzczMzc3NTk4NjIzMiIsInJkcyI6IlBDXzE1MTMyMTY2MDkwNTQ3MTMzMjV8UFJPRF9QQ18xNTEzMjE2NjA5MDU0NzEzMzI1IiwicXVlcnkiOiJnYW1pbmcrY2hhaXIiLCJncGNpZCI6IjE1MTMyMTY2MDkwNTQ3MTMzMjUiLCJtaWQiOiI1NzY0NjI4NDIzODIxODU4NzEiLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0=",
+          "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiIxMDg4NzE1NjE2NjI4MTc2MDc5IiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiMTAwODExNDQyNDA2NzYxNDg1ODQiLCJpbWFnZURvY2lkIjoiNTM3Mjg1MzczMzc3NTk4NjIzMiIsInJkcyI6IlBDXzE1MTMyMTY2MDkwNTQ3MTMzMjV8UFJPRF9QQ18xNTEzMjE2NjA5MDU0NzEzMzI1IiwicXVlcnkiOiJnYW1pbmcrY2hhaXIiLCJncGNpZCI6IjE1MTMyMTY2MDkwNTQ3MTMzMjUiLCJtaWQiOiI1NzY0NjI4NDIzODIxODU4NzEiLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0%3D",
+          "source": "Vitesse Home",
+          "source_icon": "https://encrypted-tbn2.gstatic.com/favicon-tbn?q=tbn%3AANd9GcRBh-lwSeuFtA1yNEVgnkdlYw5zOAI-3tV8gwjau-7MAtupm-rxkn_Wvamo0E3G_DY4QpfcaxBgxk_qP4YtAqeFHgWhhfF81L8",
+          "multiple_sources": true,
+          "price": "$109.99",
+          "extracted_price": 109.99,
+          "old_price": "$200",
+          "extracted_old_price": 200,
+          "rating": 4.8,
+          "reviews": 48,
+          "thumbnail": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTcJoq6wrxhRM40Gn4l8pp33clmlKVWGI1chQQoGPcKfHa_bLTLW1WbCVxEfzI",
+          "serpapi_thumbnail": "https://serpapi.com/images/url/Ost2onicu1maUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDkn2yi80Ky-qyAjyNTFwzzPJsSgoMDZOzsnN8Q4Ld_c0TM4IDMx3D0j2TvNIjE_yCfEJNwxPcg6rcE2r8gQAYRkqnw",
+          "tag": "45% OFF",
+          "extensions": [
+            "45% OFF"
+          ],
+          "delivery": "Free delivery"
+        }
+      ]
+    },
+    {
+      "title": "Budget gaming chairs",
+      "shopping_results": [
+        {
+          "position": 1,
+          "title": "Paylesshere Adult Mesh Indoor Gaming and Office Ergonomic and Lumbar Support Gaming Office Chair, Black",
+          "product_id": "3219115562768264778",
+          "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:3219115562768264778,headlineOfferDocid:5766176482842742498,imageDocid:2056973902320986606,pvt:hg&hl=en&gl=us&udm=28",
+          "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiIzMjE5MTE1NTYyNzY4MjY0Nzc4IiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiNTc2NjE3NjQ4Mjg0Mjc0MjQ5OCIsImltYWdlRG9jaWQiOiIyMDU2OTczOTAyMzIwOTg2NjA2IiwicmRzIjoiIiwicXVlcnkiOiJnYW1pbmcrY2hhaXIiLCJncGNpZCI6bnVsbCwibWlkIjpudWxsLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0=",
+          "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiIzMjE5MTE1NTYyNzY4MjY0Nzc4IiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiNTc2NjE3NjQ4Mjg0Mjc0MjQ5OCIsImltYWdlRG9jaWQiOiIyMDU2OTczOTAyMzIwOTg2NjA2IiwicmRzIjoiIiwicXVlcnkiOiJnYW1pbmcrY2hhaXIiLCJncGNpZCI6bnVsbCwibWlkIjpudWxsLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0%3D",
+          "source": "Walmart - Factory Direct Wholesales, LLC",
+          "source_icon": "https://encrypted-tbn3.gstatic.com/favicon-tbn?q=tbn%3AANd9GcTnP5ISNmbEt5sfd-d6O77v8eZaWxR-UtwYkk865osEjKrS0r8udsVsfLPjH1VQBQizWhrYkhO2STFk8WaMhokVgFUhjn2NoxU",
+          "price": "$42.99",
+          "extracted_price": 42.99,
+          "thumbnail": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTo4cQ0ZnHERcP0F62yhnZid-TgMAXe95iBnQUerMycd07Pw3WyE5gZ8Ou0xYNi8Wl7UWHOgiJB",
+          "serpapi_thumbnail": "https://serpapi.com/images/url/O3xVkXicDcndCoIwGADQJ1KHZf5AhIIlgX-haLurb2N-UHO5Re22t-xt6tye72cyRunE87iExSrDmWOu0neFNheD4MJ89_Q0K4VS7B7b_yVpxeIDdPMaWkJlkZ-gIfuNbydJkTmdKNORxwFmsu35UlpgJGxeq8HmgaBR_STvc4XRcAv7oagFHrMfiRMuOA",
+          "delivery": "Free delivery"
+        },
+        {
+          "position": 2,
+          "title": "RESPAWN 900 Gaming Chair",
+          "product_id": "2187400660516739326",
+          "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:2187400660516739326,headlineOfferDocid:758442462413449870,imageDocid:6557289164669561449,rds:PC_6548629891200848552|PROD_PC_6548629891200848552,gpcid:6548629891200848552,mid:576462373747906371,pvt:hg&hl=en&gl=us&udm=28",
+          "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiIyMTg3NDAwNjYwNTE2NzM5MzI2IiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiNzU4NDQyNDYyNDEzNDQ5ODcwIiwiaW1hZ2VEb2NpZCI6IjY1NTcyODkxNjQ2Njk1NjE0NDkiLCJyZHMiOiJQQ182NTQ4NjI5ODkxMjAwODQ4NTUyfFBST0RfUENfNjU0ODYyOTg5MTIwMDg0ODU1MiIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiI2NTQ4NjI5ODkxMjAwODQ4NTUyIiwibWlkIjoiNTc2NDYyMzczNzQ3OTA2MzcxIiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+          "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiIyMTg3NDAwNjYwNTE2NzM5MzI2IiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiNzU4NDQyNDYyNDEzNDQ5ODcwIiwiaW1hZ2VEb2NpZCI6IjY1NTcyODkxNjQ2Njk1NjE0NDkiLCJyZHMiOiJQQ182NTQ4NjI5ODkxMjAwODQ4NTUyfFBST0RfUENfNjU0ODYyOTg5MTIwMDg0ODU1MiIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiI2NTQ4NjI5ODkxMjAwODQ4NTUyIiwibWlkIjoiNTc2NDYyMzczNzQ3OTA2MzcxIiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+          "source": "Best Buy",
+          "source_icon": "https://encrypted-tbn1.gstatic.com/favicon-tbn?q=tbn%3AANd9GcTT0Tmy1Tfrj2gTx9YogV9JASOlx23rpuvmGNx4Bq5y8RSu8-Z0lLHF-bSjuIKJIIqtvp6tbLoEo8gc01Ho4x7nq1feVYguWCY",
+          "multiple_sources": true,
+          "price": "$399.99",
+          "extracted_price": 399.99,
+          "rating": 4.5,
+          "reviews": 832,
+          "thumbnail": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSlzO1utOBj8MdMJTDtYe-cEanF4CJVMbiUmUja6MO12cyUwsS8WoWVy-m6Xz8",
+          "serpapi_thumbnail": "https://serpapi.com/images/url/8mP_U3icu1maUVJSUGylr5-al1xUWVCSmqJbkpRnqJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDs6p8jcsLfF3yrLwTfH1CnEpiUzVTXZNzHMzcfYK803KDM0NzUo08_U3NEquDC0vDrYIzw8Pq9TNNYuosgAAWRsqbw"
+        },
+        {
+          "position": 3,
+          "title": "Gtracing RGB Ergonomic Gaming Chair with Massage",
+          "product_id": "2786009100579933884",
+          "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:2786009100579933884,headlineOfferDocid:275746549010605838,imageDocid:17817736044044014177,rds:PC_13494000673344916720|PROD_PC_13494000673344916720,gpcid:13494000673344916720,mid:576462827527042288,pvt:hg&hl=en&gl=us&udm=28",
+          "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiIyNzg2MDA5MTAwNTc5OTMzODg0IiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiMjc1NzQ2NTQ5MDEwNjA1ODM4IiwiaW1hZ2VEb2NpZCI6IjE3ODE3NzM2MDQ0MDQ0MDE0MTc3IiwicmRzIjoiUENfMTM0OTQwMDA2NzMzNDQ5MTY3MjB8UFJPRF9QQ18xMzQ5NDAwMDY3MzM0NDkxNjcyMCIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiIxMzQ5NDAwMDY3MzM0NDkxNjcyMCIsIm1pZCI6IjU3NjQ2MjgyNzUyNzA0MjI4OCIsInB2dCI6ImhnIiwidXVsZSI6bnVsbCwiZ2wiOiJ1cyIsImhsIjoiZW4ifQ==",
+          "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiIyNzg2MDA5MTAwNTc5OTMzODg0IiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiMjc1NzQ2NTQ5MDEwNjA1ODM4IiwiaW1hZ2VEb2NpZCI6IjE3ODE3NzM2MDQ0MDQ0MDE0MTc3IiwicmRzIjoiUENfMTM0OTQwMDA2NzMzNDQ5MTY3MjB8UFJPRF9QQ18xMzQ5NDAwMDY3MzM0NDkxNjcyMCIsInF1ZXJ5IjoiZ2FtaW5nK2NoYWlyIiwiZ3BjaWQiOiIxMzQ5NDAwMDY3MzM0NDkxNjcyMCIsIm1pZCI6IjU3NjQ2MjgyNzUyNzA0MjI4OCIsInB2dCI6ImhnIiwidXVsZSI6bnVsbCwiZ2wiOiJ1cyIsImhsIjoiZW4ifQ%3D%3D",
+          "source": "gtracing.com",
+          "source_icon": "https://encrypted-tbn1.gstatic.com/favicon-tbn?q=tbn%3AANd9GcR_EqQL8pQblBvB3-7Dkb1Iz1EdDBLzOfCf0usphs1Fn26F2FUZaZYQA1pcIL2R-EwhoP1NqYAKLTbFnOQESakaNnmfXCA",
+          "multiple_sources": true,
+          "price": "$154.99",
+          "extracted_price": 154.99,
+          "old_price": "$220",
+          "extracted_old_price": 220,
+          "rating": 3.7,
+          "reviews": 156,
+          "thumbnail": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQyl0PR6Px1MpxEdUoIQNSd22TviwqMC4sXceuBe9w5FHHnNeDzfgMYKHa2wWMk5_vvAUANlvU",
+          "serpapi_thumbnail": "https://serpapi.com/images/url/cwqgkHicu9mYUVJSUGylr5-al1xUWVCSmqJbkpRnqJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDqzMMQgIMguoMPQtqHBNCc33DPQLTjEyCinLLC_0dTYpjkhOLXVKtSw3dfPwyPNLdalKS_eN9PZINCoP9802jS8rcwx19MspCwUAf4cu9w",
+          "tag": "29% OFF",
+          "extensions": [
+            "29% OFF"
+          ]
+        },
+        {
+          "position": 4,
+          "title": "Paylesshere Black Ergonomic Gaming Chair - Adjustable Mesh w/Lumbar Support",
+          "product_id": "3774307180623510170",
+          "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:3774307180623510170,headlineOfferDocid:4877718787337894712,imageDocid:4998959015651888185,pvt:hg&hl=en&gl=us&udm=28",
+          "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiIzNzc0MzA3MTgwNjIzNTEwMTcwIiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiNDg3NzcxODc4NzMzNzg5NDcxMiIsImltYWdlRG9jaWQiOiI0OTk4OTU5MDE1NjUxODg4MTg1IiwicmRzIjoiIiwicXVlcnkiOiJnYW1pbmcrY2hhaXIiLCJncGNpZCI6bnVsbCwibWlkIjpudWxsLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0=",
+          "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiIzNzc0MzA3MTgwNjIzNTEwMTcwIiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiNDg3NzcxODc4NzMzNzg5NDcxMiIsImltYWdlRG9jaWQiOiI0OTk4OTU5MDE1NjUxODg4MTg1IiwicmRzIjoiIiwicXVlcnkiOiJnYW1pbmcrY2hhaXIiLCJncGNpZCI6bnVsbCwibWlkIjpudWxsLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsImdsIjoidXMiLCJobCI6ImVuIn0%3D",
+          "source": "Walmart - Factory Direct Wholesales, LLC",
+          "source_icon": "https://encrypted-tbn3.gstatic.com/favicon-tbn?q=tbn%3AANd9GcTnP5ISNmbEt5sfd-d6O77v8eZaWxR-UtwYkk865osEjKrS0r8udsVsfLPjH1VQBQizWhrYkhO2STFk8WaMhokVgFUhjn2NoxU",
+          "price": "$42.98",
+          "extracted_price": 42.98,
+          "thumbnail": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQjS_F11gDTfFHH0SjkLk5O0ldISrLbfVAZypCbnrkt03ucQgy-jghH7DLMND5ldSWUxYdzIMI",
+          "serpapi_thumbnail": "https://serpapi.com/images/url/AIkPzHicu9mYUVJSUGylr5-al1xUWVCSmqJbkpRnqJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDswKjnczNEx3CUlz8_AwCM7K9sk29TfISfEMLvJJSgtzjKoscE7KK8ouMTAuTQ5Mr9TNSs_wMHfx8fVzMc1JCQ4PrYhMqfL09QQAaIgujQ",
+          "delivery": "Free delivery"
+        },
+        {
+          "position": 5,
+          "title": "Insignia Essential PC Gaming Chair",
+          "product_id": "6805212492537077793",
+          "product_link": "https://www.google.com/search?ibp=oshop&q=gaming chair&prds=catalogid:6805212492537077793,headlineOfferDocid:14899963473328580632,rds:PC_692778466298626606|PROD_PC_692778466298626606,gpcid:692778466298626606,mid:576462759213999497,pvt:hg&hl=en&gl=us&udm=28",
+          "immersive_product_page_token": "eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiI2ODA1MjEyNDkyNTM3MDc3NzkzIiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiMTQ4OTk5NjM0NzMzMjg1ODA2MzIiLCJpbWFnZURvY2lkIjpudWxsLCJyZHMiOiJQQ182OTI3Nzg0NjYyOTg2MjY2MDZ8UFJPRF9QQ182OTI3Nzg0NjYyOTg2MjY2MDYiLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiNjkyNzc4NDY2Mjk4NjI2NjA2IiwibWlkIjoiNTc2NDYyNzU5MjEzOTk5NDk3IiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+          "serpapi_immersive_product_api": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6IkhhQ3BhZHVHQzliQ3A4NFAxLTNncUFJIiwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiI2ODA1MjEyNDkyNTM3MDc3NzkzIiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiMTQ4OTk5NjM0NzMzMjg1ODA2MzIiLCJpbWFnZURvY2lkIjpudWxsLCJyZHMiOiJQQ182OTI3Nzg0NjYyOTg2MjY2MDZ8UFJPRF9QQ182OTI3Nzg0NjYyOTg2MjY2MDYiLCJxdWVyeSI6ImdhbWluZytjaGFpciIsImdwY2lkIjoiNjkyNzc4NDY2Mjk4NjI2NjA2IiwibWlkIjoiNTc2NDYyNzU5MjEzOTk5NDk3IiwicHZ0IjoiaGciLCJ1dWxlIjpudWxsLCJnbCI6InVzIiwiaGwiOiJlbiJ9",
+          "source": "Best Buy",
+          "source_icon": "https://encrypted-tbn0.gstatic.com/favicon-tbn?q=tbn%3AANd9GcRJLrYt8ApvztGsW8TSy6-5HL7LwDNwH2emYmRabMUepMDXWE3LqD_Jltucg6NfE5z5MV57q9G1n_VVMyiUtZCVGXOuFlVA6g",
+          "multiple_sources": true,
+          "price": "$119.99",
+          "extracted_price": 119.99,
+          "old_price": "$180",
+          "extracted_old_price": 180,
+          "rating": 4.5,
+          "reviews": 1200,
+          "thumbnail": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTwFzT-6nhp1R3_DBnYE8BuxNRn_5RHt161raDVRtmamk8lYJsiaBpMkqvE7A",
+          "serpapi_thumbnail": "https://serpapi.com/images/url/DnW_o3icu1mSUVJSUGylr5-al1xUWVCSmqJbkpRnpJdeXJJYkpmsl5yfq1-ckV9QkJmXbl9oC5SzcvRLsXRPDil3qwrRNcvLKDAMMo53ccqLdLVwKq3wC8qLNw3yKDE0MyxKdAkLKslNzM22yIn0Ks5MdCrwzS4sczV3BAAnJyo1",
+          "tag": "33% OFF",
+          "extensions": [
+            "33% OFF"
+          ],
+          "delivery": "Free delivery by Sun"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "type": "Refine results",
+      "input_type": "link_with_icon",
+      "options": [
+        {
+          "text": "On sale",
+          "shoprs": "CAESBEoCGAEYBioMZ2FtaW5nIGNoYWlyMhMIBhIHT24gc2FsZRgCIgRKAhgBWKWzIGAC",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=gaming+chair+sale&shoprs=CAESBEoCGAEYBioMZ2FtaW5nIGNoYWlyMhMIBhIHT24gc2FsZRgCIgRKAhgBWKWzIGAC"
+        },
+        {
+          "text": "Nearby",
+          "shoprs": "CAEYAyoMZ2FtaW5nIGNoYWlyMgwIAxIGTmVhcmJ5GAJYpbMgYAI",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=gaming+chair+nearby&shoprs=CAEYAyoMZ2FtaW5nIGNoYWlyMgwIAxIGTmVhcmJ5GAJYpbMgYAI"
+        },
+        {
+          "text": "Get it fast",
+          "shoprs": "CAESDZoBCgoIEAM4AUAHSAEYFCoMZ2FtaW5nIGNoYWlyMiQIFBILR2V0IGl0IGZhc3QiDZoBCgoIEAM4AUAHSAEqBBABGAFgAg",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=gaming+chair&shoprs=CAESDZoBCgoIEAM4AUAHSAEYFCoMZ2FtaW5nIGNoYWlyMiQIFBILR2V0IGl0IGZhc3QiDZoBCgoIEAM4AUAHSAEqBBABGAFgAg"
+        },
+        {
+          "text": "New",
+          "shoprs": "CAEYCioMZ2FtaW5nIGNoYWlyMgcIChIDTmV3WKWzIGAC",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=new+gaming+chair&shoprs=CAEYCioMZ2FtaW5nIGNoYWlyMgcIChIDTmV3WKWzIGAC"
+        }
+      ]
+    },
+    {
+      "type": "Price",
+      "input_type": "price_range",
+      "options": [
+        {
+          "text": "Under $100",
+          "shoprs": "CAESDRILEQAAAACE15dBGAEYBSoMZ2FtaW5nIGNoYWlyMiMIBRIKVW5kZXIgJDEwMBgCIg0SCxEAAAAAhNeXQRgBKgIYAVilsyBgAg",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=gaming+chair+under+%24100&shoprs=CAESDRILEQAAAACE15dBGAEYBSoMZ2FtaW5nIGNoYWlyMiMIBRIKVW5kZXIgJDEwMBgCIg0SCxEAAAAAhNeXQRgBKgIYAVilsyBgAg"
+        },
+        {
+          "text": "$100 - $200",
+          "shoprs": "CAESFhIUCQAAAACE15dBEQAAAACE16dBGAEYBSoMZ2FtaW5nIGNoYWlyMi0IBRILJDEwMCAtICQyMDAYAiIWEhQJAAAAAITXl0ERAAAAAITXp0EYASoCGAFYpbMgYAI",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=gaming+chair+between+%24100+and+%24200&shoprs=CAESFhIUCQAAAACE15dBEQAAAACE16dBGAEYBSoMZ2FtaW5nIGNoYWlyMi0IBRILJDEwMCAtICQyMDAYAiIWEhQJAAAAAITXl0ERAAAAAITXp0EYASoCGAFYpbMgYAI"
+        },
+        {
+          "text": "$200 - $400",
+          "shoprs": "CAESFhIUCQAAAACE16dBEQAAAACE17dBGAEYBSoMZ2FtaW5nIGNoYWlyMi0IBRILJDIwMCAtICQ0MDAYAiIWEhQJAAAAAITXp0ERAAAAAITXt0EYASoCGAFYpbMgYAI",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=gaming+chair+between+%24200+and+%24400&shoprs=CAESFhIUCQAAAACE16dBEQAAAACE17dBGAEYBSoMZ2FtaW5nIGNoYWlyMi0IBRILJDIwMCAtICQ0MDAYAiIWEhQJAAAAAITXp0ERAAAAAITXt0EYASoCGAFYpbMgYAI"
+        },
+        {
+          "text": "Over $400",
+          "shoprs": "CAESDRILCQAAAACE17dBGAEYBSoMZ2FtaW5nIGNoYWlyMiIIBRIJT3ZlciAkNDAwGAIiDRILCQAAAACE17dBGAEqAhgBWKWzIGAC",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=gaming+chair+over+%24400&shoprs=CAESDRILCQAAAACE17dBGAEYBSoMZ2FtaW5nIGNoYWlyMiIIBRIJT3ZlciAkNDAwGAIiDRILCQAAAACE17dBGAEqAhgBWKWzIGAC"
+        }
+      ]
+    },
+    {
+      "type": "Product Rating",
+      "input_type": "link",
+      "options": [
+        {
+          "text": "4 and up",
+          "shoprs": "CAESBWIDCJADGB4qDGdhbWluZyBjaGFpcjIVCB4SCDQgYW5kIHVwIgViAwiQA0AEYAI",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=gaming+chair&shoprs=CAESBWIDCJADGB4qDGdhbWluZyBjaGFpcjIVCB4SCDQgYW5kIHVwIgViAwiQA0AEYAI"
+        }
+      ]
+    },
+    {
+      "type": "Stores",
+      "input_type": "link",
+      "options": [
+        {
+          "text": "Walmart",
+          "shoprs": "CAEYAioMZ2FtaW5nIGNoYWlyMgsIAhIHV2FsbWFydFilsyBgAg",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=walmart+gaming+chair&shoprs=CAEYAioMZ2FtaW5nIGNoYWlyMgsIAhIHV2FsbWFydFilsyBgAg"
+        },
+        {
+          "text": "Secretlab US",
+          "shoprs": "CAEYAioMZ2FtaW5nIGNoYWlyMhAIAhIMU2VjcmV0bGFiIFVTWKWzIGAC",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=secretlab+us+gaming+chair&shoprs=CAEYAioMZ2FtaW5nIGNoYWlyMhAIAhIMU2VjcmV0bGFiIFVTWKWzIGAC"
+        },
+        {
+          "text": "Target",
+          "shoprs": "CAEYAioMZ2FtaW5nIGNoYWlyMgoIAhIGVGFyZ2V0WKWzIGAC",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=target+gaming+chair&shoprs=CAEYAioMZ2FtaW5nIGNoYWlyMgoIAhIGVGFyZ2V0WKWzIGAC"
+        },
+        {
+          "text": "gtracing.com",
+          "shoprs": "CAEYAioMZ2FtaW5nIGNoYWlyMhAIAhIMZ3RyYWNpbmcuY29tWKWzIGAC",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=gtracing.com+gaming+chair&shoprs=CAEYAioMZ2FtaW5nIGNoYWlyMhAIAhIMZ3RyYWNpbmcuY29tWKWzIGAC"
+        }
+      ]
+    },
+    {
+      "type": "Category",
+      "input_type": "link",
+      "options": [
+        {
+          "text": "Bean Bag Chairs",
+          "shoprs": "CAEYCSoMZ2FtaW5nIGNoYWlyMhMICRIPQmVhbiBCYWcgQ2hhaXJzYAI",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=bean+bag+chairs+gaming+chair&shoprs=CAEYCSoMZ2FtaW5nIGNoYWlyMhMICRIPQmVhbiBCYWcgQ2hhaXJzYAI"
+        },
+        {
+          "text": "Ergonomic Chairs",
+          "shoprs": "CAEYCSoMZ2FtaW5nIGNoYWlyMhQICRIQRXJnb25vbWljIENoYWlyc2AC",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=ergonomic+chairs+gaming+chair&shoprs=CAEYCSoMZ2FtaW5nIGNoYWlyMhQICRIQRXJnb25vbWljIENoYWlyc2AC"
+        },
+        {
+          "text": "Office Chairs",
+          "shoprs": "CAEYCSoMZ2FtaW5nIGNoYWlyMhEICRINT2ZmaWNlIENoYWlyc2AC",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=office+chairs+gaming+chair&shoprs=CAEYCSoMZ2FtaW5nIGNoYWlyMhEICRINT2ZmaWNlIENoYWlyc2AC"
+        }
+      ]
+    },
+    {
+      "type": "Free shipping",
+      "input_type": "link",
+      "options": [
+        {
+          "text": "Free shipping",
+          "shoprs": "CAESBFICEAEYGSoMZ2FtaW5nIGNoYWlyMhcIGRINRnJlZSBzaGlwcGluZyIEUgIQAWAC",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=gaming+chair+free+shipping&shoprs=CAESBFICEAEYGSoMZ2FtaW5nIGNoYWlyMhcIGRINRnJlZSBzaGlwcGluZyIEUgIQAWAC"
+        }
+      ]
+    },
+    {
+      "type": "Brand",
+      "input_type": "checkbox",
+      "options": [
+        {
+          "text": "Razer",
+          "shoprs": "CAEYASoMZ2FtaW5nIGNoYWlyMhUIARIFUmF6ZXI6CgiD8zwQmeE-MAFYpbMgYAI",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=razer+gaming+chair&shoprs=CAEYASoMZ2FtaW5nIGNoYWlyMhUIARIFUmF6ZXI6CgiD8zwQmeE-MAFYpbMgYAI"
+        },
+        {
+          "text": "DXRacer",
+          "shoprs": "CAEYASoMZ2FtaW5nIGNoYWlyMhcIARIHRFhSYWNlcjoKCIPzPBD9l0AwAVilsyBgAg",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=dxracer+gaming+chair&shoprs=CAEYASoMZ2FtaW5nIGNoYWlyMhcIARIHRFhSYWNlcjoKCIPzPBD9l0AwAVilsyBgAg"
+        },
+        {
+          "text": "X Rocker",
+          "shoprs": "CAEYASoMZ2FtaW5nIGNoYWlyMhgIARIIWCBSb2NrZXI6CgiD8zwQ46xQMAFYpbMgYAI",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=x+rocker+gaming+chair&shoprs=CAEYASoMZ2FtaW5nIGNoYWlyMhgIARIIWCBSb2NrZXI6CgiD8zwQ46xQMAFYpbMgYAI"
+        },
+        {
+          "text": "CORSAIR",
+          "shoprs": "CAEYASoMZ2FtaW5nIGNoYWlyMhcIARIHQ09SU0FJUjoKCIPzPBD_6z4wAVilsyBgAg",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=corsair+gaming+chair&shoprs=CAEYASoMZ2FtaW5nIGNoYWlyMhcIARIHQ09SU0FJUjoKCIPzPBD_6z4wAVilsyBgAg"
+        }
+      ]
+    },
+    {
+      "type": "Carousel Filters",
+      "options": [
+        {
+          "text": "Under $100",
+          "shoprs": "CAESDRILEQAAAACE15dBGAEYBSoMZ2FtaW5nIGNoYWlyMiMIBRIKVW5kZXIgJDEwMBgCIg0SCxEAAAAAhNeXQRgBKgIYAVilsyBgAQ",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=gaming+chair+under+%24100&shoprs=CAESDRILEQAAAACE15dBGAEYBSoMZ2FtaW5nIGNoYWlyMiMIBRIKVW5kZXIgJDEwMBgCIg0SCxEAAAAAhNeXQRgBKgIYAVilsyBgAQ",
+          "input_type": "price_range"
+        },
+        {
+          "text": "On sale",
+          "shoprs": "CAESBEoCGAEYBioMZ2FtaW5nIGNoYWlyMhMIBhIHT24gc2FsZRgCIgRKAhgBWKWzIGAB",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=gaming+chair+sale&shoprs=CAESBEoCGAEYBioMZ2FtaW5nIGNoYWlyMhMIBhIHT24gc2FsZRgCIgRKAhgBWKWzIGAB",
+          "input_type": "link_with_icon"
+        },
+        {
+          "text": "Nearby",
+          "shoprs": "CAEYAyoMZ2FtaW5nIGNoYWlyMgwIAxIGTmVhcmJ5GAJYpbMgYAE",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=gaming+chair+nearby&shoprs=CAEYAyoMZ2FtaW5nIGNoYWlyMgwIAxIGTmVhcmJ5GAJYpbMgYAE",
+          "input_type": "link_with_icon"
+        },
+        {
+          "text": "Walmart",
+          "shoprs": "CAEYAioMZ2FtaW5nIGNoYWlyMgsIAhIHV2FsbWFydFilsyBgAQ",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=walmart+gaming+chair&shoprs=CAEYAioMZ2FtaW5nIGNoYWlyMgsIAhIHV2FsbWFydFilsyBgAQ",
+          "input_type": "link"
+        },
+        {
+          "text": "Get it fast",
+          "shoprs": "CAESDZoBCgoIEAM4AUAHSAEYFCoMZ2FtaW5nIGNoYWlyMiQIFBILR2V0IGl0IGZhc3QiDZoBCgoIEAM4AUAHSAEqBBABGAFgAQ",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=gaming+chair&shoprs=CAESDZoBCgoIEAM4AUAHSAEYFCoMZ2FtaW5nIGNoYWlyMiQIFBILR2V0IGl0IGZhc3QiDZoBCgoIEAM4AUAHSAEqBBABGAFgAQ",
+          "input_type": "link_with_icon"
+        },
+        {
+          "text": "Secretlab US",
+          "shoprs": "CAEYAioMZ2FtaW5nIGNoYWlyMhAIAhIMU2VjcmV0bGFiIFVTWKWzIGAB",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=secretlab+us+gaming+chair&shoprs=CAEYAioMZ2FtaW5nIGNoYWlyMhAIAhIMU2VjcmV0bGFiIFVTWKWzIGAB",
+          "input_type": "link"
+        },
+        {
+          "text": "Massage",
+          "shoprs": "CAEYEioMZ2FtaW5nIGNoYWlyMgsIEhIHTWFzc2FnZWAB",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=massage+gaming+chair&shoprs=CAEYEioMZ2FtaW5nIGNoYWlyMgsIEhIHTWFzc2FnZWAB",
+          "input_type": "link"
+        },
+        {
+          "text": "Reclining",
+          "shoprs": "CAEYASoMZ2FtaW5nIGNoYWlyMhsIARIJUmVjbGluaW5nOgwIheXQAxDc5tADMANYpbMgYAE",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=reclining+gaming+chair&shoprs=CAEYASoMZ2FtaW5nIGNoYWlyMhsIARIJUmVjbGluaW5nOgwIheXQAxDc5tADMANYpbMgYAE",
+          "input_type": "link"
+        },
+        {
+          "text": "Bean Bag Chairs",
+          "shoprs": "CAEYCSoMZ2FtaW5nIGNoYWlyMhMICRIPQmVhbiBCYWcgQ2hhaXJzYAE",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=bean+bag+chairs+gaming+chair&shoprs=CAEYCSoMZ2FtaW5nIGNoYWlyMhMICRIPQmVhbiBCYWcgQ2hhaXJzYAE",
+          "input_type": "link"
+        },
+        {
+          "text": "Target",
+          "shoprs": "CAEYAioMZ2FtaW5nIGNoYWlyMgoIAhIGVGFyZ2V0WKWzIGAB",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=target+gaming+chair&shoprs=CAEYAioMZ2FtaW5nIGNoYWlyMgoIAhIGVGFyZ2V0WKWzIGAB",
+          "input_type": "link"
+        },
+        {
+          "text": "Ergonomic",
+          "shoprs": "CAEYEioMZ2FtaW5nIGNoYWlyMg0IEhIJRXJnb25vbWljYAE",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=ergonomic+gaming+chair&shoprs=CAEYEioMZ2FtaW5nIGNoYWlyMg0IEhIJRXJnb25vbWljYAE",
+          "input_type": "link"
+        },
+        {
+          "text": "gtracing.com",
+          "shoprs": "CAEYAioMZ2FtaW5nIGNoYWlyMhAIAhIMZ3RyYWNpbmcuY29tWKWzIGAB",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=gtracing.com+gaming+chair&shoprs=CAEYAioMZ2FtaW5nIGNoYWlyMhAIAhIMZ3RyYWNpbmcuY29tWKWzIGAB",
+          "input_type": "link"
+        },
+        {
+          "text": "Ergonomic Chairs",
+          "shoprs": "CAEYCSoMZ2FtaW5nIGNoYWlyMhQICRIQRXJnb25vbWljIENoYWlyc2AB",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=ergonomic+chairs+gaming+chair&shoprs=CAEYCSoMZ2FtaW5nIGNoYWlyMhQICRIQRXJnb25vbWljIENoYWlyc2AB",
+          "input_type": "link"
+        },
+        {
+          "text": "New",
+          "shoprs": "CAEYCioMZ2FtaW5nIGNoYWlyMgcIChIDTmV3WKWzIGAB",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=new+gaming+chair&shoprs=CAEYCioMZ2FtaW5nIGNoYWlyMgcIChIDTmV3WKWzIGAB",
+          "input_type": "link_with_icon"
+        },
+        {
+          "text": "Used",
+          "shoprs": "CAEYCioMZ2FtaW5nIGNoYWlyMggIChIEVXNlZFilsyBgAQ",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=used+gaming+chair&shoprs=CAEYCioMZ2FtaW5nIGNoYWlyMggIChIEVXNlZFilsyBgAQ",
+          "input_type": "link"
+        },
+        {
+          "text": "Fabric",
+          "shoprs": "CAEYEioMZ2FtaW5nIGNoYWlyMgoIEhIGRmFicmljYAE",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=fabric+gaming+chair&shoprs=CAEYEioMZ2FtaW5nIGNoYWlyMgoIEhIGRmFicmljYAE",
+          "input_type": "link"
+        },
+        {
+          "text": "Mesh",
+          "shoprs": "CAEYEioMZ2FtaW5nIGNoYWlyMggIEhIETWVzaGAB",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=mesh+gaming+chair&shoprs=CAEYEioMZ2FtaW5nIGNoYWlyMggIEhIETWVzaGAB",
+          "input_type": "link"
+        },
+        {
+          "text": "Scorpion",
+          "shoprs": "CAEYEioMZ2FtaW5nIGNoYWlyMgwIEhIIU2NvcnBpb25gAQ",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=scorpion+gaming+chair&shoprs=CAEYEioMZ2FtaW5nIGNoYWlyMgwIEhIIU2NvcnBpb25gAQ",
+          "input_type": "link"
+        },
+        {
+          "text": "Office Chairs",
+          "shoprs": "CAEYCSoMZ2FtaW5nIGNoYWlyMhEICRINT2ZmaWNlIENoYWlyc2AB",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=office+chairs+gaming+chair&shoprs=CAEYCSoMZ2FtaW5nIGNoYWlyMhEICRINT2ZmaWNlIENoYWlyc2AB",
+          "input_type": "link"
+        },
+        {
+          "text": "Best Buy",
+          "shoprs": "CAEYAioMZ2FtaW5nIGNoYWlyMgwIAhIIQmVzdCBCdXlYpbMgYAE",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=best+buy+gaming+chair&shoprs=CAEYAioMZ2FtaW5nIGNoYWlyMgwIAhIIQmVzdCBCdXlYpbMgYAE",
+          "input_type": "link"
+        },
+        {
+          "text": "Staples",
+          "shoprs": "CAEYAioMZ2FtaW5nIGNoYWlyMgsIAhIHU3RhcGxlc1ilsyBgAQ",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=staples+gaming+chair&shoprs=CAEYAioMZ2FtaW5nIGNoYWlyMgsIAhIHU3RhcGxlc1ilsyBgAQ",
+          "input_type": "link"
+        },
+        {
+          "text": "Free shipping",
+          "shoprs": "CAESBFICEAEYGSoMZ2FtaW5nIGNoYWlyMhcIGRINRnJlZSBzaGlwcGluZyIEUgIQAWAB",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=gaming+chair+free+shipping&shoprs=CAESBFICEAEYGSoMZ2FtaW5nIGNoYWlyMhcIGRINRnJlZSBzaGlwcGluZyIEUgIQAWAB",
+          "input_type": "link"
+        },
+        {
+          "text": "Dowinx",
+          "shoprs": "CAEYAioMZ2FtaW5nIGNoYWlyMgoIAhIGRG93aW54WKWzIGAB",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=dowinx+gaming+chair&shoprs=CAEYAioMZ2FtaW5nIGNoYWlyMgoIAhIGRG93aW54WKWzIGAB",
+          "input_type": "link"
+        },
+        {
+          "text": "Home Depot",
+          "shoprs": "CAEYAioMZ2FtaW5nIGNoYWlyMg4IAhIKSG9tZSBEZXBvdFilsyBgAQ",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=home+depot+gaming+chair&shoprs=CAEYAioMZ2FtaW5nIGNoYWlyMg4IAhIKSG9tZSBEZXBvdFilsyBgAQ",
+          "input_type": "link"
+        },
+        {
+          "text": "AndaSeat",
+          "shoprs": "CAEYAioMZ2FtaW5nIGNoYWlyMgwIAhIIQW5kYVNlYXRYpbMgYAE",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=andaseat+gaming+chair&shoprs=CAEYAioMZ2FtaW5nIGNoYWlyMgwIAhIIQW5kYVNlYXRYpbMgYAE",
+          "input_type": "link"
+        },
+        {
+          "text": "Wayfair",
+          "shoprs": "CAEYAioMZ2FtaW5nIGNoYWlyMgsIAhIHV2F5ZmFpclilsyBgAQ",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=wayfair+gaming+chair&shoprs=CAEYAioMZ2FtaW5nIGNoYWlyMgsIAhIHV2F5ZmFpclilsyBgAQ",
+          "input_type": "link"
+        }
+      ]
+    }
+  ],
+  "serpapi_pagination": {
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=gaming+chair&start=10"
+  }
+}

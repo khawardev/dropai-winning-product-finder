@@ -1,120 +1,173 @@
-'use client';
+'use client'
 
-import React, { useState } from 'react';
-import { 
-  MessageSquare, 
-  X, 
-  Send, 
-  Bot, 
-  User
-} from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { cn } from '@/lib/utils';
-import { motion, AnimatePresence } from 'framer-motion';
+import React, { useState, useRef, useEffect } from 'react'
+import { MessageSquare, X, Send, Loader2, Sparkles } from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { cn } from '@/lib/utils'
+
+type Message = {
+  role: 'user' | 'assistant'
+  content: string
+}
 
 export default function AIChatAssistant() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [messages, setMessages] = useState([
-    { role: 'bot', text: 'Hi Alex! I\'m your DropAI assistant. How can I help you find winning products today?' }
-  ]);
-  const [input, setInput] = useState('');
+  const [isOpen, setIsOpen] = useState(false)
+  const [messages, setMessages] = useState<Message[]>([
+    { role: 'assistant', content: 'Hi! I\'m your DropAI assistant. Ask me anything about products, niches, or dropshipping strategy.' }
+  ])
+  const [input, setInput] = useState('')
+  const [isLoading, setIsLoading] = useState(false)
+  const messagesEndRef = useRef<HTMLDivElement>(null)
 
-  const handleSend = () => {
-    if (!input.trim()) return;
-    
-    const userMsg = { role: 'user', text: input };
-    setMessages(prev => [...prev, userMsg]);
-    setInput('');
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' })
+  }, [messages])
 
-    // Simulate bot response
-    setTimeout(() => {
-      const botMsg = { 
-        role: 'bot', 
-        text: `Based on current trends, I recommend looking into "Eco-friendly Home Decor" in the UK market. Demand is up 15% this week!` 
-      };
-      setMessages(prev => [...prev, botMsg]);
-    }, 1000);
-  };
+  const handleSend = async () => {
+    if (!input.trim() || isLoading) return
+
+    const userMessage = input.trim()
+    setInput('')
+    setMessages(prev => [...prev, { role: 'user', content: userMessage }])
+    setIsLoading(true)
+
+    try {
+      const response = await fetch('/api/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          messages: [...messages, { role: 'user', content: userMessage }].map(m => ({
+            role: m.role,
+            content: m.content,
+          })),
+        }),
+      })
+
+      if (!response.ok) throw new Error('Chat request failed')
+
+      const reader = response.body?.getReader()
+      const decoder = new TextDecoder()
+
+      let assistantMessage = ''
+      setMessages(prev => [...prev, { role: 'assistant', content: '' }])
+
+      if (reader) {
+        while (true) {
+          const { done, value } = await reader.read()
+          if (done) break
+
+          const chunk = decoder.decode(value)
+          const lines = chunk.split('\n')
+
+          for (const line of lines) {
+            if (line.startsWith('0:')) {
+              const text = line.slice(2).trim()
+              try {
+                const parsed = JSON.parse(text)
+                assistantMessage += parsed
+                setMessages(prev => {
+                  const updated = [...prev]
+                  updated[updated.length - 1] = { role: 'assistant', content: assistantMessage }
+                  return updated
+                })
+              } catch {
+                // skip non-JSON lines
+              }
+            }
+          }
+        }
+      }
+
+      if (!assistantMessage) {
+        setMessages(prev => {
+          const updated = [...prev]
+          updated[updated.length - 1] = {
+            role: 'assistant',
+            content: 'I can help you with product analysis, niche recommendations, and dropshipping strategies. What would you like to know?'
+          }
+          return updated
+        })
+      }
+    } catch (error) {
+      setMessages(prev => [
+        ...prev,
+        { role: 'assistant', content: 'Sorry, I encountered an error. Please try again.' }
+      ])
+    } finally {
+      setIsLoading(false)
+    }
+  }
 
   return (
-    <div className="fixed bottom-6 right-6 z-[100]">
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9, y: 20 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.9, y: 20 }}
-            className="mb-4"
-          >
-            <Card className="w-80 md:w-96 bg-card border-border shadow-2xl overflow-hidden">
-              <CardHeader className="bg-primary p-4 flex flex-row items-center justify-between space-y-0">
-                <CardTitle className="text-sm font-bold text-primary-foreground flex items-center gap-2">
-                  <Bot className="w-4 h-4" /> DropAI Assistant
-                </CardTitle>
-                <Button 
-                  variant="ghost" 
-                  size="icon" 
-                  onClick={() => setIsOpen(false)}
-                  className="h-6 w-6 text-primary-foreground hover:bg-primary-foreground/10"
-                >
-                  <X className="w-4 h-4" />
-                </Button>
-              </CardHeader>
-              <CardContent className="p-0">
-                <div className="h-80 overflow-y-auto p-4 space-y-4 bg-muted/30">
-                  {messages.map((msg, i) => (
-                    <div key={i} className={cn(
-                      "flex gap-3 max-w-[85%]",
-                      msg.role === 'user' ? "ml-auto flex-row-reverse" : ""
-                    )}>
-                      <div className={cn(
-                        "w-8 h-8 rounded-lg flex items-center justify-center shrink-0",
-                        msg.role === 'bot' ? "bg-primary" : "bg-muted"
-                      )}>
-                        {msg.role === 'bot' ? <Bot className="w-4 h-4 text-primary-foreground" /> : <User className="w-4 h-4 text-muted-foreground" />}
-                      </div>
-                      <div className={cn(
-                        "p-3 rounded-xl text-xs leading-relaxed",
-                        msg.role === 'bot' ? "bg-card text-foreground border border-border" : "bg-primary text-primary-foreground"
-                      )}>
-                        {msg.text}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-                <div className="p-4 border-t border-border flex gap-2">
-                  <Input 
-                    placeholder="Ask anything..." 
-                    value={input}
-                    onChange={(e) => setInput(e.target.value)}
-                    onKeyDown={(e) => e.key === 'Enter' && handleSend()}
-                    className="bg-muted/50 border-border text-xs h-9"
-                  />
-                  <Button 
-                    size="icon" 
-                    onClick={handleSend}
-                    className="bg-primary text-primary-foreground hover:bg-primary/90 h-9 w-9 shrink-0"
-                  >
-                    <Send className="w-4 h-4" />
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-          </motion.div>
-        )}
-      </AnimatePresence>
-
-      <Button 
+    <>
+      <button
         onClick={() => setIsOpen(!isOpen)}
-        className={cn(
-          "w-14 h-14 rounded-full shadow-2xl transition-all duration-300",
-          isOpen ? "bg-muted rotate-90 text-foreground" : "bg-primary text-primary-foreground hover:bg-primary/90"
-        )}
+        className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-primary rounded-full flex items-center justify-center text-primary-foreground shadow-lg hover:bg-primary/90 transition-all hover:scale-105"
       >
         {isOpen ? <X className="w-6 h-6" /> : <MessageSquare className="w-6 h-6" />}
-      </Button>
-    </div>
-  );
+      </button>
+
+      {isOpen && (
+        <div className="fixed bottom-24 right-6 z-50 w-[380px] h-[500px] bg-card/95 backdrop-blur-xl border border-border rounded-2xl shadow-2xl flex flex-col overflow-hidden animate-in slide-in-from-bottom-4 duration-300">
+          <div className="p-4 border-b border-border bg-primary/5">
+            <div className="flex items-center gap-2">
+              <Sparkles className="w-5 h-5 text-primary" />
+              <h3 className="font-bold text-foreground">DropAI Assistant</h3>
+            </div>
+            <p className="text-xs text-muted-foreground mt-1">AI-powered dropshipping advisor</p>
+          </div>
+
+          <div className="flex-1 overflow-y-auto p-4 space-y-4">
+            {messages.map((msg, i) => (
+              <div key={i} className={cn("flex", msg.role === 'user' ? "justify-end" : "justify-start")}>
+                <div className={cn(
+                  "max-w-[80%] px-4 py-2.5 rounded-2xl text-sm",
+                  msg.role === 'user'
+                    ? "bg-primary text-primary-foreground rounded-br-sm"
+                    : "bg-muted text-foreground rounded-bl-sm"
+                )}>
+                  {msg.content}
+                </div>
+              </div>
+            ))}
+            {isLoading && messages[messages.length - 1]?.content === '' && (
+              <div className="flex justify-start">
+                <div className="bg-muted text-foreground px-4 py-2.5 rounded-2xl rounded-bl-sm">
+                  <Loader2 className="w-4 h-4 animate-spin" />
+                </div>
+              </div>
+            )}
+            <div ref={messagesEndRef} />
+          </div>
+
+          <div className="p-4 border-t border-border">
+            <form
+              onSubmit={(e) => {
+                e.preventDefault()
+                handleSend()
+              }}
+              className="flex gap-2"
+            >
+              <Input
+                value={input}
+                onChange={(e) => setInput(e.target.value)}
+                placeholder="Ask about products, niches..."
+                className="flex-1 bg-muted/50 border-border text-sm"
+                disabled={isLoading}
+              />
+              <Button
+                type="submit"
+                size="icon"
+                disabled={isLoading || !input.trim()}
+                className="bg-primary text-primary-foreground hover:bg-primary/90 shrink-0"
+              >
+                <Send className="w-4 h-4" />
+              </Button>
+            </form>
+          </div>
+        </div>
+      )}
+    </>
+  )
 }

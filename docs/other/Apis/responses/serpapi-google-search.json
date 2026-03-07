@@ -1,0 +1,427 @@
+{
+  "search_metadata": {
+    "id": "69a99e22d3982c91204e3e6b",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/5kcA2spaiwDaC8AWwYIz7A/69a99e22d3982c91204e3e6b.json",
+    "pixel_position_endpoint": "https://serpapi.com/searches/5kcA2spaiwDaC8AWwYIz7A/69a99e22d3982c91204e3e6b.json_with_pixel_position",
+    "created_at": "2026-03-05 15:15:46 UTC",
+    "processed_at": "2026-03-05 15:15:46 UTC",
+    "google_url": "https://www.google.com/search?q=intitle%3A%22gaming+chair%22+site%3Amyshopify.com&oq=intitle%3A%22gaming+chair%22+site%3Amyshopify.com&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/5kcA2spaiwDaC8AWwYIz7A/69a99e22d3982c91204e3e6b.html",
+    "total_time_taken": 9.71
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "intitle:\"gaming chair\" site:myshopify.com",
+    "google_domain": "google.com",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "intitle:\"gaming chair\" site:myshopify.com",
+    "total_results": 491,
+    "time_taken_displayed": 0.39,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Anda Seat Premium Gaming Chair – AndaSeatCanada",
+      "link": "https://andaseat-cad.myshopify.com/collections/best-selling",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://andaseat-cad.myshopify.com/collections/best-selling&ved=2ahUKEwji0ofOhomTAxV9xMkDHSsHEjgQFnoECBkQAQ",
+      "displayed_link": "https://andaseat-cad.myshopify.com › best-selling",
+      "snippet": "16 products ; Anda Seat Assassin King Series Gaming Style Office Chair. Sold out · From $499.99 · Sold out ; Anda Seat Dark Knight Premium Gaming Style Office Chair.",
+      "about_this_result": {
+        "source": {
+          "description": "16 products ; Anda Seat Assassin King Series Gaming Style Office Chair. Sold out · From $499.99 · Sold out ; Anda Seat Dark Knight Premium Gaming Style Office Chair.",
+          "source_info_link": "https://andaseat-cad.myshopify.com/collections/best-selling"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "CA"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://andaseat-cad.myshopify.com/collections/best-selling&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fandaseat-cad.myshopify.com%2Fcollections%2Fbest-selling",
+      "source": "myshopify.com"
+    },
+    {
+      "position": 2,
+      "title": "Lord of the Rings Blacked Edition Gaming Chair",
+      "link": "https://cybe-art.myshopify.com/products/lord-of-the-rings-blacked-edition-gaming-chair",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://cybe-art.myshopify.com/products/lord-of-the-rings-blacked-edition-gaming-chair&ved=2ahUKEwji0ofOhomTAxV9xMkDHSsHEjgQFnoECBwQAQ",
+      "displayed_link": "https://cybe-art.myshopify.com › products › lord-of-the...",
+      "favicon": "https://serpapi.com/searches/69a99e22d3982c91204e3e6b/images/fX3rItgB8p62Ls0JbOTg7qtWyTVKs04_q9RS4TMM5oQ.png",
+      "snippet": "Suitable for anyone from 5'5\" to 6'8\". Maximum weight recommendation 150KG. 5-Year Warranty. 30-Days Return.",
+      "rich_snippet": {
+        "bottom": {
+          "detected_extensions": {
+            "price": 599.99,
+            "currency": "$",
+            "rating": 4.7,
+            "reviews": 400
+          },
+          "extensions": [
+            "$599.99",
+            "Old price $850",
+            "$850",
+            "In stock",
+            "4.7(400)",
+            "$9.99 delivery"
+          ]
+        }
+      },
+      "about_this_result": {
+        "source": {
+          "description": "Suitable for anyone from 5'5\" to 6'8\". Maximum weight recommendation 150KG. 5-Year Warranty. 30-Days Return.",
+          "source_info_link": "https://cybe-art.myshopify.com/products/lord-of-the-rings-blacked-edition-gaming-chair",
+          "icon": "https://serpapi.com/searches/69a99e22d3982c91204e3e6b/images/fX3rItgB8p62Ls0JbOTg7kh2vaF4j_q7DEqWRfCU3UTyyj3DsK0vT-t9Dpl-9v2e.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "CA"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://cybe-art.myshopify.com/products/lord-of-the-rings-blacked-edition-gaming-chair&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fcybe-art.myshopify.com%2Fproducts%2Flord-of-the-rings-blacked-edition-gaming-chair",
+      "source": "myshopify.com"
+    },
+    {
+      "position": 3,
+      "title": "Apex Series - Ghost Edition Gaming Chair",
+      "link": "https://cybe-art.myshopify.com/products/apex-ghost-gaming-chair?utm_source=Klaviyo&utm_medium=campaign&_kx=JV6AH__MwXd9jduiH9K5cG4z7wuiutElZVkk9s0mrSBqkNGqpV232Rb4MHdmlA8-.S22phD",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://cybe-art.myshopify.com/products/apex-ghost-gaming-chair%3Futm_source%3DKlaviyo%26utm_medium%3Dcampaign%26_kx%3DJV6AH__MwXd9jduiH9K5cG4z7wuiutElZVkk9s0mrSBqkNGqpV232Rb4MHdmlA8-.S22phD&ved=2ahUKEwji0ofOhomTAxV9xMkDHSsHEjgQFnoECCwQAQ",
+      "displayed_link": "https://cybe-art.myshopify.com › products › apex-ghost...",
+      "favicon": "https://serpapi.com/searches/69a99e22d3982c91204e3e6b/images/fX3rItgB8p62Ls0JbOTg7isH0s1OLahwbxi1TwFRLC0.png",
+      "snippet": "Apex Series - Ghost Edition Gaming Chair ; MSRP · $799.99 CAD ; TOP FEATURES. Explore All Features. PU Padded 4D Armrest. Adjustable Lumbar Support. Multi-Tilt ...",
+      "rich_snippet": {
+        "bottom": {
+          "detected_extensions": {
+            "price": 549.99,
+            "currency": "$",
+            "rating": 4.7,
+            "reviews": 400
+          },
+          "extensions": [
+            "$549.99",
+            "Old price $750",
+            "$750",
+            "In stock",
+            "4.7(400)",
+            "$9.99 delivery"
+          ]
+        }
+      },
+      "about_this_result": {
+        "source": {
+          "description": "Apex Series - Ghost Edition Gaming Chair ; MSRP · $799.99 CAD ; TOP FEATURES. Explore All Features. PU Padded 4D Armrest. Adjustable Lumbar Support. Multi-Tilt ...",
+          "source_info_link": "https://cybe-art.myshopify.com/products/apex-ghost-gaming-chair?utm_source=Klaviyo&utm_medium=campaign&_kx=JV6AH__MwXd9jduiH9K5cG4z7wuiutElZVkk9s0mrSBqkNGqpV232Rb4MHdmlA8-.S22phD",
+          "icon": "https://serpapi.com/searches/69a99e22d3982c91204e3e6b/images/fX3rItgB8p62Ls0JbOTg7qdVquPcX8p1ASjWUrODOG-ERwpTUcxXJ2QJ0aHVYkSx.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "CA"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://cybe-art.myshopify.com/products/apex-ghost-gaming-chair?utm_source=Klaviyo&utm_medium=campaign&_kx=JV6AH__MwXd9jduiH9K5cG4z7wuiutElZVkk9s0mrSBqkNGqpV232Rb4MHdmlA8-.S22phD&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fcybe-art.myshopify.com%2Fproducts%2Fapex-ghost-gaming-chair%3Futm_source%3DKlaviyo%26utm_medium%3Dcampaign%26_kx%3DJV6AH__MwXd9jduiH9K5cG4z7wuiutElZVkk9s0mrSBqkNGqpV232Rb4MHdmlA8-.S22phD",
+      "source": "myshopify.com"
+    },
+    {
+      "position": 4,
+      "title": "Apex Series - Arctic White Gaming Chair",
+      "link": "https://cybe-art.myshopify.com/products/arctic-white-gaming-chair",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://cybe-art.myshopify.com/products/arctic-white-gaming-chair&ved=2ahUKEwji0ofOhomTAxV9xMkDHSsHEjgQFnoECBsQAQ",
+      "displayed_link": "https://cybe-art.myshopify.com › products › arctic-whit...",
+      "favicon": "https://serpapi.com/searches/69a99e22d3982c91204e3e6b/images/fX3rItgB8p62Ls0JbOTg7jdNKkzJzVRrbPNbPh5d3DQ.png",
+      "snippet": "Suitable for anyone from 5'5\" to 6'8\". Maximum weight recommendation 150KG. 5-Year Warranty. 30-Days Return.",
+      "rich_snippet": {
+        "bottom": {
+          "detected_extensions": {
+            "price": 549.99,
+            "currency": "$",
+            "rating": 4.7,
+            "reviews": 400
+          },
+          "extensions": [
+            "$549.99",
+            "Old price $750",
+            "$750",
+            "In stock",
+            "4.7(400)",
+            "$9.99 delivery"
+          ]
+        }
+      },
+      "about_this_result": {
+        "source": {
+          "description": "Suitable for anyone from 5'5\" to 6'8\". Maximum weight recommendation 150KG. 5-Year Warranty. 30-Days Return.",
+          "source_info_link": "https://cybe-art.myshopify.com/products/arctic-white-gaming-chair",
+          "icon": "https://serpapi.com/searches/69a99e22d3982c91204e3e6b/images/fX3rItgB8p62Ls0JbOTg7lfUj1r2c-5IXOVeycbB3cZ-MbudGhMtFihnjqzcgCHs.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "CA"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://cybe-art.myshopify.com/products/arctic-white-gaming-chair&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fcybe-art.myshopify.com%2Fproducts%2Farctic-white-gaming-chair",
+      "source": "myshopify.com"
+    },
+    {
+      "position": 5,
+      "title": "Anda Seat Dark Knight Premium Gaming Style Office Chair",
+      "link": "https://andaseat-cad.myshopify.com/products/upgrade-to-large-size-memory-foam-pillowanda-seat-premium-gaming-chair-dark-knight-series-high-back-400lb-racing-chair-computer-office-chair-with-carbon-fiber-leather-pillow-lumbar-support-black",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://andaseat-cad.myshopify.com/products/upgrade-to-large-size-memory-foam-pillowanda-seat-premium-gaming-chair-dark-knight-series-high-back-400lb-racing-chair-computer-office-chair-with-carbon-fiber-leather-pillow-lumbar-support-black&ved=2ahUKEwji0ofOhomTAxV9xMkDHSsHEjgQFnoECB8QAQ",
+      "displayed_link": "https://andaseat-cad.myshopify.com › products › upgrad...",
+      "snippet": "Dark Knight Premium is a gaming chair that combines style, comfort, and durability. It features a sleek black design with red accents, a high-quality PU ...",
+      "rich_snippet": {
+        "bottom": {
+          "detected_extensions": {
+            "price": 599.99,
+            "currency": "$",
+            "rating": 4.3,
+            "reviews": 95
+          },
+          "extensions": [
+            "$599.99",
+            "Old price $700",
+            "$700",
+            "In stock",
+            "4.3 (95)",
+            "Free delivery"
+          ]
+        }
+      },
+      "about_this_result": {
+        "source": {
+          "description": "Dark Knight Premium is a gaming chair that combines style, comfort, and durability. It features a sleek black design with red accents, a high-quality PU ...",
+          "source_info_link": "https://andaseat-cad.myshopify.com/products/upgrade-to-large-size-memory-foam-pillowanda-seat-premium-gaming-chair-dark-knight-series-high-back-400lb-racing-chair-computer-office-chair-with-carbon-fiber-leather-pillow-lumbar-support-black"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "CA"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://andaseat-cad.myshopify.com/products/upgrade-to-large-size-memory-foam-pillowanda-seat-premium-gaming-chair-dark-knight-series-high-back-400lb-racing-chair-computer-office-chair-with-carbon-fiber-leather-pillow-lumbar-support-black&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fandaseat-cad.myshopify.com%2Fproducts%2Fupgrade-to-large-size-memory-foam-pillowanda-seat-premium-gaming-chair-dark-knight-series-high-back-400lb-racing-chair-computer-office-chair-with-carbon-fiber-leather-pillow-lumbar-support-black",
+      "source": "myshopify.com"
+    },
+    {
+      "position": 6,
+      "title": "Lynxtyn Swivel Gaming Chair",
+      "link": "https://ashley-homestores-in-canada.myshopify.com/products/lynxtyn-swivel-desk-chair-3?variant=40110838120537",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ashley-homestores-in-canada.myshopify.com/products/lynxtyn-swivel-desk-chair-3%3Fvariant%3D40110838120537&ved=2ahUKEwji0ofOhomTAxV9xMkDHSsHEjgQFnoECB4QAQ",
+      "displayed_link": "https://ashley-homestores-in-canada.myshopify.com › ly...",
+      "favicon": "https://serpapi.com/searches/69a99e22d3982c91204e3e6b/images/fX3rItgB8p62Ls0JbOTg7k0aYlz0HYRwVh7kMs7R19w.png",
+      "snippet": "A go-to choice among gamers and work-from-home warriors, the Lynxtyn swivel office chair is turning heads for good reason. Its comfy headrest, lumbar pillow and ...",
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "rating": 3,
+            "reviews": 2
+          },
+          "extensions": [
+            "3.0(2)"
+          ]
+        }
+      },
+      "about_this_result": {
+        "source": {
+          "description": "A go-to choice among gamers and work-from-home warriors, the Lynxtyn swivel office chair is turning heads for good reason. Its comfy headrest, lumbar pillow and ...",
+          "source_info_link": "https://ashley-homestores-in-canada.myshopify.com/products/lynxtyn-swivel-desk-chair-3?variant=40110838120537",
+          "icon": "https://serpapi.com/searches/69a99e22d3982c91204e3e6b/images/fX3rItgB8p62Ls0JbOTg7oZShz38Ntv-rcdCJSCHvceaoHK1wLoeK76HLnbHoAqf.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "CA"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://ashley-homestores-in-canada.myshopify.com/products/lynxtyn-swivel-desk-chair-3?variant=40110838120537&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fashley-homestores-in-canada.myshopify.com%2Fproducts%2Flynxtyn-swivel-desk-chair-3%3Fvariant%3D40110838120537",
+      "source": "myshopify.com"
+    },
+    {
+      "position": 7,
+      "title": "NZXT Special Edition Gaming Chair",
+      "link": "https://vertagear.myshopify.com/blogs/press-room/surprise-collaboration-with-nzxt",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://vertagear.myshopify.com/blogs/press-room/surprise-collaboration-with-nzxt&ved=2ahUKEwji0ofOhomTAxV9xMkDHSsHEjgQFnoECEsQAQ",
+      "displayed_link": "https://vertagear.myshopify.com › blogs › press-room",
+      "favicon": "https://serpapi.com/searches/69a99e22d3982c91204e3e6b/images/fX3rItgB8p62Ls0JbOTg7sTtMrK3Ph6wArnxEi6o2_s.png",
+      "snippet": "The chair boasts an adjustable backrest, armrests, height, and seat angle; additional neck and lumbar cushions; soft-gliding Penta RS1 casters; and multiple ...",
+      "rich_snippet": {
+        "bottom": {
+          "detected_extensions": {
+            "price": 259.9,
+            "currency": "€"
+          },
+          "extensions": [
+            "€259.90"
+          ]
+        }
+      },
+      "about_this_result": {
+        "source": {
+          "description": "The chair boasts an adjustable backrest, armrests, height, and seat angle; additional neck and lumbar cushions; soft-gliding Penta RS1 casters; and multiple ...",
+          "source_info_link": "https://vertagear.myshopify.com/blogs/press-room/surprise-collaboration-with-nzxt",
+          "icon": "https://serpapi.com/searches/69a99e22d3982c91204e3e6b/images/fX3rItgB8p62Ls0JbOTg7rD_tcb-HGgk5pSzaQg4iwxArOTP5bj3SRSVViN7yG8q.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "CA"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://vertagear.myshopify.com/blogs/press-room/surprise-collaboration-with-nzxt&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fvertagear.myshopify.com%2Fblogs%2Fpress-room%2Fsurprise-collaboration-with-nzxt",
+      "source": "myshopify.com"
+    },
+    {
+      "position": 8,
+      "title": "Lord of the Rings Gaming Chair",
+      "link": "https://cybe-art.myshopify.com/products/lord-of-the-rings",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://cybe-art.myshopify.com/products/lord-of-the-rings&ved=2ahUKEwji0ofOhomTAxV9xMkDHSsHEjgQFnoECD4QAQ",
+      "displayed_link": "https://cybe-art.myshopify.com › products › lord-of-the...",
+      "favicon": "https://serpapi.com/searches/69a99e22d3982c91204e3e6b/images/fX3rItgB8p62Ls0JbOTg7qA-19lJNW4fmwoXtl9TDtY.png",
+      "snippet": "The Lord of the Rings™ Gaming Chair ; MSRP · $849.99 CAD ; TOP FEATURES. Explore All Features. PU Padded 4D Armrest. Adjustable Lumbar Support. Multi-Tilt ...",
+      "rich_snippet": {
+        "bottom": {
+          "detected_extensions": {
+            "price": 649.99,
+            "currency": "$",
+            "rating": 4.7,
+            "reviews": 400
+          },
+          "extensions": [
+            "$649.99",
+            "Old price $850",
+            "$850",
+            "In stock",
+            "4.7(400)",
+            "$9.99 delivery"
+          ]
+        }
+      },
+      "about_this_result": {
+        "source": {
+          "description": "The Lord of the Rings™ Gaming Chair ; MSRP · $849.99 CAD ; TOP FEATURES. Explore All Features. PU Padded 4D Armrest. Adjustable Lumbar Support. Multi-Tilt ...",
+          "source_info_link": "https://cybe-art.myshopify.com/products/lord-of-the-rings",
+          "icon": "https://serpapi.com/searches/69a99e22d3982c91204e3e6b/images/fX3rItgB8p62Ls0JbOTg7msfTZtCDsuP4uHQoK0FQIe_Ib5fjTzCP-KIgUuxKctR.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "CA"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://cybe-art.myshopify.com/products/lord-of-the-rings&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fcybe-art.myshopify.com%2Fproducts%2Flord-of-the-rings",
+      "source": "myshopify.com"
+    },
+    {
+      "position": 9,
+      "title": "Vitesse Ergonomic Gaming Chair and Desk | Leather Office ...",
+      "link": "https://vitesse-gaming.myshopify.com/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://vitesse-gaming.myshopify.com/&ved=2ahUKEwji0ofOhomTAxV9xMkDHSsHEjgQFnoECEYQAQ",
+      "displayed_link": "https://vitesse-gaming.myshopify.com",
+      "favicon": "https://serpapi.com/searches/69a99e22d3982c91204e3e6b/images/fX3rItgB8p62Ls0JbOTg7hFqyaiIja8A0gHh5DAQVdI.png",
+      "snippet": "Vitesse is dedicated to offering best cheap ergonomic Gaming Desks, Chairs and Recliners to Gamers. With manufacturing experience over 10 years, ...",
+      "about_this_result": {
+        "source": {
+          "description": "Vitesse is dedicated to offering best cheap ergonomic Gaming Desks, Chairs and Recliners to Gamers. With manufacturing experience over 10 years, ...",
+          "source_info_link": "https://vitesse-gaming.myshopify.com/",
+          "icon": "https://serpapi.com/searches/69a99e22d3982c91204e3e6b/images/fX3rItgB8p62Ls0JbOTg7tDc3idqyuIdE9OJagyFlyG1hreu6u-8MBKqkV9-i8DR.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "CA"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://vitesse-gaming.myshopify.com/&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fvitesse-gaming.myshopify.com%2F",
+      "source": "myshopify.com"
+    },
+    {
+      "position": 10,
+      "title": "Miles Gaming Chair - Green and Black",
+      "link": "https://leons-furniture.myshopify.com/products/miles-gaming-chair-green-and-black",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://leons-furniture.myshopify.com/products/miles-gaming-chair-green-and-black&ved=2ahUKEwji0ofOhomTAxV9xMkDHSsHEjgQFnoECEAQAQ",
+      "displayed_link": "https://leons-furniture.myshopify.com › ... › Home Office",
+      "favicon": "https://serpapi.com/searches/69a99e22d3982c91204e3e6b/images/fX3rItgB8p62Ls0JbOTg7h3wB3wZNwIYCFTh4WOYi9Y.png",
+      "snippet": "The Miles gaming chair is built to provide exceptional comfort and functionality, making it the perfect addition to any gaming setup. Featuring built-in lumbar ...",
+      "rich_snippet": {
+        "bottom": {
+          "detected_extensions": {
+            "price": 149,
+            "currency": "$"
+          },
+          "extensions": [
+            "$149.00"
+          ]
+        }
+      },
+      "about_this_result": {
+        "source": {
+          "description": "The Miles gaming chair is built to provide exceptional comfort and functionality, making it the perfect addition to any gaming setup. Featuring built-in lumbar ...",
+          "source_info_link": "https://leons-furniture.myshopify.com/products/miles-gaming-chair-green-and-black",
+          "icon": "https://serpapi.com/searches/69a99e22d3982c91204e3e6b/images/fX3rItgB8p62Ls0JbOTg7h2meQQ3RRexnQFtQ4XNQz3v8Pt9kaPzm7HOBaXbuAXt.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "CA"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://leons-furniture.myshopify.com/products/miles-gaming-chair-green-and-black&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fleons-furniture.myshopify.com%2Fproducts%2Fmiles-gaming-chair-green-and-black",
+      "source": "myshopify.com"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=intitle:%22gaming+chair%22+site:myshopify.com&sca_esv=110a515e0d96392e&ei=K56paaKROf2Ip84Pq47IwAM&start=10&sa=N&sstk=Af77f_eU2DIB48mugVenQZ9hQE6hV_nVBHHXHxpvafwANMdeQ68I5kAfH213Ct5XyQkF4-hQhW86uqAqWtoUdesAFs2_o690pNz3Vw&ved=2ahUKEwji0ofOhomTAxV9xMkDHSsHEjgQ8NMDegQICRAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=intitle:%22gaming+chair%22+site:myshopify.com&sca_esv=110a515e0d96392e&ei=K56paaKROf2Ip84Pq47IwAM&start=10&sa=N&sstk=Af77f_eU2DIB48mugVenQZ9hQE6hV_nVBHHXHxpvafwANMdeQ68I5kAfH213Ct5XyQkF4-hQhW86uqAqWtoUdesAFs2_o690pNz3Vw&ved=2ahUKEwji0ofOhomTAxV9xMkDHSsHEjgQ8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=intitle:%22gaming+chair%22+site:myshopify.com&sca_esv=110a515e0d96392e&ei=K56paaKROf2Ip84Pq47IwAM&start=20&sa=N&sstk=Af77f_eU2DIB48mugVenQZ9hQE6hV_nVBHHXHxpvafwANMdeQ68I5kAfH213Ct5XyQkF4-hQhW86uqAqWtoUdesAFs2_o690pNz3Vw&ved=2ahUKEwji0ofOhomTAxV9xMkDHSsHEjgQ8tMDegQICRAG",
+      "4": "https://www.google.com/search?q=intitle:%22gaming+chair%22+site:myshopify.com&sca_esv=110a515e0d96392e&ei=K56paaKROf2Ip84Pq47IwAM&start=30&sa=N&sstk=Af77f_eU2DIB48mugVenQZ9hQE6hV_nVBHHXHxpvafwANMdeQ68I5kAfH213Ct5XyQkF4-hQhW86uqAqWtoUdesAFs2_o690pNz3Vw&ved=2ahUKEwji0ofOhomTAxV9xMkDHSsHEjgQ8tMDegQICRAI",
+      "5": "https://www.google.com/search?q=intitle:%22gaming+chair%22+site:myshopify.com&sca_esv=110a515e0d96392e&ei=K56paaKROf2Ip84Pq47IwAM&start=40&sa=N&sstk=Af77f_eU2DIB48mugVenQZ9hQE6hV_nVBHHXHxpvafwANMdeQ68I5kAfH213Ct5XyQkF4-hQhW86uqAqWtoUdesAFs2_o690pNz3Vw&ved=2ahUKEwji0ofOhomTAxV9xMkDHSsHEjgQ8tMDegQICRAK",
+      "6": "https://www.google.com/search?q=intitle:%22gaming+chair%22+site:myshopify.com&sca_esv=110a515e0d96392e&ei=K56paaKROf2Ip84Pq47IwAM&start=50&sa=N&sstk=Af77f_eU2DIB48mugVenQZ9hQE6hV_nVBHHXHxpvafwANMdeQ68I5kAfH213Ct5XyQkF4-hQhW86uqAqWtoUdesAFs2_o690pNz3Vw&ved=2ahUKEwji0ofOhomTAxV9xMkDHSsHEjgQ8tMDegQICRAM",
+      "7": "https://www.google.com/search?q=intitle:%22gaming+chair%22+site:myshopify.com&sca_esv=110a515e0d96392e&ei=K56paaKROf2Ip84Pq47IwAM&start=60&sa=N&sstk=Af77f_eU2DIB48mugVenQZ9hQE6hV_nVBHHXHxpvafwANMdeQ68I5kAfH213Ct5XyQkF4-hQhW86uqAqWtoUdesAFs2_o690pNz3Vw&ved=2ahUKEwji0ofOhomTAxV9xMkDHSsHEjgQ8tMDegQICRAO",
+      "8": "https://www.google.com/search?q=intitle:%22gaming+chair%22+site:myshopify.com&sca_esv=110a515e0d96392e&ei=K56paaKROf2Ip84Pq47IwAM&start=70&sa=N&sstk=Af77f_eU2DIB48mugVenQZ9hQE6hV_nVBHHXHxpvafwANMdeQ68I5kAfH213Ct5XyQkF4-hQhW86uqAqWtoUdesAFs2_o690pNz3Vw&ved=2ahUKEwji0ofOhomTAxV9xMkDHSsHEjgQ8tMDegQICRAQ",
+      "9": "https://www.google.com/search?q=intitle:%22gaming+chair%22+site:myshopify.com&sca_esv=110a515e0d96392e&ei=K56paaKROf2Ip84Pq47IwAM&start=80&sa=N&sstk=Af77f_eU2DIB48mugVenQZ9hQE6hV_nVBHHXHxpvafwANMdeQ68I5kAfH213Ct5XyQkF4-hQhW86uqAqWtoUdesAFs2_o690pNz3Vw&ved=2ahUKEwji0ofOhomTAxV9xMkDHSsHEjgQ8tMDegQICRAS",
+      "10": "https://www.google.com/search?q=intitle:%22gaming+chair%22+site:myshopify.com&sca_esv=110a515e0d96392e&ei=K56paaKROf2Ip84Pq47IwAM&start=90&sa=N&sstk=Af77f_eU2DIB48mugVenQZ9hQE6hV_nVBHHXHxpvafwANMdeQ68I5kAfH213Ct5XyQkF4-hQhW86uqAqWtoUdesAFs2_o690pNz3Vw&ved=2ahUKEwji0ofOhomTAxV9xMkDHSsHEjgQ8tMDegQICRAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=intitle%3A%22gaming+chair%22+site%3Amyshopify.com&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=intitle%3A%22gaming+chair%22+site%3Amyshopify.com&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=intitle%3A%22gaming+chair%22+site%3Amyshopify.com&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=intitle%3A%22gaming+chair%22+site%3Amyshopify.com&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=intitle%3A%22gaming+chair%22+site%3Amyshopify.com&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=intitle%3A%22gaming+chair%22+site%3Amyshopify.com&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=intitle%3A%22gaming+chair%22+site%3Amyshopify.com&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=intitle%3A%22gaming+chair%22+site%3Amyshopify.com&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=intitle%3A%22gaming+chair%22+site%3Amyshopify.com&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=intitle%3A%22gaming+chair%22+site%3Amyshopify.com&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=intitle%3A%22gaming+chair%22+site%3Amyshopify.com&start=90"
+    }
+  }
+}

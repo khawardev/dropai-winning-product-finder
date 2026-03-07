@@ -1,16 +1,17 @@
-'use client';
+'use client'
 
-import React from 'react';
+import React, { useState, useEffect } from 'react'
 import {
   BarChart3,
   TrendingUp,
   PieChart,
   Download,
   Calendar,
-  Filter
-} from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+  Filter,
+  Loader2
+} from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import {
   AreaChart,
   Area,
@@ -24,27 +25,46 @@ import {
   Cell,
   PieChart as RePieChart,
   Pie
-} from 'recharts';
+} from 'recharts'
+import { getReportsData } from '@/server/actions/ReportsData'
 
-const nicheData = [
-  { name: 'Pet Tech', value: 4500 },
-  { name: 'Home Office', value: 3200 },
-  { name: 'Eco-Friendly', value: 2800 },
-  { name: 'Smart Kitchen', value: 2400 },
-  { name: 'Fitness', value: 1900 },
-];
-
-const profitDistData = [
-  { name: '10-20%', value: 15 },
-  { name: '20-30%', value: 25 },
-  { name: '30-40%', value: 35 },
-  { name: '40-50%', value: 15 },
-  { name: '50%+', value: 10 },
-];
-
-const COLORS = ['var(--primary)', 'var(--secondary)', '#F59E0B', '#22C55E', '#EC4899'];
+const COLORS = ['var(--primary)', 'var(--secondary)', '#F59E0B', '#22C55E', '#EC4899']
 
 export default function ReportsPage() {
+  const [nicheData, setNicheData] = useState<any[]>([])
+  const [profitDistData, setProfitDistData] = useState<any[]>([])
+  const [competitionData, setCompetitionData] = useState<any[]>([])
+  const [isLoading, setIsLoading] = useState(true)
+  const [isMounted, setIsMounted] = useState(false)
+
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
+
+  useEffect(() => {
+    async function loadReports() {
+      try {
+        const result = await getReportsData()
+        if (result.data) {
+          if (result.data.recentTrends.length > 0) {
+            setNicheData(result.data.recentTrends.slice(0, 5))
+          }
+          if (result.data.profitDistribution.length > 0) {
+            setProfitDistData(result.data.profitDistribution)
+          }
+          if (result.data.nicheData.length > 0) {
+            setCompetitionData(result.data.nicheData)
+          }
+        }
+      } catch (err) {
+        console.error('Failed to load reports:', err)
+      } finally {
+        setIsLoading(false)
+      }
+    }
+    loadReports()
+  }, [])
+
   return (
     <div className="space-y-8 animate-in fade-in duration-500">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
@@ -63,7 +83,6 @@ export default function ReportsPage() {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {/* Niche Trend Over Time */}
         <Card className="bg-card border-border">
           <CardHeader className="flex flex-row items-center justify-between">
             <CardTitle className="text-lg flex items-center gap-2">
@@ -75,29 +94,34 @@ export default function ReportsPage() {
           </CardHeader>
           <CardContent>
             <div className="h-[300px] w-full">
-              <ResponsiveContainer width="100%" height="100%">
-                <AreaChart data={nicheData}>
-                  <defs>
-                    <linearGradient id="colorNiche" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="5%" stopColor="var(--primary)" stopOpacity={0.3} />
-                      <stop offset="95%" stopColor="var(--primary)" stopOpacity={0} />
-                    </linearGradient>
-                  </defs>
-                  <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" vertical={false} />
-                  <XAxis dataKey="name" stroke="var(--muted-foreground)" fontSize={12} tickLine={false} axisLine={false} />
-                  <YAxis stroke="var(--muted-foreground)" fontSize={12} tickLine={false} axisLine={false} />
-                  <Tooltip
-                    contentStyle={{ backgroundColor: 'var(--card)', borderColor: 'var(--border)', borderRadius: '18px', padding: '12px', boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)', backdropFilter: 'blur(12px)' }}
-                    itemStyle={{ color: 'var(--primary)' }}
-                  />
-                  <Area type="monotone" dataKey="value" stroke="var(--primary)" strokeWidth={2} fill="url(#colorNiche)" />
-                </AreaChart>
-              </ResponsiveContainer>
+              {isMounted && nicheData.length > 0 ? (
+                <ResponsiveContainer width="100%" height="100%" minWidth={1} minHeight={1}>
+                  <AreaChart data={nicheData}>
+                    <defs>
+                      <linearGradient id="colorNiche" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="5%" stopColor="var(--primary)" stopOpacity={0.3} />
+                        <stop offset="95%" stopColor="var(--primary)" stopOpacity={0} />
+                      </linearGradient>
+                    </defs>
+                    <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" vertical={false} />
+                    <XAxis dataKey="name" stroke="var(--muted-foreground)" fontSize={12} tickLine={false} axisLine={false} />
+                    <YAxis stroke="var(--muted-foreground)" fontSize={12} tickLine={false} axisLine={false} />
+                    <Tooltip
+                      contentStyle={{ backgroundColor: 'var(--card)', borderColor: 'var(--border)', borderRadius: '18px', padding: '12px', boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)', backdropFilter: 'blur(12px)' }}
+                      itemStyle={{ color: 'var(--primary)' }}
+                    />
+                    <Area type="monotone" dataKey="value" stroke="var(--primary)" strokeWidth={2} fill="url(#colorNiche)" />
+                  </AreaChart>
+                </ResponsiveContainer>
+              ) : (
+                <div className="flex items-center justify-center h-full text-muted-foreground text-sm">
+                  No trend data available yet.
+                </div>
+              )}
             </div>
           </CardContent>
         </Card>
 
-        {/* Profit Distribution */}
         <Card className="bg-card border-border">
           <CardHeader>
             <CardTitle className="text-lg flex items-center gap-2">
@@ -105,44 +129,50 @@ export default function ReportsPage() {
             </CardTitle>
           </CardHeader>
           <CardContent className="flex flex-col md:flex-row items-center gap-8">
-            <div className="h-[250px] w-[250px]">
-              <ResponsiveContainer width="100%" height="100%">
-                <RePieChart>
-                  <Pie
-                    data={profitDistData}
-                    cx="50%"
-                    cy="50%"
-                    innerRadius={60}
-                    outerRadius={80}
-                    paddingAngle={5}
-                    dataKey="value"
-                  >
-                    {profitDistData.map((entry, index) => (
-                      <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                    ))}
-                  </Pie>
-                  <Tooltip
-                    contentStyle={{ backgroundColor: 'var(--card)', borderColor: 'var(--border)', borderRadius: '18px', padding: '12px', boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)', backdropFilter: 'blur(12px)' }}
-                    itemStyle={{ color: 'var(--primary)' }}
-                  />
-                </RePieChart>
-              </ResponsiveContainer>
-            </div>
-            <div className="flex-1 space-y-4">
-              {profitDistData.map((item, i) => (
-                <div key={i} className="flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <div className="w-3 h-3 rounded-full" style={{ backgroundColor: COLORS[i % COLORS.length] }}></div>
-                    <span className="text-sm text-muted-foreground">{item.name}</span>
-                  </div>
-                  <span className="text-sm font-bold text-foreground">{item.value}%</span>
+            {isMounted && profitDistData.length > 0 ? (
+              <>
+                <div className="h-[250px] w-[250px]">
+                  <ResponsiveContainer width="100%" height="100%" minWidth={1} minHeight={1}>
+                    <RePieChart>
+                      <Pie
+                        data={profitDistData}
+                        cx="50%"
+                        cy="50%"
+                        innerRadius={60}
+                        outerRadius={80}
+                        paddingAngle={5}
+                        dataKey="value"
+                      >
+                        {profitDistData.map((entry, index) => (
+                          <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                        ))}
+                      </Pie>
+                      <Tooltip
+                        contentStyle={{ backgroundColor: 'var(--card)', borderColor: 'var(--border)', borderRadius: '18px', padding: '12px', boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)', backdropFilter: 'blur(12px)' }}
+                        itemStyle={{ color: 'var(--primary)' }}
+                      />
+                    </RePieChart>
+                  </ResponsiveContainer>
                 </div>
-              ))}
-            </div>
-          </CardContent>
-        </Card>
+                <div className="flex-1 space-y-4">
+                  {profitDistData.map((item, i) => (
+                    <div key={i} className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <div className="w-3 h-3 rounded-full" style={{ backgroundColor: COLORS[i % COLORS.length] }}></div>
+                        <span className="text-sm text-muted-foreground">{item.name}</span>
+                      </div>
+                      <span className="text-sm font-bold text-foreground">{item.value}%</span>
+                    </div>
+                  ))}
+                </div>
+              </>
+            ) : (
+              <div className="w-full flex items-center justify-center h-[250px] text-muted-foreground text-sm">
+                No profit margin data available yet.
+              </div>
+            )}
+          </CardContent>        </Card>
 
-        {/* Competition Distribution */}
         <Card className="bg-card border-border lg:col-span-2">
           <CardHeader>
             <CardTitle className="text-lg flex items-center gap-2">
@@ -151,22 +181,28 @@ export default function ReportsPage() {
           </CardHeader>
           <CardContent>
             <div className="h-[300px] w-full">
-              <ResponsiveContainer width="100%" height="100%">
-                <BarChart data={nicheData}>
-                  <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" vertical={false} />
-                  <XAxis dataKey="name" stroke="var(--muted-foreground)" fontSize={12} tickLine={false} axisLine={false} />
-                  <YAxis stroke="var(--muted-foreground)" fontSize={12} tickLine={false} axisLine={false} />
-                  <Tooltip
-                    contentStyle={{ backgroundColor: 'var(--card)', borderColor: 'var(--border)', borderRadius: '18px', padding: '12px', boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)', backdropFilter: 'blur(12px)' }}
-                    itemStyle={{ color: 'var(--primary)' }}
-                  />
-                  <Bar dataKey="value" fill="var(--primary)" radius={[4, 4, 0, 0]} />
-                </BarChart>
-              </ResponsiveContainer>
+              {isMounted && competitionData.length > 0 ? (
+                <ResponsiveContainer width="100%" height="100%" minWidth={1} minHeight={1}>
+                  <BarChart data={competitionData}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" vertical={false} />
+                    <XAxis dataKey="name" stroke="var(--muted-foreground)" fontSize={12} tickLine={false} axisLine={false} />
+                    <YAxis stroke="var(--muted-foreground)" fontSize={12} tickLine={false} axisLine={false} />
+                    <Tooltip
+                      contentStyle={{ backgroundColor: 'var(--card)', borderColor: 'var(--border)', borderRadius: '18px', padding: '12px', boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)', backdropFilter: 'blur(12px)' }}
+                      itemStyle={{ color: 'var(--primary)' }}
+                    />
+                    <Bar dataKey="value" fill="var(--primary)" radius={[4, 4, 0, 0]} />
+                  </BarChart>
+                </ResponsiveContainer>
+              ) : (
+                <div className="flex items-center justify-center h-full text-muted-foreground text-sm">
+                  No competition data available yet.
+                </div>
+              )}
             </div>
           </CardContent>
         </Card>
       </div>
     </div>
-  );
+  )
 }
