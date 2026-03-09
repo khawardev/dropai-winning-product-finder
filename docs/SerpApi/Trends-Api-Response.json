@@ -1,0 +1,427 @@
+{
+  "original_keyword": "gaming chair",
+  "breakouts": [],
+  "rising": [
+    {
+      "query": "gaming chair near me",
+      "value": "+140%",
+      "extracted_value": 140,
+      "link": "https://trends.google.com/trends/explore?q=gaming+chair+near+me&date=today+3-m",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=gaming+chair+near+me&tz=420"
+    },
+    {
+      "query": "dps encode 3d insight gaming chair",
+      "value": "+100%",
+      "extracted_value": 100,
+      "link": "https://trends.google.com/trends/explore?q=dps+encode+3d+insight+gaming+chair&date=today+3-m",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=dps+encode+3d+insight+gaming+chair&tz=420"
+    },
+    {
+      "query": "gaming chair nearby",
+      "value": "+80%",
+      "extracted_value": 80,
+      "link": "https://trends.google.com/trends/explore?q=gaming+chair+nearby&date=today+3-m",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=gaming+chair+nearby&tz=420"
+    }
+  ],
+  "top": [
+    {
+      "query": "best gaming chair",
+      "value": "100",
+      "extracted_value": 100,
+      "link": "https://trends.google.com/trends/explore?q=best+gaming+chair&date=today+3-m",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=best+gaming+chair&tz=420"
+    },
+    {
+      "query": "office gaming chair",
+      "value": "70",
+      "extracted_value": 70,
+      "link": "https://trends.google.com/trends/explore?q=office+gaming+chair&date=today+3-m",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=office+gaming+chair&tz=420"
+    },
+    {
+      "query": "office chair",
+      "value": "68",
+      "extracted_value": 68,
+      "link": "https://trends.google.com/trends/explore?q=office+chair&date=today+3-m",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=office+chair&tz=420"
+    },
+    {
+      "query": "gaming chair price",
+      "value": "47",
+      "extracted_value": 47,
+      "link": "https://trends.google.com/trends/explore?q=gaming+chair+price&date=today+3-m",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=gaming+chair+price&tz=420"
+    },
+    {
+      "query": "ergonomic gaming chair",
+      "value": "44",
+      "extracted_value": 44,
+      "link": "https://trends.google.com/trends/explore?q=ergonomic+gaming+chair&date=today+3-m",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=ergonomic+gaming+chair&tz=420"
+    },
+    {
+      "query": "ergonomic chair",
+      "value": "42",
+      "extracted_value": 42,
+      "link": "https://trends.google.com/trends/explore?q=ergonomic+chair&date=today+3-m",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=ergonomic+chair&tz=420"
+    },
+    {
+      "query": "gaming chairs",
+      "value": "41",
+      "extracted_value": 41,
+      "link": "https://trends.google.com/trends/explore?q=gaming+chairs&date=today+3-m",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=gaming+chairs&tz=420"
+    },
+    {
+      "query": "gaming desk",
+      "value": "40",
+      "extracted_value": 40,
+      "link": "https://trends.google.com/trends/explore?q=gaming+desk&date=today+3-m",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=gaming+desk&tz=420"
+    },
+    {
+      "query": "desk chair",
+      "value": "38",
+      "extracted_value": 38,
+      "link": "https://trends.google.com/trends/explore?q=desk+chair&date=today+3-m",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=desk+chair&tz=420"
+    },
+    {
+      "query": "gaming desk chair",
+      "value": "38",
+      "extracted_value": 38,
+      "link": "https://trends.google.com/trends/explore?q=gaming+desk+chair&date=today+3-m",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=gaming+desk+chair&tz=420"
+    },
+    {
+      "query": "desk",
+      "value": "37",
+      "extracted_value": 37,
+      "link": "https://trends.google.com/trends/explore?q=desk&date=today+3-m",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=desk&tz=420"
+    },
+    {
+      "query": "black gaming chair",
+      "value": "35",
+      "extracted_value": 35,
+      "link": "https://trends.google.com/trends/explore?q=black+gaming+chair&date=today+3-m",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=black+gaming+chair&tz=420"
+    },
+    {
+      "query": "computer chair",
+      "value": "23",
+      "extracted_value": 23,
+      "link": "https://trends.google.com/trends/explore?q=computer+chair&date=today+3-m",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=computer+chair&tz=420"
+    },
+    {
+      "query": "computer gaming chair",
+      "value": "22",
+      "extracted_value": 22,
+      "link": "https://trends.google.com/trends/explore?q=computer+gaming+chair&date=today+3-m",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=computer+gaming+chair&tz=420"
+    },
+    {
+      "query": "best gaming chair 2025",
+      "value": "21",
+      "extracted_value": 21,
+      "link": "https://trends.google.com/trends/explore?q=best+gaming+chair+2025&date=today+3-m",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=best+gaming+chair+2025&tz=420"
+    },
+    {
+      "query": "gaming pc",
+      "value": "21",
+      "extracted_value": 21,
+      "link": "https://trends.google.com/trends/explore?q=gaming+pc&date=today+3-m",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=gaming+pc&tz=420"
+    },
+    {
+      "query": "pc",
+      "value": "21",
+      "extracted_value": 21,
+      "link": "https://trends.google.com/trends/explore?q=pc&date=today+3-m",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=pc&tz=420"
+    },
+    {
+      "query": "pc gaming chair",
+      "value": "21",
+      "extracted_value": 21,
+      "link": "https://trends.google.com/trends/explore?q=pc+gaming+chair&date=today+3-m",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=pc+gaming+chair&tz=420"
+    },
+    {
+      "query": "gaming chair near me",
+      "value": "20",
+      "extracted_value": 20,
+      "link": "https://trends.google.com/trends/explore?q=gaming+chair+near+me&date=today+3-m",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=gaming+chair+near+me&tz=420"
+    },
+    {
+      "query": "gaming chair amazon",
+      "value": "20",
+      "extracted_value": 20,
+      "link": "https://trends.google.com/trends/explore?q=gaming+chair+amazon&date=today+3-m",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=gaming+chair+amazon&tz=420"
+    },
+    {
+      "query": "white gaming chair",
+      "value": "19",
+      "extracted_value": 19,
+      "link": "https://trends.google.com/trends/explore?q=white+gaming+chair&date=today+3-m",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=white+gaming+chair&tz=420"
+    },
+    {
+      "query": "rocker gaming chair",
+      "value": "17",
+      "extracted_value": 17,
+      "link": "https://trends.google.com/trends/explore?q=rocker+gaming+chair&date=today+3-m",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=rocker+gaming+chair&tz=420"
+    },
+    {
+      "query": "herman miller",
+      "value": "16",
+      "extracted_value": 16,
+      "link": "https://trends.google.com/trends/explore?q=herman+miller&date=today+3-m",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=herman+miller&tz=420"
+    },
+    {
+      "query": "herman miller gaming chair",
+      "value": "16",
+      "extracted_value": 16,
+      "link": "https://trends.google.com/trends/explore?q=herman+miller+gaming+chair&date=today+3-m",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=herman+miller+gaming+chair&tz=420"
+    },
+    {
+      "query": "ergonomic office chair",
+      "value": "16",
+      "extracted_value": 16,
+      "link": "https://trends.google.com/trends/explore?q=ergonomic+office+chair&date=today+3-m",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=ergonomic+office+chair&tz=420"
+    }
+  ],
+  "raw_data": {
+    "search_metadata": {
+      "id": "69ae9c9952acc65afd3c4c36",
+      "status": "Success",
+      "json_endpoint": "https://serpapi.com/searches/2Zr40R6QBHyk_pD6VLcc9Q/69ae9c9952acc65afd3c4c36.json",
+      "created_at": "2026-03-09 10:10:33 UTC",
+      "processed_at": "2026-03-09 10:10:33 UTC",
+      "google_trends_url": "https://trends.google.com/trends/embed/explore/RELATED_QUERIES?hl=en&tz=420&req=%7B%22comparisonItem%22%3A%5B%7B%22keyword%22%3A%22gaming+chair%22%2C%22geo%22%3A%22%22%2C%22time%22%3A%22today+3-m%22%7D%5D%2C%22category%22%3A0%2C%22property%22%3A%22%22%7D",
+      "raw_html_file": "https://serpapi.com/searches/2Zr40R6QBHyk_pD6VLcc9Q/69ae9c9952acc65afd3c4c36.html",
+      "prettify_html_file": "https://serpapi.com/searches/2Zr40R6QBHyk_pD6VLcc9Q/69ae9c9952acc65afd3c4c36.prettify",
+      "total_time_taken": 28.19
+    },
+    "search_parameters": {
+      "engine": "google_trends",
+      "q": "gaming chair",
+      "hl": "en",
+      "date": "today 3-m",
+      "tz": "420",
+      "data_type": "RELATED_QUERIES"
+    },
+    "related_queries": {
+      "rising": [
+        {
+          "query": "gaming chair near me",
+          "value": "+140%",
+          "extracted_value": 140,
+          "link": "https://trends.google.com/trends/explore?q=gaming+chair+near+me&date=today+3-m",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=gaming+chair+near+me&tz=420"
+        },
+        {
+          "query": "dps encode 3d insight gaming chair",
+          "value": "+100%",
+          "extracted_value": 100,
+          "link": "https://trends.google.com/trends/explore?q=dps+encode+3d+insight+gaming+chair&date=today+3-m",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=dps+encode+3d+insight+gaming+chair&tz=420"
+        },
+        {
+          "query": "gaming chair nearby",
+          "value": "+80%",
+          "extracted_value": 80,
+          "link": "https://trends.google.com/trends/explore?q=gaming+chair+nearby&date=today+3-m",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=gaming+chair+nearby&tz=420"
+        }
+      ],
+      "top": [
+        {
+          "query": "best gaming chair",
+          "value": "100",
+          "extracted_value": 100,
+          "link": "https://trends.google.com/trends/explore?q=best+gaming+chair&date=today+3-m",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=best+gaming+chair&tz=420"
+        },
+        {
+          "query": "office gaming chair",
+          "value": "70",
+          "extracted_value": 70,
+          "link": "https://trends.google.com/trends/explore?q=office+gaming+chair&date=today+3-m",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=office+gaming+chair&tz=420"
+        },
+        {
+          "query": "office chair",
+          "value": "68",
+          "extracted_value": 68,
+          "link": "https://trends.google.com/trends/explore?q=office+chair&date=today+3-m",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=office+chair&tz=420"
+        },
+        {
+          "query": "gaming chair price",
+          "value": "47",
+          "extracted_value": 47,
+          "link": "https://trends.google.com/trends/explore?q=gaming+chair+price&date=today+3-m",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=gaming+chair+price&tz=420"
+        },
+        {
+          "query": "ergonomic gaming chair",
+          "value": "44",
+          "extracted_value": 44,
+          "link": "https://trends.google.com/trends/explore?q=ergonomic+gaming+chair&date=today+3-m",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=ergonomic+gaming+chair&tz=420"
+        },
+        {
+          "query": "ergonomic chair",
+          "value": "42",
+          "extracted_value": 42,
+          "link": "https://trends.google.com/trends/explore?q=ergonomic+chair&date=today+3-m",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=ergonomic+chair&tz=420"
+        },
+        {
+          "query": "gaming chairs",
+          "value": "41",
+          "extracted_value": 41,
+          "link": "https://trends.google.com/trends/explore?q=gaming+chairs&date=today+3-m",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=gaming+chairs&tz=420"
+        },
+        {
+          "query": "gaming desk",
+          "value": "40",
+          "extracted_value": 40,
+          "link": "https://trends.google.com/trends/explore?q=gaming+desk&date=today+3-m",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=gaming+desk&tz=420"
+        },
+        {
+          "query": "desk chair",
+          "value": "38",
+          "extracted_value": 38,
+          "link": "https://trends.google.com/trends/explore?q=desk+chair&date=today+3-m",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=desk+chair&tz=420"
+        },
+        {
+          "query": "gaming desk chair",
+          "value": "38",
+          "extracted_value": 38,
+          "link": "https://trends.google.com/trends/explore?q=gaming+desk+chair&date=today+3-m",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=gaming+desk+chair&tz=420"
+        },
+        {
+          "query": "desk",
+          "value": "37",
+          "extracted_value": 37,
+          "link": "https://trends.google.com/trends/explore?q=desk&date=today+3-m",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=desk&tz=420"
+        },
+        {
+          "query": "black gaming chair",
+          "value": "35",
+          "extracted_value": 35,
+          "link": "https://trends.google.com/trends/explore?q=black+gaming+chair&date=today+3-m",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=black+gaming+chair&tz=420"
+        },
+        {
+          "query": "computer chair",
+          "value": "23",
+          "extracted_value": 23,
+          "link": "https://trends.google.com/trends/explore?q=computer+chair&date=today+3-m",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=computer+chair&tz=420"
+        },
+        {
+          "query": "computer gaming chair",
+          "value": "22",
+          "extracted_value": 22,
+          "link": "https://trends.google.com/trends/explore?q=computer+gaming+chair&date=today+3-m",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=computer+gaming+chair&tz=420"
+        },
+        {
+          "query": "best gaming chair 2025",
+          "value": "21",
+          "extracted_value": 21,
+          "link": "https://trends.google.com/trends/explore?q=best+gaming+chair+2025&date=today+3-m",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=best+gaming+chair+2025&tz=420"
+        },
+        {
+          "query": "gaming pc",
+          "value": "21",
+          "extracted_value": 21,
+          "link": "https://trends.google.com/trends/explore?q=gaming+pc&date=today+3-m",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=gaming+pc&tz=420"
+        },
+        {
+          "query": "pc",
+          "value": "21",
+          "extracted_value": 21,
+          "link": "https://trends.google.com/trends/explore?q=pc&date=today+3-m",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=pc&tz=420"
+        },
+        {
+          "query": "pc gaming chair",
+          "value": "21",
+          "extracted_value": 21,
+          "link": "https://trends.google.com/trends/explore?q=pc+gaming+chair&date=today+3-m",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=pc+gaming+chair&tz=420"
+        },
+        {
+          "query": "gaming chair near me",
+          "value": "20",
+          "extracted_value": 20,
+          "link": "https://trends.google.com/trends/explore?q=gaming+chair+near+me&date=today+3-m",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=gaming+chair+near+me&tz=420"
+        },
+        {
+          "query": "gaming chair amazon",
+          "value": "20",
+          "extracted_value": 20,
+          "link": "https://trends.google.com/trends/explore?q=gaming+chair+amazon&date=today+3-m",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=gaming+chair+amazon&tz=420"
+        },
+        {
+          "query": "white gaming chair",
+          "value": "19",
+          "extracted_value": 19,
+          "link": "https://trends.google.com/trends/explore?q=white+gaming+chair&date=today+3-m",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=white+gaming+chair&tz=420"
+        },
+        {
+          "query": "rocker gaming chair",
+          "value": "17",
+          "extracted_value": 17,
+          "link": "https://trends.google.com/trends/explore?q=rocker+gaming+chair&date=today+3-m",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=rocker+gaming+chair&tz=420"
+        },
+        {
+          "query": "herman miller",
+          "value": "16",
+          "extracted_value": 16,
+          "link": "https://trends.google.com/trends/explore?q=herman+miller&date=today+3-m",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=herman+miller&tz=420"
+        },
+        {
+          "query": "herman miller gaming chair",
+          "value": "16",
+          "extracted_value": 16,
+          "link": "https://trends.google.com/trends/explore?q=herman+miller+gaming+chair&date=today+3-m",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=herman+miller+gaming+chair&tz=420"
+        },
+        {
+          "query": "ergonomic office chair",
+          "value": "16",
+          "extracted_value": 16,
+          "link": "https://trends.google.com/trends/explore?q=ergonomic+office+chair&date=today+3-m",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=ergonomic+office+chair&tz=420"
+        }
+      ]
+    }
+  }
+}
