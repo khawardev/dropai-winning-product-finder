@@ -2,8 +2,8 @@
 
 import React, { useState, useRef, useEffect } from 'react'
 import { MessageSquare, X, Send, Loader2, Sparkles } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
+import { Button } from '@/components/ui/Button'
+import { Input } from '@/components/ui/Input'
 import { cn } from '@/lib/utils'
 
 type Message = {

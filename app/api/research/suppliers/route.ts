@@ -1,5 +1,45 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getGoogleLens, getGoogleShoppingAliExpress } from '@/lib/serpapi';
+import { getGoogleLens, getGoogleShoppingWholesale, getGoogleWholesaleOrganic } from '@/lib/serpapi';
+
+function extractPrice(item: any): number | null {
+  // 1. Explicit SerpApi fields
+  if (typeof item.extracted_price === 'number') return item.extracted_price;
+  if (item.price?.extracted_value) return item.price.extracted_value;
+  if (item.price?.value) {
+     const val = parseFloat(String(item.price.value).replace(/[^0-9.]/g, ''));
+     if (!isNaN(val)) return val;
+  }
+  
+  // 2. Rich Snippets (Found in organic results)
+  const richPrice = item.rich_snippet?.top?.detected_extensions?.price || 
+                    item.rich_snippet?.top?.detected_extensions?.cost ||
+                    item.rich_snippet?.bottom?.detected_extensions?.price;
+  if (richPrice) {
+    const val = parseFloat(String(richPrice).replace(/[^0-9.]/g, ''));
+    if (!isNaN(val)) return val;
+  }
+
+  // 3. Snippet parsing (Regex fallback for organic/lens snippets)
+  const textToScan = [item.snippet, item.title, item.price].filter(Boolean).join(' ');
+  // Look for patterns like "$12.99", "USD 12.99", "€12.99", "$12 - $15"
+  const priceRegex = /(?:\$|USD|EUR|€)\s*(\d+(?:[.,]\d{2})?)/gi;
+  const matches = [...textToScan.matchAll(priceRegex)];
+  if (matches.length > 0) {
+    // Take the lowest found price in the text (usually the base wholesale price)
+    const prices = matches.map(m => parseFloat(m[1].replace(',', '.'))).filter(p => p > 0);
+    if (prices.length > 0) return Math.min(...prices);
+  }
+
+  // 4. Raw string fallback
+  const priceStr = item.price || item.extracted_price;
+  if (typeof priceStr === 'string' && priceStr.length < 20) {
+    const cleaned = priceStr.split('-')[0].replace(/[^0-9.]/g, '');
+    const parsed = parseFloat(cleaned);
+    return isNaN(parsed) ? null : parsed;
+  }
+  
+  return null;
+}
 
 export async function GET(req: NextRequest) {
   try {
@@ -10,60 +50,95 @@ export async function GET(req: NextRequest) {
       return NextResponse.json({ error: 'Must provide either "q" or "url" parameter.' }, { status: 400 });
     }
 
-    let rawData: any;
-    let suppliers: any[] = [];
-    let methodUsed = '';
+    // Perform parallel lookups
+    const [lensData, shoppingWholesaleData, organicWholesaleData] = await Promise.all([
+      imageUrl ? getGoogleLens(imageUrl) : Promise.resolve({ visual_matches: [] }),
+      keyword ? getGoogleShoppingWholesale(keyword) : Promise.resolve({ shopping_results: [] }),
+      keyword ? getGoogleWholesaleOrganic(keyword) : (imageUrl ? getGoogleWholesaleOrganic(imageUrl) : Promise.resolve({ organic_results: [] }))
+    ]);
 
-    // Primary method: Google Lens with image URL
-    if (imageUrl) {
-      methodUsed = 'google_lens';
-      rawData = await getGoogleLens(imageUrl);
-      
-      // Extract exact visual matches
-      const visualMatches = rawData.visual_matches || [];
-      suppliers = visualMatches;
-    } 
-    // Secondary method: Google Shopping keyword with AliExpress appended
-    else if (keyword) {
-      methodUsed = 'google_shopping_alibaba_aliexpress';
-      rawData = await getGoogleShoppingAliExpress(keyword);
-      
-      const shoppingResults = rawData.shopping_results || [];
-      suppliers = shoppingResults;
-    }
+    // Normalize and add source tags
+    const lensMatches = (lensData.visual_matches || []).map((m: any) => ({ ...m, source_type: 'visual_match' }));
+    const shoppingMatches = (shoppingWholesaleData.shopping_results || []).map((m: any) => ({ ...m, source_type: 'shopping_wholesale' }));
+    const organicMatches = (organicWholesaleData.organic_results || []).map((m: any) => ({ ...m, source_type: 'organic_wholesale' }));
 
-    // Attempt to extract the lowest wholesale price from the suppliers
-    let lowestPrice = Infinity;
-    suppliers.forEach(s => {
-      // Clean price logic
-      let priceVal = methodUsed === 'google_lens' 
-        ? (s.price ? s.price.extracted_value : null) 
-        : s.extracted_price;
+    let allSuppliers = [...lensMatches, ...shoppingMatches, ...organicMatches];
 
-      if (!priceVal && s.price) {
-        if (typeof s.price === 'string') {
-          const parsed = parseFloat(s.price.replace(/[^0-9.]/g, ''));
-          if (!isNaN(parsed)) {
-            priceVal = parsed;
-          }
-        }
-      }
-      
-      if (typeof priceVal === 'number' && priceVal < lowestPrice && priceVal > 0) {
-        lowestPrice = priceVal;
+    // Platforms to prioritize (Expanded list from user request)
+    const verifiedPlatforms = [
+      'aliexpress', 'alibaba', 'cjdropshipping', 'spocket', 'salehoo', 
+      'zendrop', 'wholesale2b', 'modalyst', 'doba', 'worldwidebrands', 
+      'dhgate', 'banggood', '1688', 'made-in-china', 'globalsources'
+    ];
+    const retailPlatforms = ['amazon', 'walmart', 'ebay', 'target', 'bestbuy', 'etsy'];
+
+    // Enrich and Filter
+    const processedSuppliers = allSuppliers
+      .map(s => {
+        const url = (s.link || s.product_link || '').toLowerCase();
+        const sourceName = (s.source || s.displayed_link || '').toLowerCase();
+        const textToSearch = `${url} ${sourceName}`;
+        
+        const isVerified = verifiedPlatforms.some(p => textToSearch.includes(p));
+        const isRetail = retailPlatforms.some(p => textToSearch.includes(p));
+        const price = extractPrice(s);
+
+        return {
+          ...s,
+          link: s.link || s.product_link,
+          title: s.title || s.snippet || 'Wholesale Product',
+          extracted_price: price,
+          is_verified: isVerified,
+          is_retail: isRetail,
+          source: s.source || (isVerified ? 'Wholesale Factory' : (isRetail ? 'Retailer' : 'Marketplace'))
+        };
+      })
+      .filter(s => s.link && s.title);
+
+    // De-duplicate by canonical link
+    const uniqueMap = new Map();
+    processedSuppliers.forEach(s => {
+      // Clean URL for comparison
+      const cleanUrl = s.link.split('?')[0].replace('www.', '');
+      if (!uniqueMap.has(cleanUrl) || (!uniqueMap.get(cleanUrl).extracted_price && s.extracted_price)) {
+        uniqueMap.set(cleanUrl, s);
       }
     });
 
-    if (lowestPrice === Infinity) {
-      lowestPrice = 0;
-    }
+    const finalSuppliers = Array.from(uniqueMap.values());
+
+    // Sort: 1. Has Price, 2. Verified, 3. Retailers LAST, 4. Price value
+    finalSuppliers.sort((a, b) => {
+      // 1. Prioritize presence of price
+      const hasPriceA = !!a.extracted_price;
+      const hasPriceB = !!b.extracted_price;
+      if (hasPriceA && !hasPriceB) return -1;
+      if (!hasPriceA && hasPriceB) return 1;
+
+      // 2. Verified tier
+      if (a.is_verified && !b.is_verified) return -1;
+      if (!a.is_verified && b.is_verified) return 1;
+      
+      // 3. Retailers Tier (Retailers last)
+      if (a.is_retail && !b.is_retail) return 1;
+      if (!a.is_retail && b.is_retail) return -1;
+      
+      // 4. Price value
+      const priceA = a.extracted_price || 999999;
+      const priceB = b.extracted_price || 999999;
+      return priceA - priceB;
+    });
+
+    const lowestPrice = finalSuppliers.find(s => s.extracted_price && s.extracted_price > 0)?.extracted_price || 0;
 
     return NextResponse.json({
-      method: methodUsed,
+      method: 'wholesale_intelligence_v3',
       lowestPrice,
-      suppliersCount: suppliers.length,
-      suppliers,
-      raw_data: rawData
+      suppliersCount: finalSuppliers.length,
+      suppliers: finalSuppliers,
+      raw_lens: lensData,
+      raw_shopping: shoppingWholesaleData,
+      raw_organic: organicWholesaleData
     });
     
   } catch (error: any) {

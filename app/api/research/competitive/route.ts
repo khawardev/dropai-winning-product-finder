@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getGoogleShopping, getGoogleSearchShopify } from '@/lib/serpapi';
+// Cache Invalidated: 2026-03-09 17:05
+import { getGoogleShopping, getGoogleMarketplaceOrganic, getGoogleMarketIntelligence } from '@/lib/serpapi';
 
 export async function GET(req: NextRequest) {
   try {
@@ -9,19 +10,15 @@ export async function GET(req: NextRequest) {
       return NextResponse.json({ error: 'Missing keyword parameter "q"' }, { status: 400 });
     }
 
-    // Run both queries in parallel to save execution time
-    const [shoppingData, organicData] = await Promise.all([
+    const [shoppingData, organicData, marketData] = await Promise.all([
       getGoogleShopping(keyword),
-      getGoogleSearchShopify(keyword)
+      getGoogleMarketplaceOrganic(keyword),
+      getGoogleMarketIntelligence(keyword)
     ]);
 
-    // Process Google Shopping (Paid Landscape)
     const shoppingResults = shoppingData.shopping_results || [];
-    
-    // Process Google Search (Organic Shopify Spying)
     const organicResults = organicData.organic_results || [];
 
-    // Calculate Average Market Price from Shopping Results
     let avgPrice = 0;
     let validPrices = 0;
     
@@ -40,9 +37,18 @@ export async function GET(req: NextRequest) {
       original_keyword: keyword,
       avgPrice,
       competitors: shoppingResults,
+      marketplaceStores: organicResults,
       shopifyStores: organicResults,
+      marketIntelligence: {
+        relatedBrands: marketData.related_brands || [],
+        productSites: marketData.product_sites || [],
+        localResults: marketData.local_results || null,
+        knowledgeGraph: marketData.knowledge_graph || null,
+        ads: marketData.ads || []
+      },
       raw_shopping: shoppingData,
-      raw_organic: organicData
+      raw_organic: organicData,
+      raw_market: marketData
     });
     
   } catch (error: any) {

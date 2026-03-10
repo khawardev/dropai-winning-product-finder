@@ -3,8 +3,9 @@
 import React, { useEffect, useState, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { Loader2, Zap, ArrowLeft, ArrowRight } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { Button } from '@/components/ui/Button';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/Card';
+import { Badge } from '@/components/ui/Badge';
 import { cn } from '@/lib/utils';
 
 function SuppliersContent() {
@@ -33,12 +34,11 @@ function SuppliersContent() {
     const fetchData = async () => {
       try {
         // 1. Fetch Suppliers
-        let queryParams = `q=${encodeURIComponent(keyword || '')}`;
-        if (imageUrl) {
-          queryParams = `url=${encodeURIComponent(imageUrl)}`;
-        }
+        const params = new URLSearchParams();
+        if (keyword) params.set('q', keyword);
+        if (imageUrl) params.set('url', imageUrl);
 
-        const supRes = await fetch(`/api/research/suppliers?${queryParams}`);
+        const supRes = await fetch(`/api/research/suppliers?${params.toString()}`);
         if (!supRes.ok) throw new Error('Failed to fetch supplier data');
         const supData = await supRes.json();
         setSupplierResults(supData);
@@ -153,48 +153,124 @@ function SuppliersContent() {
               {/* Wholesale Suppliers Display */}
               {supplierResults.suppliers && supplierResults.suppliers.length > 0 && (
                 <div className="space-y-3 pt-6">
-                  <h3 className="font-semibold text-lg border-b pb-2">📦 Wholesale Suppliers Found</h3>
-                  <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 max-h-[600px] overflow-y-auto pr-2 pb-4">
-                    {supplierResults.suppliers.map((item: any, i: number) => (
-                      <Card key={i} className="flex flex-col overflow-hidden bg-background border-border">
-                        <div className="aspect-square relative overflow-hidden group border-b bg-muted/20">
+                  <h3 className="font-semibold text-lg border-b pb-2 flex items-center gap-2">
+                    📦 Wholesale Source Intelligence
+                    <Badge variant="secondary" className="text-[10px]">Verified Platforms</Badge>
+                  </h3>
+                  <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 max-h-[700px] overflow-y-auto pr-2 pb-4">
+                    {supplierResults.suppliers
+                      .filter((item: any) => item.title && (item.thumbnail || item.extracted_price || item.price))
+                      .map((item: any, i: number) => (
+                      <Card key={i} className={cn(
+                        "flex flex-col overflow-hidden bg-background border-border group relative",
+                        item.is_verified && "border-primary/40 ring-1 ring-primary/20"
+                      )}>
+                        {item.is_verified && (
+                          <div className="absolute top-2 right-2 z-10">
+                            <Badge className="bg-emerald-500 hover:bg-emerald-600 text-white border-none text-[9px] font-bold uppercase py-0.5 px-1.5 shadow-sm">
+                              Verified
+                            </Badge>
+                          </div>
+                        )}
+                        <div className="aspect-square relative overflow-hidden border-b bg-muted/20">
                           {item.thumbnail ? (
                             <img src={item.thumbnail} alt={item.title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                           ) : (
                             <div className="absolute inset-0 flex items-center justify-center bg-secondary">
-                              <span className="text-muted-foreground text-xs">No image</span>
+                              <span className="text-muted-foreground text-[10px] uppercase font-bold tracking-tight px-4 text-center">{item.title}</span>
                             </div>
                           )}
                         </div>
                         <CardContent className="p-4 flex-1 flex flex-col justify-between">
                           <div className="space-y-2 mb-4">
-                            <a href={item.product_link || item.link} target="_blank" rel="noopener noreferrer" className="text-sm font-medium line-clamp-2 hover:text-primary transition-colors" title={item.title}>
+                            <a href={item.link} target="_blank" rel="noopener noreferrer" className="text-sm font-medium line-clamp-2 hover:text-primary transition-colors" title={item.title}>
                               {item.title}
                             </a>
                             <div className="flex items-center gap-1.5 flex-wrap mt-1">
                               {item.source_icon && (
-                                <img src={item.source_icon} alt={item.source} className="w-3.5 h-3.5 rounded-full" />
+                                <img src={item.source_icon} alt={item.source || 'source'} className="w-3.5 h-3.5 rounded-full" />
                               )}
-                              <span className="text-[10px] font-semibold text-muted-foreground bg-secondary px-1.5 py-0.5 rounded-sm inline-block uppercase tracking-wider">{item.source}</span>
+                              <span className="text-[10px] font-semibold text-muted-foreground bg-secondary px-1.5 py-0.5 rounded-sm inline-block uppercase tracking-wider">
+                                {item.source || (item.link?.includes('aliexpress') ? 'AliExpress' : (item.link?.includes('alibaba') ? 'Alibaba' : 'Wholesaler'))}
+                              </span>
                               {item.rating && (
                                 <span className="text-[10px] flex items-center gap-0.5 text-yellow-500 font-medium bg-yellow-500/10 px-1.5 py-0.5 rounded-sm">
                                   ⭐ {item.rating} {item.reviews ? `(${item.reviews})` : ''}
                                 </span>
                               )}
                             </div>
-                            {item.in_stock && <p className="text-[10px] text-emerald-500">In Stock</p>}
-                            {item.delivery && <p className="text-[10px] text-emerald-500">{item.delivery}</p>}
+                            {(item.in_stock || item.stock) && <p className="text-[10px] text-emerald-500">In Stock</p>}
+                            {item.delivery && <p className="text-[10px] text-muted-foreground italic truncate">{item.delivery}</p>}
                           </div>
                           <div className="flex items-center justify-between mt-auto">
-                            <span className="font-bold text-lg text-emerald-500">
-                              {item.price ? (typeof item.price === 'object' ? item.price.value : (item.extracted_price ? `$${item.extracted_price.toFixed(2)}` : item.price)) : <span className="text-muted-foreground text-xs font-normal">N/A</span>}
-                            </span>
-                            <a href={item.product_link || item.link} target="_blank" rel="noopener noreferrer" className="text-xs text-primary font-medium hover:underline">
-                              Visit Store
-                            </a>
+                            <div className="flex flex-col">
+                              <span className="font-bold text-lg text-emerald-500">
+                                {item.extracted_price ? `$${item.extracted_price.toFixed(2)}` : 
+                                 (typeof item.price === 'string' ? item.price : 
+                                  (item.price?.extracted_value ? `$${item.price.extracted_value}` : 'N/A'))}
+                              </span>
+                              {item.is_verified && <span className="text-[9px] text-muted-foreground/80 uppercase font-medium tracking-tighter">Factory Direct Price</span>}
+                            </div>
+                            <div className="flex flex-col gap-1.5">
+                              <div className="flex gap-1.5">
+                                <Button size="sm" variant="ghost" className="h-7 px-2 text-[9px] font-bold uppercase text-primary hover:bg-primary/10 border border-primary/5" onClick={() => {
+                                  try {
+                                    const url = new URL(item.link);
+                                    const domain = url.hostname;
+                                    const name = encodeURIComponent(item.source || 'Wholesale Supplier');
+                                    const image = encodeURIComponent(item.source_icon || item.thumbnail || '');
+                                    const source = encodeURIComponent(item.source || 'Wholesale');
+                                    router.push(`/dashboard/dropai/library?domain=${domain}&name=${name}&image=${image}&source=${source}&type=Wholesaler`);
+                                  } catch (e) {
+                                    router.push(`/dashboard/dropai/library?domain=${item.source || 'supplier'}&name=${encodeURIComponent(item.source || 'Wholesale Supplier')}&source=Wholesale&type=Wholesaler`);
+                                  }
+                                }}>
+                                  Catalog
+                                </Button>
+                                <Button size="sm" variant="outline" className="h-7 px-2 text-[9px] font-bold uppercase border-primary/20 hover:bg-primary hover:text-primary-foreground" onClick={() => {
+                                  try {
+                                    const url = new URL(item.link);
+                                    router.push(`/dashboard/dropai/library?domain=${url.hostname}&name=${encodeURIComponent(item.source || 'Wholesale Supplier')}&image=${encodeURIComponent(item.source_icon || item.thumbnail || '')}&source=${encodeURIComponent(item.source || 'Wholesale')}&type=Wholesaler`);
+                                  } catch (e) {
+                                    router.push(`/dashboard/dropai/library?domain=${item.source || 'supplier'}&name=${encodeURIComponent(item.source || 'Wholesale Supplier')}&type=Wholesaler`);
+                                  }
+                                }}>
+                                  Save Wholesaler
+                                </Button>
+                              </div>
+                              <Button size="sm" variant="secondary" className="h-7 text-[9px] font-bold uppercase w-full bg-muted/50" asChild>
+                                <a href={item.link} target="_blank" rel="noopener noreferrer">Official Link</a>
+                              </Button>
+                            </div>
                           </div>
                         </CardContent>
                       </Card>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Direct Wholesale Spy Display */}
+              {supplierResults.raw_organic?.organic_results?.length > 0 && (
+                <div className="space-y-3 pt-6">
+                  <h3 className="font-semibold text-lg border-b pb-2 flex items-center gap-2">
+                    🔍 Direct Wholesale Spy
+                    <Badge variant="outline" className="text-[10px]">Dropshipping Platforms</Badge>
+                  </h3>
+                  <div className="grid gap-3 grid-cols-1 md:grid-cols-2">
+                    {supplierResults.raw_organic.organic_results.map((result: any, i: number) => (
+                      <div key={i} className="flex flex-col p-4 bg-secondary/20 rounded-md border border-border transition-colors hover:bg-secondary/40">
+                        <a href={result.link} target="_blank" rel="noopener noreferrer" className="font-medium text-primary hover:underline line-clamp-1 flex-1" title={result.title}>
+                          {result.title}
+                        </a>
+                        <p className="text-xs text-muted-foreground line-clamp-2 mt-1">{result.snippet}</p>
+                        <div className="flex items-center justify-between mt-3">
+                          <p className="text-[10px] text-muted-foreground/60 truncate max-w-[200px]">{result.displayed_link || result.link}</p>
+                          <Button size="sm" variant="ghost" className="h-6 text-[10px]" asChild>
+                            <a href={result.link} target="_blank" rel="noopener noreferrer">Source Details</a>
+                          </Button>
+                        </div>
+                      </div>
                     ))}
                   </div>
                 </div>

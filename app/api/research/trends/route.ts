@@ -4,12 +4,14 @@ import { getGoogleTrends } from '@/lib/serpapi';
 export async function GET(req: NextRequest) {
   try {
     const keyword = req.nextUrl.searchParams.get('q');
+    const geo = req.nextUrl.searchParams.get('geo') || 'US';
+    const date = req.nextUrl.searchParams.get('date') || 'today 3-m';
     
     if (!keyword) {
       return NextResponse.json({ error: 'Missing keyword parameter "q"' }, { status: 400 });
     }
 
-    const data = await getGoogleTrends(keyword);
+    const data = await getGoogleTrends(keyword, geo, date);
     
     // Process and extract what we need
     const relatedQueries = data.related_queries;

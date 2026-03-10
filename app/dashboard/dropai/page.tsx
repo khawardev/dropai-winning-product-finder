@@ -3,9 +3,11 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { Search, Loader2, Zap, TrendingUp, AlertTriangle, ArrowRight } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { Button } from '@/components/ui/Button';
+import { Input } from '@/components/ui/Input';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/Card';
+import { Badge } from '@/components/ui/Badge';
+import { Globe, Clock } from 'lucide-react';
 
 export default function DropAI() {
   const router = useRouter();
@@ -17,6 +19,8 @@ export default function DropAI() {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
     const keyword = formData.get('keyword') as string;
+    const geo = formData.get('geo') as string;
+    const date = formData.get('date') as string;
 
     if (!keyword) return;
 
@@ -25,7 +29,7 @@ export default function DropAI() {
     setTrendResults(null);
 
     try {
-      const response = await fetch(`/api/research/trends?q=${encodeURIComponent(keyword)}`);
+      const response = await fetch(`/api/research/trends?q=${encodeURIComponent(keyword)}&geo=${geo}&date=${encodeURIComponent(date)}`);
       
       if (!response.ok) {
         const errorData = await response.json();
@@ -59,13 +63,16 @@ export default function DropAI() {
         
         {/* Input Panel */}
         <div className="xl:col-span-1 space-y-6">
-          <Card>
-            <CardHeader>
-              <CardTitle className="text-xl">Step 1: Trend Discovery</CardTitle>
-              <CardDescription>Enter a broad seed term (e.g., "coffee", "home gadgets") to find breakout queries.</CardDescription>
+          <Card className="border-primary/20 shadow-lg shadow-primary/5">
+            <CardHeader className="bg-primary/5 border-b pb-6">
+              <CardTitle className="text-xl flex items-center gap-2">
+                <TrendingUp className="w-5 h-5 text-primary" />
+                Discovery Engine
+              </CardTitle>
+              <CardDescription>Target emerging niches before they go viral.</CardDescription>
             </CardHeader>
-            <CardContent>
-              <form onSubmit={handleTrendSearch} className="space-y-4">
+            <CardContent className="pt-6">
+              <form onSubmit={handleTrendSearch} className="space-y-6">
                 {error && (
                   <div className="p-3 bg-destructive/10 border border-destructive/20 rounded-lg text-destructive text-sm flex items-start gap-2">
                     <AlertTriangle className="w-4 h-4 mt-0.5 shrink-0" />
@@ -74,32 +81,61 @@ export default function DropAI() {
                 )}
                 
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-muted-foreground flex items-center gap-2">
+                  <label className="text-sm font-semibold text-foreground flex items-center gap-2">
                     <Search className="w-4 h-4 text-primary" /> Seed Keyword
                   </label>
                   <Input 
                     name="keyword" 
-                    placeholder="e.g. coffee" 
+                    placeholder="e.g. coffee, kitchen toys, beauty" 
                     className="bg-muted/50 border-border" 
                     required 
                     disabled={isSearching}
                   />
+                  <p className="text-[10px] text-muted-foreground">Broader terms yield better breakout results.</p>
+                </div>
+
+                <div className="grid grid-cols-2 gap-4">
+                   <div className="space-y-2">
+                      <label className="text-sm font-semibold text-foreground flex items-center gap-2">
+                        <Globe className="w-4 h-4 text-primary" /> Region
+                      </label>
+                      <select name="geo" className="w-full bg-muted/50 border border-border rounded-md px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-primary/20 transition-all">
+                         <option value="US">🇺🇸 USA</option>
+                         <option value="GB">🇬🇧 UK</option>
+                         <option value="CA">🇨🇦 Canada</option>
+                         <option value="AU">🇦🇺 Australia</option>
+                         <option value="FR">🇫🇷 France</option>
+                         <option value="DE">🇩🇪 Germany</option>
+                      </select>
+                   </div>
+                   <div className="space-y-2">
+                      <label className="text-sm font-semibold text-foreground flex items-center gap-2">
+                        <Clock className="w-4 h-4 text-primary" /> Timeframe
+                      </label>
+                      <select name="date" className="w-full bg-muted/50 border border-border rounded-md px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-primary/20 transition-all">
+                         <option value="today 3-m">3 Months</option>
+                         <option value="today 12-m">12 Months</option>
+                         <option value="today 1-m">30 Days</option>
+                         <option value="now 7-d">7 Days</option>
+                         <option value="now 1-d">24 Hours</option>
+                      </select>
+                   </div>
                 </div>
 
                 <Button
                   type="submit"
                   disabled={isSearching}
-                  className="w-full bg-primary hover:bg-primary/90 h-10 font-bold mt-2"
+                  className="w-full bg-primary hover:bg-primary/90 h-11 font-bold shadow-md shadow-primary/20"
                 >
                   {isSearching ? (
                     <>
                       <Loader2 className="mr-2 w-4 h-4 animate-spin" />
-                      Fetching...
+                      Analyzing...
                     </>
                   ) : (
                     <>
                       <TrendingUp className="mr-2 w-4 h-4" />
-                      Discover Trends
+                      Find Breakout Niches
                     </>
                   )}
                 </Button>

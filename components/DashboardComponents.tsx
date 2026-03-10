@@ -2,9 +2,9 @@
 
 import * as React from "react"
 import { ArrowDownRight, ArrowUpRight, LucideIcon } from "lucide-react"
-import { Card, CardContent } from "@/components/ui/card"
+import { Card, CardContent } from "@/components/ui/Card"
 import { cn } from "@/lib/utils"
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/Tooltip"
 
 interface MetricCardProps {
   label: string

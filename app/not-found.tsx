@@ -1,8 +1,8 @@
 'use client';
 
 import Link from 'next/link';
-import { Button } from '@/components/ui/button';
 import { Zap } from 'lucide-react';
+import { Button } from '@/components/ui/Button';
 
 export default function NotFound() {
   return (

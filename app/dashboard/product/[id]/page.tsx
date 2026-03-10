@@ -20,9 +20,9 @@ import {
   Zap,
   Loader2
 } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Button } from '@/components/ui/Button';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/Tabs';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import {
@@ -37,7 +37,7 @@ import {
   Bar,
   Cell
 } from 'recharts';
-import { Tooltip as UITooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
+import { Tooltip as UITooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/Tooltip';
 import { getProductById } from '@/server/actions/ProductResults';
 import { saveProduct, unsaveProduct, getSavedProductIds } from '@/server/actions/SaveProduct';
 

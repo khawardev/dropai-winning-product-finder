@@ -16,17 +16,17 @@ import {
   Activity,
   Globe2
 } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Button } from '@/components/ui/Button';
 import { ThemeToggle } from '@/components/ThemeToggle';
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/Card';
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-background text-foreground selection:bg-primary/30 overflow-x-hidden relative">
+    <div className="min-h-screen bg-background text-foreground selection:bg-brand-blue/30 overflow-x-hidden relative">
       {/* Abstract Glowing Backgrounds */}
       <div className="absolute top-0 inset-x-0 h-screen overflow-hidden -z-10 pointer-events-none">
-        <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] rounded-full bg-primary/20 blur-[120px]" />
-        <div className="absolute top-[20%] right-[-10%] w-[40%] h-[40%] rounded-full bg-fuchsia-600/10 blur-[120px]" />
+        <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] rounded-full bg-brand-blue/20 blur-[120px]" />
+        <div className="absolute top-[20%] right-[-10%] w-[40%] h-[40%] rounded-full bg-brand-cyan/10 blur-[120px]" />
       </div>
 
       {/* Navigation */}
@@ -34,7 +34,7 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
             <div className="flex items-center gap-1">
-              <img src="https://i.ibb.co/fJSBXLF/714d2bd0-4e86-4ac9-8720-9bdae9ab297b-removalai-preview.png" alt="DropAI Logo" className="w-8 h-8 object-contain" />
+              <img src="https://i.ibb.co/fJSBXLF/714d2bd0-4e86-4ac9-8720-9bdae9ab297b-removalai-preview.png" alt="DropAI Logo" className="w-10 h-10 object-contain" />
               <span className="text-xl font-bold tracking-tight text-foreground">DropAI</span>
             </div>
             <div className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
@@ -66,13 +66,13 @@ export default function LandingPage() {
           >
             {/* Top Badge */}
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary border border-border text-sm font-medium text-muted-foreground mb-8 backdrop-blur-sm">
-              <span className="flex h-2 w-2 rounded-full bg-emerald-500 shadow-[0_0_10px_rgba(16,185,129,0.8)] animate-pulse" />
+              <span className="flex h-2 w-2 rounded-full bg-brand-emerald shadow-[0_0_10px_rgba(16,185,129,0.8)] animate-pulse" />
               DropAI 2.0 is now live — <span className="text-foreground hover:underline cursor-pointer">See what's new &rarr;</span>
             </div>
             
             <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 text-foreground leading-[1.1]">
               Find Winning Dropshipping <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 via-fuchsia-400 to-indigo-400">
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-brand-cyan via-brand-blue to-brand-cyan">
                 Products in Seconds
               </span>
             </h1>
@@ -96,17 +96,17 @@ export default function LandingPage() {
             <div className="flex justify-center items-center gap-8 mt-12 text-muted-foreground">
               <div className="flex flex-col items-center">
                 <div className="text-2xl font-bold text-foreground mb-1">5M+</div>
-                <div className="text-xs uppercase tracking-wider font-semibold">Products Analysed</div>
+                <div className="text-xs uppercase tracking-wider font-semibold text-brand-blue">Products Analysed</div>
               </div>
               <div className="w-px h-10 bg-accent" />
               <div className="flex flex-col items-center">
                 <div className="text-2xl font-bold text-foreground mb-1">$100M+</div>
-                <div className="text-xs uppercase tracking-wider font-semibold">Revenue Generated</div>
+                <div className="text-xs uppercase tracking-wider font-semibold text-brand-cyan">Revenue Generated</div>
               </div>
               <div className="w-px h-10 bg-accent hidden sm:block" />
               <div className="hidden flex-col items-center sm:flex">
                 <div className="text-2xl font-bold text-foreground mb-1">10k+</div>
-                <div className="text-xs uppercase tracking-wider font-semibold">Active Stores</div>
+                <div className="text-xs uppercase tracking-wider font-semibold text-brand-blue">Active Stores</div>
               </div>
             </div>
           </motion.div>
@@ -119,7 +119,7 @@ export default function LandingPage() {
             className="mt-20 relative w-full mx-auto"
           >
             {/* Absolute Glow behind the video */}
-            <div className="absolute -inset-1 bg-gradient-to-r from-violet-600 to-fuchsia-600 rounded-2xl blur-3xl opacity-30 -z-10 animate-pulse" />
+            <div className="absolute -inset-1 bg-linear-to-r from-brand-blue to-brand-cyan rounded-2xl blur-3xl opacity-30 -z-10 animate-pulse" />
             
             <div className="relative rounded-2xl overflow-hidden border border-border bg-secondary shadow-2xl backdrop-blur-sm p-2 sm:p-4">
               <div className="relative aspect-[16/9] w-full rounded-xl overflow-hidden bg-black">
@@ -159,11 +159,11 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-violet-500/10 text-primary text-sm font-semibold mb-6 border border-violet-500/20">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-cyan/10 text-primary text-sm font-semibold mb-6 border border-brand-cyan/20">
                 <Search className="w-4 h-4" /> AI Research
               </div>
               <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
-                Spot the next viral <br /> trend <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-indigo-400">before it peaks</span>
+                Spot the next viral <br /> trend <span className="text-transparent bg-clip-text bg-linear-to-r from-brand-cyan to-brand-blue">before it peaks</span>
               </h2>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
                 Our AI agents constantly monitor TikTok, Instagram, and major marketplaces. We analyze millions of data points to identify products that are just beginning to trend, giving you the first-mover advantage.
@@ -175,7 +175,7 @@ export default function LandingPage() {
                   "Historical sales volume estimation"
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 text-muted-foreground">
-                    <div className="w-6 h-6 rounded-full bg-violet-500/20 flex items-center justify-center border border-primary/30">
+                    <div className="w-6 h-6 rounded-full bg-brand-cyan/20 flex items-center justify-center border border-primary/30">
                       <CheckCircle2 className="w-4 h-4 text-primary" />
                     </div>
                     {item}
@@ -184,11 +184,11 @@ export default function LandingPage() {
               </ul>
             </div>
             <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-br from-violet-600/20 to-fuchsia-600/20 rounded-3xl blur-2xl -z-10" />
+              <div className="absolute -inset-4 bg-gradient-to-br from-brand-blue/20 to-brand-cyan/20 rounded-3xl blur-2xl -z-10" />
               <div className="relative bg-card border border-border rounded-2xl p-6 shadow-2xl overflow-hidden">
-                <div className="absolute top-0 right-0 w-64 h-64 bg-violet-500/10 rounded-full blur-3xl -z-10 translate-x-1/2 -translate-y-1/2" />
+                <div className="absolute top-0 right-0 w-64 h-64 bg-brand-cyan/10 rounded-full blur-3xl -z-10 translate-x-1/2 -translate-y-1/2" />
                 <div className="flex items-center gap-4 mb-8">
-                  <div className="w-12 h-12 rounded-xl bg-violet-500/20 flex items-center justify-center border border-primary/30">
+                  <div className="w-12 h-12 rounded-xl bg-brand-cyan/20 flex items-center justify-center border border-primary/30">
                     <Activity className="w-6 h-6 text-primary" />
                   </div>
                   <div>
@@ -205,7 +205,7 @@ export default function LandingPage() {
                       </div>
                       <div className="h-2 bg-secondary rounded-full overflow-hidden">
                         <motion.div 
-                          className="h-full bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-full"
+                          className="h-full bg-gradient-to-r from-brand-blue to-brand-cyan rounded-full"
                           initial={{ width: 0 }}
                           whileInView={{ width: `${width}%` }}
                           viewport={{ once: true }}
@@ -226,11 +226,11 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center flex-col-reverse lg:flex-row-reverse">
             <div className="order-1 lg:order-2">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-sm font-semibold mb-6 border border-emerald-500/20">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-emerald/10 text-brand-emerald text-sm font-semibold mb-6 border border-brand-emerald/20">
                 <DollarSign className="w-4 h-4" /> Profit Optimization
               </div>
               <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
-                Know your margins <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400">before spending a dime</span>
+                Know your margins <br /> <span className="text-transparent bg-clip-text bg-linear-to-r from-brand-emerald to-brand-blue">before spending a dime</span>
               </h2>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
                 DropAI instantly calculates your true margins. It accounts for product costs, estimated shipping rates, average CPA (Cost Per Acquisition), and transaction fees to reveal actual net profit.
@@ -242,16 +242,16 @@ export default function LandingPage() {
               </Link>
             </div>
             <div className="relative order-2 lg:order-1">
-              <div className="absolute -inset-4 bg-gradient-to-br from-emerald-600/20 to-teal-600/20 rounded-3xl blur-2xl -z-10" />
+              <div className="absolute -inset-4 bg-linear-to-br from-brand-emerald/20 to-brand-blue/20 rounded-3xl blur-2xl -z-10" />
               <div className="relative bg-card border border-border rounded-2xl p-6 shadow-2xl overflow-hidden backdrop-blur-sm">
                 <div className="flex justify-between items-end mb-8 border-b border-border pb-6">
                   <div>
                     <p className="text-sm text-muted-foreground mb-1">Estimated Net Profit/Mo</p>
                     <div className="text-4xl font-bold flex items-center gap-2 text-foreground">
-                      $12,450 <span className="text-sm font-semibold text-emerald-400 bg-emerald-500/10 px-2 py-1 rounded-md">+24%</span>
+                      $12,450 <span className="text-sm font-semibold text-brand-emerald bg-brand-emerald/10 px-2 py-1 rounded-md">+24%</span>
                     </div>
                   </div>
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-emerald-400 to-teal-500 flex items-center justify-center">
+                  <div className="size-12 rounded-full bg-linear-to-br from-brand-emerald to-brand-blue flex items-center justify-center">
                     <DollarSign className="text-primary-foreground w-6 h-6" />
                   </div>
                 </div>
@@ -270,7 +270,7 @@ export default function LandingPage() {
                   </div>
                   <div className="bg-secondary rounded-xl p-4 border border-border">
                     <p className="text-muted-foreground text-xs uppercase mb-1">Net Margin</p>
-                    <p className="text-emerald-400 font-semibold text-lg">42%</p>
+                    <p className="text-brand-emerald font-semibold text-lg">42%</p>
                   </div>
                 </div>
               </div>
@@ -293,27 +293,27 @@ export default function LandingPage() {
                 title: "Supplier Matcher",
                 desc: "1-click matching to reliable suppliers with optimal shipping times via APIs.",
                 icon: Globe2,
-                gradient: "from-blue-500/20 to-cyan-500/20",
-                iconColor: "text-blue-400"
+                gradient: "from-brand-blue/20 to-brand-blue/20",
+                iconColor: "text-brand-blue"
               },
               {
                 title: "Competitor Spy",
                 desc: "Analyze other Shopify stores running the same product and estimate their daily revenue.",
                 icon: Users,
-                gradient: "from-fuchsia-500/20 to-pink-500/20",
-                iconColor: "text-fuchsia-400"
+                gradient: "from-brand-cyan/20 to-brand-cyan/20",
+                iconColor: "text-brand-cyan"
               },
               {
                 title: "AI Ad Copy",
                 desc: "Auto-generate high-converting Facebook/TikTok ad scripts tailored to the product.",
                 icon: TrendingUp,
-                gradient: "from-orange-500/20 to-yellow-500/20",
-                iconColor: "text-orange-400"
+                gradient: "from-brand-orange/20 to-brand-orange/20",
+                iconColor: "text-brand-orange"
               }
             ].map((feature, i) => (
               <Card key={i} className="bg-muted border-border backdrop-blur-sm hover:bg-accent transition-all hover:-translate-y-1 duration-300">
                 <CardContent className="pt-8 px-8">
-                  <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${feature.gradient} flex items-center justify-center mb-6 border border-border`}>
+                  <div className={`size-14 rounded-2xl bg-linear-to-br ${feature.gradient} flex items-center justify-center mb-6 border border-border`}>
                     <feature.icon className={`w-7 h-7 ${feature.iconColor}`} />
                   </div>
                   <h3 className="text-xl font-bold mb-3 text-foreground">{feature.title}</h3>
@@ -327,7 +327,7 @@ export default function LandingPage() {
 
       {/* Pricing Section */}
       <section id="pricing" className="py-24 border-t border-border relative">
-        <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-violet-500/50 to-transparent" />
+        <div className="absolute top-0 inset-x-0 h-px bg-linear-to-r from-transparent via-brand-cyan/50 to-transparent" />
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4 text-foreground">Scale without limits</h2>
@@ -358,7 +358,7 @@ export default function LandingPage() {
             {/* Pro - Highlighted */}
             <Card className="bg-card border-primary/50 relative shadow-[0_0_30px_hsl(var(--primary)/0.15)] scale-105 z-10">
               <div className="absolute top-0 inset-x-0 transform -translate-y-1/2 flex justify-center">
-                <span className="bg-gradient-to-r from-violet-600 to-indigo-600 text-white text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full shadow-lg">
+                <span className="bg-linear-to-r from-brand-blue to-brand-cyan text-white text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full shadow-lg">
                   Most Popular
                 </span>
               </div>
@@ -413,8 +413,8 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8 mb-8 pb-8 border-b border-border">
             <div className="col-span-2">
-              <div className="flex items-center gap-1 mb-4">
-                <img src="https://i.ibb.co/fJSBXLF/714d2bd0-4e86-4ac9-8720-9bdae9ab297b-removalai-preview.png" alt="DropAI Logo" className="w-8 h-8 object-contain" />
+              <div className="flex items-center  mb-4">
+                <img src="https://i.ibb.co/fJSBXLF/714d2bd0-4e86-4ac9-8720-9bdae9ab297b-removalai-preview.png" alt="DropAI Logo" className="size-10 object-contain" />
                 <span className="text-xl font-bold text-foreground">DropAI</span>
               </div>
               <p className="text-muted-foreground text-sm max-w-xs leading-relaxed">

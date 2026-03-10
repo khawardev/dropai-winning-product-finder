@@ -16,10 +16,10 @@ import {
   ArrowUpDown,
   Loader2
 } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import { Card, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/Button'
+import { Card, CardContent } from '@/components/ui/Card'
 import { cn } from '@/lib/utils'
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/Tooltip'
 import { getProductResults } from '@/server/actions/ProductResults'
 import { saveProduct, unsaveProduct, getSavedProductIds } from '@/server/actions/SaveProduct'
 import { useSearchParams } from 'next/navigation'
