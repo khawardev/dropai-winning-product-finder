@@ -140,7 +140,7 @@ export default function SavedProductsPage() {
           </div>
           <h2 className="text-xl font-bold text-foreground">No saved products yet</h2>
           <p className="text-muted-foreground mt-2 max-w-xs mx-auto">Start exploring the Product Finder to build your winning collection.</p>
-          <Link href="/dashboard/finder">
+          <Link href="/dashboard/dropai">
             <Button className="mt-8 bg-primary text-primary-foreground hover:bg-primary/90">
               Go to Product Finder
             </Button>

@@ -1,12 +1,13 @@
 'use client';
 
-import React, { useEffect, useState, Suspense } from 'react';
+import React, { useEffect, useState, Suspense, useTransition } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { Loader2, Zap, ArrowLeft, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
 import { cn } from '@/lib/utils';
+import { analyzeAndSaveWinningProduct } from '@/server/actions/DropAiActions';
 
 function SuppliersContent() {
   const router = useRouter();
@@ -17,6 +18,8 @@ function SuppliersContent() {
   const [isAnalyzing, setIsAnalyzing] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [supplierResults, setSupplierResults] = useState<any>(null);
+  const [isPending, startTransition] = useTransition();
+  const [competitorsContext, setCompetitorsContext] = useState<any[]>([]);
   
   // We need to fetch the competitive data again here or theoretically pass it through context/state.
   // For Phase 1 routing, we will dynamically fetch competitive stats here again to do the profit math,
@@ -49,6 +52,7 @@ function SuppliersContent() {
            if (compRes.ok) {
              const compData = await compRes.json();
              setRetailPrice(compData.avgPrice || 0);
+             setCompetitorsContext(compData.competitors || []);
            }
         }
       } catch (err: any) {
@@ -60,6 +64,27 @@ function SuppliersContent() {
 
     fetchData();
   }, [keyword, imageUrl]);
+
+  const handleSaveAsWinningProduct = () => {
+    if (!supplierResults || (!keyword && !imageUrl)) return;
+    
+    startTransition(async () => {
+      const result = await analyzeAndSaveWinningProduct({
+        keyword: keyword || 'Image Search Product',
+        imageUrl: imageUrl || undefined,
+        retailPrice: retailPrice,
+        wholesalePrice: supplierResults.lowestPrice || 0,
+        suppliers: supplierResults.suppliers || [],
+        competitors: competitorsContext
+      });
+
+      if (result.success && result.productId) {
+        router.push(`/dashboard/results?id=${result.productId}`);
+      } else {
+        setError(result.error || 'Failed to save product');
+      }
+    });
+  };
 
   if (!keyword && !imageUrl) {
     return (
@@ -284,10 +309,15 @@ function SuppliersContent() {
                   Start New Search
                 </Button>
                 <Button 
-                  disabled
+                  disabled={isPending || !supplierResults}
+                  onClick={handleSaveAsWinningProduct}
                   className="bg-primary hover:bg-primary/90"
                 >
-                  Save as Winning Product (Phase 2) <ArrowRight className="ml-2 w-4 h-4" />
+                  {isPending ? (
+                    <><Loader2 className="w-4 h-4 mr-2 animate-spin" /> Saving...</>
+                  ) : (
+                    <>Save as Winning Product (Phase 2) <ArrowRight className="ml-2 w-4 h-4" /></>
+                  )}
                 </Button>
               </div>
 

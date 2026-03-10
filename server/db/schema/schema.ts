@@ -139,6 +139,17 @@ export const apiCache = pgTable('api_cache', {
   createdAt: timestamp('created_at').defaultNow().notNull(),
 })
 
+export const savedSellers = pgTable('saved_sellers', {
+  id: uuid('id').defaultRandom().primaryKey(),
+  userId: text('user_id').references(() => user.id),
+  domain: text('domain').notNull(),
+  name: text('name').notNull(),
+  image: text('image'),
+  source: text('source'),
+  type: text('type').notNull(), // 'Competitor' | 'Wholesaler'
+  savedAt: timestamp('saved_at').defaultNow().notNull(),
+})
+
 export const userRelations = relations(user, ({ many }) => ({
         sessions: many(session),
         accounts: many(account),

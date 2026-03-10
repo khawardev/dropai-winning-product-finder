@@ -131,7 +131,7 @@ function ResultsContent() {
           </div>
           <h2 className="text-xl font-bold text-foreground">No products discovered yet</h2>
           <p className="text-muted-foreground mt-2 max-w-xs mx-auto">Head to the Product Finder to run your first AI analysis.</p>
-          <Link href="/dashboard/finder">
+          <Link href="/dashboard/dropai">
             <Button className="mt-8 bg-primary text-primary-foreground hover:bg-primary/90">
               Go to Product Finder
             </Button>

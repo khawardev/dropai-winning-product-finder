@@ -28,10 +28,10 @@ import { useSession, signOut } from '@/lib/auth-client'
 const navItems = [
   { name: 'Dashboard', icon: LayoutDashboard, href: '/dashboard' },
   { name: 'Product Finder', icon: Search, href: '/dashboard/dropai' },
-  // { name: 'Saved Products', icon: Bookmark, href: '/dashboard/saved' },
-  // { name: 'Supplier Library', icon: Library, href: '/dashboard/suppliers' },
-  // { name: 'Reports', icon: BarChart3, href: '/dashboard/reports' },
-  // { name: 'Settings', icon: Settings, href: '/dashboard/settings' },
+  { name: 'Saved Products', icon: Bookmark, href: '/dashboard/saved' },
+  { name: 'Supplier Library', icon: Library, href: '/dashboard/suppliers' },
+  { name: 'Reports', icon: BarChart3, href: '/dashboard/reports' },
+  { name: 'Settings', icon: Settings, href: '/dashboard/settings' },
 ]
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {

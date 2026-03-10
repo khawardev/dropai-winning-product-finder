@@ -78,7 +78,7 @@ export default function DashboardOverview() {
           <h1 className="text-3xl font-bold text-foreground tracking-tight">Dashboard Overview</h1>
           <p className="text-muted-foreground text-sm mt-1">Monitor your product performance and market trends.</p>
         </div>
-        <Link href="/dashboard/finder">
+        <Link href="/dashboard/dropai">
           <Button className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-xl shadow-lg shadow-primary/20 gap-2">
             <SearchIcon className="size-4" /> Find New Products
           </Button>
@@ -290,7 +290,7 @@ export default function DashboardOverview() {
                 <p className="text-foreground font-bold text-lg">No winners yet</p>
                 <p className="text-muted-foreground text-sm mt-1">Start your first search to find winning products.</p>
               </div>
-              <Link href="/dashboard/finder">
+              <Link href="/dashboard/dropai">
                 <Button className="mt-2 bg-primary hover:bg-primary/90 rounded-xl px-8">
                   Get Started
                 </Button>

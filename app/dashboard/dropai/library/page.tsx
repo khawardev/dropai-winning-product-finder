@@ -1,12 +1,13 @@
 'use client';
 
-import React, { useEffect, useState, Suspense } from 'react';
+import React, { useEffect, useState, Suspense, useTransition } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { Loader2, ShoppingBag, Globe, ExternalLink, Package, AlertCircle, ArrowLeft, Search, Clock, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
 import { Input } from '@/components/ui/Input';
+import { getSavedSellers, saveSeller, removeSavedSeller } from '@/server/actions/DropAiActions';
 
 function LibraryContent() {
   const router = useRouter();
@@ -17,6 +18,7 @@ function LibraryContent() {
   const [products, setProducts] = useState<any[]>([]);
   const [savedSuppliers, setSavedSuppliers] = useState<any[]>([]);
   const [filter, setFilter] = useState<'all' | 'Competitor' | 'Wholesaler'>('all');
+  const [isPending, startTransition] = useTransition();
 
   // Get data from URL
   const domain = searchParams.get('domain');
@@ -26,10 +28,12 @@ function LibraryContent() {
   const type = searchParams.get('type') || 'Competitor'; // Default to Competitor
 
   useEffect(() => {
-    const saved = localStorage.getItem('dropai_saved_suppliers');
-    if (saved) {
-      setSavedSuppliers(JSON.parse(saved));
-    }
+    startTransition(async () => {
+      const result = await getSavedSellers();
+      if (result.success) {
+        setSavedSuppliers(result.data as any[]);
+      }
+    });
   }, []);
 
   // Auto-save if new data is passed via URL
@@ -37,10 +41,21 @@ function LibraryContent() {
     if (domain && name) {
       const exists = savedSuppliers.find(s => s.domain === domain);
       if (!exists) {
-        const newSupplier = { domain, name, image, source, type, savedAt: new Date().toISOString() };
-        const updated = [newSupplier, ...savedSuppliers];
-        setSavedSuppliers(updated);
-        localStorage.setItem('dropai_saved_suppliers', JSON.stringify(updated));
+        startTransition(async () => {
+          const result = await saveSeller({
+            domain,
+            name,
+            image: image || undefined,
+            source: source || undefined,
+            type
+          });
+          if (result.success && !result.alreadySaved) {
+            const updatedResult = await getSavedSellers();
+            if (updatedResult.success) {
+               setSavedSuppliers(updatedResult.data as any[]);
+            }
+          }
+        });
       }
     }
   }, [domain, name, image, source, type, savedSuppliers]);
@@ -60,13 +75,19 @@ function LibraryContent() {
     }
   };
 
-  const removeSupplier = (targetDomain: string) => {
-    const updated = savedSuppliers.filter(s => s.domain !== targetDomain);
-    setSavedSuppliers(updated);
-    localStorage.setItem('dropai_saved_suppliers', JSON.stringify(updated));
-    if (domain === targetDomain) {
-      router.push('/dashboard/dropai/library');
-    }
+  const handleRemoveSupplier = async (targetDomain: string) => {
+    startTransition(async () => {
+      const result = await removeSavedSeller(targetDomain);
+      if (result.success) {
+        const updatedResult = await getSavedSellers();
+        if (updatedResult.success) {
+           setSavedSuppliers(updatedResult.data as any[]);
+        }
+        if (domain === targetDomain) {
+          router.push('/dashboard/dropai/library');
+        }
+      }
+    });
   };
 
   const filteredSuppliers = savedSuppliers.filter(s => 
@@ -145,7 +166,7 @@ function LibraryContent() {
                       variant="ghost" 
                       size="icon" 
                       className="h-8 w-8 text-destructive/50 hover:text-destructive hover:bg-destructive/5"
-                      onClick={() => removeSupplier(supplier.domain)}
+                      onClick={() => handleRemoveSupplier(supplier.domain)}
                     >
                       <AlertCircle className="w-4 h-4" />
                     </Button>
