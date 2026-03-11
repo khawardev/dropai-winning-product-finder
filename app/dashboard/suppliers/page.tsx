@@ -57,7 +57,7 @@ export default function SupplierLibrary() {
             <Input placeholder="Search suppliers..." className="pl-10 bg-muted/50 border-border" />
           </div>
           <Button variant="outline" className="border-border text-foreground">
-            <Filter className="mr-2 w-4 h-4" /> Filters
+            <Filter className="w-4 h-4" /> Filters
           </Button>
         </div>
       </div>

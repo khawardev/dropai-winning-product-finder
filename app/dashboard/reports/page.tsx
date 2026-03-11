@@ -74,10 +74,10 @@ export default function ReportsPage() {
         </div>
         <div className="flex items-center gap-3">
           <Button variant="outline" className="border-border text-foreground">
-            <Calendar className="mr-2 w-4 h-4" /> Last 30 Days
+            <Calendar className="w-4 h-4" /> Last 30 Days
           </Button>
           <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
-            <Download className="mr-2 w-4 h-4" /> Download CSV
+            <Download className="w-4 h-4" /> Download CSV
           </Button>
         </div>
       </div>

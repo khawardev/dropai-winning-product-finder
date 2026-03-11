@@ -1,222 +1,301 @@
 {
-  "original_keyword": "gaming chair",
-  "breakouts": [],
+  "original_keyword": "Smart Door Lock",
+  "breakouts": [
+    {
+      "query": "sifely smart lock",
+      "value": "Breakout",
+      "extracted_value": 24200,
+      "link": "https://trends.google.com/trends/explore?q=sifely+smart+lock&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=sifely+smart+lock&tz=420"
+    },
+    {
+      "query": "level bolt",
+      "value": "+2,650%",
+      "extracted_value": 2650,
+      "link": "https://trends.google.com/trends/explore?q=level+bolt&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=level+bolt&tz=420"
+    }
+  ],
   "rising": [
     {
-      "query": "gaming chair near me",
+      "query": "sifely smart lock",
+      "value": "Breakout",
+      "extracted_value": 24200,
+      "link": "https://trends.google.com/trends/explore?q=sifely+smart+lock&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=sifely+smart+lock&tz=420"
+    },
+    {
+      "query": "level bolt",
+      "value": "+2,650%",
+      "extracted_value": 2650,
+      "link": "https://trends.google.com/trends/explore?q=level+bolt&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=level+bolt&tz=420"
+    },
+    {
+      "query": "level lock pro",
+      "value": "+400%",
+      "extracted_value": 400,
+      "link": "https://trends.google.com/trends/explore?q=level+lock+pro&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=level+lock+pro&tz=420"
+    },
+    {
+      "query": "nuki smart lock",
+      "value": "+300%",
+      "extracted_value": 300,
+      "link": "https://trends.google.com/trends/explore?q=nuki+smart+lock&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=nuki+smart+lock&tz=420"
+    },
+    {
+      "query": "how to replace a door lock",
+      "value": "+250%",
+      "extracted_value": 250,
+      "link": "https://trends.google.com/trends/explore?q=how+to+replace+a+door+lock&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=how+to+replace+a+door+lock&tz=420"
+    },
+    {
+      "query": "august wi-fi smart lock",
+      "value": "+160%",
+      "extracted_value": 160,
+      "link": "https://trends.google.com/trends/explore?q=august+wi-fi+smart+lock&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=august+wi-fi+smart+lock&tz=420"
+    },
+    {
+      "query": "schlage smart lock reset code",
       "value": "+140%",
       "extracted_value": 140,
-      "link": "https://trends.google.com/trends/explore?q=gaming+chair+near+me&date=today+3-m",
-      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=gaming+chair+near+me&tz=420"
+      "link": "https://trends.google.com/trends/explore?q=schlage+smart+lock+reset+code&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=schlage+smart+lock+reset+code&tz=420"
     },
     {
-      "query": "dps encode 3d insight gaming chair",
-      "value": "+100%",
-      "extracted_value": 100,
-      "link": "https://trends.google.com/trends/explore?q=dps+encode+3d+insight+gaming+chair&date=today+3-m",
-      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=dps+encode+3d+insight+gaming+chair&tz=420"
+      "query": "best keyless entry door lock with handle",
+      "value": "+60%",
+      "extracted_value": 60,
+      "link": "https://trends.google.com/trends/explore?q=best+keyless+entry+door+lock+with+handle&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=best+keyless+entry+door+lock+with+handle&tz=420"
     },
     {
-      "query": "gaming chair nearby",
-      "value": "+80%",
-      "extracted_value": 80,
-      "link": "https://trends.google.com/trends/explore?q=gaming+chair+nearby&date=today+3-m",
-      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=gaming+chair+nearby&tz=420"
+      "query": "best keyless door lock",
+      "value": "+60%",
+      "extracted_value": 60,
+      "link": "https://trends.google.com/trends/explore?q=best+keyless+door+lock&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=best+keyless+door+lock&tz=420"
+    },
+    {
+      "query": "smart thermostat",
+      "value": "+50%",
+      "extracted_value": 50,
+      "link": "https://trends.google.com/trends/explore?q=smart+thermostat&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=smart+thermostat&tz=420"
+    },
+    {
+      "query": "ttlock",
+      "value": "+50%",
+      "extracted_value": 50,
+      "link": "https://trends.google.com/trends/explore?q=ttlock&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=ttlock&tz=420"
+    },
+    {
+      "query": "kwikset halo",
+      "value": "+50%",
+      "extracted_value": 50,
+      "link": "https://trends.google.com/trends/explore?q=kwikset+halo&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=kwikset+halo&tz=420"
     }
   ],
   "top": [
     {
-      "query": "best gaming chair",
+      "query": "smart lock for door",
       "value": "100",
       "extracted_value": 100,
-      "link": "https://trends.google.com/trends/explore?q=best+gaming+chair&date=today+3-m",
-      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=best+gaming+chair&tz=420"
+      "link": "https://trends.google.com/trends/explore?q=smart+lock+for+door&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=smart+lock+for+door&tz=420"
     },
     {
-      "query": "office gaming chair",
-      "value": "70",
-      "extracted_value": 70,
-      "link": "https://trends.google.com/trends/explore?q=office+gaming+chair&date=today+3-m",
-      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=office+gaming+chair&tz=420"
+      "query": "best smart lock",
+      "value": "66",
+      "extracted_value": 66,
+      "link": "https://trends.google.com/trends/explore?q=best+smart+lock&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=best+smart+lock&tz=420"
     },
     {
-      "query": "office chair",
-      "value": "68",
-      "extracted_value": 68,
-      "link": "https://trends.google.com/trends/explore?q=office+chair&date=today+3-m",
-      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=office+chair&tz=420"
+      "query": "best smart door lock",
+      "value": "66",
+      "extracted_value": 66,
+      "link": "https://trends.google.com/trends/explore?q=best+smart+door+lock&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=best+smart+door+lock&tz=420"
     },
     {
-      "query": "gaming chair price",
-      "value": "47",
-      "extracted_value": 47,
-      "link": "https://trends.google.com/trends/explore?q=gaming+chair+price&date=today+3-m",
-      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=gaming+chair+price&tz=420"
+      "query": "smart front door lock",
+      "value": "54",
+      "extracted_value": 54,
+      "link": "https://trends.google.com/trends/explore?q=smart+front+door+lock&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=smart+front+door+lock&tz=420"
     },
     {
-      "query": "ergonomic gaming chair",
-      "value": "44",
-      "extracted_value": 44,
-      "link": "https://trends.google.com/trends/explore?q=ergonomic+gaming+chair&date=today+3-m",
-      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=ergonomic+gaming+chair&tz=420"
+      "query": "front door lock",
+      "value": "53",
+      "extracted_value": 53,
+      "link": "https://trends.google.com/trends/explore?q=front+door+lock&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=front+door+lock&tz=420"
     },
     {
-      "query": "ergonomic chair",
+      "query": "smart home door lock",
       "value": "42",
       "extracted_value": 42,
-      "link": "https://trends.google.com/trends/explore?q=ergonomic+chair&date=today+3-m",
-      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=ergonomic+chair&tz=420"
+      "link": "https://trends.google.com/trends/explore?q=smart+home+door+lock&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=smart+home+door+lock&tz=420"
     },
     {
-      "query": "gaming chairs",
+      "query": "door locks",
       "value": "41",
       "extracted_value": 41,
-      "link": "https://trends.google.com/trends/explore?q=gaming+chairs&date=today+3-m",
-      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=gaming+chairs&tz=420"
+      "link": "https://trends.google.com/trends/explore?q=door+locks&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=door+locks&tz=420"
     },
     {
-      "query": "gaming desk",
+      "query": "smart locks",
+      "value": "41",
+      "extracted_value": 41,
+      "link": "https://trends.google.com/trends/explore?q=smart+locks&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=smart+locks&tz=420"
+    },
+    {
+      "query": "smart door locks",
       "value": "40",
       "extracted_value": 40,
-      "link": "https://trends.google.com/trends/explore?q=gaming+desk&date=today+3-m",
-      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=gaming+desk&tz=420"
+      "link": "https://trends.google.com/trends/explore?q=smart+door+locks&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=smart+door+locks&tz=420"
     },
     {
-      "query": "desk chair",
-      "value": "38",
-      "extracted_value": 38,
-      "link": "https://trends.google.com/trends/explore?q=desk+chair&date=today+3-m",
-      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=desk+chair&tz=420"
-    },
-    {
-      "query": "gaming desk chair",
-      "value": "38",
-      "extracted_value": 38,
-      "link": "https://trends.google.com/trends/explore?q=gaming+desk+chair&date=today+3-m",
-      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=gaming+desk+chair&tz=420"
-    },
-    {
-      "query": "desk",
+      "query": "fingerprint door lock",
       "value": "37",
       "extracted_value": 37,
-      "link": "https://trends.google.com/trends/explore?q=desk&date=today+3-m",
-      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=desk&tz=420"
+      "link": "https://trends.google.com/trends/explore?q=fingerprint+door+lock&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=fingerprint+door+lock&tz=420"
     },
     {
-      "query": "black gaming chair",
+      "query": "smart fingerprint door lock",
+      "value": "37",
+      "extracted_value": 37,
+      "link": "https://trends.google.com/trends/explore?q=smart+fingerprint+door+lock&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=smart+fingerprint+door+lock&tz=420"
+    },
+    {
+      "query": "deadbolt lock",
       "value": "35",
       "extracted_value": 35,
-      "link": "https://trends.google.com/trends/explore?q=black+gaming+chair&date=today+3-m",
-      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=black+gaming+chair&tz=420"
+      "link": "https://trends.google.com/trends/explore?q=deadbolt+lock&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=deadbolt+lock&tz=420"
     },
     {
-      "query": "computer chair",
-      "value": "23",
-      "extracted_value": 23,
-      "link": "https://trends.google.com/trends/explore?q=computer+chair&date=today+3-m",
-      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=computer+chair&tz=420"
+      "query": "smart deadbolt",
+      "value": "35",
+      "extracted_value": 35,
+      "link": "https://trends.google.com/trends/explore?q=smart+deadbolt&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=smart+deadbolt&tz=420"
     },
     {
-      "query": "computer gaming chair",
-      "value": "22",
-      "extracted_value": 22,
-      "link": "https://trends.google.com/trends/explore?q=computer+gaming+chair&date=today+3-m",
-      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=computer+gaming+chair&tz=420"
+      "query": "deadbolt",
+      "value": "35",
+      "extracted_value": 35,
+      "link": "https://trends.google.com/trends/explore?q=deadbolt&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=deadbolt&tz=420"
     },
     {
-      "query": "best gaming chair 2025",
-      "value": "21",
-      "extracted_value": 21,
-      "link": "https://trends.google.com/trends/explore?q=best+gaming+chair+2025&date=today+3-m",
-      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=best+gaming+chair+2025&tz=420"
+      "query": "smart deadbolt lock",
+      "value": "34",
+      "extracted_value": 34,
+      "link": "https://trends.google.com/trends/explore?q=smart+deadbolt+lock&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=smart+deadbolt+lock&tz=420"
     },
     {
-      "query": "gaming pc",
-      "value": "21",
-      "extracted_value": 21,
-      "link": "https://trends.google.com/trends/explore?q=gaming+pc&date=today+3-m",
-      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=gaming+pc&tz=420"
+      "query": "keypad door lock",
+      "value": "34",
+      "extracted_value": 34,
+      "link": "https://trends.google.com/trends/explore?q=keypad+door+lock&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=keypad+door+lock&tz=420"
     },
     {
-      "query": "pc",
-      "value": "21",
-      "extracted_value": 21,
-      "link": "https://trends.google.com/trends/explore?q=pc&date=today+3-m",
-      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=pc&tz=420"
+      "query": "door handle",
+      "value": "31",
+      "extracted_value": 31,
+      "link": "https://trends.google.com/trends/explore?q=door+handle&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=door+handle&tz=420"
     },
     {
-      "query": "pc gaming chair",
-      "value": "21",
-      "extracted_value": 21,
-      "link": "https://trends.google.com/trends/explore?q=pc+gaming+chair&date=today+3-m",
-      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=pc+gaming+chair&tz=420"
+      "query": "smart door handle lock",
+      "value": "31",
+      "extracted_value": 31,
+      "link": "https://trends.google.com/trends/explore?q=smart+door+handle+lock&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=smart+door+handle+lock&tz=420"
     },
     {
-      "query": "gaming chair near me",
-      "value": "20",
-      "extracted_value": 20,
-      "link": "https://trends.google.com/trends/explore?q=gaming+chair+near+me&date=today+3-m",
-      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=gaming+chair+near+me&tz=420"
+      "query": "smart key lock",
+      "value": "28",
+      "extracted_value": 28,
+      "link": "https://trends.google.com/trends/explore?q=smart+key+lock&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=smart+key+lock&tz=420"
     },
     {
-      "query": "gaming chair amazon",
-      "value": "20",
-      "extracted_value": 20,
-      "link": "https://trends.google.com/trends/explore?q=gaming+chair+amazon&date=today+3-m",
-      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=gaming+chair+amazon&tz=420"
+      "query": "kwikset",
+      "value": "28",
+      "extracted_value": 28,
+      "link": "https://trends.google.com/trends/explore?q=kwikset&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=kwikset&tz=420"
     },
     {
-      "query": "white gaming chair",
-      "value": "19",
-      "extracted_value": 19,
-      "link": "https://trends.google.com/trends/explore?q=white+gaming+chair&date=today+3-m",
-      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=white+gaming+chair&tz=420"
+      "query": "kwikset smart lock",
+      "value": "27",
+      "extracted_value": 27,
+      "link": "https://trends.google.com/trends/explore?q=kwikset+smart+lock&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=kwikset+smart+lock&tz=420"
     },
     {
-      "query": "rocker gaming chair",
-      "value": "17",
-      "extracted_value": 17,
-      "link": "https://trends.google.com/trends/explore?q=rocker+gaming+chair&date=today+3-m",
-      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=rocker+gaming+chair&tz=420"
+      "query": "kwikset door lock",
+      "value": "27",
+      "extracted_value": 27,
+      "link": "https://trends.google.com/trends/explore?q=kwikset+door+lock&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=kwikset+door+lock&tz=420"
     },
     {
-      "query": "herman miller",
-      "value": "16",
-      "extracted_value": 16,
-      "link": "https://trends.google.com/trends/explore?q=herman+miller&date=today+3-m",
-      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=herman+miller&tz=420"
+      "query": "kwikset lock",
+      "value": "27",
+      "extracted_value": 27,
+      "link": "https://trends.google.com/trends/explore?q=kwikset+lock&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=kwikset+lock&tz=420"
     },
     {
-      "query": "herman miller gaming chair",
-      "value": "16",
-      "extracted_value": 16,
-      "link": "https://trends.google.com/trends/explore?q=herman+miller+gaming+chair&date=today+3-m",
-      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=herman+miller+gaming+chair&tz=420"
+      "query": "wifi door lock",
+      "value": "26",
+      "extracted_value": 26,
+      "link": "https://trends.google.com/trends/explore?q=wifi+door+lock&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=wifi+door+lock&tz=420"
     },
     {
-      "query": "ergonomic office chair",
-      "value": "16",
-      "extracted_value": 16,
-      "link": "https://trends.google.com/trends/explore?q=ergonomic+office+chair&date=today+3-m",
-      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=ergonomic+office+chair&tz=420"
+      "query": "yale smart lock",
+      "value": "25",
+      "extracted_value": 25,
+      "link": "https://trends.google.com/trends/explore?q=yale+smart+lock&date=today+3-m&geo=US",
+      "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=yale+smart+lock&tz=420"
     }
   ],
   "raw_data": {
     "search_metadata": {
-      "id": "69ae9c9952acc65afd3c4c36",
+      "id": "69b128100d0b29fdef14264a",
       "status": "Success",
-      "json_endpoint": "https://serpapi.com/searches/2Zr40R6QBHyk_pD6VLcc9Q/69ae9c9952acc65afd3c4c36.json",
-      "created_at": "2026-03-09 10:10:33 UTC",
-      "processed_at": "2026-03-09 10:10:33 UTC",
-      "google_trends_url": "https://trends.google.com/trends/embed/explore/RELATED_QUERIES?hl=en&tz=420&req=%7B%22comparisonItem%22%3A%5B%7B%22keyword%22%3A%22gaming+chair%22%2C%22geo%22%3A%22%22%2C%22time%22%3A%22today+3-m%22%7D%5D%2C%22category%22%3A0%2C%22property%22%3A%22%22%7D",
-      "raw_html_file": "https://serpapi.com/searches/2Zr40R6QBHyk_pD6VLcc9Q/69ae9c9952acc65afd3c4c36.html",
-      "prettify_html_file": "https://serpapi.com/searches/2Zr40R6QBHyk_pD6VLcc9Q/69ae9c9952acc65afd3c4c36.prettify",
-      "total_time_taken": 28.19
+      "json_endpoint": "https://serpapi.com/searches/No_SCiQIV1Rq_UXG2xmwUw/69b128100d0b29fdef14264a.json",
+      "created_at": "2026-03-11 08:30:08 UTC",
+      "processed_at": "2026-03-11 08:30:08 UTC",
+      "google_trends_url": "https://trends.google.com/trends/embed/explore/RELATED_QUERIES?hl=en&tz=420&req=%7B%22comparisonItem%22%3A%5B%7B%22keyword%22%3A%22Smart+Door+Lock%22%2C%22geo%22%3A%22US%22%2C%22time%22%3A%22today+3-m%22%7D%5D%2C%22category%22%3A0%2C%22property%22%3A%22%22%7D",
+      "raw_html_file": "https://serpapi.com/searches/No_SCiQIV1Rq_UXG2xmwUw/69b128100d0b29fdef14264a.html",
+      "prettify_html_file": "https://serpapi.com/searches/No_SCiQIV1Rq_UXG2xmwUw/69b128100d0b29fdef14264a.prettify",
+      "total_time_taken": 3.35
     },
     "search_parameters": {
       "engine": "google_trends",
-      "q": "gaming chair",
+      "q": "Smart Door Lock",
       "hl": "en",
+      "geo": "US",
       "date": "today 3-m",
       "tz": "420",
       "data_type": "RELATED_QUERIES"
@@ -224,202 +303,265 @@
     "related_queries": {
       "rising": [
         {
-          "query": "gaming chair near me",
+          "query": "sifely smart lock",
+          "value": "Breakout",
+          "extracted_value": 24200,
+          "link": "https://trends.google.com/trends/explore?q=sifely+smart+lock&date=today+3-m&geo=US",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=sifely+smart+lock&tz=420"
+        },
+        {
+          "query": "level bolt",
+          "value": "+2,650%",
+          "extracted_value": 2650,
+          "link": "https://trends.google.com/trends/explore?q=level+bolt&date=today+3-m&geo=US",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=level+bolt&tz=420"
+        },
+        {
+          "query": "level lock pro",
+          "value": "+400%",
+          "extracted_value": 400,
+          "link": "https://trends.google.com/trends/explore?q=level+lock+pro&date=today+3-m&geo=US",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=level+lock+pro&tz=420"
+        },
+        {
+          "query": "nuki smart lock",
+          "value": "+300%",
+          "extracted_value": 300,
+          "link": "https://trends.google.com/trends/explore?q=nuki+smart+lock&date=today+3-m&geo=US",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=nuki+smart+lock&tz=420"
+        },
+        {
+          "query": "how to replace a door lock",
+          "value": "+250%",
+          "extracted_value": 250,
+          "link": "https://trends.google.com/trends/explore?q=how+to+replace+a+door+lock&date=today+3-m&geo=US",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=how+to+replace+a+door+lock&tz=420"
+        },
+        {
+          "query": "august wi-fi smart lock",
+          "value": "+160%",
+          "extracted_value": 160,
+          "link": "https://trends.google.com/trends/explore?q=august+wi-fi+smart+lock&date=today+3-m&geo=US",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=august+wi-fi+smart+lock&tz=420"
+        },
+        {
+          "query": "schlage smart lock reset code",
           "value": "+140%",
           "extracted_value": 140,
-          "link": "https://trends.google.com/trends/explore?q=gaming+chair+near+me&date=today+3-m",
-          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=gaming+chair+near+me&tz=420"
+          "link": "https://trends.google.com/trends/explore?q=schlage+smart+lock+reset+code&date=today+3-m&geo=US",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=schlage+smart+lock+reset+code&tz=420"
         },
         {
-          "query": "dps encode 3d insight gaming chair",
-          "value": "+100%",
-          "extracted_value": 100,
-          "link": "https://trends.google.com/trends/explore?q=dps+encode+3d+insight+gaming+chair&date=today+3-m",
-          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=dps+encode+3d+insight+gaming+chair&tz=420"
+          "query": "best keyless entry door lock with handle",
+          "value": "+60%",
+          "extracted_value": 60,
+          "link": "https://trends.google.com/trends/explore?q=best+keyless+entry+door+lock+with+handle&date=today+3-m&geo=US",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=best+keyless+entry+door+lock+with+handle&tz=420"
         },
         {
-          "query": "gaming chair nearby",
-          "value": "+80%",
-          "extracted_value": 80,
-          "link": "https://trends.google.com/trends/explore?q=gaming+chair+nearby&date=today+3-m",
-          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=gaming+chair+nearby&tz=420"
+          "query": "best keyless door lock",
+          "value": "+60%",
+          "extracted_value": 60,
+          "link": "https://trends.google.com/trends/explore?q=best+keyless+door+lock&date=today+3-m&geo=US",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=best+keyless+door+lock&tz=420"
+        },
+        {
+          "query": "smart thermostat",
+          "value": "+50%",
+          "extracted_value": 50,
+          "link": "https://trends.google.com/trends/explore?q=smart+thermostat&date=today+3-m&geo=US",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=smart+thermostat&tz=420"
+        },
+        {
+          "query": "ttlock",
+          "value": "+50%",
+          "extracted_value": 50,
+          "link": "https://trends.google.com/trends/explore?q=ttlock&date=today+3-m&geo=US",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=ttlock&tz=420"
+        },
+        {
+          "query": "kwikset halo",
+          "value": "+50%",
+          "extracted_value": 50,
+          "link": "https://trends.google.com/trends/explore?q=kwikset+halo&date=today+3-m&geo=US",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=kwikset+halo&tz=420"
         }
       ],
       "top": [
         {
-          "query": "best gaming chair",
+          "query": "smart lock for door",
           "value": "100",
           "extracted_value": 100,
-          "link": "https://trends.google.com/trends/explore?q=best+gaming+chair&date=today+3-m",
-          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=best+gaming+chair&tz=420"
+          "link": "https://trends.google.com/trends/explore?q=smart+lock+for+door&date=today+3-m&geo=US",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=smart+lock+for+door&tz=420"
         },
         {
-          "query": "office gaming chair",
-          "value": "70",
-          "extracted_value": 70,
-          "link": "https://trends.google.com/trends/explore?q=office+gaming+chair&date=today+3-m",
-          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=office+gaming+chair&tz=420"
+          "query": "best smart lock",
+          "value": "66",
+          "extracted_value": 66,
+          "link": "https://trends.google.com/trends/explore?q=best+smart+lock&date=today+3-m&geo=US",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=best+smart+lock&tz=420"
         },
         {
-          "query": "office chair",
-          "value": "68",
-          "extracted_value": 68,
-          "link": "https://trends.google.com/trends/explore?q=office+chair&date=today+3-m",
-          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=office+chair&tz=420"
+          "query": "best smart door lock",
+          "value": "66",
+          "extracted_value": 66,
+          "link": "https://trends.google.com/trends/explore?q=best+smart+door+lock&date=today+3-m&geo=US",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=best+smart+door+lock&tz=420"
         },
         {
-          "query": "gaming chair price",
-          "value": "47",
-          "extracted_value": 47,
-          "link": "https://trends.google.com/trends/explore?q=gaming+chair+price&date=today+3-m",
-          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=gaming+chair+price&tz=420"
+          "query": "smart front door lock",
+          "value": "54",
+          "extracted_value": 54,
+          "link": "https://trends.google.com/trends/explore?q=smart+front+door+lock&date=today+3-m&geo=US",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=smart+front+door+lock&tz=420"
         },
         {
-          "query": "ergonomic gaming chair",
-          "value": "44",
-          "extracted_value": 44,
-          "link": "https://trends.google.com/trends/explore?q=ergonomic+gaming+chair&date=today+3-m",
-          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=ergonomic+gaming+chair&tz=420"
+          "query": "front door lock",
+          "value": "53",
+          "extracted_value": 53,
+          "link": "https://trends.google.com/trends/explore?q=front+door+lock&date=today+3-m&geo=US",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=front+door+lock&tz=420"
         },
         {
-          "query": "ergonomic chair",
+          "query": "smart home door lock",
           "value": "42",
           "extracted_value": 42,
-          "link": "https://trends.google.com/trends/explore?q=ergonomic+chair&date=today+3-m",
-          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=ergonomic+chair&tz=420"
+          "link": "https://trends.google.com/trends/explore?q=smart+home+door+lock&date=today+3-m&geo=US",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=smart+home+door+lock&tz=420"
         },
         {
-          "query": "gaming chairs",
+          "query": "door locks",
           "value": "41",
           "extracted_value": 41,
-          "link": "https://trends.google.com/trends/explore?q=gaming+chairs&date=today+3-m",
-          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=gaming+chairs&tz=420"
+          "link": "https://trends.google.com/trends/explore?q=door+locks&date=today+3-m&geo=US",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=door+locks&tz=420"
         },
         {
-          "query": "gaming desk",
+          "query": "smart locks",
+          "value": "41",
+          "extracted_value": 41,
+          "link": "https://trends.google.com/trends/explore?q=smart+locks&date=today+3-m&geo=US",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=smart+locks&tz=420"
+        },
+        {
+          "query": "smart door locks",
           "value": "40",
           "extracted_value": 40,
-          "link": "https://trends.google.com/trends/explore?q=gaming+desk&date=today+3-m",
-          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=gaming+desk&tz=420"
+          "link": "https://trends.google.com/trends/explore?q=smart+door+locks&date=today+3-m&geo=US",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=smart+door+locks&tz=420"
         },
         {
-          "query": "desk chair",
-          "value": "38",
-          "extracted_value": 38,
-          "link": "https://trends.google.com/trends/explore?q=desk+chair&date=today+3-m",
-          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=desk+chair&tz=420"
-        },
-        {
-          "query": "gaming desk chair",
-          "value": "38",
-          "extracted_value": 38,
-          "link": "https://trends.google.com/trends/explore?q=gaming+desk+chair&date=today+3-m",
-          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=gaming+desk+chair&tz=420"
-        },
-        {
-          "query": "desk",
+          "query": "fingerprint door lock",
           "value": "37",
           "extracted_value": 37,
-          "link": "https://trends.google.com/trends/explore?q=desk&date=today+3-m",
-          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=desk&tz=420"
+          "link": "https://trends.google.com/trends/explore?q=fingerprint+door+lock&date=today+3-m&geo=US",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=fingerprint+door+lock&tz=420"
         },
         {
-          "query": "black gaming chair",
+          "query": "smart fingerprint door lock",
+          "value": "37",
+          "extracted_value": 37,
+          "link": "https://trends.google.com/trends/explore?q=smart+fingerprint+door+lock&date=today+3-m&geo=US",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=smart+fingerprint+door+lock&tz=420"
+        },
+        {
+          "query": "deadbolt lock",
           "value": "35",
           "extracted_value": 35,
-          "link": "https://trends.google.com/trends/explore?q=black+gaming+chair&date=today+3-m",
-          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=black+gaming+chair&tz=420"
+          "link": "https://trends.google.com/trends/explore?q=deadbolt+lock&date=today+3-m&geo=US",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=deadbolt+lock&tz=420"
         },
         {
-          "query": "computer chair",
-          "value": "23",
-          "extracted_value": 23,
-          "link": "https://trends.google.com/trends/explore?q=computer+chair&date=today+3-m",
-          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=computer+chair&tz=420"
+          "query": "smart deadbolt",
+          "value": "35",
+          "extracted_value": 35,
+          "link": "https://trends.google.com/trends/explore?q=smart+deadbolt&date=today+3-m&geo=US",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=smart+deadbolt&tz=420"
         },
         {
-          "query": "computer gaming chair",
-          "value": "22",
-          "extracted_value": 22,
-          "link": "https://trends.google.com/trends/explore?q=computer+gaming+chair&date=today+3-m",
-          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=computer+gaming+chair&tz=420"
+          "query": "deadbolt",
+          "value": "35",
+          "extracted_value": 35,
+          "link": "https://trends.google.com/trends/explore?q=deadbolt&date=today+3-m&geo=US",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=deadbolt&tz=420"
         },
         {
-          "query": "best gaming chair 2025",
-          "value": "21",
-          "extracted_value": 21,
-          "link": "https://trends.google.com/trends/explore?q=best+gaming+chair+2025&date=today+3-m",
-          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=best+gaming+chair+2025&tz=420"
+          "query": "smart deadbolt lock",
+          "value": "34",
+          "extracted_value": 34,
+          "link": "https://trends.google.com/trends/explore?q=smart+deadbolt+lock&date=today+3-m&geo=US",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=smart+deadbolt+lock&tz=420"
         },
         {
-          "query": "gaming pc",
-          "value": "21",
-          "extracted_value": 21,
-          "link": "https://trends.google.com/trends/explore?q=gaming+pc&date=today+3-m",
-          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=gaming+pc&tz=420"
+          "query": "keypad door lock",
+          "value": "34",
+          "extracted_value": 34,
+          "link": "https://trends.google.com/trends/explore?q=keypad+door+lock&date=today+3-m&geo=US",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=keypad+door+lock&tz=420"
         },
         {
-          "query": "pc",
-          "value": "21",
-          "extracted_value": 21,
-          "link": "https://trends.google.com/trends/explore?q=pc&date=today+3-m",
-          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=pc&tz=420"
+          "query": "door handle",
+          "value": "31",
+          "extracted_value": 31,
+          "link": "https://trends.google.com/trends/explore?q=door+handle&date=today+3-m&geo=US",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=door+handle&tz=420"
         },
         {
-          "query": "pc gaming chair",
-          "value": "21",
-          "extracted_value": 21,
-          "link": "https://trends.google.com/trends/explore?q=pc+gaming+chair&date=today+3-m",
-          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=pc+gaming+chair&tz=420"
+          "query": "smart door handle lock",
+          "value": "31",
+          "extracted_value": 31,
+          "link": "https://trends.google.com/trends/explore?q=smart+door+handle+lock&date=today+3-m&geo=US",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=smart+door+handle+lock&tz=420"
         },
         {
-          "query": "gaming chair near me",
-          "value": "20",
-          "extracted_value": 20,
-          "link": "https://trends.google.com/trends/explore?q=gaming+chair+near+me&date=today+3-m",
-          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=gaming+chair+near+me&tz=420"
+          "query": "smart key lock",
+          "value": "28",
+          "extracted_value": 28,
+          "link": "https://trends.google.com/trends/explore?q=smart+key+lock&date=today+3-m&geo=US",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=smart+key+lock&tz=420"
         },
         {
-          "query": "gaming chair amazon",
-          "value": "20",
-          "extracted_value": 20,
-          "link": "https://trends.google.com/trends/explore?q=gaming+chair+amazon&date=today+3-m",
-          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=gaming+chair+amazon&tz=420"
+          "query": "kwikset",
+          "value": "28",
+          "extracted_value": 28,
+          "link": "https://trends.google.com/trends/explore?q=kwikset&date=today+3-m&geo=US",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=kwikset&tz=420"
         },
         {
-          "query": "white gaming chair",
-          "value": "19",
-          "extracted_value": 19,
-          "link": "https://trends.google.com/trends/explore?q=white+gaming+chair&date=today+3-m",
-          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=white+gaming+chair&tz=420"
+          "query": "kwikset smart lock",
+          "value": "27",
+          "extracted_value": 27,
+          "link": "https://trends.google.com/trends/explore?q=kwikset+smart+lock&date=today+3-m&geo=US",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=kwikset+smart+lock&tz=420"
         },
         {
-          "query": "rocker gaming chair",
-          "value": "17",
-          "extracted_value": 17,
-          "link": "https://trends.google.com/trends/explore?q=rocker+gaming+chair&date=today+3-m",
-          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=rocker+gaming+chair&tz=420"
+          "query": "kwikset door lock",
+          "value": "27",
+          "extracted_value": 27,
+          "link": "https://trends.google.com/trends/explore?q=kwikset+door+lock&date=today+3-m&geo=US",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=kwikset+door+lock&tz=420"
         },
         {
-          "query": "herman miller",
-          "value": "16",
-          "extracted_value": 16,
-          "link": "https://trends.google.com/trends/explore?q=herman+miller&date=today+3-m",
-          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=herman+miller&tz=420"
+          "query": "kwikset lock",
+          "value": "27",
+          "extracted_value": 27,
+          "link": "https://trends.google.com/trends/explore?q=kwikset+lock&date=today+3-m&geo=US",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=kwikset+lock&tz=420"
         },
         {
-          "query": "herman miller gaming chair",
-          "value": "16",
-          "extracted_value": 16,
-          "link": "https://trends.google.com/trends/explore?q=herman+miller+gaming+chair&date=today+3-m",
-          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=herman+miller+gaming+chair&tz=420"
+          "query": "wifi door lock",
+          "value": "26",
+          "extracted_value": 26,
+          "link": "https://trends.google.com/trends/explore?q=wifi+door+lock&date=today+3-m&geo=US",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=wifi+door+lock&tz=420"
         },
         {
-          "query": "ergonomic office chair",
-          "value": "16",
-          "extracted_value": 16,
-          "link": "https://trends.google.com/trends/explore?q=ergonomic+office+chair&date=today+3-m",
-          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&hl=en&q=ergonomic+office+chair&tz=420"
+          "query": "yale smart lock",
+          "value": "25",
+          "extracted_value": 25,
+          "link": "https://trends.google.com/trends/explore?q=yale+smart+lock&date=today+3-m&geo=US",
+          "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+3-m&engine=google_trends&geo=US&hl=en&q=yale+smart+lock&tz=420"
         }
       ]
     }

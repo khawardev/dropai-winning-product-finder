@@ -41,6 +41,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
   const { data: session, isPending } = useSession()
 
   const userName = session?.user?.name || 'User'
+  const userEmail = session?.user?.email || 'User'
   const userInitials = userName
     .split(' ')
     .map((n: string) => n[0])
@@ -130,10 +131,6 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
           
           <div className="flex items-center gap-4">
             <ThemeToggle />
-            <Button variant="ghost" size="icon" className="relative text-muted-foreground hover:text-foreground hover:bg-muted/50 rounded-xl transition-all">
-              <Bell className="size-5" />
-              <span className="absolute top-2.5 right-2.5 size-2 bg-brand-cyan rounded-full border-2 border-background animate-pulse"></span>
-            </Button>
             <div className="h-8 w-px bg-border mx-1"></div>
             <div className="flex items-center gap-3 pl-2 group cursor-pointer">
               <div className="text-right hidden sm:block">
@@ -142,7 +139,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                 ) : (
                   <>
                     <p className="text-sm font-semibold text-foreground leading-none">{userName}</p>
-                    <p className="text-[10px] text-muted-foreground mt-1 uppercase tracking-wider font-bold">Pro Plan</p>
+                      <p className="text-[10px] text-muted-foreground mt-1  tracking-wider ">{userEmail}</p>
                   </>
                 )}
               </div>

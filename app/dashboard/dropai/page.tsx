@@ -30,7 +30,7 @@ export default function DropAI() {
 
     try {
       const response = await fetch(`/api/research/trends?q=${encodeURIComponent(keyword)}&geo=${geo}&date=${encodeURIComponent(date)}`);
-      
+
       if (!response.ok) {
         const errorData = await response.json();
         throw new Error(errorData.error || 'Failed to fetch trends');
@@ -60,18 +60,17 @@ export default function DropAI() {
       </div>
 
       <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
-        
+
         {/* Input Panel */}
         <div className="xl:col-span-1 space-y-6">
-          <Card className="border-primary/20 shadow-lg shadow-primary/5">
-            <CardHeader className="bg-primary/5 border-b pb-6">
+          <Card>
+            <CardHeader>
               <CardTitle className="text-xl flex items-center gap-2">
-                <TrendingUp className="w-5 h-5 text-primary" />
                 Discovery Engine
               </CardTitle>
               <CardDescription>Target emerging niches before they go viral.</CardDescription>
             </CardHeader>
-            <CardContent className="pt-6">
+            <CardContent >
               <form onSubmit={handleTrendSearch} className="space-y-6">
                 {error && (
                   <div className="p-3 bg-destructive/10 border border-destructive/20 rounded-lg text-destructive text-sm flex items-start gap-2">
@@ -79,62 +78,62 @@ export default function DropAI() {
                     <span>{error}</span>
                   </div>
                 )}
-                
+
                 <div className="space-y-2">
                   <label className="text-sm font-semibold text-foreground flex items-center gap-2">
                     <Search className="w-4 h-4 text-primary" /> Seed Keyword
                   </label>
-                  <Input 
-                    name="keyword" 
-                    placeholder="e.g. coffee, kitchen toys, beauty" 
-                    className="bg-muted/50 border-border" 
-                    required 
+                  <Input
+                    name="keyword"
+                    placeholder="e.g. coffee, kitchen toys, beauty"
+                    className="bg-muted/50 border-border"
+                    required
                     disabled={isSearching}
                   />
                   <p className="text-[10px] text-muted-foreground">Broader terms yield better breakout results.</p>
                 </div>
 
                 <div className="grid grid-cols-2 gap-4">
-                   <div className="space-y-2">
-                      <label className="text-sm font-semibold text-foreground flex items-center gap-2">
-                        <Globe className="w-4 h-4 text-primary" /> Region
-                      </label>
-                      <select name="geo" className="w-full bg-muted/50 border border-border rounded-md px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-primary/20 transition-all">
-                         <option value="US">🇺🇸 USA</option>
-                         <option value="GB">🇬🇧 UK</option>
-                         <option value="CA">🇨🇦 Canada</option>
-                         <option value="AU">🇦🇺 Australia</option>
-                         <option value="FR">🇫🇷 France</option>
-                         <option value="DE">🇩🇪 Germany</option>
-                      </select>
-                   </div>
-                   <div className="space-y-2">
-                      <label className="text-sm font-semibold text-foreground flex items-center gap-2">
-                        <Clock className="w-4 h-4 text-primary" /> Timeframe
-                      </label>
-                      <select name="date" className="w-full bg-muted/50 border border-border rounded-md px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-primary/20 transition-all">
-                         <option value="today 3-m">3 Months</option>
-                         <option value="today 12-m">12 Months</option>
-                         <option value="today 1-m">30 Days</option>
-                         <option value="now 7-d">7 Days</option>
-                         <option value="now 1-d">24 Hours</option>
-                      </select>
-                   </div>
+                  <div className="space-y-2">
+                    <label className="text-sm font-semibold text-foreground flex items-center gap-2">
+                      <Globe className="w-4 h-4 text-primary" /> Region
+                    </label>
+                    <select name="geo" className="w-full bg-muted/50 border border-border rounded-md px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-primary/20 transition-all">
+                      <option value="US">🇺🇸 USA</option>
+                      <option value="GB">🇬🇧 UK</option>
+                      <option value="CA">🇨🇦 Canada</option>
+                      <option value="AU">🇦🇺 Australia</option>
+                      <option value="FR">🇫🇷 France</option>
+                      <option value="DE">🇩🇪 Germany</option>
+                    </select>
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-sm font-semibold text-foreground flex items-center gap-2">
+                      <Clock className="w-4 h-4 text-primary" /> Timeframe
+                    </label>
+                    <select name="date" className="w-full bg-muted/50 border border-border rounded-md px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-primary/20 transition-all">
+                      <option value="today 3-m">3 Months</option>
+                      <option value="today 12-m">12 Months</option>
+                      <option value="today 1-m">30 Days</option>
+                      <option value="now 7-d">7 Days</option>
+                      <option value="now 1-d">24 Hours</option>
+                    </select>
+                  </div>
                 </div>
 
                 <Button
                   type="submit"
                   disabled={isSearching}
-                  className="w-full bg-primary hover:bg-primary/90 h-11 font-bold shadow-md shadow-primary/20"
+                  className="w-full bg-primary hover:bg-primary/90 h-11 shadow-md shadow-primary/20"
                 >
                   {isSearching ? (
                     <>
-                      <Loader2 className="mr-2 w-4 h-4 animate-spin" />
+                      <Loader2 className="w-4 h-4 animate-spin" />
                       Analyzing...
                     </>
                   ) : (
                     <>
-                      <TrendingUp className="mr-2 w-4 h-4" />
+                      <TrendingUp className="w-4 h-4" />
                       Find Breakout Niches
                     </>
                   )}
@@ -156,15 +155,15 @@ export default function DropAI() {
             </CardHeader>
             <CardContent>
               {isSearching ? (
-                 <div className="flex flex-col items-center justify-center p-12 text-center space-y-4">
-                   <div className="relative inline-block">
-                     <div className="absolute inset-0 animate-ping rounded-full bg-primary/20"></div>
-                     <div className="relative w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto">
-                       <Loader2 className="w-8 h-8 text-primary-foreground animate-spin" />
-                     </div>
-                   </div>
-                   <p className="text-muted-foreground">Scanning Google Trends...</p>
-                 </div>
+                <div className="flex flex-col items-center justify-center p-12 text-center space-y-4">
+                  <div className="relative inline-block">
+                    <div className="absolute inset-0 animate-ping rounded-full bg-primary/20"></div>
+                    <div className="relative w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto">
+                      <Loader2 className="w-8 h-8 text-primary-foreground animate-spin" />
+                    </div>
+                  </div>
+                  <p className="text-muted-foreground">Scanning Google Trends...</p>
+                </div>
               ) : trendResults ? (
                 <div className="space-y-6">
                   {/* Summary Metric */}
@@ -180,7 +179,7 @@ export default function DropAI() {
                   </div>
 
                   {/* Highlights section */}
-                  
+
                   {/* Breakouts */}
                   {trendResults.breakouts && trendResults.breakouts.length > 0 && (
                     <div className="space-y-3">
@@ -193,9 +192,9 @@ export default function DropAI() {
                               <span className="text-xs font-bold text-emerald-500 bg-emerald-500/10 px-2 py-1 rounded-full">
                                 {item.value}
                               </span>
-                              <Button 
-                                size="sm" 
-                                variant="outline" 
+                              <Button
+                                size="sm"
+                                variant="outline"
                                 className="h-7 text-xs"
                                 onClick={() => handleProceedToCompetitive(item.query)}
                               >
@@ -220,9 +219,9 @@ export default function DropAI() {
                               <span className="text-xs font-bold text-blue-500 bg-blue-500/10 px-2 py-1 rounded-full">
                                 {item.value}
                               </span>
-                              <Button 
-                                size="sm" 
-                                variant="secondary" 
+                              <Button
+                                size="sm"
+                                variant="secondary"
                                 className="h-7 text-xs"
                                 onClick={() => handleProceedToCompetitive(item.query)}
                               >
@@ -247,9 +246,9 @@ export default function DropAI() {
                               <span className="text-xs font-bold text-muted-foreground bg-muted px-2 py-1 rounded-full">
                                 Score: {item.value}
                               </span>
-                              <Button 
-                                size="sm" 
-                                variant="secondary" 
+                              <Button
+                                size="sm"
+                                variant="secondary"
                                 className="h-7 text-xs"
                                 onClick={() => handleProceedToCompetitive(item.query)}
                               >
@@ -272,12 +271,12 @@ export default function DropAI() {
 
                   {/* Raw JSON dump for dev phase */}
                   <div className="mt-8 border-t pt-6">
-                     <h3 className="text-sm font-semibold text-muted-foreground mb-3 flex justify-between items-center">
-                       <span>Raw JSON Output</span>
-                     </h3>
-                     <pre className="bg-muted p-4 rounded-md overflow-x-auto text-[11px] font-mono text-muted-foreground">
-                       {JSON.stringify(trendResults, null, 2)}
-                     </pre>
+                    <h3 className="text-sm font-semibold text-muted-foreground mb-3 flex justify-between items-center">
+                      <span>Raw JSON Output</span>
+                    </h3>
+                    <pre className="bg-muted p-4 rounded-md overflow-x-auto text-[11px] font-mono text-muted-foreground">
+                      {JSON.stringify(trendResults, null, 2)}
+                    </pre>
                   </div>
                 </div>
               ) : (

@@ -30,7 +30,7 @@ export function MetricCard({
       <Tooltip>
         <TooltipTrigger asChild>
           <Card className={cn("bg-card border-border overflow-hidden", className)}>
-            <CardContent className="pt-6">
+            <CardContent >
               <div className="flex justify-between items-start mb-4">
                 <div className="p-2 bg-primary/10 rounded-lg">
                   <Icon className="w-5 h-5 text-primary" />

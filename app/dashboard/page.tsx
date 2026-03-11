@@ -79,7 +79,7 @@ export default function DashboardOverview() {
           <p className="text-muted-foreground text-sm mt-1">Monitor your product performance and market trends.</p>
         </div>
         <Link href="/dashboard/dropai">
-          <Button className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-xl shadow-lg shadow-primary/20 gap-2">
+          <Button size={'lg'} className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-xl shadow-lg shadow-primary/20 gap-2">
             <SearchIcon className="size-4" /> Find New Products
           </Button>
         </Link>
@@ -127,8 +127,8 @@ export default function DashboardOverview() {
                   <AreaChart data={trendData}>
                     <defs>
                       <linearGradient id="colorValue" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="5%" stopColor="#027bdd" stopOpacity={0.2}/>
-                        <stop offset="95%" stopColor="#027bdd" stopOpacity={0}/>
+                        <stop offset="5%" stopColor="#027bdd" stopOpacity={0.2} />
+                        <stop offset="95%" stopColor="#027bdd" stopOpacity={0} />
                       </linearGradient>
                     </defs>
                     <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="var(--border)" opacity={0.5} />
@@ -136,19 +136,19 @@ export default function DashboardOverview() {
                       dataKey="name"
                       axisLine={false}
                       tickLine={false}
-                      tick={{fill: 'var(--muted-foreground)', fontSize: 12}}
+                      tick={{ fill: 'var(--muted-foreground)', fontSize: 12 }}
                       dy={10}
                     />
                     <YAxis
                       axisLine={false}
                       tickLine={false}
-                      tick={{fill: 'var(--muted-foreground)', fontSize: 12}}
+                      tick={{ fill: 'var(--muted-foreground)', fontSize: 12 }}
                       tickFormatter={(value) => `$${value}`}
                       dx={-10}
                     />
                     <Tooltip
-                      contentStyle={{backgroundColor: 'var(--card)', borderColor: 'var(--border)', borderRadius: '12px', padding: '12px', boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)', backdropFilter: 'blur(12px)'}}
-                      itemStyle={{color: '#027bdd', fontWeight: 'bold'}}
+                      contentStyle={{ backgroundColor: 'var(--card)', borderColor: 'var(--border)', borderRadius: '12px', padding: '12px', boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)', backdropFilter: 'blur(12px)' }}
+                      itemStyle={{ color: '#027bdd', fontWeight: 'bold' }}
                       cursor={{ stroke: '#027bdd', strokeWidth: 1, strokeDasharray: '4 4' }}
                     />
                     <Area
@@ -181,7 +181,7 @@ export default function DashboardOverview() {
               Category Insights
             </CardTitle>
           </CardHeader>
-          <CardContent className="pt-6">
+          <CardContent >
             <div className="space-y-5">
               {categoryData.length > 0 ? categoryData.map((cat: any, i: number) => (
                 <div key={i} className="space-y-2">
@@ -190,7 +190,7 @@ export default function DashboardOverview() {
                     <span className="text-foreground font-bold">{cat.value}%</span>
                   </div>
                   <div className="h-2 bg-muted rounded-full overflow-hidden">
-                    <motion.div 
+                    <motion.div
                       className="h-full bg-linear-to-r from-brand-blue to-brand-cyan"
                       initial={{ width: 0 }}
                       animate={{ width: `${cat.value}%` }}
@@ -248,8 +248,8 @@ export default function DashboardOverview() {
                       <td className="px-6 py-4">
                         <div className="flex items-center gap-3">
                           <div className="w-16 h-1.5 bg-muted rounded-full overflow-hidden">
-                            <div 
-                              className="h-full bg-linear-to-r from-brand-blue to-brand-cyan" 
+                            <div
+                              className="h-full bg-linear-to-r from-brand-blue to-brand-cyan"
                               style={{ width: `${row.demandScore}%` }}
                             ></div>
                           </div>
@@ -262,8 +262,8 @@ export default function DashboardOverview() {
                       <td className="px-6 py-4">
                         <span className={cn(
                           "px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider",
-                          row.trending 
-                            ? "bg-brand-blue/10 text-brand-blue border border-brand-blue/20" 
+                          row.trending
+                            ? "bg-brand-blue/10 text-brand-blue border border-brand-blue/20"
                             : "bg-muted text-muted-foreground border border-border"
                         )}>
                           {row.trending ? 'Trending' : 'Stable'}
