@@ -1,69 +1,9 @@
 'use server'
 
 import { db } from '@/server/db'
-import { savedProducts, productResults, supplierLinks } from '@/server/db/schema/schema'
-import { SaveProductInputSchema } from '@/lib/validations'
+import { winningProducts } from '@/server/db/schema/schema'
 import { getAuthUserId } from '@/lib/server-session'
-import { eq, and, desc } from 'drizzle-orm'
-
-export async function saveProduct(productId: string, notes?: string) {
-  const validated = SaveProductInputSchema.safeParse({ productId, notes })
-  if (!validated.success) {
-    return { success: false, error: 'Invalid input' }
-  }
-
-  const userId = await getAuthUserId()
-  if (!userId) return { success: false, error: 'Not authenticated' }
-
-  try {
-    const existing = await db
-      .select()
-      .from(savedProducts)
-      .where(
-        and(
-          eq(savedProducts.userId, userId),
-          eq(savedProducts.productId, productId)
-        )
-      )
-      .limit(1)
-
-    if (existing.length > 0) {
-      return { success: true, alreadySaved: true }
-    }
-
-    await db.insert(savedProducts).values({
-      userId,
-      productId,
-      notes: notes || null,
-    })
-
-    return { success: true }
-  } catch (error) {
-    console.error('Failed to save product:', error)
-    return { success: false, error: 'Failed to save product' }
-  }
-}
-
-export async function unsaveProduct(productId: string) {
-  const userId = await getAuthUserId()
-  if (!userId) return { success: false, error: 'Not authenticated' }
-
-  try {
-    await db
-      .delete(savedProducts)
-      .where(
-        and(
-          eq(savedProducts.userId, userId),
-          eq(savedProducts.productId, productId)
-        )
-      )
-
-    return { success: true }
-  } catch (error) {
-    console.error('Failed to unsave product:', error)
-    return { success: false, error: 'Failed to remove saved product' }
-  }
-}
+import { eq, desc } from 'drizzle-orm'
 
 export async function getSavedProducts() {
   const userId = await getAuthUserId()
@@ -71,56 +11,40 @@ export async function getSavedProducts() {
 
   try {
     const saved = await db
-      .select()
-      .from(savedProducts)
-      .where(eq(savedProducts.userId, userId))
-      .orderBy(desc(savedProducts.savedAt))
-
-    const productsWithDetails = await Promise.all(
-      saved.map(async (s) => {
-        if (!s.productId) return null
-
-        const [product] = await db
-          .select()
-          .from(productResults)
-          .where(eq(productResults.id, s.productId))
-          .limit(1)
-
-        if (!product) return null
-
-        const suppliers = await db
-          .select()
-          .from(supplierLinks)
-          .where(eq(supplierLinks.productId, product.id))
-
-        return {
-          ...product,
-          savedAt: s.savedAt,
-          savedNotes: s.notes,
-          suppliers,
-        }
+      .select({
+        id: winningProducts.id,
+        keyword: winningProducts.keyword,
+        region: winningProducts.region,
+        timeframe: winningProducts.timeframe,
+        createdAt: winningProducts.createdAt,
+        // We only select the specific parts of pipelineData needed for the list if possible, 
+        // or just select it as is if it's not too large for the specific use case, 
+        // but selecting specific columns is always better.
+        pipelineData: winningProducts.pipelineData, 
       })
-    )
+      .from(winningProducts)
+      .where(eq(winningProducts.userId, userId))
+      .orderBy(desc(winningProducts.createdAt))
 
-    return { success: true, data: productsWithDetails.filter(Boolean) }
+    return { success: true, data: saved }
   } catch (error) {
     console.error('Failed to get saved products:', error)
     return { success: true, data: [] }
   }
 }
 
-export async function getSavedProductIds() {
+export async function deleteWinningProduct(id: string) {
   const userId = await getAuthUserId()
-  if (!userId) return []
+  if (!userId) return { success: false, error: 'Not authenticated' }
 
   try {
-    const saved = await db
-      .select({ productId: savedProducts.productId })
-      .from(savedProducts)
-      .where(eq(savedProducts.userId, userId))
+    await db
+      .delete(winningProducts)
+      .where(eq(winningProducts.id, id))
 
-    return saved.map((s) => s.productId)
+    return { success: true }
   } catch (error) {
-    return []
+    console.error('Failed to delete product:', error)
+    return { success: false, error: 'Failed to remove product' }
   }
 }

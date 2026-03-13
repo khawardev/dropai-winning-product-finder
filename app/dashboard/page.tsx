@@ -10,13 +10,14 @@ import {
   Search as SearchIcon,
   Bookmark,
   ShoppingCart,
-  Loader2,
   ChevronRight,
   Zap
 } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
+import { Badge } from '@/components/ui/Badge'
+import { Skeleton } from '@/components/ui/Skeleton'
 import {
   XAxis,
   YAxis,
@@ -24,39 +25,44 @@ import {
   Tooltip,
   ResponsiveContainer,
   AreaChart,
-  Area
+  Area,
+  Legend
 } from 'recharts'
+import useSWR from 'swr'
 import { Progress } from '@/components/ui/Progress'
 import { MetricCard } from '@/components/DashboardComponents'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
+import { Blur } from '@/components/MagicBlur'
 import { getDashboardStats } from '@/server/actions/DashboardStats'
 
+const CustomTooltip = ({ active, payload, label }: any) => {
+  if (active && payload && payload.length) {
+    return (
+      <div className="bg-card border border-border p-3 rounded-xl shadow-xl backdrop-blur-md">
+        <p className="text-sm text-muted-foreground font-medium mb-1">{label}</p>
+        <p className="text-sm font-medium text-primary">{payload[0].value.toFixed(1)}%</p>
+      </div>
+    );
+  }
+  return null;
+};
+
 export default function DashboardOverview() {
-  const [stats, setStats] = useState<any>(null)
-  const [isLoading, setIsLoading] = useState(true)
-  const [isMounted, setIsMounted] = useState(false)
-
+  const isMounted = React.useRef(false);
+  const [, setForceUpdate] = useState(0);
 
   useEffect(() => {
-    setIsMounted(true)
-  }, [])
+    isMounted.current = true;
+    setForceUpdate(prev => prev + 1);
+  }, []);
 
-  useEffect(() => {
-    async function loadStats() {
-      try {
-        const result = await getDashboardStats()
-        if (result.success) {
-          setStats(result.data)
-        }
-      } catch (err) {
-        console.error('Failed to load dashboard stats:', err)
-      } finally {
-        setIsLoading(false)
-      }
-    }
-    loadStats()
-  }, [])
+  const { data: result, error, isLoading } = useSWR('dashboard-stats', getDashboardStats, {
+    revalidateOnFocus: false,
+    dedupingInterval: 60000, // 1 minute
+  });
+
+  const stats = result?.success ? result.data : null;
 
   const productsAnalyzed = stats?.productsAnalyzed || 0
   const activeSuppliers = stats?.activeSuppliers || 0
@@ -72,14 +78,14 @@ export default function DashboardOverview() {
   }
 
   return (
-    <div className="space-y-8 animate-in fade-in slide-in-from-bottom-2 duration-700">
+    <Blur className="space-y-8">
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
-          <h1 className="text-3xl font-bold text-foreground tracking-tight">Dashboard Overview</h1>
+          <h1 className="text-3xl font-medium text-foreground tracking-tight">Dashboard Overview</h1>
           <p className="text-muted-foreground text-sm mt-1">Monitor your product performance and market trends.</p>
         </div>
         <Link href="/dashboard/dropai">
-          <Button size={'lg'} className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-xl shadow-lg shadow-primary/20 gap-2">
+          <Button size="xl" shape="xl" glow className="gap-2">
             <SearchIcon className="size-4" /> Find New Products
           </Button>
         </Link>
@@ -88,43 +94,45 @@ export default function DashboardOverview() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <MetricCard
           label="Products Analyzed"
-          value={isLoading ? '...' : String(productsAnalyzed)}
+          value={isLoading ? <Skeleton className="h-8 w-16" /> : String(productsAnalyzed)}
           icon={SearchIcon}
           description="Total AI analysis runs"
         />
         <MetricCard
           label="Active Suppliers"
-          value={isLoading ? '...' : String(activeSuppliers)}
+          value={isLoading ? <Skeleton className="h-8 w-16" /> : String(activeSuppliers)}
           icon={Package}
           description="Verified global partners"
         />
         <MetricCard
           label="Potential Revenue"
-          value={isLoading ? '...' : formatRevenue(potentialRevenue)}
+          value={isLoading ? <Skeleton className="h-8 w-16" /> : formatRevenue(potentialRevenue)}
           icon={ShoppingCart}
           description="Estimated market value"
         />
         <MetricCard
           label="Saved Products"
-          value={isLoading ? '...' : String(savedProductsCount)}
+          value={isLoading ? <Skeleton className="h-8 w-16" /> : String(savedProductsCount)}
           icon={Bookmark}
           description="Items in your watchlist"
         />
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        <Card className="lg:col-span-2 bg-card border-border shadow-sm rounded-2xl overflow-hidden">
-          <CardHeader className="border-b border-border/50 bg-muted/20">
-            <CardTitle className="text-lg font-bold flex items-center gap-2">
+        <Card className="lg:col-span-2">
+          <CardHeader className="border-b">
+            <CardTitle className="text-lg font-medium flex items-center gap-2">
               <TrendingUp className="size-5 text-brand-blue" />
               Global Trend Analysis
             </CardTitle>
           </CardHeader>
-          <CardContent className="pt-8">
-            <div className="h-[300px] w-full">
-              {isMounted && trendData.length > 0 ? (
-                <ResponsiveContainer width="100%" height="100%" minWidth={1} minHeight={1}>
-                  <AreaChart data={trendData}>
+          <CardContent className="px-2 pt-4 pb-2">
+            <div className="h-[300px] w-full relative">
+              {isLoading ? (
+                <Skeleton className="h-full w-full rounded-xl" />
+              ) : isMounted.current && trendData.length > 0 ? (
+                <ResponsiveContainer width="100%" height="100%">
+                  <AreaChart data={trendData} margin={{ top: 20, right: 30, left: 10, bottom: 0 }}>
                     <defs>
                       <linearGradient id="colorValue" x1="0" y1="0" x2="0" y2="1">
                         <stop offset="5%" stopColor="#027bdd" stopOpacity={0.2} />
@@ -143,15 +151,40 @@ export default function DashboardOverview() {
                       axisLine={false}
                       tickLine={false}
                       tick={{ fill: 'var(--muted-foreground)', fontSize: 12 }}
-                      tickFormatter={(value) => `$${value}`}
+                      tickFormatter={(value) => `${value}%`}
                       dx={-10}
                     />
                     <Tooltip
-                      contentStyle={{ backgroundColor: 'var(--card)', borderColor: 'var(--border)', borderRadius: '12px', padding: '12px', boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)', backdropFilter: 'blur(12px)' }}
-                      itemStyle={{ color: '#027bdd', fontWeight: 'bold' }}
-                      cursor={{ stroke: '#027bdd', strokeWidth: 1, strokeDasharray: '4 4' }}
+                      content={({ active, payload, label }: any) => {
+                        if (active && payload && payload.length) {
+                          return (
+                            <div className="bg-card border border-border p-3 rounded-xl shadow-2xl backdrop-blur-md z-50">
+                              <p className="text-sm text-muted-foreground font-medium mb-1  ">{label}</p>
+                              <p className="text-sm font-medium text-primary">
+                                {payload[0].name}: {payload[0].value.toFixed(1)}%
+                              </p>
+                            </div>
+                          );
+                        }
+                        return null;
+                      }}
+                      cursor={{ stroke: '#027bdd', strokeWidth: 1.5, strokeDasharray: '4 4' }}
+                      wrapperStyle={{ zIndex: 1000, outline: 'none' }}
+                      allowEscapeViewBox={{ x: true, y: true }}
+                    />
+                    <Legend
+                      verticalAlign="top"
+                      align="right"
+                      iconType="circle"
+                      height={40}
+                      wrapperStyle={{
+                        paddingBottom: '20px',
+                        fontSize: '12px',
+                        fontWeight: 500
+                      }}
                     />
                     <Area
+                      name="Margin %"
                       type="monotone"
                       dataKey="value"
                       stroke="#027bdd"
@@ -174,29 +207,32 @@ export default function DashboardOverview() {
           </CardContent>
         </Card>
 
-        <Card className="bg-card border-border shadow-sm rounded-2xl overflow-hidden">
-          <CardHeader className="border-b border-border/50 bg-muted/20">
-            <CardTitle className="text-lg font-bold flex items-center gap-2">
+        <Card className="overflow-hidden">
+          <CardHeader className="border-b ">
+            <CardTitle className="text-lg font-medium flex items-center gap-2">
               <Map className="size-5 text-brand-cyan" />
               Category Insights
             </CardTitle>
           </CardHeader>
           <CardContent >
             <div className="space-y-5">
-              {categoryData.length > 0 ? categoryData.map((cat: any, i: number) => (
+              {isLoading ? (
+                Array.from({ length: 4 }).map((_, i) => (
+                  <div key={i} className="space-y-2">
+                    <div className="flex justify-between items-center">
+                      <Skeleton className="h-4 w-24" />
+                      <Skeleton className="h-4 w-12" />
+                    </div>
+                    <Skeleton className="h-1.5 w-full" />
+                  </div>
+                ))
+              ) : categoryData.length > 0 ? categoryData.map((cat: any, i: number) => (
                 <div key={i} className="space-y-2">
                   <div className="flex justify-between text-sm items-center">
                     <span className="text-muted-foreground font-medium">{cat.name}</span>
-                    <span className="text-foreground font-bold">{cat.value}%</span>
+                    <span className="text-foreground font-medium">{cat.value}%</span>
                   </div>
-                  <div className="h-2 bg-muted rounded-full overflow-hidden">
-                    <motion.div
-                      className="h-full bg-linear-to-r from-brand-blue to-brand-cyan"
-                      initial={{ width: 0 }}
-                      animate={{ width: `${cat.value}%` }}
-                      transition={{ duration: 1, delay: i * 0.1 }}
-                    />
-                  </div>
+                  <Progress value={cat.value} className="h-1.5" />
                 </div>
               )) : (
                 <div className="text-muted-foreground text-sm py-4">
@@ -205,10 +241,7 @@ export default function DashboardOverview() {
               )}
             </div>
             <div className="mt-8 p-5 bg-linear-to-br from-brand-blue/5 to-brand-cyan/5 border border-brand-blue/10 rounded-2xl relative overflow-hidden group">
-              <div className="absolute top-0 right-0 p-2 opacity-10 group-hover:opacity-20 transition-opacity">
-                <Zap className="size-12 text-brand-blue" />
-              </div>
-              <p className="text-xs text-brand-blue font-bold uppercase tracking-widest mb-2">AI Pulse</p>
+              <p className="text-sm text-brand-blue font-medium  mb-2">AI Pulse</p>
               <p className="text-sm text-foreground/80 leading-relaxed font-medium">
                 {productsAnalyzed > 0
                   ? `High volume detection in ${categoryData[0]?.name || 'current categories'}. Consider scaling your ${categoryData[0]?.name || 'top'} niche.`
@@ -219,32 +252,44 @@ export default function DashboardOverview() {
         </Card>
       </div>
 
-      <Card className="bg-card border-border shadow-sm rounded-2xl overflow-hidden">
-        <CardHeader className="flex flex-row items-center justify-between border-b border-border/50 bg-muted/20">
-          <CardTitle className="text-lg font-bold">Winning Products</CardTitle>
-          <Link href="/dashboard/results">
-            <Button variant="ghost" size="sm" className="text-xs font-bold hover:bg-muted/50 rounded-lg gap-1">
+      <Card className="overflow-hidden">
+        <CardHeader className="flex flex-row items-center justify-between border-b ">
+          <CardTitle className="text-lg font-medium">Winning Products</CardTitle>
+          <Link href="/dashboard/saved">
+            <Button variant="ghost" size="sm" className="font-medium gap-1">
               View All <ChevronRight className="size-3" />
             </Button>
           </Link>
         </CardHeader>
         <CardContent className="p-0">
-          {recentProducts.length > 0 ? (
+          {isLoading ? (
+            <div className="p-6 space-y-4">
+              {Array.from({ length: 5 }).map((_, i) => (
+                <div key={i} className="flex items-center justify-between py-2 border-b border-border/50 last:border-0">
+                  <Skeleton className="h-4 w-48" />
+                  <Skeleton className="h-4 w-24" />
+                  <Skeleton className="h-4 w-16" />
+                  <Skeleton className="h-6 w-20 rounded-full" />
+                  <Skeleton className="h-8 w-8 rounded-lg" />
+                </div>
+              ))}
+            </div>
+          ) : recentProducts.length > 0 ? (
             <div className="overflow-x-auto">
               <table className="w-full text-left border-collapse">
                 <thead>
-                  <tr className="text-muted-foreground text-[11px] uppercase tracking-widest bg-muted/10 font-bold">
-                    <th className="px-6 py-4">Product Name</th>
-                    <th className="px-6 py-4">Demand</th>
-                    <th className="px-6 py-4 text-center">Profit</th>
-                    <th className="px-6 py-4">Status</th>
-                    <th className="px-6 py-4 text-right">Insight</th>
+                  <tr className="text-muted-foreground text-sm  bg-muted/10 ">
+                    <th className="px-6 py-4 font-medium">Product Name</th>
+                    <th className="px-6 py-4 font-medium">Demand</th>
+                    <th className="px-6 py-4 text-center font-medium">Profit</th>
+                    <th className="px-6 py-4 font-medium">Status</th>
+                    <th className="px-6 py-4 text-right font-medium">Insight</th>
                   </tr>
                 </thead>
                 <tbody className="text-sm divide-y divide-border/50">
                   {recentProducts.map((row: any, i: number) => (
                     <tr key={i} className="group hover:bg-muted/30 transition-all cursor-pointer">
-                      <td className="px-6 py-4 font-bold text-foreground">{row.name}</td>
+                      <td className="px-6 py-4 font-medium text-foreground">{row.name}</td>
                       <td className="px-6 py-4">
                         <div className="flex items-center gap-3">
                           <div className="w-16 h-1.5 bg-muted rounded-full overflow-hidden">
@@ -253,25 +298,24 @@ export default function DashboardOverview() {
                               style={{ width: `${row.demandScore}%` }}
                             ></div>
                           </div>
-                          <span className="text-brand-blue font-bold text-xs">{row.demandScore.toFixed(0)}</span>
+                          <span className="text-brand-blue font-medium text-sm">{row.demandScore.toFixed(0)}</span>
                         </div>
                       </td>
-                      <td className="px-6 py-4 text-center font-mono font-bold text-brand-emerald">
+                      <td className="px-6 py-4 text-center font-mono font-medium text-brand-emerald">
                         {row.profitMargin?.toFixed(0) || 0}%
                       </td>
                       <td className="px-6 py-4">
-                        <span className={cn(
-                          "px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider",
-                          row.trending
-                            ? "bg-brand-blue/10 text-brand-blue border border-brand-blue/20"
-                            : "bg-muted text-muted-foreground border border-border"
-                        )}>
+                        <Badge
+                          variant={row.trending ? "blue" : "secondary"}
+                          shape="pill"
+                          className="text-sm font-medium"
+                        >
                           {row.trending ? 'Trending' : 'Stable'}
-                        </span>
+                        </Badge>
                       </td>
                       <td className="px-6 py-4 text-right">
                         <Link href={`/dashboard/product/${row.id}`}>
-                          <Button variant="ghost" size="sm" className="size-8 p-0 rounded-lg hover:bg-brand-blue hover:text-white transition-all">
+                          <Button variant="ghost" size="icon-sm" className="hover:bg-brand-blue hover:text-white transition-all">
                             <ArrowUpRight className="size-4" />
                           </Button>
                         </Link>
@@ -287,11 +331,11 @@ export default function DashboardOverview() {
                 <Package className="size-8 text-muted-foreground" />
               </div>
               <div className="max-w-xs">
-                <p className="text-foreground font-bold text-lg">No winners yet</p>
+                <p className="text-foreground font-medium text-lg">No winners yet</p>
                 <p className="text-muted-foreground text-sm mt-1">Start your first search to find winning products.</p>
               </div>
               <Link href="/dashboard/dropai">
-                <Button className="mt-2 bg-primary hover:bg-primary/90 rounded-xl px-8">
+                <Button shape="xl" className="mt-2">
                   Get Started
                 </Button>
               </Link>
@@ -299,6 +343,6 @@ export default function DashboardOverview() {
           )}
         </CardContent>
       </Card>
-    </div>
+    </Blur>
   )
 }

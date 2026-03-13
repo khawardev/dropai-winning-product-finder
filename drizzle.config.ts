@@ -8,4 +8,5 @@ export default defineConfig({
   dbCredentials: {
     url: process.env.DATABASE_URL_MIGRATIONS!,
   },
+  tablesFilter: ['user', 'session', 'account', 'verification', 'winning_products'],
 })

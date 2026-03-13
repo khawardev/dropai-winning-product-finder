@@ -3,11 +3,14 @@
 import React, { useState, Suspense } from 'react'
 import Link from 'next/link'
 import { useRouter, useSearchParams } from 'next/navigation'
-import { Zap, Mail, Lock, Loader2 } from 'lucide-react'
+import { Zap, Mail, Lock } from 'lucide-react'
+import { Spinner, ButtonSpinner } from '@/components/Spinner'
 import { Button } from '@/components/ui/Button'
 import { Input } from '@/components/ui/Input'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/Card'
 import { signIn } from '@/lib/auth-client'
+import { Logo } from '@/components/Logo'
+import BlurFade from '@/components/ui/BlurFade'
 
 function LoginForm() {
   const [email, setEmail] = useState('')
@@ -45,25 +48,18 @@ function LoginForm() {
         <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-brand-cyan/10 blur-[120px]" />
       </div>
 
-      <div className="w-full max-w-md relative z-10 animate-in fade-in slide-in-from-bottom-4 duration-700">
+      <BlurFade className="w-full max-w-md relative z-10">
         <div className="flex justify-center mb-10">
-          <Link href="/" className="flex items-center group">
-            <img 
-              src="https://i.ibb.co/fJSBXLF/714d2bd0-4e86-4ac9-8720-9bdae9ab297b-removalai-preview.png" 
-              alt="DropAI Logo" 
-              className="w-10 h-10 object-contain transition-all group-hover:scale-105" 
-            />
-            <span className="text-2xl font-bold tracking-tight text-foreground">DropAI</span>
-          </Link>
+          <Logo textClassName="text-2xl" />
         </div>
-        
+
         <div className="relative">
           {/* Subtle Outer Glow */}
           <div className="absolute -inset-0.5 bg-linear-to-r from-brand-blue/20 to-brand-cyan/20 rounded-2xl blur-2xl opacity-50 -z-10" />
-          
-          <Card className="bg-none border-0 bg-transparent overflow-hidden">
+
+          <Card className="bg-transparent border-none">
             <CardHeader className="space-y-1 text-center pb-8 pt-8">
-              <CardTitle className="text-3xl font-bold text-foreground tracking-tight">Welcome back</CardTitle>
+              <CardTitle className="text-3xl font-medium text-foreground tracking-tight">Welcome back</CardTitle>
               <CardDescription className="text-muted-foreground pt-1">
                 Enter your details to sign in
               </CardDescription>
@@ -71,62 +67,60 @@ function LoginForm() {
             <CardContent className="pb-8">
               <form onSubmit={handleLogin} className="space-y-4">
                 {error && (
-                  <div className="p-3 bg-destructive/10 border border-destructive/20 rounded-xl text-destructive text-sm flex items-center gap-2 animate-in fade-in zoom-in-95 duration-200">
-                    <Zap className="w-4 h-4 shrink-0" />
-                    {error}
-                  </div>
+                  <BlurFade>
+                    <div className="p-3 bg-destructive/10 border border-destructive/20 rounded-xl text-destructive text-sm flex items-center gap-2">
+                      <Zap className="w-4 h-4 shrink-0" />
+                      {error}
+                    </div>
+                  </BlurFade>
                 )}
                 <div className="space-y-4">
-                  <div className="relative group">
-                    <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground group-focus-within:text-brand-blue transition-colors" />
-                    <Input 
-                      type="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      placeholder="Email address" 
-                      className="pl-11 h-12 bg-muted/50 border-border hover:border-brand-blue/30 text-foreground placeholder:text-muted-foreground focus-visible:ring-1 focus-visible:ring-brand-blue/50 focus-visible:border-brand-blue transition-all rounded-xl"
-                      required
-                    />
-                  </div>
-                  <div className="relative group">
-                    <Lock className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground group-focus-within:text-brand-blue transition-colors" />
-                    <Input 
-                      type="password"
-                      value={password}
-                      onChange={(e) => setPassword(e.target.value)}
-                      placeholder="Password" 
-                      className="pl-11 h-12 bg-muted/50 border-border hover:border-brand-blue/30 text-foreground placeholder:text-muted-foreground focus-visible:ring-1 focus-visible:ring-brand-blue/50 focus-visible:border-brand-blue transition-all rounded-xl"
-                      required
-                    />
-                  </div>
-                </div>
-                
-                <div className="flex justify-end pt-1">
-                  <button type="button" className="text-xs font-medium text-muted-foreground hover:text-brand-blue transition-colors underline-offset-4 hover:underline">
-                    Forgot password?
-                  </button>
+                  <Input
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Email address"
+                    icon={<Mail className='size-4' />}
+                    required
+                  />
+                  <Input
+                    type="password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    placeholder="Password"
+                    icon={<Lock className='size-4'/>}
+                    required
+                  />
                 </div>
 
-                <Button 
+                <div className="flex justify-end pt-1">
+                  <Button variant="link" size="sm" type="button" className="text-muted-foreground hover:text-brand-blue p-0">
+                    Forgot password?
+                  </Button>
+                </div>
+
+                <Button
                   type="submit"
                   disabled={isLoading}
-                  className="w-full h-12 bg-primary hover:bg-primary/90 text-primary-foreground font-bold shadow-lg shadow-primary/10 transition-all hover:scale-[1.01] rounded-xl mt-4"
+                  size="xl"
+                  shape="xl"
+                  glow
+                  className="w-full font-medium"
                 >
-                  {isLoading ? <Loader2 className="w-5 h-5 animate-spin mr-2" /> : null}
-                  {isLoading ? 'Signing In...' : 'Sign In'}
+                  {isLoading ? <ButtonSpinner>Signing In...</ButtonSpinner> : 'Sign In'}
                 </Button>
               </form>
             </CardContent>
           </Card>
         </div>
-        
+
         <p className="mt-8 text-center text-sm text-muted-foreground">
           Don&apos;t have an account?{' '}
-          <Link href="/signup" className="text-brand-blue hover:text-brand-cyan font-semibold transition-all">
+          <Link href="/signup" className="text-brand-blue hover:text-brand-cyan font-medium transition-all">
             Join DropAI
           </Link>
         </p>
-      </div>
+      </BlurFade>
     </div>
   )
 }
@@ -135,7 +129,7 @@ export default function LoginPage() {
   return (
     <Suspense fallback={
       <div className="min-h-screen bg-background flex items-center justify-center p-4">
-        <Loader2 className="w-8 h-8 animate-spin text-brand-blue" />
+        <Spinner />
       </div>
     }>
       <LoginForm />

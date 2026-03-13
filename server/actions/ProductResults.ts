@@ -1,46 +1,25 @@
 'use server'
 
 import { db } from '@/server/db'
-import { productResults, supplierLinks, competitors } from '@/server/db/schema/schema'
+import { winningProducts } from '@/server/db/schema/schema'
 import { eq, desc } from 'drizzle-orm'
 
-export async function getProductResults(searchId?: string) {
+export async function getProductResults() {
   try {
-    let query = db
-      .select()
-      .from(productResults)
-      .orderBy(desc(productResults.discoveredAt))
+    const products = await db
+      .select({
+        id: winningProducts.id,
+        keyword: winningProducts.keyword,
+        region: winningProducts.region,
+        timeframe: winningProducts.timeframe,
+        pipelineData: winningProducts.pipelineData,
+        createdAt: winningProducts.createdAt,
+      })
+      .from(winningProducts)
+      .orderBy(desc(winningProducts.createdAt))
       .limit(20)
 
-    if (searchId) {
-      // @ts-ignore - drizzle-orm type issue with dynamic queries in this simple form
-      query = db
-        .select()
-        .from(productResults)
-        .where(eq(productResults.searchId, searchId))
-        .orderBy(desc(productResults.discoveredAt))
-        .limit(20)
-    }
-
-    const products = await query
-
-    const productsWithRelations = await Promise.all(
-      products.map(async (product) => {
-        const suppliers = await db
-          .select()
-          .from(supplierLinks)
-          .where(eq(supplierLinks.productId, product.id))
-          
-        const comps = await db
-          .select()
-          .from(competitors)
-          .where(eq(competitors.productId, product.id))
-
-        return { ...product, suppliers, competitors: comps }
-      })
-    )
-
-    return { success: true, data: productsWithRelations }
+    return { success: true, data: products }
   } catch (error) {
     console.error('Failed to get product results:', error)
     return { success: true, data: [] }
@@ -51,25 +30,38 @@ export async function getProductById(id: string) {
   try {
     const [product] = await db
       .select()
-      .from(productResults)
-      .where(eq(productResults.id, id))
+      .from(winningProducts)
+      .where(eq(winningProducts.id, id))
       .limit(1)
 
     if (!product) return { success: false, error: 'Product not found' }
 
-    const suppliers = await db
-      .select()
-      .from(supplierLinks)
-      .where(eq(supplierLinks.productId, product.id))
-      
-    const comps = await db
-      .select()
-      .from(competitors)
-      .where(eq(competitors.productId, product.id))
-
-    return { success: true, data: { ...product, suppliers, competitors: comps } }
+    return { success: true, data: product }
   } catch (error) {
     console.error('Failed to get product:', error)
     return { success: false, error: 'Failed to fetch product' }
+  }
+}
+
+export async function updateProductAIAnalysis(id: string, analysis: any) {
+  try {
+    const [product] = await db
+      .select({ aiAnalysis: winningProducts.aiAnalysis })
+      .from(winningProducts)
+      .where(eq(winningProducts.id, id))
+      .limit(1)
+
+    const currentAnalysis = (product?.aiAnalysis as any[]) || []
+    const updatedAnalysis = [analysis, ...currentAnalysis]
+
+    await db
+      .update(winningProducts)
+      .set({ aiAnalysis: updatedAnalysis })
+      .where(eq(winningProducts.id, id))
+
+    return { success: true }
+  } catch (error) {
+    console.error('Failed to update AI analysis:', error)
+    return { success: false, error: 'Failed to save analysis' }
   }
 }

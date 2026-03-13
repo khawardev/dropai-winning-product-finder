@@ -1,85 +1,63 @@
 'use server'
 
 import { db } from '@/server/db'
-import { productResults } from '@/server/db/schema/schema'
-import { sql, desc } from 'drizzle-orm'
+import { winningProducts } from '@/server/db/schema/schema'
+import { desc } from 'drizzle-orm'
 
 export async function getReportsData() {
   try {
-    const nicheData = await db
+    const products = await db
       .select({
-        niche: sql<string>`COALESCE(${productResults.competitionLevel}, 'Medium')`,
-        count: sql<number>`COUNT(*)`,
-        avgDemand: sql<number>`ROUND(AVG(CAST(${productResults.demandScore} AS NUMERIC)), 1)`,
+        keyword: winningProducts.keyword,
+        region: winningProducts.region,
+        pipelineData: winningProducts.pipelineData,
+        createdAt: winningProducts.createdAt,
       })
-      .from(productResults)
-      .groupBy(sql`${productResults.competitionLevel}`)
+      .from(winningProducts)
+      .orderBy(desc(winningProducts.createdAt))
+      .limit(50);
 
-    const profitDistribution = await db
-      .select({
-        range: sql<string>`
-          CASE
-            WHEN CAST(${productResults.profitMargin} AS NUMERIC) < 20 THEN '10-20%'
-            WHEN CAST(${productResults.profitMargin} AS NUMERIC) < 30 THEN '20-30%'
-            WHEN CAST(${productResults.profitMargin} AS NUMERIC) < 40 THEN '30-40%'
-            WHEN CAST(${productResults.profitMargin} AS NUMERIC) < 50 THEN '40-50%'
-            ELSE '50%+'
-          END
-        `,
-        count: sql<number>`COUNT(*)`,
-      })
-      .from(productResults)
-      .groupBy(sql`
-        CASE
-          WHEN CAST(${productResults.profitMargin} AS NUMERIC) < 20 THEN '10-20%'
-          WHEN CAST(${productResults.profitMargin} AS NUMERIC) < 30 THEN '20-30%'
-          WHEN CAST(${productResults.profitMargin} AS NUMERIC) < 40 THEN '30-40%'
-          WHEN CAST(${productResults.profitMargin} AS NUMERIC) < 50 THEN '40-50%'
-          ELSE '50%+'
-        END
-      `)
+    const trends = products.map((p: any) => ({
+      name: p.keyword,
+      value: p.pipelineData?.profitability?.marginPercent || 0,
+      profit: p.pipelineData?.profitability?.grossMargin || 0,
+      competition: p.pipelineData?.profitability?.verdict || 'Medium',
+    }));
 
-    const recentTrends = await db
-      .select({
-        name: productResults.name,
-        demandScore: productResults.demandScore,
-        profitMargin: productResults.profitMargin,
-        competitionLevel: productResults.competitionLevel,
-        discoveredAt: productResults.discoveredAt,
-      })
-      .from(productResults)
-      .orderBy(desc(productResults.discoveredAt))
-      .limit(20)
+    const margins = products.map((p: any) => p.pipelineData?.profitability?.marginPercent || 0);
+    const profitDistribution = [
+      { name: 'Under 20%', value: margins.filter(m => m < 20).length },
+      { name: '20-40%', value: margins.filter(m => m >= 20 && m < 40).length },
+      { name: 'Over 40%', value: margins.filter(m => m >= 40).length },
+    ].filter(item => item.value > 0);
+
+    const commonRegions = products.reduce((acc: any, p: any) => {
+      acc[p.region] = (acc[p.region] || 0) + 1;
+      return acc;
+    }, {});
+
+    const nicheData = Object.entries(commonRegions).map(([name, value]) => ({
+      name,
+      value: Number(value),
+    }));
 
     return {
       success: true,
       data: {
-        nicheData: nicheData.map((n) => ({
-          name: n.niche,
-          value: Number(n.count),
-          avgDemand: Number(n.avgDemand),
-        })),
-        profitDistribution: profitDistribution.map((p) => ({
-          name: p.range?.trim() || 'Unknown',
-          value: Number(p.count),
-        })),
-        recentTrends: recentTrends.map((t) => ({
-          name: t.name,
-          value: Number(t.demandScore) || 0,
-          profit: Number(t.profitMargin) || 0,
-          competition: t.competitionLevel || 'Medium',
-        })),
+        nicheData,
+        profitDistribution,
+        recentTrends: trends,
       },
-    }
+    };
   } catch (error) {
-    console.error('Failed to get reports data:', error)
+    console.error('Failed to get reports data:', error);
     return {
-      success: true,
+      success: false,
       data: {
         nicheData: [],
         profitDistribution: [],
         recentTrends: [],
       },
-    }
+    };
   }
 }

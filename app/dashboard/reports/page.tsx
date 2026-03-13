@@ -7,8 +7,7 @@ import {
   PieChart,
   Download,
   Calendar,
-  Filter,
-  Loader2
+  Filter
 } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card'
@@ -24,77 +23,63 @@ import {
   Bar,
   Cell,
   PieChart as RePieChart,
-  Pie
+  Pie,
+  Legend
 } from 'recharts'
+import useSWR from 'swr'
 import { getReportsData } from '@/server/actions/ReportsData'
+import { Blur } from '@/components/MagicBlur'
 
 const COLORS = ['var(--primary)', 'var(--secondary)', '#F59E0B', '#22C55E', '#EC4899']
 
 export default function ReportsPage() {
-  const [nicheData, setNicheData] = useState<any[]>([])
-  const [profitDistData, setProfitDistData] = useState<any[]>([])
-  const [competitionData, setCompetitionData] = useState<any[]>([])
-  const [isLoading, setIsLoading] = useState(true)
-  const [isMounted, setIsMounted] = useState(false)
+  const isMounted = React.useRef(false);
+  const [, setForceUpdate] = useState(0);
 
   useEffect(() => {
-    setIsMounted(true)
-  }, [])
+    isMounted.current = true;
+    setForceUpdate(prev => prev + 1);
+  }, []);
 
-  useEffect(() => {
-    async function loadReports() {
-      try {
-        const result = await getReportsData()
-        if (result.data) {
-          if (result.data.recentTrends.length > 0) {
-            setNicheData(result.data.recentTrends.slice(0, 5))
-          }
-          if (result.data.profitDistribution.length > 0) {
-            setProfitDistData(result.data.profitDistribution)
-          }
-          if (result.data.nicheData.length > 0) {
-            setCompetitionData(result.data.nicheData)
-          }
-        }
-      } catch (err) {
-        console.error('Failed to load reports:', err)
-      } finally {
-        setIsLoading(false)
-      }
-    }
-    loadReports()
-  }, [])
+  const { data: result, error, isLoading } = useSWR('reports-data', getReportsData, {
+    revalidateOnFocus: false,
+    dedupingInterval: 60000, // 1 minute
+  });
+
+  const nicheData = result?.data?.recentTrends?.slice(0, 5) || [];
+  const profitDistData = result?.data?.profitDistribution || [];
+  const competitionData = result?.data?.nicheData || [];
 
   return (
-    <div className="space-y-8 animate-in fade-in duration-500">
+    <Blur className="space-y-8">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
         <div>
-          <h1 className="text-2xl font-bold text-foreground">Market Reports</h1>
+          <h1 className="text-2xl font-medium text-foreground">Market Reports</h1>
           <p className="text-muted-foreground text-sm mt-1">Deep dive into niche trends and market performance metrics.</p>
         </div>
         <div className="flex items-center gap-3">
-          <Button variant="outline" className="border-border text-foreground">
-            <Calendar className="w-4 h-4" /> Last 30 Days
+          <Button variant="outline">
+            <Calendar /> Last 30 Days
           </Button>
-          <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
-            <Download className="w-4 h-4" /> Download CSV
+          <Button>
+            <Download /> Download CSV
           </Button>
         </div>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <Card className="bg-card border-border">
+        <Card className="">
           <CardHeader className="flex flex-row items-center justify-between">
             <CardTitle className="text-lg flex items-center gap-2">
               <TrendingUp className="w-5 h-5 text-primary" /> Niche Trend Over Time
             </CardTitle>
-            <Button variant="ghost" size="sm" className="text-muted-foreground">
-              <Filter className="w-4 h-4" />
+            <Button variant="ghost" size="sm">
+              <Filter />
             </Button>
           </CardHeader>
           <CardContent>
             <div className="h-[300px] w-full">
-              {isMounted && nicheData.length > 0 ? (
+              {isMounted.current && nicheData.length > 0 ? (
                 <ResponsiveContainer width="100%" height="100%" minWidth={1} minHeight={1}>
                   <AreaChart data={nicheData}>
                     <defs>
@@ -110,7 +95,8 @@ export default function ReportsPage() {
                       contentStyle={{ backgroundColor: 'var(--card)', borderColor: 'var(--border)', borderRadius: '18px', padding: '12px', boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)', backdropFilter: 'blur(12px)' }}
                       itemStyle={{ color: 'var(--primary)' }}
                     />
-                    <Area type="monotone" dataKey="value" stroke="var(--primary)" strokeWidth={2} fill="url(#colorNiche)" />
+                    <Legend verticalAlign="top" align="right" />
+                    <Area name="Interest" type="monotone" dataKey="value" stroke="var(--primary)" strokeWidth={2} fill="url(#colorNiche)" />
                   </AreaChart>
                 </ResponsiveContainer>
               ) : (
@@ -122,14 +108,14 @@ export default function ReportsPage() {
           </CardContent>
         </Card>
 
-        <Card className="bg-card border-border">
+        <Card className="">
           <CardHeader>
             <CardTitle className="text-lg flex items-center gap-2">
               <PieChart className="w-5 h-5 text-emerald-500" /> Profit Margin Distribution
             </CardTitle>
           </CardHeader>
           <CardContent className="flex flex-col md:flex-row items-center gap-8">
-            {isMounted && profitDistData.length > 0 ? (
+            {isMounted.current && profitDistData.length > 0 ? (
               <>
                 <div className="h-[250px] w-[250px]">
                   <ResponsiveContainer width="100%" height="100%" minWidth={1} minHeight={1}>
@@ -161,7 +147,7 @@ export default function ReportsPage() {
                         <div className="w-3 h-3 rounded-full" style={{ backgroundColor: COLORS[i % COLORS.length] }}></div>
                         <span className="text-sm text-muted-foreground">{item.name}</span>
                       </div>
-                      <span className="text-sm font-bold text-foreground">{item.value}%</span>
+                      <span className="text-sm font-medium text-foreground">{item.value}%</span>
                     </div>
                   ))}
                 </div>
@@ -173,7 +159,7 @@ export default function ReportsPage() {
             )}
           </CardContent>        </Card>
 
-        <Card className="bg-card border-border lg:col-span-2">
+        <Card className="lg:col-span-2">
           <CardHeader>
             <CardTitle className="text-lg flex items-center gap-2">
               <BarChart3 className="w-5 h-5 text-orange-500" /> Competition Distribution by Category
@@ -181,7 +167,7 @@ export default function ReportsPage() {
           </CardHeader>
           <CardContent>
             <div className="h-[300px] w-full">
-              {isMounted && competitionData.length > 0 ? (
+              {isMounted.current && competitionData.length > 0 ? (
                 <ResponsiveContainer width="100%" height="100%" minWidth={1} minHeight={1}>
                   <BarChart data={competitionData}>
                     <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" vertical={false} />
@@ -191,7 +177,8 @@ export default function ReportsPage() {
                       contentStyle={{ backgroundColor: 'var(--card)', borderColor: 'var(--border)', borderRadius: '18px', padding: '12px', boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)', backdropFilter: 'blur(12px)' }}
                       itemStyle={{ color: 'var(--primary)' }}
                     />
-                    <Bar dataKey="value" fill="var(--primary)" radius={[4, 4, 0, 0]} />
+                    <Legend verticalAlign="top" align="right" />
+                    <Bar name="Competition Level" dataKey="value" fill="var(--primary)" radius={[4, 4, 0, 0]} />
                   </BarChart>
                 </ResponsiveContainer>
               ) : (
@@ -203,6 +190,6 @@ export default function ReportsPage() {
           </CardContent>
         </Card>
       </div>
-    </div>
+    </Blur>
   )
 }

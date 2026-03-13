@@ -1,10 +1,12 @@
 'use client'
 
 import React, { useState, useRef, useEffect } from 'react'
-import { MessageSquare, X, Send, Loader2, Sparkles } from 'lucide-react'
+import { MessageSquare, X, Send, Sparkles } from 'lucide-react'
+import { Spinner } from '@/components/Spinner'
 import { Button } from '@/components/ui/Button'
 import { Input } from '@/components/ui/Input'
 import { cn } from '@/lib/utils'
+import BlurFade from '@/components/ui/BlurFade'
 
 type Message = {
   role: 'user' | 'assistant'
@@ -101,21 +103,24 @@ export default function AIChatAssistant() {
 
   return (
     <>
-      <button
+      <Button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-primary rounded-full flex items-center justify-center text-primary-foreground shadow-lg hover:bg-primary/90 transition-all hover:scale-105"
+        size="fab"
+        glow
+        className="fixed bottom-6 right-6 z-50 transition-all"
       >
         {isOpen ? <X className="w-6 h-6" /> : <MessageSquare className="w-6 h-6" />}
-      </button>
+      </Button>
 
       {isOpen && (
-        <div className="fixed bottom-24 right-6 z-50 w-[380px] h-[500px] bg-card/95 backdrop-blur-xl border border-border rounded-2xl shadow-2xl flex flex-col overflow-hidden animate-in slide-in-from-bottom-4 duration-300">
+        <BlurFade className="fixed bottom-24 right-6 z-50">
+          <div className="w-[380px] h-[500px] bg-card/95 backdrop-blur-xl border border-border rounded-2xl shadow-2xl flex flex-col overflow-hidden">
           <div className="p-4 border-b border-border bg-primary/5">
             <div className="flex items-center gap-2">
               <Sparkles className="w-5 h-5 text-primary" />
-              <h3 className="font-bold text-foreground">DropAI Assistant</h3>
+              <h3 className="font-medium text-foreground">DropAI Assistant</h3>
             </div>
-            <p className="text-xs text-muted-foreground mt-1">AI-powered dropshipping advisor</p>
+            <p className="text-sm text-muted-foreground mt-1">AI-powered dropshipping advisor</p>
           </div>
 
           <div className="flex-1 overflow-y-auto p-4 space-y-4">
@@ -134,7 +139,7 @@ export default function AIChatAssistant() {
             {isLoading && messages[messages.length - 1]?.content === '' && (
               <div className="flex justify-start">
                 <div className="bg-muted text-foreground px-4 py-2.5 rounded-2xl rounded-bl-sm">
-                  <Loader2 className="w-4 h-4 animate-spin" />
+                  <Spinner />
                 </div>
               </div>
             )}
@@ -160,13 +165,13 @@ export default function AIChatAssistant() {
                 type="submit"
                 size="icon"
                 disabled={isLoading || !input.trim()}
-                className="bg-primary text-primary-foreground hover:bg-primary/90 shrink-0"
               >
-                <Send className="w-4 h-4" />
+                <Send />
               </Button>
             </form>
+            </div>
           </div>
-        </div>
+        </BlurFade>
       )}
     </>
   )

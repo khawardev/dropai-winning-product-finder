@@ -2,12 +2,14 @@
 
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { Search, Loader2, Zap, TrendingUp, AlertTriangle, ArrowRight } from 'lucide-react';
+import { Search, Zap, TrendingUp, AlertTriangle, ArrowRight } from 'lucide-react';
+import { Spinner, ButtonSpinner } from '@/components/Spinner';
 import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
 import { Globe, Clock } from 'lucide-react';
+import { Blur } from '@/components/MagicBlur';
 
 export default function DropAI() {
   const router = useRouter();
@@ -38,6 +40,7 @@ export default function DropAI() {
 
       const data = await response.json();
       setTrendResults(data);
+      sessionStorage.setItem('dropai_trend_results', JSON.stringify(data));
 
     } catch (err: any) {
       setError(err.message || 'An unexpected error occurred.');
@@ -47,13 +50,14 @@ export default function DropAI() {
   };
 
   const handleProceedToCompetitive = (keyword: string) => {
+    sessionStorage.setItem('dropai_selected_keyword', keyword);
     router.push(`/dashboard/dropai/competitive?q=${encodeURIComponent(keyword)}`);
   };
 
   return (
-    <div className="mx-auto space-y-8 animate-in fade-in duration-500 pb-20">
+    <Blur className="mx-auto space-y-8 pb-20">
       <div>
-        <h1 className="text-2xl font-bold text-foreground">DropAI Workflow (Phase 1)</h1>
+        <h1 className="text-2xl font-medium text-foreground">DropAI Workflow (Phase 1)</h1>
         <p className="text-muted-foreground text-sm mt-1">
           Step 1: Trend Discovery
         </p>
@@ -80,7 +84,7 @@ export default function DropAI() {
                 )}
 
                 <div className="space-y-2">
-                  <label className="text-sm font-semibold text-foreground flex items-center gap-2">
+                  <label className="text-sm font-medium text-foreground flex items-center gap-2">
                     <Search className="w-4 h-4 text-primary" /> Seed Keyword
                   </label>
                   <Input
@@ -90,12 +94,12 @@ export default function DropAI() {
                     required
                     disabled={isSearching}
                   />
-                  <p className="text-[10px] text-muted-foreground">Broader terms yield better breakout results.</p>
+                  <p className="text-sm text-muted-foreground">Broader terms yield better breakout results.</p>
                 </div>
 
                 <div className="grid grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <label className="text-sm font-semibold text-foreground flex items-center gap-2">
+                    <label className="text-sm font-medium text-foreground flex items-center gap-2">
                       <Globe className="w-4 h-4 text-primary" /> Region
                     </label>
                     <select name="geo" className="w-full bg-muted/50 border border-border rounded-md px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-primary/20 transition-all">
@@ -108,7 +112,7 @@ export default function DropAI() {
                     </select>
                   </div>
                   <div className="space-y-2">
-                    <label className="text-sm font-semibold text-foreground flex items-center gap-2">
+                    <label className="text-sm font-medium text-foreground flex items-center gap-2">
                       <Clock className="w-4 h-4 text-primary" /> Timeframe
                     </label>
                     <select name="date" className="w-full bg-muted/50 border border-border rounded-md px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-primary/20 transition-all">
@@ -124,16 +128,15 @@ export default function DropAI() {
                 <Button
                   type="submit"
                   disabled={isSearching}
-                  className="w-full bg-primary hover:bg-primary/90 h-11 shadow-md shadow-primary/20"
+                  size="xl"
+                  glow
+                  className="w-full"
                 >
                   {isSearching ? (
-                    <>
-                      <Loader2 className="w-4 h-4 animate-spin" />
-                      Analyzing...
-                    </>
+                    <ButtonSpinner>Analyzing...</ButtonSpinner>
                   ) : (
                     <>
-                      <TrendingUp className="w-4 h-4" />
+                      <TrendingUp />
                       Find Breakout Niches
                     </>
                   )}
@@ -148,7 +151,6 @@ export default function DropAI() {
           <Card className="h-full min-h-[400px]">
             <CardHeader>
               <CardTitle className="text-xl flex items-center gap-2">
-                <Zap className="w-5 h-5 text-yellow-500" />
                 Raw Output & Validations
               </CardTitle>
               <CardDescription>Validating the data flow for Trend Discovery.</CardDescription>
@@ -159,7 +161,7 @@ export default function DropAI() {
                   <div className="relative inline-block">
                     <div className="absolute inset-0 animate-ping rounded-full bg-primary/20"></div>
                     <div className="relative w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto">
-                      <Loader2 className="w-8 h-8 text-primary-foreground animate-spin" />
+                      <Spinner />
                     </div>
                   </div>
                   <p className="text-muted-foreground">Scanning Google Trends...</p>
@@ -168,13 +170,13 @@ export default function DropAI() {
                 <div className="space-y-6">
                   {/* Summary Metric */}
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    <div className="bg-muted p-4 rounded-lg flex flex-col items-center justify-center text-center">
-                      <span className="text-3xl font-bold text-foreground">{trendResults.breakouts?.length || 0}</span>
-                      <span className="text-xs text-muted-foreground mt-1 uppercase tracking-wider">Breakouts</span>
+                    <div className="bg-muted/50 p-4 rounded-2xl flex flex-col items-center justify-center text-center border border-border/50">
+                      <span className="text-3xl font-medium text-foreground tracking-tighter">{trendResults.breakouts?.length || 0}</span>
+                      <span className="text-sm text-muted-foreground mt-1 font-medium">Breakouts</span>
                     </div>
-                    <div className="bg-muted p-4 rounded-lg flex flex-col items-center justify-center text-center">
-                      <span className="text-3xl font-bold text-foreground">{trendResults.rising?.length || 0}</span>
-                      <span className="text-xs text-muted-foreground mt-1 uppercase tracking-wider">Rising Queries</span>
+                    <div className="bg-muted/50 p-4 rounded-2xl flex flex-col items-center justify-center text-center border border-border/50">
+                      <span className="text-3xl font-medium text-foreground tracking-tighter">{trendResults.rising?.length || 0}</span>
+                      <span className="text-sm text-muted-foreground mt-1 font-medium">Rising Queries</span>
                     </div>
                   </div>
 
@@ -183,19 +185,18 @@ export default function DropAI() {
                   {/* Breakouts */}
                   {trendResults.breakouts && trendResults.breakouts.length > 0 && (
                     <div className="space-y-3">
-                      <h3 className="font-semibold text-lg border-b pb-2">🔥 Potential Winning Niches (Breakouts)</h3>
+                      <h3 className="font-medium text-lg border-b pb-2">🔥 Potential Winning Niches (Breakouts)</h3>
                       <div className="grid gap-2 grid-cols-1 sm:grid-cols-2">
                         {trendResults.breakouts.map((item: any, i: number) => (
                           <div key={i} className="flex justify-between items-center p-3 bg-secondary/50 rounded-md border border-border">
                             <span className="font-medium text-sm truncate mr-2" title={item.query}>{item.query}</span>
                             <div className="flex items-center gap-2 shrink-0">
-                              <span className="text-xs font-bold text-emerald-500 bg-emerald-500/10 px-2 py-1 rounded-full">
+                              <Badge variant="emerald" shape="rounded">
                                 {item.value}
-                              </span>
+                              </Badge>
                               <Button
                                 size="sm"
                                 variant="outline"
-                                className="h-7 text-xs"
                                 onClick={() => handleProceedToCompetitive(item.query)}
                               >
                                 Analyze Setup <ArrowRight className="ml-1 w-3 h-3" />
@@ -210,19 +211,18 @@ export default function DropAI() {
                   {/* Rising Queries */}
                   {trendResults.rising && trendResults.rising.length > 0 && (
                     <div className="space-y-3 pt-4">
-                      <h3 className="font-semibold text-lg border-b pb-2">📈 Rising Queries</h3>
+                      <h3 className="font-medium text-lg border-b pb-2">📈 Rising Queries</h3>
                       <div className="grid gap-2 grid-cols-1 sm:grid-cols-2">
                         {trendResults.rising.slice(0, 10).map((item: any, i: number) => (
                           <div key={i} className="flex justify-between items-center p-3 bg-secondary/20 rounded-md border border-border">
                             <span className="font-medium text-sm truncate mr-2" title={item.query}>{item.query}</span>
                             <div className="flex items-center gap-2 shrink-0">
-                              <span className="text-xs font-bold text-blue-500 bg-blue-500/10 px-2 py-1 rounded-full">
+                              <Badge variant="blue" shape="rounded">
                                 {item.value}
-                              </span>
+                              </Badge>
                               <Button
                                 size="sm"
                                 variant="secondary"
-                                className="h-7 text-xs"
                                 onClick={() => handleProceedToCompetitive(item.query)}
                               >
                                 Analyze <ArrowRight className="ml-1 w-3 h-3" />
@@ -237,19 +237,18 @@ export default function DropAI() {
                   {/* Top Queries */}
                   {trendResults.top && trendResults.top.length > 0 && (
                     <div className="space-y-3 pt-4">
-                      <h3 className="font-semibold text-lg border-b pb-2">⭐ Top Queries</h3>
+                      <h3 className="font-medium text-lg border-b pb-2">⭐ Top Queries</h3>
                       <div className="grid gap-2 grid-cols-1 sm:grid-cols-2">
                         {trendResults.top.slice(0, 10).map((item: any, i: number) => (
                           <div key={i} className="flex justify-between items-center p-3 bg-secondary/20 rounded-md border border-border">
                             <span className="font-medium text-sm truncate mr-2" title={item.query}>{item.query}</span>
                             <div className="flex items-center gap-2 shrink-0">
-                              <span className="text-xs font-bold text-muted-foreground bg-muted px-2 py-1 rounded-full">
+                              <Badge shape="rounded">
                                 Score: {item.value}
-                              </span>
+                              </Badge>
                               <Button
                                 size="sm"
                                 variant="secondary"
-                                className="h-7 text-xs"
                                 onClick={() => handleProceedToCompetitive(item.query)}
                               >
                                 Analyze <ArrowRight className="ml-1 w-3 h-3" />
@@ -271,10 +270,10 @@ export default function DropAI() {
 
                   {/* Raw JSON dump for dev phase */}
                   <div className="mt-8 border-t pt-6">
-                    <h3 className="text-sm font-semibold text-muted-foreground mb-3 flex justify-between items-center">
+                    <h3 className="text-sm font-medium text-muted-foreground mb-3 flex justify-between items-center">
                       <span>Raw JSON Output</span>
                     </h3>
-                    <pre className="bg-muted p-4 rounded-md overflow-x-auto text-[11px] font-mono text-muted-foreground">
+                    <pre className="bg-muted p-4 rounded-md overflow-x-auto text-sm font-mono text-muted-foreground">
                       {JSON.stringify(trendResults, null, 2)}
                     </pre>
                   </div>
@@ -289,6 +288,6 @@ export default function DropAI() {
           </Card>
         </div>
       </div>
-    </div>
+    </Blur>
   );
 }

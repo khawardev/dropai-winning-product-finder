@@ -1,5 +1,5 @@
 import { relations } from 'drizzle-orm'
-import { pgTable, uuid, text, timestamp, decimal, jsonb, integer, date, index, boolean } from 'drizzle-orm/pg-core'
+import { pgTable, text, timestamp, boolean, jsonb, uuid, index } from 'drizzle-orm/pg-core'
 
 export const user = pgTable('user', {
         id: text('id').primaryKey(),
@@ -53,118 +53,44 @@ export const verification = pgTable('verification', {
         updatedAt: timestamp('updatedAt').notNull().defaultNow(),
 })
 
-export const searchHistory = pgTable('search_history', {
+export const winningProducts = pgTable('winning_products', {
   id: uuid('id').defaultRandom().primaryKey(),
   userId: text('user_id').references(() => user.id),
-  niche: text('niche').notNull(),
-  targetCountry: text('target_country').notNull(),
-  audience: text('audience'),
-  category: text('category'),
-  budgetMin: decimal('budget_min'),
-  budgetMax: decimal('budget_max'),
-  shippingLimit: integer('shipping_limit'),
-  parameters: jsonb('parameters'),
-  status: text('status').notNull().default('pending'),
-  cacheKey: text('cache_key').notNull(),
+  keyword: text('keyword').notNull(),
+  region: text('region').notNull(),
+  timeframe: text('timeframe').notNull(),
+  pipelineData: jsonb('pipeline_data').notNull(),
+  aiAnalysis: jsonb('ai_analysis').default([]),
   createdAt: timestamp('created_at').defaultNow().notNull(),
-}, (table) => [
-  index('search_cache_idx').on(table.cacheKey, table.createdAt),
-])
-
-export const productResults = pgTable('product_results', {
-  id: uuid('id').defaultRandom().primaryKey(),
-  searchId: uuid('search_id').references(() => searchHistory.id),
-  name: text('name').notNull(),
-  description: text('description'),
-  imageUrl: text('image_url'),
-  demandScore: decimal('demand_score'),
-  profitMargin: decimal('profit_margin'),
-  competitionLevel: text('competition_level'),
-  shippingDays: integer('shipping_days'),
-  suppliersCount: integer('suppliers_count'),
-  trending: boolean('trending').default(false),
-  costPrice: decimal('cost_price'),
-  sellingPrice: decimal('selling_price'),
-  aiAnalysis: jsonb('ai_analysis'),
-  discoveredAt: timestamp('discovered_at').defaultNow().notNull(),
+}, (table) => {
+  return [
+    index('user_id_idx').on(table.userId),
+    index('created_at_idx').on(table.createdAt),
+  ]
 })
 
-export const supplierLinks = pgTable('supplier_links', {
-  id: uuid('id').defaultRandom().primaryKey(),
-  productId: uuid('product_id').references(() => productResults.id),
-  supplierName: text('supplier_name').notNull(),
-  costPrice: decimal('cost_price'),
-  shippingCost: decimal('shipping_cost'),
-  shippingDays: integer('shipping_days'),
-  reliabilityScore: decimal('reliability_score'),
-  productUrl: text('product_url'),
-  location: text('location'),
-  categories: jsonb('categories'),
-  minOrder: text('min_order'),
-  verified: boolean('verified').default(false),
-})
-
-export const competitors = pgTable('competitors', {
-  id: uuid('id').defaultRandom().primaryKey(),
-  productId: uuid('product_id').references(() => productResults.id),
-  sellerName: text('seller_name').notNull(),
-  platform: text('platform'),
-  retailPrice: decimal('retail_price'),
-  shippingPrice: decimal('shipping_price'),
-  rating: decimal('rating'),
-  reviewCount: integer('review_count'),
-  createdAt: timestamp('created_at').defaultNow().notNull(),
-})
-
-export const savedProducts = pgTable('saved_products', {
-  id: uuid('id').defaultRandom().primaryKey(),
-  userId: text('user_id').references(() => user.id),
-  productId: uuid('product_id').references(() => productResults.id),
-  notes: text('notes'),
-  savedAt: timestamp('saved_at').defaultNow().notNull(),
-})
-
-export const marketData = pgTable('market_data', {
-  id: uuid('id').defaultRandom().primaryKey(),
-  niche: text('niche').notNull(),
-  date: date('date').notNull(),
-  trendScore: decimal('trend_score'),
-  metadata: jsonb('metadata'),
-})
-
-export const apiCache = pgTable('api_cache', {
-  key: text('key').primaryKey(),
-  data: jsonb('data'),
-  expiresAt: timestamp('expires_at'),
-  createdAt: timestamp('created_at').defaultNow().notNull(),
-})
-
-export const savedSellers = pgTable('saved_sellers', {
-  id: uuid('id').defaultRandom().primaryKey(),
-  userId: text('user_id').references(() => user.id),
-  domain: text('domain').notNull(),
-  name: text('name').notNull(),
-  image: text('image'),
-  source: text('source'),
-  type: text('type').notNull(), // 'Competitor' | 'Wholesaler'
-  savedAt: timestamp('saved_at').defaultNow().notNull(),
-})
+export const winningProductsRelations = relations(winningProducts, ({ one }) => ({
+  user: one(user, {
+    fields: [winningProducts.userId],
+    references: [user.id],
+  }),
+}))
 
 export const userRelations = relations(user, ({ many }) => ({
-        sessions: many(session),
-        accounts: many(account),
+	sessions: many(session),
+	accounts: many(account),
 }))
 
 export const sessionRelations = relations(session, ({ one }) => ({
-        user: one(user, {
-                fields: [session.userId],
-                references: [user.id],
-        }),
+	user: one(user, {
+		fields: [session.userId],
+		references: [user.id],
+	}),
 }))
 
 export const accountRelations = relations(account, ({ one }) => ({
-        user: one(user, {
-                fields: [account.userId],
-                references: [user.id],
-        }),
+	user: one(user, {
+		fields: [account.userId],
+		references: [user.id],
+	}),
 }))

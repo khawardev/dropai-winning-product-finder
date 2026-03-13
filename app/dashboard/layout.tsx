@@ -3,26 +3,27 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
-import { 
-  LayoutDashboard, 
-  Search, 
-  Bookmark, 
-  Library, 
-  BarChart3, 
-  Settings, 
-  Bell, 
+import {
+  LayoutDashboard,
+  Search,
+  Bookmark,
+  Library,
+  BarChart3,
+  Settings,
+  Bell,
   Menu,
   X,
   Zap,
   SearchIcon,
   LogOut,
-  Loader2,
 } from 'lucide-react'
+import { Spinner, ButtonSpinner } from '@/components/Spinner'
 import { Button } from '@/components/ui/Button'
 import { Input } from '@/components/ui/Input'
 import { cn } from '@/lib/utils'
 import AIChatAssistant from '@/components/AIChatAssistant'
 import { ThemeToggle } from '@/components/ThemeToggle'
+import { Logo } from '@/components/Logo'
 import { useSession, signOut } from '@/lib/auth-client'
 
 const navItems = [
@@ -56,35 +57,30 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
 
   return (
     <div className="min-h-screen bg-background text-foreground selection:bg-brand-blue/30">
-      <aside 
+      <aside
         className={cn(
           "fixed left-0 top-0 h-full bg-card/50 border-r border-border transition-all duration-300 z-50 backdrop-blur-xl",
           sidebarOpen ? "w-64" : "w-20"
         )}
       >
         <div className="flex flex-col h-full">
-          <div className="p-6 flex items-center ">
-            <div className="size-9 flex items-center justify-center shrink-0">
-              <img 
-                src="https://i.ibb.co/fJSBXLF/714d2bd0-4e86-4ac9-8720-9bdae9ab297b-removalai-preview.png" 
-                alt="DropAI Logo" 
-                className="w-full h-full object-contain transition-transform group-hover:scale-110" 
-              />
-            </div>
-            {sidebarOpen && <span className="text-xl font-bold text-foreground tracking-tight">DropAI</span>}
+          <div className="p-4 flex items-center ">
+            <Logo
+              showText={sidebarOpen}
+            />
           </div>
 
-          <nav className="flex-1 px-3 space-y-1 mt-4">
+          <nav className="flex-1 px-3 space-y-1">
             {navItems.map((item) => {
               const isActive = pathname === item.href
               return (
-                <Link 
-                  key={item.name} 
+                <Link
+                  key={item.name}
                   href={item.href}
                   className={cn(
                     "flex items-center gap-3 px-3 py-2.5 rounded-xl transition-all group",
-                    isActive 
-                      ? "bg-linear-to-r from-brand-blue/10 to-brand-cyan/10 text-brand-blue border border-brand-blue/20" 
+                    isActive
+                      ? "bg-linear-to-r from-brand-blue/10 to-brand-cyan/10 text-brand-blue border border-brand-blue/20"
                       : "text-muted-foreground hover:bg-muted/50 hover:text-foreground border border-transparent"
                   )}
                 >
@@ -95,55 +91,54 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
             })}
           </nav>
 
-          <div className="p-4 border-t border-border space-y-1">
-            <button 
+          <div className="p-4 border-t border-border space-y-2">
+            <Button
+              variant="ghost"
               onClick={() => setSidebarOpen(!sidebarOpen)}
-              className="flex items-center gap-3 px-3 py-2.5 w-full rounded-xl text-muted-foreground hover:bg-muted/50 hover:text-foreground transition-all group"
+              className="flex items-center justify-start gap-3 w-full"
             >
               {sidebarOpen ? <X className="size-5" /> : <Menu className="size-5" />}
               {sidebarOpen && <span className="text-sm font-medium">Collapse</span>}
-            </button>
-            <button
+            </Button>
+            <Button
+              variant="ghost"
               onClick={handleLogout}
-              className="flex items-center gap-3 px-3 py-2.5 w-full rounded-xl text-muted-foreground hover:bg-destructive/10 hover:text-destructive transition-all group"
+              className="flex items-center justify-start gap-3 w-full hover:bg-destructive/10 hover:text-destructive"
             >
               <LogOut className="size-5" />
               {sidebarOpen && <span className="text-sm font-medium">Logout</span>}
-            </button>
+            </Button>
           </div>
         </div>
       </aside>
 
-      <main 
+      <main
         className={cn(
           "transition-all duration-300 min-h-screen",
           sidebarOpen ? "pl-64" : "pl-20"
         )}
       >
-        <header className="h-16 border-b border-border bg-background/50 backdrop-blur-xl sticky top-0 z-40 px-8 flex items-center justify-between">
-          <div className="flex-1 max-w-md relative group">
-            <SearchIcon className="absolute left-3 top-1/2 -translate-y-1/2 size-4 text-muted-foreground group-focus-within:text-brand-blue transition-colors" />
-            <Input 
-              placeholder="Search products, suppliers..." 
-              className="pl-10 h-10 bg-muted/30 border-border hover:border-brand-blue/30 focus-visible:ring-1 focus-visible:ring-brand-blue/50 focus-visible:border-brand-blue text-sm rounded-xl transition-all"
-            />
-          </div>
-          
+        <header className="h-16 border-b gap-4 border-border bg-background/50 backdrop-blur-xl sticky top-0 z-40 px-8 flex items-center justify-between">
+          <Input
+            placeholder="Search products, suppliers..."
+            icon={<SearchIcon className="size-4" />}
+          />
+
           <div className="flex items-center gap-4">
             <ThemeToggle />
             <div className="h-8 w-px bg-border mx-1"></div>
             <div className="flex items-center gap-3 pl-2 group cursor-pointer">
               <div className="text-right hidden sm:block">
                 {isPending ? (
-                  <Loader2 className="size-4 animate-spin text-muted-foreground" />
+                  <Spinner />
                 ) : (
                   <>
-                    <p className="text-sm font-semibold text-foreground leading-none">{userName}</p>
-                      <p className="text-[10px] text-muted-foreground mt-1  tracking-wider ">{userEmail}</p>
+                    <p className="text-sm font-medium text-foreground leading-none">{userName}</p>
+                    <p className="text-sm text-muted-foreground mt-1">{userEmail}</p>
                   </>
                 )}
               </div>
-              <div className="size-10 rounded-xl bg-linear-to-br from-brand-blue/10 to-brand-cyan/10 border border-brand-blue/20 flex items-center justify-center text-brand-blue font-bold shadow-sm transition-transform group-hover:scale-105">
+              <div className="size-10 rounded-xl bg-linear-to-br from-brand-blue/10 to-brand-cyan/10 border border-brand-blue/20 flex items-center justify-center text-brand-blue font-medium shadow-sm transition-transform group-hover:scale-105">
                 {userInitials}
               </div>
             </div>
