@@ -7,6 +7,8 @@ function extractPrice(item: any): number | null {
   if (item.price?.extracted_value) return item.price.extracted_value;
   
   const priceValue = item.price?.value || item.price;
+  if (typeof priceValue === 'number' && priceValue > 0) return priceValue;
+  
   if (priceValue && typeof priceValue === 'string') {
      const val = parseFloat(priceValue.replace(/[^0-9.]/g, ''));
      if (!isNaN(val) && val > 0) return val;
@@ -24,10 +26,11 @@ function extractPrice(item: any): number | null {
   // 3. Snippet parsing (Regex fallback for organic/lens snippets)
   const textToScan = [item.snippet, item.title].filter(Boolean).join(' ');
   // Look for patterns like "$12.99", "USD 12.99", "€12.99", "$12 - $15", "US $12.99"
-  const priceRegex = /(?:\$|USD|EUR|€|US\s*\$)\s*(\d+(?:[.,]\d{2})?)/gi;
+  // Regex handles "$12.99", "USD 12.99", "12.99 USD", "12.99$", "€12.99", "12,99 €"
+  const priceRegex = /(?:(?:\$|USD|EUR|€|US\s*\$|£)\s*(\d+(?:[.,]\d{2})?))|(?:(\d+(?:[.,]\d{2})?)\s*(?:\$|USD|EUR|€|US\s*\$|£))/gi;
   const matches = [...textToScan.matchAll(priceRegex)];
   if (matches.length > 0) {
-    const prices = matches.map(m => parseFloat(m[1].replace(',', '.'))).filter(p => p > 0);
+    const prices = matches.map(m => parseFloat((m[1] || m[2]).replace(',', '.'))).filter(p => p > 0);
     if (prices.length > 0) return Math.min(...prices);
   }
   
@@ -51,15 +54,30 @@ export async function GET(req: NextRequest) {
       return NextResponse.json({ error: 'Must provide either "q" or "url" parameter.' }, { status: 400 });
     }
 
+    // 1. Concurrent Fetching
     const [lensData, shoppingWholesaleData, organicWholesaleData] = await Promise.all([
       imageUrl ? getGoogleLens(imageUrl) : Promise.resolve({ visual_matches: [] }),
       keyword ? getGoogleShoppingWholesale(keyword) : Promise.resolve({ shopping_results: [] }),
-      keyword ? getGoogleWholesaleOrganic(keyword) : (imageUrl ? getGoogleWholesaleOrganic(imageUrl) : Promise.resolve({ organic_results: [] }))
+      keyword ? getGoogleWholesaleOrganic(keyword) : Promise.resolve({ organic_results: [] })
     ]);
+
+    // 2. Extract potential keyword from Lens if we don't have one
+    let derivedKeyword = keyword;
+    if (!derivedKeyword && lensData.visual_matches?.length > 0) {
+      derivedKeyword = lensData.visual_matches[0].title;
+    }
+
+    // 3. If we derived a keyword from Lens, and didn't have organic data yet, try to fetch it
+    let finalOrganicData = organicWholesaleData;
+    if (!keyword && derivedKeyword && (!finalOrganicData.organic_results || finalOrganicData.organic_results.length === 0)) {
+       try {
+         finalOrganicData = await getGoogleWholesaleOrganic(derivedKeyword);
+       } catch (e) {}
+    }
 
     const lensMatches = (lensData.visual_matches || []).map((m: any) => ({ ...m, source_type: 'visual_match' }));
     const shoppingMatches = (shoppingWholesaleData.shopping_results || []).map((m: any) => ({ ...m, source_type: 'shopping_wholesale' }));
-    const organicMatches = (organicWholesaleData.organic_results || []).map((m: any) => ({ ...m, source_type: 'organic_wholesale' }));
+    const organicMatches = (finalOrganicData.organic_results || []).map((m: any) => ({ ...m, source_type: 'organic_wholesale' }));
 
     let allSuppliers = [...lensMatches, ...shoppingMatches, ...organicMatches];
 
@@ -68,10 +86,13 @@ export async function GET(req: NextRequest) {
       'zendrop', 'wholesale2b', 'modalyst', 'doba', 'worldwidebrands', 
       'dhgate', 'banggood', '1688', 'made-in-china', 'globalsources'
     ];
-    const retailPlatforms = ['amazon', 'walmart', 'ebay', 'target', 'bestbuy', 'etsy'];
+    const retailPlatforms = [
+      'amazon', 'walmart', 'ebay', 'target', 'bestbuy', 'etsy', 'myshopify', 'shopify', '.shop', '.store',
+      'bedbathandbeyond', 'offerup', 'woot', 'mercari', 'poshmark', 'facebook', 'pinterest', 'temu', 'shein'
+    ];
 
     const processedSuppliers = allSuppliers
-      .map(s => {
+      .map((s: any) => {
         const url = (s.link || s.product_link || '').toLowerCase();
         const sourceName = (s.source || s.displayed_link || '').toLowerCase();
         const textToSearch = `${url} ${sourceName}`;
@@ -80,7 +101,11 @@ export async function GET(req: NextRequest) {
         const isRetail = retailPlatforms.some(p => textToSearch.includes(p));
         const price = extractPrice(s);
 
-        const thumbnail = s.thumbnail || s.favicon || s.rich_snippet?.top?.detected_extensions?.image_url;
+        const inlineImages = s.inline_images || [];
+        const primaryImage = inlineImages[0]?.thumbnail || s.image || s.thumbnail || s.favicon || s.rich_snippet?.top?.detected_extensions?.image_url;
+
+        const source = s.source || (isVerified ? 'Wholesale Factory' : (isRetail ? 'Retailer' : 'Marketplace'));
+        const cleanSource = source.replace(/https?:\/\//, '').split('/')[0].split('?')[0];
 
         return {
           ...s,
@@ -89,11 +114,11 @@ export async function GET(req: NextRequest) {
           extracted_price: price,
           is_verified: isVerified,
           is_retail: isRetail,
-          thumbnail: thumbnail,
-          source: s.source || (isVerified ? 'Wholesale Factory' : (isRetail ? 'Retailer' : 'Marketplace'))
+          thumbnail: primaryImage,
+          source: cleanSource
         };
       })
-      .filter(s => s.link && s.title);
+      .filter((s: any) => s.link && s.title && !s.is_retail);
 
     const uniqueMap = new Map();
     processedSuppliers.forEach(s => {
@@ -129,6 +154,12 @@ export async function GET(req: NextRequest) {
       lowestPrice,
       suppliersCount: finalSuppliers.length,
       suppliers: finalSuppliers,
+      // Debug info
+      stats: {
+        total_discovered: allSuppliers.length,
+        total_processed: processedSuppliers.length,
+        total_unique: finalSuppliers.length
+      },
       raw_lens: lensData,
       raw_shopping: shoppingWholesaleData,
       raw_organic: organicWholesaleData

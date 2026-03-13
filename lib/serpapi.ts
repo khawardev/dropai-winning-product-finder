@@ -107,7 +107,7 @@ export async function getGoogleShoppingWholesale(keyword: string) {
   
   return fetchSerpApi({
     engine: 'google_shopping',
-    q: `${keyword} (${platforms}) price buy`,
+    q: `${keyword} (${platforms})`,
     direct_link: 'true'
   });
 }
@@ -136,7 +136,7 @@ export async function getGoogleWholesaleOrganic(keyword: string) {
 
   return fetchSerpApi({
     engine: 'google',
-    q: `intitle:"${keyword}" ("wholesale price" OR "dropshipping price" OR "bulk") (${sites})`,
+    q: `${keyword} ("wholesale price" OR "dropshipping price" OR "bulk") (${sites})`,
     num: '20'
   });
 }

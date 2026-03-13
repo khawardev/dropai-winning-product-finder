@@ -164,7 +164,7 @@ function SuppliersContent() {
             <ArrowLeft />
           </Button>
           <div>
-            <h1 className="text-2xl font-medium text-foreground tracking-tight">DropAI Sourcing Engine</h1>
+            <h1 className="text-2xl font-medium text-foreground tracking-tight">Prodcut Sourcing Engine</h1>
             <p className="text-muted-foreground text-sm mt-1">
               Analyzing <span className="text-primary font-medium">{keyword || "Image Search Snapshot"}</span>
             </p>
@@ -181,7 +181,7 @@ function SuppliersContent() {
 
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
         <Card className="lg:col-span-3 shadow-2xl shadow-primary/5 overflow-hidden">
-          <CardHeader className="border-b border-border/50 bg-muted/20">
+          <CardHeader className="border-b">
             <div className="flex justify-between items-center">
               <div>
                 <CardTitle className="text-lg font-medium tracking-tight flex items-center gap-2">
@@ -235,13 +235,13 @@ function SuppliersContent() {
                   ))}
                 </div>
 
-                {supplierResults?.suppliers?.length > 0 && (
+                {supplierResults?.suppliers?.length > 0 ? (
                   <div className="space-y-6">
                     <div className="flex items-center justify-between border-b border-border/50 pb-4">
                       <h3 className="font-medium text-sm flex items-center gap-2">
-                        Verified Wholesalers
+                        Global Wholesale Network
                       </h3>
-                      <span className="text-sm font-medium text-muted-foreground">{supplierResults.suppliers.length} Sources Found</span>
+                      <span className="text-sm font-medium text-muted-foreground">{supplierResults.suppliers.length} Factory Sources Found</span>
                     </div>
 
                     <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 xl:grid-cols-3">
@@ -255,52 +255,52 @@ function SuppliersContent() {
                           )}>
                             <div className="aspect-4/3 relative overflow-hidden">
                               {item.thumbnail ? (
-                                <Image
-                                  src={item.thumbnail}
-                                  alt={item.title}
-                                  fill
-                                  className="object-contain transition-transform duration-700 group-hover:scale-110 bg-white border-b border-border/50"
-                                  unoptimized
-                                  referrerPolicy="no-referrer"
-                                />
-                              ) : (
-                                <div className="absolute inset-0 flex items-center justify-center">
-                                  <ShoppingBag className="size-10 text-muted-foreground/20" />
-                                </div>
-                              )}
-                              {item.is_verified && (
-                                <div className="absolute top-3 right-3">
-                                  <div className="bg-emerald-500 text-white text-sm font-black  py-1 px-2 rounded-lg shadow-xl flex items-center gap-1">
-                                    <div className="size-1 rounded-full bg-white animate-pulse" /> Verified
+                                  <Image
+                                    src={item.thumbnail}
+                                    alt={item.title}
+                                    fill
+                                    className="object-cover transition-transform duration-700 group-hover:scale-110 bg-white border-b border-border/50"
+                                    unoptimized
+                                    referrerPolicy="no-referrer"
+                                  />
+                                ) : (
+                                  <div className="absolute inset-0 flex items-center justify-center bg-muted/20">
+                                    <ShoppingBag className="size-10 text-muted-foreground/20" />
+                                  </div>
+                                )}
+                                {item.is_verified && (
+                                  <div className="absolute top-3 right-3">
+                                    <div className="bg-primary/90 text-white text-xs font-bold py-1 px-2 rounded-lg shadow-xl flex items-center gap-1 backdrop-blur-md">
+                                      <CheckCircle2 className="size-3" /> Factory Directly
+                                    </div>
+                                  </div>
+                                )}
+                              </div>
+                              <CardContent className="p-5 flex-1 flex flex-col">
+                                <div className="space-y-4 mb-6">
+                                  <p className="text-sm font-medium text-foreground line-clamp-2 leading-tight h-10">{item.title}</p>
+  
+                                  <div className="flex items-center gap-2 mt-2">
+                                    <Badge variant="blue" shape="rounded">
+                                      {item.source || 'Wholesale'}
+                                    </Badge>
+                                    {item.rating && (
+                                      <Badge variant="orange" shape="rounded">
+                                        ⭐ {item.rating}
+                                      </Badge>
+                                    )}
                                   </div>
                                 </div>
-                              )}
-                            </div>
-                            <CardContent className="p-5 flex-1 flex flex-col">
-                              <div className="space-y-3 mb-6">
-                                <p className="text-sm font-medium text-foreground line-clamp-2 leading-snug">{item.title}</p>
-
-                                <div className="flex items-center gap-2 mt-2">
-                                  <Badge variant="secondary" shape="rounded">
-                                    {item.source || 'Direct'}
-                                  </Badge>
-                                  {item.rating && (
-                                    <Badge variant="orange" shape="rounded">
-                                      ⭐ {item.rating}
-                                    </Badge>
-                                  )}
-                                </div>
-                              </div>
-
-                              <div className="flex items-center justify-between mt-auto pt-4 border-t border-border/20">
-                                <div className="flex flex-col">
-                                  <span className="text-sm font-medium text-muted-foreground mb-1 opacity-50">Sourcing Price</span>
-                                  <span className="font-medium text-lg text-emerald-500 tracking-tighter">
-                                    {item.extracted_price ? `$${item.extracted_price.toFixed(2)}` :
-                                      (typeof item.price === 'string' ? item.price :
-                                        (item.price?.extracted_value ? `$${item.price.extracted_value}` : 'N/A'))}
-                                  </span>
-                                </div>
+  
+                                <div className="flex items-center justify-between mt-auto pt-4 border-t border-border/20">
+                                  <div className="flex flex-col">
+                                    <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground mb-0.5">Sourcing Price</span>
+                                    <span className="font-bold text-xl text-brand-emerald tracking-tighter">
+                                      {item.extracted_price ? `$${item.extracted_price.toFixed(2)}` :
+                                        (typeof item.price === 'string' ? item.price :
+                                          (item.price?.extracted_value ? `$${item.price.extracted_value}` : 'N/A'))}
+                                    </span>
+                                  </div>
                                 <Button variant="ghost" size="icon-sm" onClick={() => window.open(item.link, '_blank')}>
                                   <ExternalLink className="size-4" />
                                 </Button>
@@ -309,6 +309,19 @@ function SuppliersContent() {
                           </Card>
                         ))}
                     </div>
+                  </div>
+                ) : (
+                  <div className="flex flex-col items-center justify-center py-16 text-center space-y-4 border-2 border-dashed border-border/50 rounded-3xl">
+                     <div className="size-16 bg-muted/50 rounded-2xl flex items-center justify-center">
+                        <ShoppingBag className="size-8 text-muted-foreground" />
+                     </div>
+                     <div>
+                       <p className="text-foreground font-medium">No verified wholesalers found.</p>
+                       <p className="text-muted-foreground text-sm max-w-xs mx-auto mt-1">Try refining your search keyword for better results.</p>
+                     </div>
+                     <Button variant="outline" shape="pill" size="sm" onClick={() => router.push('/dashboard/dropai')}>
+                        Restart Search
+                     </Button>
                   </div>
                 )}
               </div>
@@ -337,7 +350,7 @@ function SuppliersContent() {
                 </div>
                 <div>
                   <p className="text-sm font-medium text-foreground">Supply Chain Mapped</p>
-                  <p className="text-sm font-medium text-muted-foreground">{supplierResults?.suppliers?.length || 0} Factories Found</p>
+                  <p className="text-sm font-medium text-muted-foreground">{supplierResults?.suppliers?.length || 0} Factories/Wholesale Found</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
@@ -363,7 +376,7 @@ function SuppliersContent() {
                 {isPending ? (
                   <ButtonSpinner>Finalizing...</ButtonSpinner>
                 ) : (
-                  <>Deploy Product <ArrowRight className="ml-2 size-4" /></>
+                  <>Deploy & Save Product <ArrowRight  /></>
                 )}
               </Button>
               <p className="text-sm text-center text-primary/60 font-medium mt-4">Adds full intelligence profile to dashboard</p>
@@ -372,7 +385,7 @@ function SuppliersContent() {
 
           <Button
             variant="ghost"
-            className="w-full rounded-2xl text-muted-foreground hover:text-foreground text-sm font-black "
+            className="w-full"
             onClick={() => router.push('/dashboard/dropai')}
           >
             Discard Search & Restart

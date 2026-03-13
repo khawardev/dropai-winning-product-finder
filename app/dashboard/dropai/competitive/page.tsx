@@ -83,9 +83,9 @@ function CompetitiveContent() {
           <ArrowLeft />
         </Button>
         <div>
-          <h1 className="text-2xl font-medium text-foreground">DropAI Workflow (Phase 1)</h1>
+          <h1 className="text-2xl font-medium text-foreground">Product Finder (Phase 1)</h1>
           <p className="text-muted-foreground text-sm mt-1">
-            Step 2: Competitive Market Setup for <strong className="text-primary">{keyword}</strong>
+            Step 2: Competitive Market Setup for <span className="text-primary">{keyword}</span>
           </p>
         </div>
       </div>
@@ -108,8 +108,8 @@ function CompetitiveContent() {
           {isAnalyzing ? (
             <div className="flex flex-col items-center justify-center py-16 text-center space-y-4">
               <div className="relative inline-block">
-                <div className="absolute inset-0 animate-ping rounded-full bg-primary/20"></div>
-                <div className="relative w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto">
+                <div className="absolute inset-0 animate-ping rounded-full bg-muted/20"></div>
+                <div className="relative w-16 h-16 bg-muted rounded-full flex items-center justify-center mx-auto">
                   <Spinner />
                 </div>
               </div>
@@ -150,7 +150,7 @@ function CompetitiveContent() {
                   <h3 className="font-medium text-lg border-b pb-2">🛒 Top Shopping Competitors</h3>
                   <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 max-h-[600px] overflow-y-auto pr-2 pb-4">
                     {competitiveResults.competitors.map((item: any, i: number) => (
-                      <Card key={i} className="flex flex-col overflow-hidden relative group">
+                      <Card key={i} className="flex flex-col overflow-hidden relative py-0 group">
                         {item.tag && (
                           <Badge variant="destructive" className="absolute top-2 right-2 z-10">{item.tag}</Badge>
                         )}
@@ -169,7 +169,7 @@ function CompetitiveContent() {
                           )}
                         </div>
                         <CardContent className="p-4 flex-1 flex flex-col justify-between">
-                          <div className="space-y-2 mb-4">
+                          <div className="space-y-2 ">
                             <a href={item.product_link || item.link} target="_blank" rel="noopener noreferrer" className="text-sm font-medium line-clamp-2 hover:text-primary transition-colors" title={item.title}>
                               {item.title}
                             </a>
@@ -328,12 +328,12 @@ function CompetitiveContent() {
                 </Button>
               </div>
 
-              <div className="mt-8 border-t pt-6">
+              {/* <div className="mt-8 border-t pt-6">
                 <h3 className="text-sm font-medium text-muted-foreground mb-3">Raw JSON Output - Competitive</h3>
                 <pre className="bg-muted p-4 rounded-md overflow-x-auto text-sm font-mono text-muted-foreground">
                   {JSON.stringify(competitiveResults, null, 2)}
                 </pre>
-              </div>
+              </div> */}
             </div>
           ) : null}
         </CardContent>

@@ -57,7 +57,7 @@ export default function DropAI() {
   return (
     <Blur className="mx-auto space-y-8 pb-20">
       <div>
-        <h1 className="text-2xl font-medium text-foreground">DropAI Workflow (Phase 1)</h1>
+        <h1 className="text-2xl font-medium text-foreground">Product Finder (Phase 1)</h1>
         <p className="text-muted-foreground text-sm mt-1">
           Step 1: Trend Discovery
         </p>
@@ -159,8 +159,8 @@ export default function DropAI() {
               {isSearching ? (
                 <div className="flex flex-col items-center justify-center p-12 text-center space-y-4">
                   <div className="relative inline-block">
-                    <div className="absolute inset-0 animate-ping rounded-full bg-primary/20"></div>
-                    <div className="relative w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto">
+                    <div className="absolute inset-0 animate-ping rounded-full bg-muted/20"></div>
+                    <div className="relative w-16 h-16 bg-muted rounded-full flex items-center justify-center mx-auto">
                       <Spinner />
                     </div>
                   </div>
@@ -196,7 +196,7 @@ export default function DropAI() {
                               </Badge>
                               <Button
                                 size="sm"
-                                variant="outline"
+                                variant="secondary"
                                 onClick={() => handleProceedToCompetitive(item.query)}
                               >
                                 Analyze Setup <ArrowRight className="ml-1 w-3 h-3" />
@@ -269,14 +269,14 @@ export default function DropAI() {
                   )}
 
                   {/* Raw JSON dump for dev phase */}
-                  <div className="mt-8 border-t pt-6">
+                  {/* <div className="mt-8 border-t pt-6">
                     <h3 className="text-sm font-medium text-muted-foreground mb-3 flex justify-between items-center">
                       <span>Raw JSON Output</span>
                     </h3>
                     <pre className="bg-muted p-4 rounded-md overflow-x-auto text-sm font-mono text-muted-foreground">
                       {JSON.stringify(trendResults, null, 2)}
                     </pre>
-                  </div>
+                  </div> */}
                 </div>
               ) : (
                 <div className="flex flex-col items-center justify-center h-full p-12 text-center opacity-50">
