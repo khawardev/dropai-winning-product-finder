@@ -7,7 +7,7 @@ import * as React from 'react'
 import { cn } from '@/lib/utils'
 
 const buttonVariants = cva(
-  "inline-flex shrink-0 cursor-pointer rounded-xl select-none items-center justify-center gap-2 whitespace-nowrap font-medium text-sm outline-none backdrop-blur-sm transition-all active:scale-[0.97] disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive [&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0",
+  "inline-flex shrink-0 cursor-pointer rounded-xl select-none items-center justify-center gap-2 whitespace-nowrap font-medium text-sm outline-none  transition-all active:scale-[0.97] disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive [&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0",
   {
     variants: {
       variant: {
@@ -23,7 +23,7 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80 active:bg-secondary",
         ghost:
           "text-muted-foreground hover:bg-muted/50 hover:text-accent-foreground active:bg-muted/70 active:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline active:text-primary/80",
+        link: "text-primary  underline-offset-4 hover:underline active:text-primary/80",
         soft: "bg-primary/10 text-primary hover:bg-primary/20 active:bg-primary/30",
         "soft-text":
           "text-primary hover:bg-primary/5 hover:text-primary active:bg-primary/20",

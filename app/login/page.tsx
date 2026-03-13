@@ -41,7 +41,7 @@ function LoginForm() {
   }
 
   return (
-    <div className="min-h-screen bg-background text-foreground flex items-center justify-center p-4 relative overflow-hidden selection:bg-brand-blue/30">
+    <div className="min-h-screen  text-foreground flex items-center justify-center p-4 relative overflow-hidden selection:bg-brand-blue/30">
       {/* Abstract Glowing Backgrounds */}
       <div className="absolute top-0 inset-x-0 h-screen overflow-hidden -z-10 pointer-events-none">
         <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] rounded-full bg-brand-blue/10 blur-[120px]" />
@@ -57,7 +57,7 @@ function LoginForm() {
           {/* Subtle Outer Glow */}
           <div className="absolute -inset-0.5 bg-linear-to-r from-brand-blue/20 to-brand-cyan/20 rounded-2xl blur-2xl opacity-50 -z-10" />
 
-          <Card className="bg-transparent border-none">
+          <Card className="bg-transparent shadow-none border-none">
             <CardHeader className="space-y-1 text-center pb-8 pt-8">
               <CardTitle className="text-3xl font-medium text-foreground tracking-tight">Welcome back</CardTitle>
               <CardDescription className="text-muted-foreground pt-1">
@@ -94,7 +94,7 @@ function LoginForm() {
                 </div>
 
                 <div className="flex justify-end pt-1">
-                  <Button variant="link" size="sm" type="button" className="text-muted-foreground hover:text-brand-blue p-0">
+                  <Button variant="link" size="sm" type="button" >
                     Forgot password?
                   </Button>
                 </div>
@@ -107,7 +107,7 @@ function LoginForm() {
                   glow
                   className="w-full font-medium"
                 >
-                  {isLoading ? <ButtonSpinner>Signing In...</ButtonSpinner> : 'Sign In'}
+                  {isLoading ? <ButtonSpinner>Signing In</ButtonSpinner> : 'Sign In'}
                 </Button>
               </form>
             </CardContent>
@@ -117,7 +117,7 @@ function LoginForm() {
         <p className="mt-8 text-center text-sm text-muted-foreground">
           Don&apos;t have an account?{' '}
           <Link href="/signup" className="text-brand-blue hover:text-brand-cyan font-medium transition-all">
-            Join DropAI
+           Sign Up
           </Link>
         </p>
       </BlurFade>

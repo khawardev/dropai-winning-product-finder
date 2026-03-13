@@ -53,7 +53,7 @@ export default function SignupPage() {
   }
 
   return (
-    <div className="min-h-screen bg-background text-foreground flex items-center justify-center p-4 relative overflow-hidden selection:bg-brand-blue/30">
+    <div className="min-h-screen  text-foreground flex items-center justify-center p-4 relative overflow-hidden selection:bg-brand-blue/30">
       {/* Abstract Glowing Backgrounds */}
       <div className="absolute top-0 inset-x-0 h-screen overflow-hidden -z-10 pointer-events-none">
         <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] rounded-full bg-brand-blue/10 blur-[120px]" />
@@ -69,7 +69,7 @@ export default function SignupPage() {
           {/* Subtle Outer Glow */}
           <div className="absolute -inset-0.5 bg-linear-to-r from-brand-blue/20 to-brand-cyan/20 rounded-2xl blur-2xl opacity-50 -z-10" />
 
-          <Card className="bg-transparent border-none">
+          <Card className="bg-transparent shadow-none border-none">
             <CardHeader className="space-y-1 text-center pb-8 pt-8">
               <CardTitle className="text-3xl font-medium text-foreground tracking-tight">Create an account</CardTitle>
               <CardDescription className="text-muted-foreground pt-1">
@@ -117,8 +117,7 @@ export default function SignupPage() {
                     value={confirmPassword}
                     onChange={(e) => setConfirmPassword(e.target.value)}
                     placeholder="Confirm Password"
-                    icon={<Lock />}
-                    className="h-12 bg-muted/50 border-border hover:border-brand-blue/30 text-foreground placeholder:text-muted-foreground focus-visible:ring-1 focus-visible:ring-brand-blue/50 focus-visible:border-brand-blue transition-all rounded-xl"
+                    icon={<Lock className="size-4" />}
                     required
                   />
                 </div>
@@ -129,9 +128,9 @@ export default function SignupPage() {
                   size="xl"
                   shape="xl"
                   glow
-                  className="w-full mt-9 font-medium"
+                  className="w-full mt-9 "
                 >
-                  {isLoading ? <ButtonSpinner>Creating Account...</ButtonSpinner> : 'Create Account'}
+                  {isLoading ? <ButtonSpinner>Creating Account</ButtonSpinner> : 'Create Account'}
                 </Button>
               </form>
             </CardContent>
